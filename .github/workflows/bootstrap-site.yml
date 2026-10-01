@@ -1,0 +1,129 @@
+name: Bootstrap LINEAiGE public site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/bootstrap-site.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out public repository
+        uses: actions/checkout@v6
+
+      - name: Recover the verified public deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          BASE="https://lineaige-barbph.netlify.app"
+          files=(
+            "llms.txt"
+            "sitemap.xml"
+            "site.webmanifest"
+            "index.html"
+            "robots.txt"
+            "404.html"
+            "co-author/index.html"
+            "methodology/index.html"
+            "records/index.html"
+            "assets/apple-touch-icon.png"
+            "assets/og-lineaige.png"
+            "assets/seo.css"
+            "assets/icon-192.png"
+            "assets/favicon-32.png"
+            "assets/icon-512.png"
+            "context/youtube-transformers-google-cloud-2021/index.html"
+            "future/meta-el-paso-ai-datacenter-2028/index.html"
+            "future/philippines-ai-infra-400mw-2030/index.html"
+            "future/philippines-ai-infra-1-5gw-2033/index.html"
+            "future/geniac-prize-final-2027/index.html"
+            "future/anthropic-nextgen-tpu-2027/index.html"
+            "future/stargate-norway-100k-gpus-2026/index.html"
+            "future/eurohpc-aigf-selection-2027/index.html"
+            "future/google-blackstone-tpu-cloud-2027/index.html"
+            "record/hyperclovax-2023/index.html"
+            "record/turing-1950/index.html"
+            "record/mistral7b-2023/index.html"
+            "record/sarvam2b-2024/index.html"
+            "record/typhoon-2024/index.html"
+            "record/falcon-2023/index.html"
+            "record/dartmouth-1955/index.html"
+            "record/plamo-prime-2024/index.html"
+            "record/llama2-2023/index.html"
+            "record/chatgpt-2022/index.html"
+            "record/claude-2023/index.html"
+            "record/transformer-2017/index.html"
+            "record/gemini1-2023/index.html"
+            "record/rosenblatt-1958/index.html"
+            "record/inkubalm-2024/index.html"
+            "record/qwen2-2024/index.html"
+            "learn/helsinki-elements-of-ai/index.html"
+            "learn/harvard-cs50-ai/index.html"
+            "learn/stanford-cs25-transformers-united/index.html"
+            "learn/microsoft-ai-fluency/index.html"
+            "learn/aws-learn-ai/index.html"
+            "learn/mit-ai-101-2021/index.html"
+            "learn/mit-6034-ai-2010/index.html"
+          )
+
+          for path in "${files[@]}"; do
+            mkdir -p "$(dirname "$path")"
+            curl --fail --location --silent --show-error "$BASE/$path" -o "$path"
+          done
+
+          mkdir -p data
+          curl --fail --location --silent --show-error             "https://raw.githubusercontent.com/industriesbarbph-rgb/lineaige/main/data/events.json"             -o data/events.json
+          curl --fail --location --silent --show-error             "https://raw.githubusercontent.com/industriesbarbph-rgb/lineaige/main/data/future-announcements.json"             -o data/future-announcements.json
+
+          python - <<'PY'
+          from pathlib import Path
+
+          index = Path("index.html")
+          text = index.read_text(encoding="utf-8")
+          text = text.replace(
+              "const FUTURE_DATA_URL='https://raw.githubusercontent.com/industriesbarbph-rgb/lineaige/main/data/future-announcements.json';",
+              "const FUTURE_DATA_URL='data/future-announcements.json';"
+          )
+          text = text.replace(
+              "const CANONICAL_DATA_URL='https://raw.githubusercontent.com/industriesbarbph-rgb/lineaige/main/data/events.json';",
+              "const CANONICAL_DATA_URL='data/events.json';"
+          )
+          index.write_text(text, encoding="utf-8")
+
+          coauthor = Path("co-author/index.html")
+          text = coauthor.read_text(encoding="utf-8")
+          old = '''<section style="position:relative;z-index:9;margin:18px auto 0;text-align:center"><a href="https://github.com/industriesbarbph-rgb/lineaige/issues/new?template=coauthor-submission.yml" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:11px 16px;border:1px solid rgba(23,20,18,.45);border-radius:999px;color:#171412;text-decoration:none;font-weight:700;letter-spacing:.08em">SUBMIT A CONTRIBUTION</a><p style="max-width:560px;margin:12px auto 0;color:rgba(23,20,18,.68);font-size:12px;line-height:1.45">Submissions enter the LINEAiGE evidence-review queue and preserve authorship provenance. A GitHub account is required for this temporary route.</p></section>'''
+          new = '''<section style="position:relative;z-index:9;margin:18px auto 0;text-align:center"><span style="display:inline-block;padding:11px 16px;border:1px solid rgba(23,20,18,.45);border-radius:999px;color:#171412;font-weight:700;letter-spacing:.08em">SUBMISSION INTAKE — COMING SOON</span><p style="max-width:560px;margin:12px auto 0;color:rgba(23,20,18,.68);font-size:12px;line-height:1.45">The public contribution route is being separated from LINEAiGE Core so submissions can enter a private evidence-review and moderation queue without exposing internal records.</p></section>'''
+          if old not in text:
+              raise SystemExit("Expected Co-Author submission block was not found; refusing to publish an unreviewed variant.")
+          coauthor.write_text(text.replace(old, new), encoding="utf-8")
+
+          Path(".nojekyll").touch()
+          Path("CNAME").write_text("lineaige.barbph.com\n", encoding="utf-8")
+          PY
+
+          grep -q "const CANONICAL_DATA_URL='data/events.json';" index.html
+          grep -q "const FUTURE_DATA_URL='data/future-announcements.json';" index.html
+          test -s data/events.json
+          test -s data/future-announcements.json
+          test -s assets/og-lineaige.png
+
+      - name: Commit recovered public site
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "LINEAiGE Public Publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add . ':!.github/workflows/bootstrap-site.yml'
+          if git diff --cached --quiet; then
+            echo "No public-site changes to commit."
+            exit 0
+          fi
+          git commit -m "Publish recovered LINEAiGE production site"
+          git push
