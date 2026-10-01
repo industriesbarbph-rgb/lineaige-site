@@ -1,0 +1,1755 @@
+<!doctype html>
+<!-- LINEAiGE deployment build — cleaned 2026-09-20. Mobile and desktop layout tightened. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>LINEAiGE — Verified AI History &amp; Future Announcements</title>
+<meta name="description" content="Explore LINEAiGE, an evidence-controlled record of artificial intelligence history, verified AI milestones, learning resources, and source-backed future announcements.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="author" content="BarbPH">
+<meta name="theme-color" content="#030507">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://lineaige.barbph.com/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LINEAiGE">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="LINEAiGE — Verified AI History &amp; Future Announcements">
+<meta property="og:description" content="Explore LINEAiGE, an evidence-controlled record of artificial intelligence history, verified AI milestones, learning resources, and source-backed future announcements.">
+<meta property="og:url" content="https://lineaige.barbph.com/">
+<meta property="og:image" content="https://lineaige.barbph.com/assets/og-lineaige.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vertical LINEAiGE wordmark on a dark luminous spine with a neon-blue lowercase i">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LINEAiGE — Verified AI History &amp; Future Announcements">
+<meta name="twitter:description" content="Explore LINEAiGE, an evidence-controlled record of artificial intelligence history, verified AI milestones, learning resources, and source-backed future announcements.">
+<meta name="twitter:image" content="https://lineaige.barbph.com/assets/og-lineaige.png">
+
+<style>
+:root {
+  --pillar-h: 92vh;
+  --spine-x:clamp(98px,15.5vw,206px);
+  --now-y: 18vh; /* compact future window; ~82% of the screen remains for history */
+}
+*{box-sizing:border-box}
+html,body{width:100%;height:100%;margin:0}
+body{
+  overflow:hidden;
+  overscroll-behavior:none;
+  touch-action:manipulation;
+  background:
+    radial-gradient(circle at 50% 52%,rgba(24,41,63,.23),transparent 26%),
+    radial-gradient(circle at 50% 18%,rgba(255,255,255,.03),transparent 28%),
+    linear-gradient(180deg,#030507 0%,#070a0e 50%,#020305 100%);
+  color:#fff;
+  font-family:Inter,Arial,Helvetica,sans-serif;
+}
+.stage{
+  position:relative;
+  width:100%;
+  height:100%;
+  perspective:1200px;
+  isolation:isolate;
+}
+
+.stage::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:clamp(105px,19vw,250px);
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(4,7,10,.34),rgba(4,7,10,.10) 58%,transparent);
+  z-index:1;
+}
+
+
+/* ==========================================================
+   ANNOUNCED FUTURE — ONE DASH
+   Only one future marker exists. Its year changes through the
+   currently admitted future years; tap it to open that year's evidence.
+   ========================================================== */
+.future-field{
+  position:fixed;
+  inset:0;
+  z-index:24;
+  pointer-events:none;
+  overflow:visible;
+}
+.future-group{
+  position:absolute;
+  left:var(--spine-x);
+  width:96px;
+  height:30px;
+  transform:translate(calc(-100% - 10px),-50%);
+  padding:0 29px 0 0;
+  text-align:right;
+  margin:0;
+  border:0;
+  background:transparent;
+  color:inherit;
+  cursor:pointer;
+  pointer-events:auto;
+  appearance:none;
+  -webkit-appearance:none;
+  outline:none;
+  touch-action:manipulation;
+}
+.future-group::before{
+  content:"";
+  position:absolute;
+  right:0;
+  top:50%;
+  width:20px;
+  height:1px;
+  transform:translateY(-50%);
+  background:rgba(239,249,255,.70);
+  box-shadow:0 0 6px rgba(195,232,255,.20);
+  transition:width .16s ease,background .16s ease,box-shadow .16s ease;
+}
+.future-group::after{
+  content:"";
+  position:absolute;
+  right:-2px;
+  top:50%;
+  width:4px;
+  height:4px;
+  transform:translateY(-50%);
+  border-radius:50%;
+  background:rgba(250,253,255,.95);
+  box-shadow:0 0 7px rgba(204,237,255,.26);
+}
+.future-group:hover::before,
+.future-group:focus-visible::before,
+.future-group.is-selected::before{
+  width:26px;
+  background:rgba(255,255,255,.98);
+  box-shadow:0 0 9px rgba(202,236,255,.38);
+}
+.future-group .future-year{
+  display:block;
+  position:absolute;
+  right:30px;
+  top:50%;
+  transform:translateY(-50%);
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:8px;
+  line-height:1;
+  font-weight:700;
+  letter-spacing:.16em;
+  color:rgba(240,249,254,.82);
+  white-space:nowrap;
+  transition:opacity .22s ease,transform .22s ease;
+}
+.future-group.year-changing .future-year{
+  opacity:.12;
+  transform:translateY(-50%) translateX(4px);
+}
+
+/* Full evidence remains in the drawer, never on the tiny future rail. */
+.future-source-list{
+  display:grid;
+  gap:8px;
+  margin-top:11px;
+}
+.future-source-item{
+  padding:8px 9px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:10px;
+  background:rgba(255,255,255,.035);
+}
+.future-source-item strong{
+  display:block;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:12px;
+  line-height:1.18;
+  font-weight:400;
+  color:rgba(244,248,251,.90);
+}
+.future-source-item span{
+  display:block;
+  margin-top:4px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:7px;
+  line-height:1.35;
+  letter-spacing:.05em;
+  color:rgba(190,211,224,.55);
+}
+.future-source-item a{
+  display:inline-block;
+  margin-top:6px;
+  color:rgba(232,245,252,.82);
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:7px;
+  letter-spacing:.10em;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+.future-source-item a:hover,
+.future-source-item a:focus-visible{
+  text-decoration:underline;
+  outline:none;
+}
+@media(max-width:700px){
+  .future-group{
+    width:90px;
+    height:28px;
+    padding:0 27px 0 0;
+    transform:translate(calc(-100% - 8px),-50%);
+    text-align:right;
+  }
+  .future-group::before{
+    width:18px;
+    right:0;
+    left:auto;
+  }
+  .future-group::after{
+    right:-2px;
+    left:auto;
+  }
+  .future-group .future-year{
+    right:28px;
+    left:auto;
+    font-size:7px;
+  }
+}
+
+.glass-pillar{
+  position:absolute;
+  left:var(--spine-x);
+  top:50%;
+  transform:translate(-50%,-50%);
+  z-index:8;
+  pointer-events:none;
+  width:min(112px,16vw);
+  height:var(--pillar-h);
+  min-height:560px;
+  overflow:visible;
+  transform-style:preserve-3d;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+}
+.core-light{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:3px;
+  height:100vh;
+  transform:translate(-50%,-50%);
+  background:
+    linear-gradient(180deg,
+      rgba(220,246,255,.62) 0%,
+      rgba(255,255,255,.34) 14%,
+      rgba(220,246,255,.84) 50%,
+      rgba(255,255,255,.34) 86%,
+      rgba(220,246,255,.62) 100%);
+  box-shadow:
+    0 0 4px rgba(255,255,255,.58),
+    0 0 16px rgba(155,225,255,.30);
+  opacity:.92;
+  pointer-events:none;
+  animation:axisPulse 5.6s ease-in-out infinite;
+}
+.core-light::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  width:1px;
+  height:100%;
+  transform:translateX(-50%);
+  background:linear-gradient(180deg,
+    transparent 0%,
+    rgba(255,255,255,.22) 18%,
+    rgba(255,255,255,.60) 50%,
+    rgba(255,255,255,.22) 82%,
+    transparent 100%);
+  opacity:.78;
+}
+.core-light::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:-12%;
+  width:12px;
+  height:22%;
+  transform:translateX(-50%);
+  border-radius:999px;
+  background:linear-gradient(180deg,
+    rgba(255,255,255,0) 0%,
+    rgba(220,246,255,.10) 18%,
+    rgba(255,255,255,.75) 46%,
+    rgba(220,246,255,.10) 74%,
+    rgba(255,255,255,0) 100%);
+  filter:blur(3px);
+  opacity:.42;
+  animation:axisTraveler 12s linear infinite;
+}
+@keyframes axisPulse{
+  0%,100%{
+    opacity:.86;
+    box-shadow:
+      0 0 4px rgba(255,255,255,.50),
+      0 0 12px rgba(155,225,255,.24);
+  }
+  50%{
+    opacity:.98;
+    box-shadow:
+      0 0 5px rgba(255,255,255,.65),
+      0 0 18px rgba(155,225,255,.34);
+  }
+}
+@keyframes axisTraveler{
+  0%{
+    top:-12%;
+    opacity:.18;
+  }
+  8%{
+    opacity:.34;
+  }
+  20%{
+    opacity:.46;
+  }
+  50%{
+    opacity:.30;
+  }
+  78%{
+    opacity:.44;
+  }
+  92%{
+    opacity:.22;
+  }
+  100%{
+    top:90%;
+    opacity:.12;
+  }
+}
+.brand::before{content:"";position:absolute;right:calc(100% + 8px);top:50%;width:18px;height:1px;transform:translateY(-50%);background:rgba(239,249,255,.70);box-shadow:0 0 6px rgba(195,232,255,.18)}.brand::after{content:"";position:absolute;right:calc(100% + 24px);top:50%;width:4px;height:4px;border-radius:50%;transform:translateY(-50%);background:rgba(250,253,255,.94);box-shadow:0 0 7px rgba(204,237,255,.24)}.brand:hover::before,.brand:focus-visible::before{width:24px;background:rgba(255,255,255,.96);box-shadow:0 0 8px rgba(202,236,255,.30)}.brand:focus-visible{outline:none}
+.data-field{
+  position:fixed;
+  inset:0;
+  overflow:hidden;
+  z-index:4;
+  pointer-events:none;
+  contain:strict;
+}
+.data-node{
+  position:absolute;
+  z-index:5;
+  left:var(--x);
+  top:0;
+  width:min(var(--w),28vw);
+  max-width:360px;
+  padding:12px 0 0;
+  margin:0;
+  border:0;
+  background:transparent;
+  color:inherit;
+  opacity:var(--o);
+  transform:translate3d(-50%,112vh,0);
+  animation:dataRise var(--dur) linear infinite;
+  animation-delay:var(--delay);
+  pointer-events:auto;
+  cursor:pointer;
+  user-select:none;
+  will-change:transform;
+  backface-visibility:hidden;
+  -webkit-font-smoothing:antialiased;
+  contain:layout style paint;
+}
+.node-glass{
+  width:100%;
+  padding:7px 10px 8px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.18);
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.135),rgba(255,255,255,.038) 58%,rgba(170,220,255,.078)),
+    rgba(8,12,18,.25);
+  box-shadow:
+    inset 2px 2px 5px rgba(255,255,255,.12),
+    inset -3px -3px 7px rgba(0,0,0,.15),
+    0 8px 24px rgba(0,0,0,.18),
+    0 0 10px rgba(190,230,255,.055);
+  transform:translateZ(0) scale(1);
+  transition:transform .18s ease,border-color .18s ease,background-color .18s ease;
+}
+.data-node:hover,
+.data-node:focus-visible{
+  opacity:1 !important;
+  z-index:20;
+  outline:none;
+  animation-play-state:paused;
+}
+.data-node:hover .node-glass,
+.data-node:focus-visible .node-glass{
+  transform:translateZ(0) scale(1.035);
+  border-color:rgba(255,255,255,.46);
+}
+.data-node .meta{
+  display:flex;
+  gap:7px;
+  align-items:center;
+  margin-bottom:3px;
+  font-size:8px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:rgba(226,239,249,.65);
+}
+.data-node .dot{
+  width:4px;
+  height:4px;
+  border-radius:50%;
+  background:rgba(239,250,255,.8);
+  box-shadow:0 0 7px rgba(190,232,255,.55);
+  flex:0 0 auto;
+}
+.data-node .title{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(10px,.86vw,13px);
+  line-height:1.15;
+  color:rgba(248,251,255,.88);
+  text-shadow:0 1px 1px rgba(0,0,0,.45);
+  overflow:hidden;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+}
+.data-node[data-type="CANDIDATE"] .node-glass{
+  border-style:dashed;
+}
+.data-node[data-type="RESEARCH LEDGER"] .node-glass{
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.025)),
+    rgba(8,12,18,.22);
+}
+.data-node[data-type="LEARNING"] .node-glass{
+  box-shadow:
+    inset 2px 2px 5px rgba(255,255,255,.13),
+    0 0 13px rgba(255,255,255,.045);
+}
+@keyframes dataRise{
+  from{transform:translate3d(-50%,112vh,0)}
+  to{transform:translate3d(-50%,calc(var(--now-y) + 8.8vh),0)}
+}
+
+
+/* IMPORTANT: --spine-x is the TRUE X coordinate of the illuminated centerline.
+   The glass wrapper is centered on it; the ruler uses the same coordinate.
+   Do not anchor either system to the wrapper's left edge.
+
+   ===== TEMPORAL RAIL — QUIET, READABLE, NON-CHARTLIKE =====
+   Most of the viewport = recorded past.
+   TODAY = 18vh from the top.
+   The small area above TODAY is represented by ONE rotating future dash.
+*/
+.time-ruler{
+  position:fixed;
+  left:var(--spine-x);
+  top:0;
+  bottom:0;
+  width:0;
+  z-index:20;
+  pointer-events:auto;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  touch-action:manipulation;
+}
+
+
+.time-ruler::after{
+  content:"";
+  position:absolute;
+  left:-20px;
+  top:0;
+  width:40px;
+  height:100%;
+  pointer-events:none;
+  /* intentionally transparent: reserved no-text corridor */
+}
+
+/* HISTORY ZONE BELOW TODAY:
+   every dash is still a real clickable year,
+   but the visual system now makes the lower historical field more purposeful:
+   faint years = research gaps,
+   decade anchors = orientation,
+   brighter long dashes = admitted-record years. */
+.year-tick{
+  position:absolute;
+  left:0;
+  width:44px;
+  height:14px;
+  transform:translate(-100%,-50%);
+  margin:0;
+  padding:14px 0 0;
+  border:0;
+  background:transparent;
+  cursor:pointer;
+  pointer-events:auto;
+  appearance:none;
+  -webkit-appearance:none;
+  outline:none;
+}
+.year-tick::before{
+  content:"";
+  position:absolute;
+  right:0;
+  top:50%;
+  width:2px;
+  height:1px;
+  transform:translateY(-50%);
+  background:rgba(226,240,248,.10);
+  transition:width .16s ease, background .16s ease, box-shadow .16s ease;
+}
+.year-tick.five::before{
+  width:4px;
+  background:rgba(226,240,248,.16);
+}
+.year-tick.decade::before{
+  width:9px;
+  background:rgba(232,245,252,.24);
+}
+.year-tick.event-year::before{
+  width:18px;
+  background:rgba(244,250,255,.66);
+  box-shadow:0 0 4px rgba(205,235,255,.12);
+}
+.year-tick.event-year::after{
+  content:"";
+  position:absolute;
+  right:-1px;
+  top:50%;
+  width:4px;
+  height:4px;
+  transform:translateY(-50%);
+  border-radius:50%;
+  background:rgba(247,252,255,.88);
+  box-shadow:0 0 5px rgba(210,238,255,.24);
+}
+.year-tick:hover::before,
+.year-tick:focus-visible::before{
+  width:24px;
+  background:rgba(250,253,255,.86);
+  box-shadow:0 0 6px rgba(210,239,255,.20);
+}
+.year-tick .year-label{
+  position:absolute;
+  right:14px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:6px;
+  letter-spacing:.06em;
+  color:rgba(204,219,230,.28);
+  white-space:nowrap;
+  pointer-events:none;
+}
+.year-tick .tick-tip{
+  position:absolute;
+  right:32px;
+  top:50%;
+  transform:translateY(-50%);
+  padding:4px 6px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:8px;
+  background:rgba(8,12,16,.86);
+  color:rgba(236,246,252,.84);
+  font-size:6px;
+  letter-spacing:.06em;
+  white-space:nowrap;
+  opacity:0;
+  visibility:hidden;
+  transition:opacity .15s ease;
+  pointer-events:none;
+}
+.year-tick:hover .tick-tip,
+.year-tick:focus-visible .tick-tip{
+  opacity:1;
+  visibility:visible;
+}
+.year-tick:active::before,
+.year-tick.is-selected::before{
+  width:28px;
+  background:rgba(255,255,255,.96);
+  box-shadow:
+    0 0 5px rgba(255,255,255,.42),
+    0 0 12px rgba(190,230,255,.24);
+}
+
+/* TODAY — compact, clean, intentionally stronger than the ruler. */
+.now-marker{
+  position:absolute;
+  left:0;
+  top:var(--now-y);
+  transform:translateY(-50%);
+  z-index:12;
+}
+.now-marker::before{
+  content:"";
+  position:absolute;
+  left:8px;
+  right:auto;
+  top:0;
+  width:24px;
+  height:1px;
+  background:rgba(250,253,255,.82);
+  box-shadow:0 0 5px rgba(226,245,255,.20);
+}
+.now-marker::after{
+  content:"";
+  position:absolute;
+  left:-2px;
+  top:-2px;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 0 7px rgba(220,242,255,.30);
+}
+.now-copy{
+  position:absolute;
+  left:18px;
+  right:auto;
+  top:50%;
+  transform:translateY(-50%);
+  width:max-content;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:3px;
+  white-space:nowrap;
+  text-align:left;
+  text-shadow:0 1px 2px rgba(0,0,0,.9);
+}
+.now-copy strong{
+  font-size:8px;
+  line-height:1;
+  letter-spacing:.16em;
+  color:rgba(250,253,255,.92);
+}
+.now-copy span{
+  font-size:6.5px;
+  line-height:1;
+  letter-spacing:.05em;
+  color:rgba(213,229,239,.48);
+}
+
+/* Era labels live as quiet captions in the left rail.
+   They never collide with TODAY or LINEAiGE. */
+.era-label{
+  position:absolute;
+  right:50px;
+  width:112px;
+  transform:translateY(-50%);
+  text-align:right;
+  font-size:5.8px;
+  line-height:1.28;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:rgba(188,205,217,.22);
+}
+.era-label b{
+  display:block;
+  font-weight:600;
+  color:rgba(216,231,240,.34);
+}
+.era-label span{
+  display:block;
+  margin-top:0;
+  color:rgba(185,202,214,.20);
+}
+
+/* Event-year title is available only as hover/focus metadata via title attribute.
+   The main floating card remains the readable event representation. */
+
+@media(max-width:700px){
+  :root{
+    --spine-x:60px;
+    --now-y:18vh;
+  }
+  .year-tick .year-label,
+  .era-label{
+    display:none;
+  }
+  .now-copy{
+    left:14px;
+    right:auto;
+    align-items:flex-start;
+    text-align:left;
+    gap:3px;
+  }
+  .now-copy strong{font-size:6.8px}
+  .now-copy span{font-size:5.6px}
+}
+
+
+/* LINEAiGE deployment marker: starts directly below TODAY and grows downward. */
+#brandMarker{
+  position:absolute;
+  left:0;
+  right:0;
+  top:calc(var(--now-y) + 1.7vh);
+  height:auto;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  z-index:21;
+  margin:0;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:inherit;
+  cursor:pointer;
+  pointer-events:auto;
+  appearance:none;
+  -webkit-appearance:none;
+  transform:none;
+}
+#brandMarker > span{
+  display:block;
+  margin:0;
+  white-space:pre-line;
+  text-align:center;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(16px,1.52vw,21px);
+  font-weight:400;
+  line-height:1.02;
+  letter-spacing:.13em;
+  color:rgba(250,252,255,.92);
+  text-shadow:
+    0 0 2px rgba(255,255,255,.96),
+    0 0 12px rgba(185,225,255,.34),
+    0 1px 2px rgba(0,0,0,.95);
+  mix-blend-mode:screen;
+}
+#brandMarker::before{
+  content:"";
+  position:absolute;
+  right:50%;
+  top:2px;
+  width:25px;
+  height:1px;
+  background:rgba(239,249,255,.72);
+  box-shadow:0 0 6px rgba(195,232,255,.20);
+}
+#brandMarker::after{
+  content:"";
+  position:absolute;
+  left:calc(50% - 2px);
+  top:-1px;
+  width:4px;
+  height:4px;
+  border-radius:50%;
+  background:rgba(250,253,255,.95);
+  box-shadow:0 0 7px rgba(204,237,255,.26);
+}
+#brandMarker:hover::before,
+#brandMarker:focus-visible::before{
+  width:29px;
+  background:rgba(255,255,255,.96);
+  box-shadow:0 0 8px rgba(202,236,255,.30);
+}
+#brandMarker:focus-visible{
+  outline:none;
+}
+
+#brandMarker .brand-i{
+  display:inline !important;
+  color:#2F7CFF;
+  text-shadow:
+    0 0 2px rgba(255,255,255,.84),
+    0 0 7px rgba(47,124,255,.72),
+    0 0 15px rgba(47,124,255,.34),
+    0 0 22px rgba(47,124,255,.16);
+}
+
+@media(max-width:700px){
+  #brandMarker{
+    top:calc(var(--now-y) + 1.45vh);
+  }
+  #brandMarker > span{
+    font-size:17px;
+    letter-spacing:.10em;
+  }
+}
+
+/* ONE GLASS NAVIGATION CUBE — traveling through the top open area */
+
+
+.cube-zone{
+  --cube:clamp(54px,4.9vw,62px);
+  position:fixed;
+  left:clamp(300px,56vw,calc(100vw - 90px));
+  top:max(14px, calc(var(--now-y) - 13.8vh));
+  bottom:auto;
+  width:var(--cube);
+  height:var(--cube);
+  z-index:50;
+  perspective:850px;
+  pointer-events:auto;
+  transform:translateX(-50%) translate3d(-38vw,0,0);
+  animation:cubeTravel 16s linear infinite alternate;
+  will-change:transform;
+  isolation:isolate;
+}
+
+/* Dark contact shadow = ground contact, not a glow. */
+.cube-zone::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:-9px;
+  width:84%;
+  height:12px;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:rgba(0,0,0,.46);
+  filter:blur(4px);
+  pointer-events:none;
+  z-index:-1;
+}
+
+.nav-cube{
+  position:absolute;
+  inset:0;
+  transform-style:preserve-3d;
+  transform-origin:50% 50%;
+  animation:cubeTurn 22s cubic-bezier(.42,0,.58,1) infinite;
+  will-change:transform;
+}
+
+.cube-zone:hover .nav-cube,
+.cube-zone:focus-within .nav-cube,
+.cube-zone.paused .nav-cube{
+  animation-play-state:paused;
+}
+
+.cube-face{
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(236,244,250,.34);
+  background:rgba(210,225,235,.055);
+  box-shadow:none;
+  backdrop-filter:blur(7px) saturate(112%);
+  -webkit-backdrop-filter:blur(7px) saturate(112%);
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+  overflow:hidden;
+}
+
+/* No face highlights, no glow, no "stone" reflection. */
+.cube-face::before,
+.cube-face::after{
+  content:none;
+}
+
+.cube-face a{
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  padding:4px;
+  color:rgba(248,251,253,.96);
+  text-decoration:none;
+  text-align:center;
+  font-size:clamp(6.2px,.5vw,7.4px);
+  font-weight:600;
+  line-height:1.2;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  text-shadow:0 1px 2px rgba(0,0,0,.82);
+  z-index:2;
+}
+
+.cube-face a span{
+  display:block;
+  max-width:92%;
+}
+
+.cube-face a:focus-visible{
+  outline:1px solid rgba(255,255,255,.85);
+  outline-offset:-5px;
+}
+
+.face-front{transform:rotateY(0deg) translateZ(calc(var(--cube)/2))}
+.face-right{transform:rotateY(90deg) translateZ(calc(var(--cube)/2))}
+.face-back{transform:rotateY(180deg) translateZ(calc(var(--cube)/2))}
+.face-left{transform:rotateY(-90deg) translateZ(calc(var(--cube)/2))}
+.face-top{transform:rotateX(90deg) translateZ(calc(var(--cube)/2))}
+.face-bottom{
+  transform:rotateX(-90deg) translateZ(calc(var(--cube)/2));
+  pointer-events:none;
+}
+
+.face-top,
+.face-bottom{
+  background:rgba(210,225,235,.055);
+}
+
+.face-top .cube-cap{
+  display:grid;
+  place-items:center;
+  width:100%;
+  height:100%;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(6.8px,.56vw,8px);
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:none;
+}
+
+/* Cube travels left ↔ right through the top empty space. */
+@keyframes cubeTravel{
+  from{transform:translateX(-50%) translate3d(-12vw,0,0)}
+  to{transform:translateX(-50%) translate3d(12vw,0,0)}
+}
+
+/* Rotation + deliberate top-face reveal for BarbPH. */
+@keyframes cubeTurn{
+  0%   {transform:rotateX(-10deg) rotateY(28deg)}
+  12%  {transform:rotateX(-10deg) rotateY(118deg)}
+  24%  {transform:rotateX(-10deg) rotateY(208deg)}
+  36%  {transform:rotateX(-10deg) rotateY(298deg)}
+  48%  {transform:rotateX(-10deg) rotateY(388deg)}
+  62%  {transform:rotateX(-28deg) rotateY(412deg)}
+  76%  {transform:rotateX(-58deg) rotateY(438deg)}
+  88%  {transform:rotateX(-38deg) rotateY(458deg)}
+  100% {transform:rotateX(-10deg) rotateY(478deg)}
+}
+
+@media(max-width:700px){
+  .cube-zone{
+    --cube:clamp(52px,14vw,60px);
+    left:clamp(240px,73vw,calc(100vw - 64px));
+    top:max(12px, calc(var(--now-y) - 14.2vh));
+    animation-duration:13s;
+  }
+  .cube-face a{
+    font-size:6.1px;
+    padding:4px;
+  }
+@keyframes cubeTravel{
+    from{transform:translateX(-50%) translate3d(-9vw,0,0)}
+    to{transform:translateX(-50%) translate3d(9vw,0,0)}
+  }
+}
+
+
+@media(max-width:700px){
+  .glass-pillar{
+    left:var(--spine-x);
+    width:84px;
+    transform:translate(-50%,-50%);
+  }
+.data-node{
+    width:min(var(--w),46vw);
+    max-width:152px;
+  }
+}
+
+
+@media(max-width:700px){
+  .year-tick{
+    left:0;
+    width:44px;
+    height:12px;
+    transform:translate(-100%,-50%);
+  }
+  .year-tick::before{
+    left:auto;
+    right:0;
+  }
+  .year-tick.event-year::after{
+    left:auto;
+    right:-1px;
+  }
+  .year-tick .year-label{
+    display:none;
+  }
+  .year-tick .tick-tip{
+    left:52px;
+    right:auto;
+  }
+}
+
+
+#brandMarker:hover::before,
+
+
+@media(prefers-reduced-motion:reduce){
+  .cube-zone{
+    animation:none;
+    transform:translateX(-50%);
+  }
+  .nav-cube{
+    animation:none;
+    transform:rotateX(-34deg) rotateY(28deg);
+  }
+}
+
+.drawer{
+  position:fixed;z-index:100;left:50%;bottom:18px;transform:translate(-50%,18px);
+  width:min(620px,calc(100vw - 28px));padding:16px 17px 15px;border-radius:20px;
+  border:1px solid rgba(255,255,255,.23);
+  background:linear-gradient(145deg,rgba(12,17,24,.82),rgba(4,7,12,.68));
+  backdrop-filter:blur(24px) saturate(130%);
+  -webkit-backdrop-filter:blur(24px) saturate(130%);
+  box-shadow:0 18px 70px rgba(0,0,0,.5),inset 1px 1px 0 rgba(255,255,255,.12);
+  opacity:0;visibility:hidden;transition:.22s ease;pointer-events:none;
+}
+.drawer.open{opacity:1;visibility:visible;transform:translate(-50%,0);pointer-events:auto}
+.drawer .close{position:absolute;right:11px;top:9px;width:28px;height:28px;border:0;border-radius:50%;background:rgba(255,255,255,.07);color:#fff;font-size:18px;cursor:pointer}
+.drawer .eyebrow{font-size:9px;letter-spacing:.17em;text-transform:uppercase;color:rgba(220,235,246,.58);margin:0 35px 8px 0}
+.drawer h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(18px,2.4vw,28px);line-height:1.05;margin:0 32px 8px 0;color:rgba(250,252,255,.95)}
+.drawer p{margin:0;color:rgba(224,236,245,.72);font-size:11px;line-height:1.45}
+.drawer .path{margin-top:9px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:9px;color:rgba(195,218,235,.48);word-break:break-all}
+.drawer .source-link{
+  display:none;
+  width:max-content;
+  max-width:100%;
+  margin-top:12px;
+  padding:8px 11px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;
+  background:rgba(255,255,255,.055);
+  color:rgba(244,249,252,.9);
+  text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:9px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.drawer .source-link:hover,
+.drawer .source-link:focus-visible{
+  background:rgba(255,255,255,.095);
+  border-color:rgba(255,255,255,.30);
+  outline:none;
+}
+
+@media(max-width:700px){
+  :root{--pillar-h:88vh}
+.data-node{width:min(var(--w),46vw);max-width:152px}
+  .node-glass{padding:6px 8px;border-radius:12px}
+  .data-node .meta{font-size:7px}
+  .data-node .title{font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  .data-node{animation:none!important;transform:translate3d(-50%,var(--static-y),0)}
+  
+}
+
+/* ==========================================================
+   LINEAiGE DEPLOYMENT MARKER — TRUE BELOW-TODAY POSITION
+   The marker point is under TODAY; the vertical word grows DOWN from it.
+   ========================================================== */
+/* Dash attaches to the real illuminated centerline, not the wrapper edge. */
+
+
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://barbph.com/#organization","name":"BarbPH","url":"https://barbph.com/"},{"@type":"WebSite","@id":"https://lineaige.barbph.com/#website","url":"https://lineaige.barbph.com/","name":"LINEAiGE","description":"Explore LINEAiGE, an evidence-controlled record of artificial intelligence history, verified AI milestones, learning resources, and source-backed future announcements.","publisher":{"@id":"https://barbph.com/#organization"},"inLanguage":"en"},{"@type":"CollectionPage","@id":"https://lineaige.barbph.com/#webpage","url":"https://lineaige.barbph.com/","name":"LINEAiGE — Verified AI History & Future Announcements","description":"Explore LINEAiGE, an evidence-controlled record of artificial intelligence history, verified AI milestones, learning resources, and source-backed future announcements.","isPartOf":{"@id":"https://lineaige.barbph.com/#website"},"about":{"@type":"Thing","name":"Artificial intelligence history"},"datePublished":"2026-09-20","dateModified":"2026-09-20","mainEntity":{"@id":"https://lineaige.barbph.com/#historical-records"}},{"@type":"ItemList","@id":"https://lineaige.barbph.com/#historical-records","name":"Verified AI historical records in LINEAiGE","numberOfItems":16,"itemListElement":[{"@type":"ListItem","position":1,"name":"Computing Machinery and Intelligence","url":"https://lineaige.barbph.com/record/turing-1950/"},{"@type":"ListItem","position":2,"name":"Dartmouth Artificial Intelligence Proposal","url":"https://lineaige.barbph.com/record/dartmouth-1955/"},{"@type":"ListItem","position":3,"name":"The Perceptron","url":"https://lineaige.barbph.com/record/rosenblatt-1958/"},{"@type":"ListItem","position":4,"name":"Attention Is All You Need","url":"https://lineaige.barbph.com/record/transformer-2017/"},{"@type":"ListItem","position":5,"name":"Introducing ChatGPT","url":"https://lineaige.barbph.com/record/chatgpt-2022/"},{"@type":"ListItem","position":6,"name":"Introducing Claude","url":"https://lineaige.barbph.com/record/claude-2023/"},{"@type":"ListItem","position":7,"name":"Falcon LLM Launch","url":"https://lineaige.barbph.com/record/falcon-2023/"},{"@type":"ListItem","position":8,"name":"Llama 2 Availability","url":"https://lineaige.barbph.com/record/llama2-2023/"},{"@type":"ListItem","position":9,"name":"HyperCLOVA X Introduction","url":"https://lineaige.barbph.com/record/hyperclovax-2023/"},{"@type":"ListItem","position":10,"name":"Mistral 7B Release","url":"https://lineaige.barbph.com/record/mistral7b-2023/"},{"@type":"ListItem","position":11,"name":"Introducing Gemini 1.0","url":"https://lineaige.barbph.com/record/gemini1-2023/"},{"@type":"ListItem","position":12,"name":"Typhoon Thai LLM Introduction","url":"https://lineaige.barbph.com/record/typhoon-2024/"},{"@type":"ListItem","position":13,"name":"Qwen2 Release","url":"https://lineaige.barbph.com/record/qwen2-2024/"},{"@type":"ListItem","position":14,"name":"Sarvam 2B Launch","url":"https://lineaige.barbph.com/record/sarvam2b-2024/"},{"@type":"ListItem","position":15,"name":"InkubaLM Paper Introduction","url":"https://lineaige.barbph.com/record/inkubalm-2024/"},{"@type":"ListItem","position":16,"name":"PLaMo Prime Launch","url":"https://lineaige.barbph.com/record/plamo-prime-2024/"}]},{"@type":"ItemList","@id":"https://lineaige.barbph.com/#announced-future","name":"Evidence-backed announced future AI milestones in LINEAiGE","numberOfItems":8,"itemListElement":[{"@type":"ListItem","position":1,"name":"Stargate Norway targets 100,000 NVIDIA GPUs","url":"https://lineaige.barbph.com/future/stargate-norway-100k-gpus-2026/"},{"@type":"ListItem","position":2,"name":"EU AI Gigafactory projects scheduled for selection","url":"https://lineaige.barbph.com/future/eurohpc-aigf-selection-2027/"},{"@type":"ListItem","position":3,"name":"GENIAC-PRIZE 2026 final contest and awards","url":"https://lineaige.barbph.com/future/geniac-prize-final-2027/"},{"@type":"ListItem","position":4,"name":"Anthropic next-generation TPU capacity starts coming online","url":"https://lineaige.barbph.com/future/anthropic-nextgen-tpu-2027/"},{"@type":"ListItem","position":5,"name":"Blackstone-Google TPU cloud targets 500MW online","url":"https://lineaige.barbph.com/future/google-blackstone-tpu-cloud-2027/"},{"@type":"ListItem","position":6,"name":"Meta El Paso 1GW AI data-center capacity begins coming online","url":"https://lineaige.barbph.com/future/meta-el-paso-ai-datacenter-2028/"},{"@type":"ListItem","position":7,"name":"Philippines AI infrastructure first phase targets about 400MW","url":"https://lineaige.barbph.com/future/philippines-ai-infra-400mw-2030/"},{"@type":"ListItem","position":8,"name":"Philippines AI data-center capacity target reaches 1.5GW","url":"https://lineaige.barbph.com/future/philippines-ai-infra-1-5gw-2033/"}]}]}</script>
+<link rel="index" href="/records/">
+</head>
+<body>
+<main class="stage" aria-label="LINEAiGE glass data field">
+  <header class="sr-only"><h1>LINEAiGE — Verified AI History and Announced Future</h1><p>An evidence-controlled record of artificial intelligence history, verified milestones, learning resources, and source-backed announced future developments.</p></header>
+  <div class="data-field" id="dataField" aria-label="LINEAiGE data records"></div>
+  <div class="future-field" id="futureField" aria-label="Evidence-backed announced future milestones"></div>
+
+  <div class="time-ruler" id="timeRuler" aria-label="LINEAiGE temporal ruler">
+        <div class="now-marker" id="nowMarker">
+      <div class="now-copy">
+        <strong id="nowDate">TODAY</strong>
+        <span id="nowClock"></span>
+      </div>
+    </div>
+    <div class="era-label" id="eraFoundations">
+      <b>FOUNDATIONS + SYMBOLIC AI</b>
+      <span>1940–1989</span>
+    </div>
+    <div class="era-label" id="eraML">
+      <b>MACHINE LEARNING EXPANSION</b>
+      <span>1990–2016</span>
+    </div>
+    <div class="era-label" id="eraGenAI">
+      <b>TRANSFORMER + GENERATIVE AI</b>
+      <span>2017–TODAY</span>
+    </div>
+  </div>
+
+
+  <section class="glass-pillar" aria-label="LINEAiGE">
+    <div class="core-light"></div>
+
+    <button class="brand" id="brandMarker" type="button" aria-label="LINEAiGE deployment marker"><span>L
+I
+N
+E
+A
+<span class="brand-i">i</span>
+G
+E</span></button>
+  </section>
+
+      <div class="cube-zone" id="cubeZone" aria-label="LINEAiGE navigation cube">
+      <div class="nav-cube">
+          <div class="cube-face face-front">
+            <a href="/co-author/" target="_blank" rel="noopener noreferrer" aria-label="Open Co-Author">
+              <span>CO-AUTHOR</span>
+            </a>
+          </div>
+          <div class="cube-face face-right">
+            <a href="https://docs.google.com/document/d/1N5y-Jgt5U6iyIuDC9XqcsO5JgUWiMZUvPP12-adWyWE/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer" aria-label="Open Paper Trail">
+              <span>PAPER TRAIL</span>
+            </a>
+          </div>
+          <div class="cube-face face-back">
+            <a href="https://www.youtube.com/@barbphtv" target="_blank" rel="noopener noreferrer" aria-label="Open YouTube">
+              <span>YOUTUBE</span>
+            </a>
+          </div>
+          <div class="cube-face face-left">
+            <a href="https://barbph.com/partnership" target="_blank" rel="noopener noreferrer" aria-label="Open Contact Us">
+              <span>CONTACT US</span>
+            </a>
+          </div>
+          <div class="cube-face face-top">
+            <a href="https://barbph.com/" target="_blank" rel="noopener noreferrer" aria-label="Open BarbPH">
+              <span class="cube-cap">BarbPH</span>
+            </a>
+          </div>
+          <div class="cube-face face-bottom" aria-hidden="true"></div>
+      </div>
+    </div>
+</main>
+<noscript>
+  <section style="max-width:760px;margin:40px auto;padding:24px;color:#eef5f9;font-family:Arial,sans-serif;line-height:1.6">
+    <h2>LINEAiGE evidence index</h2>
+    <p>The interactive timeline requires JavaScript. The verified records remain available as crawlable pages.</p>
+    <p><a href="/records/">Browse the LINEAiGE record index</a> · <a href="/methodology/">Read the evidence methodology</a></p>
+  </section>
+</noscript>
+
+
+
+<section class="drawer" id="drawer" aria-live="polite">
+  <button class="close" id="drawerClose" aria-label="Close">×</button>
+  <p class="eyebrow" id="drawerMeta"></p>
+  <h2 id="drawerTitle"></h2>
+  <p id="drawerText"></p>
+  <div class="path" id="drawerPath"></div>
+  <div class="future-source-list" id="futureSourceList"></div>
+  <a class="source-link" id="drawerPermalink"></a>
+  <a class="source-link" id="drawerSource" target="_blank" rel="noopener noreferrer"></a>
+</section>
+
+<script>
+/* Public snapshot: canonical history, living edge, verified learning resources, contextual media, and an embedded fallback for admitted future announcements. Held-back research and candidates are excluded. */
+const FUTURE_DATA_URL='data/future-announcements.json';
+const FUTURE_FALLBACK=[{"id":"stargate-norway-100k-gpus-2026","targetDate":"2026-12-31","targetPrecision":"by end of 2026","announcedOn":"2025-07-31","title":"Stargate Norway targets 100,000 NVIDIA GPUs","type":"ANNOUNCED FUTURE","category":"AI INFRASTRUCTURE","status":"ANNOUNCED","organization":"OpenAI / Nscale / Aker","geography":"Narvik, Norway","summary":"Stargate Norway is planned to deliver 230MW of capacity and targets delivery of 100,000 NVIDIA GPUs by the end of 2026, with an ambition to expand further.","source":"https://openai.com/index/introducing-stargate-norway/","sourceLabel":"OPEN PRIMARY SOURCE","evidenceQuality":"PRIMARY"},{"id":"eurohpc-aigf-selection-2027","targetDate":"2027-Q1","targetPrecision":"early 2027","announcedOn":"2026-07-30","title":"EU AI Gigafactory projects scheduled for selection","type":"ANNOUNCED FUTURE","category":"AI INFRASTRUCTURE","status":"ANNOUNCED","organization":"EuroHPC Joint Undertaking","geography":"European Union","summary":"EuroHPC's 2026 call states that selected AI Gigafactory projects are expected to be chosen in early 2027. The programme can establish up to seven large AI compute facilities, with operations expected within 18 months of selection.","source":"https://www.eurohpc-ju.europa.eu/eurohpc-joint-undertaking-launches-ai-gigafactories-call-2026-07-30_en","sourceLabel":"OPEN PRIMARY SOURCE","evidenceQuality":"PRIMARY"},{"id":"geniac-prize-final-2027","targetDate":"2027-03","targetPrecision":"March 2027","announcedOn":"2026-05-29","title":"GENIAC-PRIZE 2026 final contest and awards","type":"ANNOUNCED FUTURE","category":"AI PROGRAM","status":"ANNOUNCED","organization":"Japan METI / NEDO","geography":"Japan","summary":"Japan's METI and NEDO scheduled the GENIAC-PRIZE 2026 final contest and awards ceremony for March 2027, with prize-money awarding scheduled for May 2027. The programme targets AI social implementation and human-resource development.","source":"https://www.meti.go.jp/english/press/2026/0529_002.html","sourceLabel":"OPEN PRIMARY SOURCE","evidenceQuality":"PRIMARY"},{"id":"anthropic-nextgen-tpu-2027","targetDate":"2027","targetPrecision":"starting in 2027","announcedOn":"2026-04-06","title":"Anthropic next-generation TPU capacity starts coming online","type":"ANNOUNCED FUTURE","category":"AI COMPUTE","status":"ANNOUNCED","organization":"Anthropic / Google / Broadcom","geography":"Global infrastructure","summary":"Anthropic announced an agreement with Google and Broadcom for multiple gigawatts of next-generation TPU capacity expected to come online starting in 2027 to support frontier Claude models.","source":"https://www.anthropic.com/news/google-broadcom-partnership-compute","sourceLabel":"OPEN PRIMARY SOURCE","evidenceQuality":"PRIMARY"},{"id":"google-blackstone-tpu-cloud-2027","targetDate":"2027","targetPrecision":"during 2027","announcedOn":"2026-05-19","title":"Blackstone-Google TPU cloud targets 500MW online","type":"ANNOUNCED FUTURE","category":"AI COMPUTE","status":"ANNOUNCED","organization":"Blackstone / Google","geography":"Not specified in announcement","summary":"Blackstone announced a joint venture with Google for a new TPU cloud, with an initial $5 billion equity commitment and an expected 500MW of capacity to come online in 2027. Google will supply TPUs, software and services.","source":"https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/blackstone-tpu-cloud/","sourceLabel":"OPEN PRIMARY SOURCE","evidenceQuality":"PRIMARY"},{"id":"meta-el-paso-ai-datacenter-2028","targetDate":"2028","targetPrecision":"beginning in 2028","announcedOn":"2026-07-28","title":"Meta El Paso 1GW AI data-center capacity begins coming online","type":"ANNOUNCED FUTURE","category":"AI INFRASTRUCTURE","status":"ANNOUNCED","organization":"Meta / BlackRock","geography":"El Paso, Texas, United States","summary":"Meta and BlackRock announced a 1GW data-center campus in El Paso intended to support AI models and other workloads. The venture expects to begin bringing the capacity online in 2028.","source":"https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/","sourceLabel":"OPEN PRIMARY SOURCE","evidenceQuality":"PRIMARY"},{"id":"philippines-ai-infra-400mw-2030","targetDate":"2030","targetPrecision":"by 2030","announcedOn":"2026-09-08","title":"Philippines AI infrastructure first phase targets about 400MW","type":"ANNOUNCED FUTURE","category":"AI INFRASTRUCTURE ROADMAP","status":"ANNOUNCED","organization":"Philippine government / DICT","geography":"Philippines","summary":"The Philippines AI+ Infrastructure Masterplan 2026-2033 sets an initial deployment target of roughly 400MW of AI data-center capacity by 2030.","source":"https://www.pna.gov.ph/articles/1283577","sourceLabel":"OPEN GOVERNMENT NEWS SOURCE","evidenceQuality":"GOVERNMENT NEWS AGENCY","primaryDocument":"https://ictstatistics.dict.gov.ph/wp-content/uploads/2026/09/PAIIM_2033_Expanded_Full-Masterplan_Final-Version.pdf"},{"id":"philippines-ai-infra-1-5gw-2033","targetDate":"2033","targetPrecision":"by 2033","announcedOn":"2026-09-08","title":"Philippines AI data-center capacity target reaches 1.5GW","type":"ANNOUNCED FUTURE","category":"AI INFRASTRUCTURE ROADMAP","status":"ANNOUNCED","organization":"Philippine government / DICT","geography":"Philippines","summary":"The Philippines AI+ Infrastructure Masterplan 2026-2033 targets expansion of AI data-center capacity from a 50MW baseline to 1.5GW by 2033.","source":"https://www.pna.gov.ph/articles/1283577","sourceLabel":"OPEN GOVERNMENT NEWS SOURCE","evidenceQuality":"GOVERNMENT NEWS AGENCY","primaryDocument":"https://ictstatistics.dict.gov.ph/wp-content/uploads/2026/09/PAIIM_2033_Expanded_Full-Masterplan_Final-Version.pdf"}];
+let FUTURE_DATA=FUTURE_FALLBACK.slice();
+
+let DATA=[{"id":"turing-1950","date":"1950","title":"Computing Machinery and Intelligence","type":"CANONICAL","status":"VERIFIED RECORD","summary":"Alan Turing published Computing Machinery and Intelligence in Mind, framing machine intelligence through the imitation game and asking whether machines can think.","source":"https://academic.oup.com/mind/article/LIX/236/433/986238","sourceLabel":"OPEN SOURCE"},{"id":"dartmouth-1955","date":"1955","title":"Dartmouth Artificial Intelligence Proposal","type":"CANONICAL","status":"VERIFIED RECORD","summary":"John McCarthy, Marvin Minsky, Nathaniel Rochester and Claude Shannon authored the proposal for the Dartmouth Summer Research Project on Artificial Intelligence, dated August 31, 1955.","source":"https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1904/0","sourceLabel":"OPEN SOURCE"},{"id":"rosenblatt-1958","date":"1958-11","title":"The Perceptron","type":"CANONICAL","status":"VERIFIED RECORD","summary":"Frank Rosenblatt published The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain in Psychological Review. LINEAiGE preserves month-level precision here; no unsupported exact publication day is asserted.","source":"https://doi.org/10.1037/h0042519","sourceLabel":"OPEN SOURCE"},{"id":"transformer-2017","date":"2017","title":"Attention Is All You Need","type":"CANONICAL","status":"VERIFIED RECORD","summary":"Vaswani and colleagues introduced the Transformer architecture in Attention Is All You Need, proposing a sequence-transduction architecture based on attention mechanisms without recurrence or convolutions.","source":"https://arxiv.org/abs/1706.03762","sourceLabel":"OPEN SOURCE"},{"id":"chatgpt-2022","date":"2022","title":"Introducing ChatGPT","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"OpenAI publicly introduced ChatGPT on November 30, 2022 as a conversational model released for research preview and user feedback.","source":"https://openai.com/index/chatgpt/","sourceLabel":"OPEN SOURCE"},{"id":"claude-2023","date":"2023","title":"Introducing Claude","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Anthropic announced Claude more broadly on March 14, 2023 after a closed alpha with partners, describing it as a next-generation AI assistant available through a chat interface and API.","source":"https://www.anthropic.com/news/introducing-claude","sourceLabel":"OPEN SOURCE"},{"id":"falcon-2023","date":"2023","title":"Falcon LLM Launch","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Abu Dhabi's Technology Innovation Institute announced the launch of Falcon LLM on March 15, 2023, describing a 40-billion-parameter foundational large language model developed by its AI and Digital Science Research Center team.","source":"https://www.tii.ae/news/abu-dhabi-based-technology-innovation-institute-introduces-falcon-llm-foundational-large","sourceLabel":"OPEN SOURCE"},{"id":"llama2-2023","date":"2023","title":"Llama 2 Availability","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Meta announced the availability of Llama 2 on July 18, 2023 as the next generation of its large language model family, making model weights and starting code available for research and commercial use under its license.","source":"https://about.fb.com/news/2023/07/llama-2/","sourceLabel":"OPEN SOURCE"},{"id":"hyperclovax-2023","date":"2023","title":"HyperCLOVA X Introduction","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"NAVER introduced HyperCLOVA X at its DAN 23 conference on August 24, 2023, alongside CLOVA X and the generative AI search service CUE: built on the model.","source":"https://www.navercorp.com/media/pressReleasesDetail?seq=31266","sourceLabel":"OPEN SOURCE"},{"id":"mistral7b-2023","date":"2023","title":"Mistral 7B Release","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Mistral AI released Mistral 7B on September 27, 2023, describing it as a 7.3-billion-parameter language model released under the Apache 2.0 license.","source":"https://mistral.ai/fr/news/announcing-mistral-7b/","sourceLabel":"OPEN SOURCE"},{"id":"gemini1-2023","date":"2023","title":"Introducing Gemini 1.0","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Google and Google DeepMind introduced Gemini on December 6, 2023, with Gemini 1.0 optimized in Ultra, Pro and Nano sizes and designed as a multimodal model family.","source":"https://blog.google/innovation-and-ai/technology/ai/google-gemini-ai/","sourceLabel":"OPEN SOURCE"},{"id":"typhoon-2024","date":"2024","title":"Typhoon Thai LLM Introduction","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"SCB 10X announced Typhoon on January 29, 2024 as a large language model optimized for Thai, including an open-source Typhoon-7B pretrained model and an instruction-tuned model offered through an API service.","source":"https://www.scbx.com/en/news/scb-10x-unveils-large-language-model-typhoon/","sourceLabel":"OPEN SOURCE"},{"id":"qwen2-2024","date":"2024","title":"Qwen2 Release","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"The Qwen Team announced Qwen2 on June 7, 2024, releasing pretrained and instruction-tuned models in five sizes and making the models available through Hugging Face and ModelScope.","source":"https://qwenlm.github.io/blog/qwen2/","sourceLabel":"OPEN SOURCE"},{"id":"sarvam2b-2024","date":"2024","title":"Sarvam 2B Launch","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Sarvam AI introduced Sarvam 2B on August 13, 2024 as an open-source 2-billion-parameter small Indic language model within the launch of its full-stack generative AI platform for India.","source":"https://www.sarvam.ai/blogs/sarvam-launch","sourceLabel":"OPEN SOURCE"},{"id":"inkubalm-2024","date":"2024","title":"InkubaLM Paper Introduction","type":"CANONICAL","status":"VERIFIED RECORD","summary":"The InkubaLM paper was submitted to arXiv on August 30, 2024 and explicitly introduced InkubaLM, predating the later October 25, 2024 Lelapa AI blog post.","source":"https://arxiv.org/abs/2408.17024","sourceLabel":"OPEN SOURCE"},{"id":"plamo-prime-2024","date":"2024","title":"PLaMo Prime Launch","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Preferred Networks announced the launch of PLaMo Prime on December 2, 2024 as the flagship model in its PLaMo large-language-model line, commercially available through PLaMo API and accessible through PLaMo Chat during the initial trial period.","source":"https://www.preferred.jp/en/news/459","sourceLabel":"OPEN SOURCE"},{"id":"now","date":"TODAY","title":"The living edge of LINEAiGE","type":"LIVING EDGE","status":"PRESENT IS FORMING","summary":"This is the living boundary between recorded history and the present. TODAY is navigation, not historical evidence.","source":null,"sourceLabel":null},{"id":"mit-6034-ai-2010","date":null,"title":"6.034 Artificial Intelligence","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"MIT OpenCourseWare · Massachusetts Institute of Technology · Undergraduate · free open courseware. Topics include artificial intelligence, knowledge representation, problem solving, and learning.","source":"https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/","sourceLabel":"OPEN COURSE"},{"id":"mit-ai-101-2021","date":null,"title":"AI 101","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"MIT OpenCourseWare · Massachusetts Institute of Technology · Beginner · free open courseware. Topics include artificial intelligence, machine vision, data wrangling, and reinforcement learning.","source":"https://ocw.mit.edu/courses/res-6-013-ai-101-fall-2021/","sourceLabel":"OPEN COURSE"},{"id":"harvard-cs50-ai","date":null,"title":"CS50's Introduction to Artificial Intelligence with Python","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"CS50 OpenCourseWare · Harvard University · Introductory · free open courseware. Topics include artificial intelligence, Python, machine learning, search, and neural networks.","source":"https://cs50.harvard.edu/ai/","sourceLabel":"OPEN COURSE"},{"id":"microsoft-ai-fluency","date":null,"title":"AI Fluency","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"Microsoft Learn · Beginner · free learning path. Topics include AI foundations, AI literacy, and applied AI.","source":"https://learn.microsoft.com/en-us/training/paths/ai-fluency/","sourceLabel":"OPEN RESOURCE"},{"id":"aws-learn-ai","date":null,"title":"Learn AI","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"AWS Training and Certification · all levels · mixed access. Topics include artificial intelligence, generative AI, machine learning, and AI engineering.","source":"https://aws.amazon.com/ai/learn/","sourceLabel":"OPEN RESOURCE"},{"id":"stanford-cs25-transformers-united","date":null,"title":"CS25: Transformers United","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"Stanford CS25 · Stanford University · Seminar · free public audit. Topics include transformers, large language models, multimodal AI, robotics, and generative AI.","source":"https://web.stanford.edu/class/cs25/","sourceLabel":"OPEN COURSE"},{"id":"helsinki-elements-of-ai","date":null,"title":"Elements of AI: Introduction to AI","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"Elements of AI · University of Helsinki · Beginner · free open courseware. Topics include artificial intelligence, machine learning, neural networks, AI concepts, and AI limitations.","source":"https://www.elementsofai.com/","sourceLabel":"OPEN COURSE"},{"id":"youtube-transformers-google-cloud-2021","date":"2021","title":"Transformers, explained: Understand the model behind GPT, BERT, and T5","type":"CONTEXT MEDIA","status":"CONTEXT ONLY","summary":"Google Cloud Tech contextual explainer attached to the verified 2017 Transformer record. It is not the primary historical evidence for the original paper.","source":"https://www.youtube.com/watch?v=SZorAJ4I-sA","sourceLabel":"WATCH CONTEXT"}];
+
+const STATIC_SUPPLEMENTAL=DATA.filter(r=>r.type!=='CANONICAL');
+const CANONICAL_DATA_URL='data/events.json';
+
+const field=document.getElementById('dataField');
+const futureField=document.getElementById('futureField');
+const drawer=document.getElementById('drawer');
+const drawerMeta=document.getElementById('drawerMeta');
+const drawerTitle=document.getElementById('drawerTitle');
+const drawerText=document.getElementById('drawerText');
+const drawerPath=document.getElementById('drawerPath');
+const drawerSource=document.getElementById('drawerSource');
+const drawerPermalink=document.getElementById('drawerPermalink');
+const futureSourceList=document.getElementById('futureSourceList');
+const brandMarker=document.getElementById('brandMarker');
+const drawerClose=document.getElementById('drawerClose');
+
+const timeRuler=document.getElementById('timeRuler');
+const nowDate=document.getElementById('nowDate');
+const nowClock=document.getElementById('nowClock');
+
+function lineaigeRecordUrl(r){
+  if(!r || !r.id) return null;
+  if(r.type==='CANONICAL') return `/record/${r.id}/`;
+  if(r.type==='LEARNING') return `/learn/${r.id}/`;
+  if(r.type==='CONTEXT MEDIA') return `/context/${r.id}/`;
+  return null;
+}
+
+function setDrawerPermalink(url,label='OPEN LINEAIGE RECORD'){
+  if(!drawerPermalink) return;
+  if(url){
+    drawerPermalink.href=url;
+    drawerPermalink.textContent=label;
+    drawerPermalink.style.display='inline-flex';
+  }else{
+    drawerPermalink.removeAttribute('href');
+    drawerPermalink.textContent='';
+    drawerPermalink.style.display='none';
+  }
+}
+
+function getYearFromRecord(r){
+  if(!r || r.type!=='CANONICAL') return null;
+  const m=String(r.date||'').match(/^(\d{4})/);
+  return m ? Number(m[1]) : null;
+}
+
+function nowYPx(){
+  const raw=getComputedStyle(document.documentElement)
+    .getPropertyValue('--now-y').trim();
+  if(raw.endsWith('vh')) return window.innerHeight*(parseFloat(raw)||18)/100;
+  if(raw.endsWith('px')) return parseFloat(raw)||window.innerHeight*.18;
+  return window.innerHeight*.18;
+}
+
+function historicalY(year,currentYear){
+  const nowY=nowYPx();
+  const bottomY=window.innerHeight-2;
+  const earliest=1940;
+  const clamped=Math.max(earliest,Math.min(currentYear,year));
+  const ratio=(currentYear-clamped)/Math.max(1,currentYear-earliest);
+  return nowY + ratio*(bottomY-nowY);
+}
+
+function buildTimeRuler(){
+  if(!timeRuler) return;
+
+  timeRuler.querySelectorAll('.year-tick').forEach(el=>el.remove());
+
+  const now=new Date();
+  const currentYear=now.getFullYear();
+
+  const eventYears=new Map();
+  DATA.forEach(r=>{
+    const y=getYearFromRecord(r);
+    if(!y) return;
+    if(!eventYears.has(y)) eventYears.set(y,[]);
+    eventYears.get(y).push(r);
+  });
+
+  const brandQuietStart=nowYPx() + window.innerHeight*0.015;
+  const brandQuietEnd=nowYPx() + (window.innerWidth <= 700 ? window.innerHeight*0.34 : window.innerHeight*0.32);
+
+  for(let year=1940; year<=currentYear; year++){
+    const y=historicalY(year,currentYear);
+    if(y>brandQuietStart && y<brandQuietEnd) continue;
+
+    const tick=document.createElement('button');
+    tick.type='button';
+
+    const isDecade=year%10===0;
+    const isFive=!isDecade && year%5===0;
+    const yearRecords=eventYears.get(year)||[];
+
+    tick.className='year-tick'
+      +(isDecade?' decade':isFive?' five':'')
+      +(yearRecords.length?' event-year':'');
+    tick.style.top=y+'px';
+
+    tick.setAttribute('aria-label',
+      yearRecords.length
+        ? `${year}. ${yearRecords.length} admitted LINEAiGE ${yearRecords.length===1?'record':'records'}.`
+        : `${year}. No admitted canonical LINEAiGE record yet.`
+    );
+
+    if(isDecade){
+      const label=document.createElement('span');
+      label.className='year-label';
+      label.textContent=String(year);
+      tick.appendChild(label);
+    }
+
+    const tip=document.createElement('span');
+    tip.className='tick-tip';
+    tip.textContent=yearRecords.length
+      ? `${year} · ${yearRecords.length} ${yearRecords.length===1?'record':'records'}`
+      : `${year} · research gap`;
+    tick.appendChild(tip);
+
+    const openYear=()=>{
+      clearFutureDrawer();
+      timeRuler.querySelectorAll('.year-tick.is-selected').forEach(el=>el.classList.remove('is-selected'));
+      tick.classList.add('is-selected');
+      setTimeout(()=>tick.classList.remove('is-selected'),700);
+
+      drawerMeta.textContent=yearRecords.length
+        ? `${year} · CANONICAL YEAR`
+        : `${year} · RESEARCH GAP`;
+      drawerTitle.textContent=String(year);
+
+      if(yearRecords.length){
+        drawerText.textContent=yearRecords.map((r,i)=>`${i+1}. ${r.title}`).join('   ');
+        drawerPath.textContent=`${yearRecords.length} admitted LINEAiGE ${yearRecords.length===1?'record':'records'} in ${year}. Tap a floating card for the full record summary.`;
+
+        setDrawerPermalink(yearRecords.length===1 ? lineaigeRecordUrl(yearRecords[0]) : null);
+        if(yearRecords.length===1 && yearRecords[0].source){
+          drawerSource.href=yearRecords[0].source;
+          drawerSource.textContent=yearRecords[0].sourceLabel||'OPEN SOURCE';
+          drawerSource.style.display='inline-flex';
+        }else{
+          drawerSource.removeAttribute('href');
+          drawerSource.textContent='';
+          drawerSource.style.display='none';
+        }
+      }else{
+        setDrawerPermalink(null);
+        drawerText.textContent='No canonical LINEAiGE record has been admitted for this year yet. This dash remains visible as a research gap, showing where the historical record is still thin or still under development.';
+        drawerPath.textContent=`Year: ${year}`;
+        drawerSource.removeAttribute('href');
+        drawerSource.textContent='';
+        drawerSource.style.display='none';
+      }
+
+      drawer.classList.add('open');
+    };
+
+    tick.addEventListener('click',openYear);
+    timeRuler.appendChild(tick);
+  }
+
+  const eraMid=(start,end)=>historicalY((start+end)/2,currentYear);
+  const foundations=document.getElementById('eraFoundations');
+  const ml=document.getElementById('eraML');
+  const gen=document.getElementById('eraGenAI');
+
+  if(foundations) foundations.style.top=eraMid(1940,Math.min(1989,currentYear))+'px';
+  if(ml && currentYear>=1990) ml.style.top=eraMid(1990,Math.min(2016,currentYear))+'px';
+  if(gen && currentYear>=2017){
+    const y=eraMid(2017,currentYear);
+    gen.style.top=Math.max(y,window.innerHeight*.29)+'px';
+  }
+}
+
+
+function futureTargetYear(r){
+  const m=String(r?.targetDate||'').match(/^(\d{4})/);
+  return m ? Number(m[1]) : null;
+}
+
+function clearFutureDrawer(){
+  if(futureSourceList) futureSourceList.replaceChildren();
+}
+
+function addFutureDrawerItems(records){
+  clearFutureDrawer();
+  if(!futureSourceList) return;
+
+  records.forEach(r=>{
+    const item=document.createElement('div');
+    item.className='future-source-item';
+
+    const title=document.createElement('strong');
+    title.textContent=r.title||'Announced milestone';
+
+    const meta=document.createElement('span');
+    const pieces=[
+      r.targetPrecision||r.targetDate||'',
+      r.organization||'',
+      r.category||'',
+      r.geography||''
+    ].filter(Boolean);
+    meta.textContent=pieces.join(' · ');
+
+    item.append(title,meta);
+
+    const recordLink=document.createElement('a');
+    recordLink.href=`/future/${r.id}/`;
+    recordLink.textContent='LINEAIGE RECORD';
+    item.appendChild(recordLink);
+
+    if(r.source){
+      const link=document.createElement('a');
+      link.href=r.source;
+      link.target='_blank';
+      link.rel='noopener noreferrer';
+      link.textContent=r.sourceLabel||'OPEN EVIDENCE';
+      item.appendChild(link);
+    }
+
+    futureSourceList.appendChild(item);
+  });
+}
+
+let futureYears=[];
+let futureGroups=new Map();
+let futureYearIndex=0;
+let futureCycleTimer=null;
+let futureMarker=null;
+
+function showFutureYear(index,{animate=true}={}){
+  if(!futureMarker || !futureYears.length) return;
+
+  futureYearIndex=((index%futureYears.length)+futureYears.length)%futureYears.length;
+  const year=futureYears[futureYearIndex];
+  const yearEl=futureMarker.querySelector('.future-year');
+
+  if(animate){
+    futureMarker.classList.add('year-changing');
+    setTimeout(()=>{
+      yearEl.textContent=String(year);
+      futureMarker.classList.remove('year-changing');
+    },180);
+  }else{
+    yearEl.textContent=String(year);
+  }
+
+  const rs=futureGroups.get(year)||[];
+  futureMarker.dataset.year=String(year);
+  futureMarker.setAttribute(
+    'aria-label',
+    `${year}: ${rs.length} announced future ${rs.length===1?'milestone':'milestones'}. Tap for evidence.`
+  );
+}
+
+function startFutureCycle(){
+  clearInterval(futureCycleTimer);
+  if(futureYears.length<2) return;
+  futureCycleTimer=setInterval(()=>{
+    if(drawer.classList.contains('open')) return;
+    showFutureYear(futureYearIndex+1);
+  },4200);
+}
+
+function openCurrentFutureYear(){
+  if(!futureYears.length) return;
+  const year=futureYears[futureYearIndex];
+  const rs=futureGroups.get(year)||[];
+
+  futureMarker.classList.add('is-selected');
+  setTimeout(()=>futureMarker.classList.remove('is-selected'),900);
+
+  drawerMeta.textContent=`${year} · ANNOUNCED FUTURE · ${rs.length} ${rs.length===1?'MILESTONE':'MILESTONES'}`;
+  drawerTitle.textContent=rs.length===1 ? rs[0].title : `${year} announced future`;
+  drawerText.textContent=rs.length===1
+    ? rs[0].summary
+    : `LINEAiGE currently has ${rs.length} evidence-backed announced milestones targeting ${year}. These are announcements, not completed historical events.`;
+  drawerPath.textContent='Status remains announced until later evidence confirms, updates, delays, cancels, or completes the milestone.';
+  setDrawerPermalink(null);
+  drawerSource.removeAttribute('href');
+  drawerSource.textContent='';
+  drawerSource.style.display='none';
+  addFutureDrawerItems(rs);
+  drawer.classList.add('open');
+}
+
+function buildFutureField(records=FUTURE_DATA){
+  if(!futureField) return;
+
+  futureField.replaceChildren();
+  clearInterval(futureCycleTimer);
+
+  const now=new Date();
+  const currentYear=now.getFullYear();
+
+  const valid=records.filter(r=>{
+    const y=futureTargetYear(r);
+    return y && y>=currentYear && r.status!=='CANCELLED' && r.status!=='COMPLETED';
+  });
+
+  if(!valid.length){
+    futureYears=[];
+    futureGroups=new Map();
+    futureMarker=null;
+    return;
+  }
+
+  futureGroups=new Map();
+  valid.forEach(r=>{
+    const y=futureTargetYear(r);
+    if(!futureGroups.has(y)) futureGroups.set(y,[]);
+    futureGroups.get(y).push(r);
+  });
+
+  futureYears=[...futureGroups.keys()].sort((a,b)=>a-b);
+  futureYearIndex=Math.min(futureYearIndex,futureYears.length-1);
+
+  const btn=document.createElement('button');
+  btn.type='button';
+  btn.className='future-group';
+  /* One marker, centered above TODAY and placed on the LEFT side of the spine. */
+  btn.style.top=Math.max(24,nowYPx()*.52)+'px';
+
+  const yearEl=document.createElement('span');
+  yearEl.className='future-year';
+  btn.appendChild(yearEl);
+
+  btn.addEventListener('click',openCurrentFutureYear);
+  btn.addEventListener('pointerdown',()=>{
+    clearInterval(futureCycleTimer);
+    setTimeout(startFutureCycle,5000);
+  },{passive:true});
+
+  futureField.appendChild(btn);
+  futureMarker=btn;
+
+  showFutureYear(futureYearIndex,{animate:false});
+  startFutureCycle();
+}
+
+async function refreshFutureData(){
+  try{
+    const res=await fetch(`${FUTURE_DATA_URL}?t=${Date.now()}`,{cache:'no-store'});
+    if(!res.ok) throw new Error(`future data ${res.status}`);
+    const payload=await res.json();
+    if(!payload || !Array.isArray(payload.records)) throw new Error('invalid future data');
+    FUTURE_DATA=payload.records;
+  }catch(_err){
+    /* content:// previews and offline sessions use the verified embedded snapshot. */
+    FUTURE_DATA=FUTURE_FALLBACK.slice();
+  }
+  buildFutureField(FUTURE_DATA);
+}
+
+
+function openDeploymentMarker(){
+  clearFutureDrawer();
+  drawerMeta.textContent='LINEAIGE · DEPLOYMENT MARKER';
+  drawerTitle.textContent='LINEAiGE';
+  drawerText.textContent='This marker represents the public deployment point of LINEAiGE. It sits directly under TODAY on the ruler because the system itself begins here, while the verified historical record continues beneath it.';
+  drawerPath.textContent='Deployment date: SEP 20, 2026';
+  setDrawerPermalink(null);
+  drawerSource.removeAttribute('href');
+  drawerSource.textContent='';
+  drawerSource.style.display='none';
+  drawer.classList.add('open');
+}
+
+function updateVisitorNow(){
+  const now=new Date();
+  const dateFmt=new Intl.DateTimeFormat(undefined,{
+    year:'numeric',month:'short',day:'numeric'
+  });
+  const timeFmt=new Intl.DateTimeFormat(undefined,{
+    hour:'numeric',minute:'2-digit'
+  });
+  const zone=Intl.DateTimeFormat().resolvedOptions().timeZone || 'Local time';
+
+  if(nowDate) nowDate.textContent=dateFmt.format(now).toUpperCase();
+  if(nowClock) nowClock.textContent=`${timeFmt.format(now)} · ${zone}`;
+}
+
+buildTimeRuler();
+buildFutureField(FUTURE_DATA);
+refreshFutureData();
+refreshCanonicalData();
+updateVisitorNow();
+setInterval(updateVisitorNow,30000);
+setInterval(refreshFutureData,15*60*1000);
+setInterval(refreshCanonicalData,15*60*1000);
+window.addEventListener('resize',()=>{
+  buildTimeRuler();
+  buildFutureField(FUTURE_DATA);
+},{passive:true});
+
+
+
+function adaptCanonicalEvent(r){
+  const source=(r.sources||[]).find(s=>s.primary && s.sourceRole==='claim-evidence')
+    ||(r.sources||[]).find(s=>s.primary)
+    ||(r.sources||[])[0]
+    ||null;
+  const dateValue=r.eventDate || r.eventMonth || r.eventYear || r.displayDate || '';
+  return {
+    id:r.id,
+    date:dateValue,
+    title:r.title,
+    type:'CANONICAL',
+    status:r.status || 'VERIFIED RECORD',
+    summary:r.summary || '',
+    source:source ? source.url : null,
+    sourceLabel:source ? 'OPEN SOURCE' : null
+  };
+}
+
+function rebuildPublicQueue(canonicalRecords){
+  DATA=[
+    ...canonicalRecords.map(adaptCanonicalEvent),
+    ...STATIC_SUPPLEMENTAL
+  ];
+  QUEUE=DATA.slice().sort((a,b)=>hash(a.id)-hash(b.id));
+  cursor=0;
+
+  document.querySelectorAll('.data-node').forEach(el=>{
+    assignRecord(el,nextRecord());
+  });
+
+  buildTimeRuler();
+}
+
+async function refreshCanonicalData(){
+  try{
+    const res=await fetch(`${CANONICAL_DATA_URL}?t=${Date.now()}`,{cache:'no-store'});
+    if(!res.ok) throw new Error(`canonical data ${res.status}`);
+    const payload=await res.json();
+    if(!payload || !Array.isArray(payload.events)) throw new Error('invalid canonical data');
+    const canonical=payload.events.filter(r=>
+      r && r.recordType==='event' &&
+      r.temporalState==='recorded' &&
+      r.verification && r.verification.state==='verified'
+    );
+    if(!canonical.length) throw new Error('no verified canonical records');
+    rebuildPublicQueue(canonical);
+  }catch(_err){
+    /* Embedded verified snapshot remains active if GitHub is unavailable. */
+  }
+}
+
+
+function hash(str){
+  let h=2166136261;
+  for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619)}
+  return h>>>0;
+}
+function frac(n){return (n%10000)/10000}
+function recordText(r){
+  return r.summary || (
+    r.type==='LIVING EDGE'
+      ? 'The living present. TODAY is navigation, not historical evidence.'
+      : 'Published LINEAiGE record.'
+  );
+}
+const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const mobile=window.matchMedia('(max-width:700px)').matches;
+const tablet=window.matchMedia('(min-width:701px) and (max-width:999px)').matches;
+const POOL_SIZE=Math.min(DATA.length,
+  reducedMotion ? (mobile?6:tablet?8:10) : (mobile?7:tablet?9:12)
+);
+
+/* Deterministic order: the complete corpus is still used, but only a small
+   compositor-friendly pool is on screen at once. Each animation cycle swaps
+   in the next real LINEAiGE record, so every record passes through the field. */
+let QUEUE=DATA.slice().sort((a,b)=>hash(a.id)-hash(b.id));
+let cursor=0;
+
+function nextRecord(){
+  const r=QUEUE[cursor % QUEUE.length];
+  cursor=(cursor+1)%QUEUE.length;
+  return r;
+}
+
+function cardMeta(r){
+  if(r.type==='LEARNING') return {date:'', kind:'VERIFIED LEARNING RESOURCE'};
+  if(r.id==='now'){
+    return {
+      date:new Intl.DateTimeFormat(undefined,{month:'short',day:'numeric'}).format(new Date()).toUpperCase(),
+      kind:'LIVING EDGE'
+    };
+  }
+  return {date:r.date||'',kind:r.type||''};
+}
+
+function drawerMetaLabel(r){
+  if(r.type==='LEARNING') return 'VERIFIED LEARNING RESOURCE';
+  return `${r.date||''} · ${r.type}${r.status ? ' · '+r.status : ''}`;
+}
+
+function assignRecord(el,r){
+  el._record=r;
+  el.dataset.type=r.type;
+  const meta=cardMeta(r);
+  el.querySelector('.date').textContent=meta.date;
+  el.querySelector('.kind').textContent=meta.kind;
+  el.querySelector('.title').textContent=r.title;
+}
+
+for(let i=0;i<POOL_SIZE;i++){
+  const slotHash=hash('slot-'+i);
+  const el=document.createElement('button');
+  el.className='data-node';
+  el.type='button';
+
+  // One continuous public record field. The left-side LINEAiGE spine is identity,
+  // not a divider between two classes of records.
+  // Collision-safe lanes. Cards in the same lane share one duration and are
+  // evenly phase-spaced, so they cannot catch each other over time.
+  const mobileLanes=[70];
+  const tabletLanes=[43,68,89];
+  const desktopLanes=[38,55,72,89];
+  const lanes=mobile ? mobileLanes : (tablet ? tabletLanes : desktopLanes);
+  const lane=i % lanes.length;
+  const laneSlot=Math.floor(i/lanes.length);
+  const lanePopulation=Math.ceil((POOL_SIZE-lane)/lanes.length);
+  const x=lanes[lane];
+  const width=mobile
+    ? 138
+    : tablet
+      ? 142+((slotHash>>>5)%12)
+      : 172+((slotHash>>>5)%28);
+  const dur=mobile ? 49 : (tablet ? 44 : 40);
+  const phase=((laneSlot + lane/lanes.length)/Math.max(1,lanePopulation))*dur;
+  const staticStep=mobile ? 10.5 : (tablet ? 17 : 22);
+  const staticBase=(mobile ? 27 : 25) + laneSlot*staticStep + lane*(mobile ? 0 : 3);
+
+  el.style.setProperty('--x',x+'%');
+  el.style.setProperty('--w',width+'px');
+  el.style.setProperty('--dur',dur+'s');
+  el.style.setProperty('--delay',(-phase)+'s');
+  el.style.setProperty('--o',(0.48+((slotHash>>>22)%16)/100).toFixed(2));
+  el.style.setProperty('--static-y',Math.min(88,staticBase)+'vh');
+
+  el.innerHTML='<div class="node-glass"><div class="meta"><span class="dot"></span><span class="date"></span><span class="kind"></span></div><div class="title"></div></div>';
+
+  assignRecord(el,nextRecord());
+
+  el.addEventListener('animationiteration',()=>{
+    assignRecord(el,nextRecord());
+  });
+
+  el.addEventListener('click',()=>{
+    clearFutureDrawer();
+    const r=el._record;
+    if(!r) return;
+    drawerMeta.textContent=drawerMetaLabel(r);
+    drawerTitle.textContent=r.title;
+    drawerText.textContent=recordText(r);
+    drawerPath.textContent=`Record ID: ${r.id}`;
+    setDrawerPermalink(lineaigeRecordUrl(r));
+    if(r.source){
+      drawerSource.href=r.source;
+      drawerSource.textContent=r.sourceLabel||'OPEN SOURCE';
+      drawerSource.style.display='inline-flex';
+    }else{
+      drawerSource.removeAttribute('href');
+      drawerSource.textContent='';
+      drawerSource.style.display='none';
+    }
+    drawer.classList.add('open');
+  });
+
+  field.appendChild(el);
+}
+
+const cubeZone=document.getElementById('cubeZone');
+let cubePauseTimer=null;
+if(cubeZone){
+  const holdCube=()=>{
+    cubeZone.classList.add('paused');
+    clearTimeout(cubePauseTimer);
+    cubePauseTimer=setTimeout(()=>cubeZone.classList.remove('paused'),4200);
+  };
+  cubeZone.addEventListener('pointerdown',holdCube,{passive:true});
+  cubeZone.addEventListener('focusin',()=>cubeZone.classList.add('paused'));
+  cubeZone.addEventListener('focusout',()=>{
+    clearTimeout(cubePauseTimer);
+    cubePauseTimer=setTimeout(()=>cubeZone.classList.remove('paused'),800);
+  });
+}
+
+drawerClose.addEventListener('click',()=>{drawer.classList.remove('open');clearFutureDrawer()});
+if(brandMarker) brandMarker.addEventListener('click',openDeploymentMarker);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')drawer.classList.remove('open')});
+</script>
+</body>
+</html>
