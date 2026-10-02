@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
     paths:
+      - "data/events.json"
+      - "scripts/rebuild_public.py"
       - ".github/workflows/rebuild-backfill.yml"
       - "scripts/rebuild_public.py"
       - "data/events.json"
