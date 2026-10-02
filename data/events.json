@@ -43,7 +43,7 @@
         {
           "type": "chronological",
           "targetId": "dartmouth-1955",
-          "label": "Continue to the 1955 Dartmouth proposal",
+          "label": "Continue to Dartmouth Artificial Intelligence Proposal",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -95,17 +95,17 @@
         {
           "type": "chronological",
           "targetId": "turing-1950",
-          "label": "Travel backward to Turing's 1950 paper",
+          "label": "Travel backward to Computing Machinery and Intelligence",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "rosenblatt-1958",
-          "label": "Continue to Rosenblatt's perceptron paper",
+          "label": "Continue to The Perceptron",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -165,17 +165,17 @@
         {
           "type": "chronological",
           "targetId": "dartmouth-1955",
-          "label": "Travel backward to the Dartmouth proposal",
+          "label": "Travel backward to Dartmouth Artificial Intelligence Proposal",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "transformer-2017",
-          "label": "Travel forward through neural-network history to the Transformer record",
+          "label": "Continue to Attention Is All You Need",
           "evidenceState": "contextual",
-          "evidenceNote": "This is a long-range chronological/contextual path, not a claim of direct causality.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -239,17 +239,17 @@
         {
           "type": "chronological",
           "targetId": "rosenblatt-1958",
-          "label": "Travel backward through neural-network history",
+          "label": "Travel backward to The Perceptron",
           "evidenceState": "contextual",
-          "evidenceNote": "Contextual chronology; no direct causal relationship is asserted by this link.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "chatgpt-2022",
-          "label": "Continue forward to ChatGPT's public introduction",
+          "label": "Continue to Introducing ChatGPT",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only. This link does not by itself assert a direct causal relationship.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -296,17 +296,17 @@
         {
           "type": "chronological",
           "targetId": "transformer-2017",
-          "label": "Travel backward to the Transformer paper",
+          "label": "Travel backward to Attention Is All You Need",
           "evidenceState": "contextual",
-          "evidenceNote": "Contextual chronology only; this relationship record does not assert the Transformer paper alone caused ChatGPT.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "claude-2023",
-          "label": "Continue to Claude's public introduction",
+          "label": "Continue to Introducing Claude",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal between documented public system introductions; not a claim of direct influence.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -353,17 +353,17 @@
         {
           "type": "chronological",
           "targetId": "chatgpt-2022",
-          "label": "Travel backward to ChatGPT's public introduction",
+          "label": "Travel backward to Introducing ChatGPT",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "falcon-2023",
-          "label": "Continue to Falcon LLM's documented launch",
+          "label": "Continue to Falcon LLM Launch",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -420,17 +420,17 @@
         {
           "type": "chronological",
           "targetId": "claude-2023",
-          "label": "Travel backward to Claude's public introduction",
+          "label": "Travel backward to Introducing Claude",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "llama2-2023",
-          "label": "Continue to the Llama 2 availability announcement",
+          "label": "Continue to Llama 2 Availability",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -478,17 +478,17 @@
         {
           "type": "chronological",
           "targetId": "falcon-2023",
-          "label": "Travel backward to Falcon LLM's documented launch",
+          "label": "Travel backward to Falcon LLM Launch",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "hyperclovax-2023",
-          "label": "Continue to the HyperCLOVA X introduction",
+          "label": "Continue to HyperCLOVA X Introduction",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -547,17 +547,17 @@
         {
           "type": "chronological",
           "targetId": "llama2-2023",
-          "label": "Travel backward to the Llama 2 availability announcement",
+          "label": "Travel backward to Llama 2 Availability",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "mistral7b-2023",
-          "label": "Continue to the Mistral 7B release",
+          "label": "Continue to Mistral 7B Release",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -615,17 +615,17 @@
         {
           "type": "chronological",
           "targetId": "hyperclovax-2023",
-          "label": "Travel backward to the HyperCLOVA X introduction",
+          "label": "Travel backward to HyperCLOVA X Introduction",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "gemini1-2023",
-          "label": "Continue to Gemini 1.0's introduction",
+          "label": "Continue to Introducing Gemini 1.0",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -680,17 +680,17 @@
         {
           "type": "chronological",
           "targetId": "mistral7b-2023",
-          "label": "Travel backward to the Mistral 7B release",
+          "label": "Travel backward to Mistral 7B Release",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "typhoon-2024",
-          "label": "Continue to the Typhoon Thai LLM introduction",
+          "label": "Continue to Typhoon Thai LLM Introduction",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -757,17 +757,17 @@
         {
           "type": "chronological",
           "targetId": "gemini1-2023",
-          "label": "Travel backward to Gemini 1.0's introduction",
+          "label": "Travel backward to Introducing Gemini 1.0",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "qwen2-2024",
-          "label": "Continue to the Qwen2 release",
+          "label": "Continue to Qwen2 Release",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -831,17 +831,17 @@
         {
           "type": "chronological",
           "targetId": "typhoon-2024",
-          "label": "Travel backward to the Typhoon Thai LLM introduction",
+          "label": "Travel backward to Typhoon Thai LLM Introduction",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "sarvam2b-2024",
-          "label": "Continue to the Sarvam 2B launch",
+          "label": "Continue to Sarvam 2B Launch",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -899,17 +899,17 @@
         {
           "type": "chronological",
           "targetId": "qwen2-2024",
-          "label": "Travel backward to the Qwen2 release",
+          "label": "Travel backward to Qwen2 Release",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "inkubalm-2024",
-          "label": "Continue to the InkubaLM introduction",
+          "label": "Continue to InkubaLM Paper Introduction",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -985,17 +985,17 @@
         {
           "type": "chronological",
           "targetId": "sarvam2b-2024",
-          "label": "Travel backward to the Sarvam 2B launch",
+          "label": "Travel backward to Sarvam 2B Launch",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
           "targetId": "plamo-prime-2024",
-          "label": "Continue to the PLaMo Prime launch",
+          "label": "Continue to PLaMo Prime Launch",
           "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         }
       ],
@@ -1058,20 +1058,28 @@
       ],
       "relationships": [
         {
-          "type": "chronological",
-          "targetId": "inkubalm-2024",
-          "label": "Travel backward to the InkubaLM introduction",
-          "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; no direct influence is asserted.",
-          "sourceUrls": []
-        },
-        {
           "type": "navigation",
           "targetId": "now",
           "label": "Continue toward the living present",
           "evidenceState": "navigation-only",
           "evidenceNote": "Interface navigation from a recorded event toward NOW.",
           "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "inkubalm-2024",
+          "label": "Travel backward to InkubaLM Paper Introduction",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "deepseek-r1-2025",
+          "label": "Continue to DeepSeek-R1 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
         }
       ],
       "corrections": [],
@@ -1079,316 +1087,2471 @@
       "entryOrigin": "lineaige"
     },
     {
-      "id": "deepseek-introducing-deepseek-v3-2024",
+      "id": "deepseek-r1-2025",
       "recordType": "event",
-      "title": "Introducing DeepSeek-V3",
-      "displayDate": "26 December 2024",
-      "eventDate": "2024-12-26",
+      "title": "DeepSeek-R1 Release",
+      "displayDate": "January 20, 2025",
       "datePrecision": "day",
       "temporalState": "recorded",
       "status": "VERIFIED RECORD",
-      "summary": "DeepSeek published the first-party milestone “Introducing DeepSeek-V3” on December 26, 2024; the source states an introduction, release, launch, or availability event.",
-      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "summary": "DeepSeek publicly released DeepSeek-R1 on January 20, 2025. Its official release announcement states that the model weights were released under the MIT License and that the model was available through DeepSeek's website and API.",
+      "significance": "A documented public release milestone for DeepSeek-R1, an openly released reasoning-model system with public model weights and API availability.",
       "people": [],
       "organizations": [
         "DeepSeek"
       ],
-      "technologies": [],
+      "technologies": [
+        "DeepSeek-R1",
+        "Reasoning model",
+        "Reinforcement learning"
+      ],
       "verification": {
         "state": "verified",
         "factualClaim": true,
         "confidence": "high",
-        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
-        "lastVerified": "2026-10-02T10:44:46Z"
+        "note": "DeepSeek's first-party January 20, 2025 release announcement directly establishes the public release date, model-weight release under the MIT License, and website/API availability. DeepSeek's official API change log independently records 2025.01.20 as the deepseek-reasoner / DeepSeek-R1 milestone. The date is attached only to this documented public-release event; no development date, geography, ancestry, influence, causal relationship, or unsupported precision is inferred.",
+        "lastVerified": "2026-09-14T01:05:27+08:00"
       },
       "sources": [
         {
-          "title": "Introducing DeepSeek-V3",
-          "url": "https://deepseek.com/en/news/deepseek-v3",
+          "title": "DeepSeek-R1 Release",
+          "url": "https://deepseek.com/en/news/deepseek-r1/",
           "publisher": "DeepSeek",
-          "publishedDate": "2024-12-26",
+          "publishedDate": "2025-01-20",
           "sourceType": "official-announcement",
           "primary": true,
-          "archivedUrl": null
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "DeepSeek-R1 Release",
+          "url": "https://api-docs.deepseek.com/news/news250120/",
+          "publisher": "DeepSeek API Docs",
+          "publishedDate": "2025-01-20",
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        },
+        {
+          "title": "Change Log",
+          "url": "https://api-docs.deepseek.com/updates/",
+          "publisher": "DeepSeek API Docs",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "plamo-prime-2024",
+          "label": "Travel backward to PLaMo Prime Launch",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "mistral-small-3-release-2025",
+          "label": "Continue to Mistral Small 3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-01-20"
     },
     {
-      "id": "deepseek-deepseek-v4-preview-entering-the-era-of-affordable-million-to-2026",
+      "id": "mistral-small-3-release-2025",
       "recordType": "event",
-      "title": "DeepSeek-V4 Preview: Entering the Era of Affordable Million-Token Context",
-      "displayDate": "24 April 2026",
-      "eventDate": "2026-04-24",
+      "title": "Mistral Small 3 Release",
+      "displayDate": "30 January 2025",
       "datePrecision": "day",
       "temporalState": "recorded",
       "status": "VERIFIED RECORD",
-      "summary": "DeepSeek published the first-party milestone “DeepSeek-V4 Preview: Entering the Era of Affordable Million-Token Context” on April 24, 2026; the source states an introduction, release, launch, or availability event.",
-      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "summary": "Mistral AI introduced Mistral Small 3 on January 30, 2025 as a latency-optimized 24B-parameter model released under the Apache 2.0 license.",
+      "significance": "A dated release milestone for Mistral AI's open-weight model line, with pretrained and instruction-tuned checkpoints made available under Apache 2.0.",
       "people": [],
       "organizations": [
-        "DeepSeek"
+        "Mistral AI"
       ],
-      "technologies": [],
+      "technologies": [
+        "Mistral Small 3"
+      ],
       "verification": {
         "state": "verified",
         "factualClaim": true,
         "confidence": "high",
-        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
-        "lastVerified": "2026-10-02T10:44:44Z"
+        "note": "Mistral AI's first-party announcement is dated January 30, 2025 and states that Mistral Small 3 is a latency-optimized 24B-parameter model released under Apache 2.0, with pretrained and instruction-tuned checkpoints. Mistral's official model documentation independently records January 30, 2025 and model identifier mistral-small-2501. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-09-24T21:04:03+08:00"
       },
       "sources": [
         {
-          "title": "DeepSeek-V4 Preview: Entering the Era of Affordable Million-Token Context",
-          "url": "https://deepseek.com/en/news/v4-preview",
-          "publisher": "DeepSeek",
-          "publishedDate": "2026-04-24",
+          "title": "Mistral Small 3",
+          "url": "https://mistral.ai/news/mistral-small-3/",
+          "publisher": "Mistral AI",
+          "publishedDate": "2025-01-30",
           "sourceType": "official-announcement",
           "primary": true,
-          "archivedUrl": null
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Mistral Small 3.0 - Mistral AI | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/mistral-small-3-0-25-01",
+          "publisher": "Mistral AI",
+          "publishedDate": "2025-01-30",
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "deepseek-r1-2025",
+          "label": "Travel backward to DeepSeek-R1 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "paligemma-2-mix-release-2025",
+          "label": "Continue to PaliGemma 2 mix Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-01-30"
     },
     {
-      "id": "xai-grok-4-6-on-amazon-bedrock-2026",
+      "id": "paligemma-2-mix-release-2025",
       "recordType": "event",
-      "title": "Grok 4.6 on Amazon Bedrock",
-      "displayDate": "19 August 2026",
-      "eventDate": "2026-08-19",
+      "title": "PaliGemma 2 mix Release",
+      "displayDate": "19 February 2025",
       "datePrecision": "day",
       "temporalState": "recorded",
       "status": "VERIFIED RECORD",
-      "summary": "xAI published the first-party milestone “Grok 4.6 on Amazon Bedrock” on August 19, 2026; the source states an introduction, release, launch, or availability event.",
-      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "summary": "Google's Gemma release documentation records the release of PaliGemma 2 mix on February 19, 2025, in 3B, 10B, and 28B parameter sizes.",
+      "significance": "A dated release milestone for PaliGemma 2 checkpoints tuned across a mixture of vision-language tasks for direct exploration and common out-of-the-box uses.",
       "people": [],
       "organizations": [
-        "xAI"
+        "Google"
       ],
-      "technologies": [],
+      "technologies": [
+        "PaliGemma 2 mix",
+        "PaliGemma 2 mix 3B",
+        "PaliGemma 2 mix 10B",
+        "PaliGemma 2 mix 28B"
+      ],
       "verification": {
         "state": "verified",
         "factualClaim": true,
         "confidence": "high",
-        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
-        "lastVerified": "2026-10-02T10:44:47Z"
+        "note": "Google AI for Developers' first-party Gemma release ledger explicitly records February 19, 2025 as the PaliGemma 2 mix release date and lists 3B, 10B, and 28B parameter sizes. Google's same-day Developers Blog announcement independently identifies the launch and describes the mix checkpoints as tuned to a mixture of tasks for direct exploration and common out-of-the-box uses. This boundary is kept separate from the December 5, 2024 PaliGemma 2 release. No development geography, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-09-24T01:05:00+08:00"
       },
       "sources": [
         {
-          "title": "Grok 4.6 on Amazon Bedrock",
-          "url": "https://x.ai/news/grok-4-6-amazon-bedrock",
-          "publisher": "xAI",
-          "publishedDate": "2026-08-19",
+          "title": "Gemma releases",
+          "url": "https://ai.google.dev/gemma/docs/releases",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Introducing PaliGemma 2 mix: A vision-language model for multiple tasks",
+          "url": "https://developers.googleblog.com/introducing-paligemma-2-mix/",
+          "publisher": "Google Developers Blog",
+          "publishedDate": "2025-02-19",
           "sourceType": "official-announcement",
           "primary": true,
-          "archivedUrl": null
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "mistral-small-3-release-2025",
+          "label": "Travel backward to Mistral Small 3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "aya-vision-launch-2025",
+          "label": "Continue to Aya Vision Public Launch",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-02-19"
     },
     {
-      "id": "xai-grok-4-6-on-gemini-enterprise-agent-platform-2026",
+      "id": "aya-vision-launch-2025",
       "recordType": "event",
-      "title": "Grok 4.6 on Gemini Enterprise Agent Platform",
-      "displayDate": "21 August 2026",
-      "eventDate": "2026-08-21",
+      "title": "Aya Vision Public Launch",
+      "displayDate": "4 March 2025",
       "datePrecision": "day",
       "temporalState": "recorded",
       "status": "VERIFIED RECORD",
-      "summary": "xAI published the first-party milestone “Grok 4.6 on Gemini Enterprise Agent Platform” on August 21, 2026; the source states an introduction, release, launch, or availability event.",
-      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "summary": "Cohere Labs announced Aya Vision on March 4, 2025 as a multilingual multimodal model supporting text-and-image tasks across 23 languages.",
+      "significance": "A dated public-launch milestone in the Aya research program, extending the program into multilingual multimodal text-and-image capabilities.",
       "people": [],
       "organizations": [
-        "xAI"
+        "Cohere Labs"
       ],
-      "technologies": [],
+      "technologies": [
+        "Aya Vision",
+        "Aya Vision 32B"
+      ],
       "verification": {
         "state": "verified",
         "factualClaim": true,
         "confidence": "high",
-        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
-        "lastVerified": "2026-10-02T10:44:47Z"
+        "note": "Cohere Labs' first-party launch post is dated March 4, 2025 and announces Aya Vision as an open-weights multilingual multimodal model. Cohere's first-party model documentation independently corroborates the Aya Vision 32B model, text-and-image modality, 23-language scope, and open-weight availability. The later primary technical report, submitted May 13, 2025, documents Aya Vision 8B and 32B and is retained as chronology context rather than evidence for the March launch date. This candidate records the dated public-launch milestone only and does not infer development geography, ancestry, downstream influence, causality, or relationship edges.",
+        "lastVerified": "2026-09-24T17:06:18+08:00"
       },
       "sources": [
         {
-          "title": "Grok 4.6 on Gemini Enterprise Agent Platform",
-          "url": "https://x.ai/news/grok-4-6-vertex-ai",
-          "publisher": "xAI",
-          "publishedDate": "2026-08-21",
+          "title": "Aya Vision: Expanding the worlds AI can see",
+          "url": "https://cohere.com/blog/aya-vision",
+          "publisher": "Cohere Labs",
+          "publishedDate": "2025-03-04",
           "sourceType": "official-announcement",
           "primary": true,
-          "archivedUrl": null
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Aya Vision",
+          "url": "https://docs.cohere.com/docs/aya-vision",
+          "publisher": "Cohere",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        },
+        {
+          "title": "Aya Vision: Advancing the Frontier of Multilingual Multimodality",
+          "url": "https://arxiv.org/abs/2505.08751",
+          "publisher": "arXiv",
+          "publishedDate": "2025-05-13",
+          "sourceType": "paper",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "context"
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "paligemma-2-mix-release-2025",
+          "label": "Travel backward to PaliGemma 2 mix Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemma-3-release-2025",
+          "label": "Continue to Gemma 3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-03-04"
     },
     {
-      "id": "xai-grok-4-6-on-microsoft-foundry-2026",
+      "id": "gemma-3-release-2025",
       "recordType": "event",
-      "title": "Grok 4.6 on Microsoft Foundry",
-      "displayDate": "26 August 2026",
-      "eventDate": "2026-08-26",
+      "title": "Gemma 3 Release",
+      "displayDate": "10 March 2025",
       "datePrecision": "day",
       "temporalState": "recorded",
       "status": "VERIFIED RECORD",
-      "summary": "xAI published the first-party milestone “Grok 4.6 on Microsoft Foundry” on August 26, 2026; the source states an introduction, release, launch, or availability event.",
-      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "summary": "Google's Gemma release documentation records the release of Gemma 3 on March 10, 2025, in 1B, 4B, 12B, and 27B parameter sizes.",
+      "significance": "A dated release milestone in Google's Gemma family of open models.",
       "people": [],
       "organizations": [
-        "xAI"
+        "Google"
       ],
-      "technologies": [],
+      "technologies": [
+        "Gemma 3",
+        "Gemma 3 1B",
+        "Gemma 3 4B",
+        "Gemma 3 12B",
+        "Gemma 3 27B"
+      ],
       "verification": {
         "state": "verified",
         "factualClaim": true,
         "confidence": "high",
-        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
-        "lastVerified": "2026-10-02T10:44:47Z"
+        "note": "Google AI for Developers' first-party Gemma releases documentation explicitly records March 10, 2025 as the release date for Gemma 3 in 1B, 4B, 12B and 27B sizes. A separate Google announcement dated March 12 introduces Gemma 3 and describes immediate access, but this candidate uses the dedicated release ledger for the release date rather than silently substituting the later announcement date. No development geography, ancestry, downstream influence, causality, people attribution, or relationship edges are inferred.",
+        "lastVerified": "2026-09-19T22:02:18+08:00"
       },
       "sources": [
         {
-          "title": "Grok 4.6 on Microsoft Foundry",
-          "url": "https://x.ai/news/grok-4-6-microsoft-foundry",
-          "publisher": "xAI",
-          "publishedDate": "2026-08-26",
+          "title": "Gemma releases",
+          "url": "https://ai.google.dev/gemma/docs/releases",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Introducing Gemma 3: The most capable model you can run on a single GPU or TPU",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-3/",
+          "publisher": "Google",
+          "publishedDate": "2025-03-12",
           "sourceType": "official-announcement",
           "primary": true,
-          "archivedUrl": null
+          "archivedUrl": null,
+          "sourceRole": "context"
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "aya-vision-launch-2025",
+          "label": "Travel backward to Aya Vision Public Launch",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "navigation",
+          "targetId": "shieldgemma-2-release-2025",
+          "label": "Open adjacent same-time record: ShieldGemma 2 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-03-10"
     },
     {
-      "id": "xai-grok-bot-is-now-included-with-more-plans-2026",
+      "id": "shieldgemma-2-release-2025",
       "recordType": "event",
-      "title": "Grok Bot is now included with more plans",
-      "displayDate": "26 August 2026",
-      "eventDate": "2026-08-26",
+      "title": "ShieldGemma 2 Release",
+      "displayDate": "10 March 2025",
       "datePrecision": "day",
       "temporalState": "recorded",
       "status": "VERIFIED RECORD",
-      "summary": "xAI published the first-party milestone “Grok Bot is now included with more plans” on August 26, 2026; the source states an introduction, release, launch, or availability event.",
-      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "summary": "Google's official Gemma release ledger records the release of ShieldGemma 2 on March 10, 2025. Google's official model card describes ShieldGemma 2 as a 4B parameter model built on Gemma 3 for image safety classification.",
+      "significance": "A dated Gemma-family safety-model release extending ShieldGemma to image safety classification.",
       "people": [],
       "organizations": [
-        "xAI"
+        "Google"
       ],
-      "technologies": [],
+      "technologies": [
+        "ShieldGemma 2",
+        "Gemma 3"
+      ],
       "verification": {
         "state": "verified",
         "factualClaim": true,
         "confidence": "high",
-        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
-        "lastVerified": "2026-10-02T10:44:47Z"
+        "note": "Google AI for Developers' official Gemma release ledger explicitly records ShieldGemma 2 on March 10, 2025. Google's official ShieldGemma 2 model card establishes its 4B size, Gemma 3 basis, and image-safety-classification purpose. No development geography, ancestry, influence, causality, universal priority, or unsupported relationship edge is inferred.",
+        "lastVerified": "2026-09-26T04:05:56+08:00"
       },
       "sources": [
         {
-          "title": "Grok Bot is now included with more plans",
-          "url": "https://x.ai/news/grok-bot-more-plans",
-          "publisher": "xAI",
-          "publishedDate": "2026-08-26",
-          "sourceType": "official-announcement",
+          "title": "Gemma releases",
+          "url": "https://ai.google.dev/gemma/docs/releases",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
           "primary": true,
-          "archivedUrl": null
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "ShieldGemma model card",
+          "url": "https://ai.google.dev/gemma/docs/shieldgemma/model_card_2",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gemma-3-release-2025",
+          "label": "Open adjacent same-time record: Gemma 3 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "mistral-small-3-1-release-2025",
+          "label": "Continue to Mistral Small 3.1 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-03-10"
     },
     {
-      "id": "xai-grok-bot-for-enterprise-2026",
+      "id": "mistral-small-3-1-release-2025",
       "recordType": "event",
-      "title": "Grok Bot for Enterprise",
-      "displayDate": "3 September 2026",
-      "eventDate": "2026-09-03",
+      "title": "Mistral Small 3.1 Release",
+      "displayDate": "17 March 2025",
       "datePrecision": "day",
       "temporalState": "recorded",
       "status": "VERIFIED RECORD",
-      "summary": "xAI published the first-party milestone “Grok Bot for Enterprise” on September 3, 2026; the source states an introduction, release, launch, or availability event.",
-      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "summary": "Mistral AI announced Mistral Small 3.1 on March 17, 2025 and made the model available under the Apache 2.0 license.",
+      "significance": "A dated release milestone for an open-weight Mistral model adding multimodal understanding and a context window of up to 128k tokens.",
       "people": [],
       "organizations": [
-        "xAI"
+        "Mistral AI"
       ],
-      "technologies": [],
+      "technologies": [
+        "Mistral Small 3.1"
+      ],
       "verification": {
         "state": "verified",
         "factualClaim": true,
         "confidence": "high",
-        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
-        "lastVerified": "2026-10-02T10:44:47Z"
+        "note": "Mistral AI's first-party announcement is dated March 17, 2025 and states that Mistral Small 3.1 is released under Apache 2.0, with multimodal understanding and up to 128k context. Mistral's official model documentation independently records March 17, 2025 and model identifier mistral-small-2503. No development geography, ancestry beyond Mistral's explicit statement that it builds on Mistral Small 3, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-09-24T19:07:28+08:00"
       },
       "sources": [
         {
-          "title": "Grok Bot for Enterprise",
-          "url": "https://x.ai/news/grok-bot-for-enterprise",
-          "publisher": "xAI",
+          "title": "Mistral Small 3.1",
+          "url": "https://mistral.ai/news/mistral-small-3-1/",
+          "publisher": "Mistral AI",
+          "publishedDate": "2025-03-17",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Mistral Small 3.1 - Mistral AI | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/mistral-small-3-1-25-03",
+          "publisher": "Mistral AI",
+          "publishedDate": "2025-03-17",
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "shieldgemma-2-release-2025",
+          "label": "Travel backward to ShieldGemma 2 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "txgemma-release-2025",
+          "label": "Continue to TxGemma Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-03-17"
+    },
+    {
+      "id": "txgemma-release-2025",
+      "recordType": "event",
+      "title": "TxGemma Release",
+      "displayDate": "25 March 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google introduced TxGemma on March 25, 2025 as a collection of open models designed to support therapeutic-development tasks.",
+      "significance": "A dated release milestone for a Gemma-based collection specialized for therapeutic-development research tasks.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "TxGemma"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party Developers Blog announcement dated March 25, 2025 explicitly says it is releasing TxGemma, a collection of open models designed to improve therapeutic development. The announcement states that TxGemma builds on Google DeepMind's Gemma. This record does not infer development geography, downstream influence, priority, or causal relationships beyond that explicit first-party statement.",
+        "lastVerified": "2026-09-24T10:02:34+08:00"
+      },
+      "sources": [
+        {
+          "title": "Introducing TxGemma: Open models to improve therapeutics development",
+          "url": "https://developers.googleblog.com/en/introducing-txgemma-open-models-improving-therapeutics-development/",
+          "publisher": "Google Developers Blog",
+          "publishedDate": "2025-03-25",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "mistral-small-3-1-release-2025",
+          "label": "Travel backward to Mistral Small 3.1 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "llama-4-scout-maverick-release-2025",
+          "label": "Continue to Llama 4 Scout and Maverick Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-03-25"
+    },
+    {
+      "id": "llama-4-scout-maverick-release-2025",
+      "recordType": "event",
+      "title": "Llama 4 Scout and Maverick Release",
+      "displayDate": "5 April 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Meta announced Llama 4 Scout and Llama 4 Maverick on April 5, 2025 and made both models available for download that day; Llama 4 Behemoth was described separately as still in training and not yet released.",
+      "significance": "A dated public-release milestone for the first released models in Meta's Llama 4 family, while preserving the contemporaneous distinction between released Scout and Maverick models and the unreleased Behemoth model.",
+      "people": [],
+      "organizations": [
+        "Meta"
+      ],
+      "technologies": [
+        "Llama 4 Scout",
+        "Llama 4 Maverick"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Meta's first-party April 5, 2025 announcement explicitly introduces Llama 4 Scout and Llama 4 Maverick and states that both were available for download that day. The same announcement explicitly says Llama 4 Behemoth was still training and was not being released, so Behemoth is not represented as a released technology in this candidate. No development geography, ancestry, downstream influence, causality, people attribution, or relationship edges are inferred.",
+        "lastVerified": "2026-09-20T03:07:16+08:00"
+      },
+      "sources": [
+        {
+          "title": "The Llama 4 herd: The beginning of a new era of natively multimodal AI innovation",
+          "url": "https://about.fb.com/news/2025/04/llama-4-multimodal-intelligence/",
+          "publisher": "Meta",
+          "publishedDate": "2025-04-05",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "txgemma-release-2025",
+          "label": "Travel backward to TxGemma Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "dolphingemma-announcement-2025",
+          "label": "Continue to DolphinGemma Announcement",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-04-05"
+    },
+    {
+      "id": "dolphingemma-announcement-2025",
+      "recordType": "event",
+      "title": "DolphinGemma Announcement",
+      "displayDate": "14 April 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google announced progress on DolphinGemma on April 14, 2025, describing it as a foundational AI model trained to learn the structure of dolphin vocalizations and generate novel dolphin-like sound sequences.",
+      "significance": "A dated first-party announcement of a specialized approximately 400M-parameter audio-in, audio-out model for research on dolphin vocalizations.",
+      "people": [],
+      "organizations": [
+        "Google",
+        "Georgia Tech",
+        "Wild Dolphin Project"
+      ],
+      "technologies": [
+        "DolphinGemma"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party announcement dated April 14, 2025 explicitly announces progress on DolphinGemma, describes the model as approximately 400M parameters, and states that it was trained on the Wild Dolphin Project's acoustic database of wild Atlantic spotted dolphins. The source says Google collaborated with researchers at Georgia Tech and the field research of the Wild Dolphin Project. This record preserves the boundary as an announcement of progress; it does not infer a public model release, development geography, priority, downstream influence, ancestry beyond explicit source language, or causal relationships.",
+        "lastVerified": "2026-09-24T11:06:08+08:00"
+      },
+      "sources": [
+        {
+          "title": "DolphinGemma: How Google AI is helping decode dolphin communication",
+          "url": "https://blog.google/innovation-and-ai/products/dolphingemma/",
+          "publisher": "Google",
+          "publishedDate": "2025-04-14",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "llama-4-scout-maverick-release-2025",
+          "label": "Travel backward to Llama 4 Scout and Maverick Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemma-3n-preview-2025",
+          "label": "Continue to Gemma 3n Preview",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-04-14"
+    },
+    {
+      "id": "gemma-3n-preview-2025",
+      "recordType": "event",
+      "title": "Gemma 3n Preview",
+      "displayDate": "20 May 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google announced the preview of Gemma 3n on May 20, 2025 as a mobile-first open model architecture intended for efficient multimodal AI on phones, tablets, and laptops.",
+      "significance": "A dated preview milestone in Google's Gemma family focused on efficient on-device multimodal AI.",
+      "people": [],
+      "organizations": [
+        "Google",
+        "Google DeepMind"
+      ],
+      "technologies": [
+        "Gemma 3n"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google Developers Blog's first-party announcement is dated May 20, 2025 and explicitly labels Gemma 3n a preview, describes it as mobile-first, and states that it targets real-time AI on phones, tablets, and laptops. This record preserves preview status and does not treat the preview as a later general-release boundary. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-09-24T04:04:17+08:00"
+      },
+      "sources": [
+        {
+          "title": "Announcing Gemma 3n preview: powerful, efficient, mobile-first AI",
+          "url": "https://developers.googleblog.com/introducing-gemma-3n/",
+          "publisher": "Google Developers Blog",
+          "publishedDate": "2025-05-20",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "dolphingemma-announcement-2025",
+          "label": "Travel backward to DolphinGemma Announcement",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemma-3n-release-2025",
+          "label": "Continue to Gemma 3n Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-05-20"
+    },
+    {
+      "id": "gemma-3n-release-2025",
+      "recordType": "event",
+      "title": "Gemma 3n Release",
+      "displayDate": "26 June 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google's Gemma release ledger records June 26, 2025 as the release of Gemma 3n in E2B and E4B sizes.",
+      "significance": "A dated release milestone for Gemma 3n, an open-weight multimodal model family designed for efficient execution on resource-constrained devices.",
+      "people": [],
+      "organizations": [
+        "Google",
+        "Google DeepMind"
+      ],
+      "technologies": [
+        "Gemma 3n",
+        "Gemma 3n E2B",
+        "Gemma 3n E4B"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party Gemma release ledger records June 26, 2025 as the release of Gemma 3n in E2B and E4B sizes. Google's first-party Gemma 3n model card independently documents E2B/E4B effective sizes, multimodal text/image/video/audio input, open weights, and design for efficient execution on low-resource devices. Google's May 20, 2025 developer announcement independently establishes the earlier Gemma 3n preview, preserving preview versus release chronology. The model card and preview announcement do not replace the release ledger as evidence for the exact June 26 release date. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-10-01T01:08:50+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemma releases",
+          "url": "https://ai.google.dev/gemma/docs/releases",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Gemma 3n model card",
+          "url": "https://ai.google.dev/gemma/docs/gemma-3n/model_card",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        },
+        {
+          "title": "Announcing Gemma 3n preview: powerful, efficient, mobile-first AI",
+          "url": "https://developers.googleblog.com/introducing-gemma-3n/",
+          "publisher": "Google",
+          "publishedDate": "2025-05-20",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemma-3n-preview-2025",
+          "label": "Travel backward to Gemma 3n Preview",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemma-3-270m-release-2025",
+          "label": "Continue to Gemma 3 270M Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-06-26"
+    },
+    {
+      "id": "gemma-3-270m-release-2025",
+      "recordType": "event",
+      "title": "Gemma 3 270M Release",
+      "displayDate": "14 August 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google introduced Gemma 3 270M on August 14, 2025 as a compact 270-million-parameter model designed for task-specific fine-tuning and efficient on-device use.",
+      "significance": "A dated release milestone adding a compact 270M member to the Gemma 3 family, distinct from the March Gemma 3 family release and the Gemma 3n release sequence.",
+      "people": [],
+      "organizations": [
+        "Google",
+        "Google DeepMind"
+      ],
+      "technologies": [
+        "Gemma 3 270M"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google Developers Blog's first-party announcement is dated August 14, 2025 and explicitly introduces Gemma 3 270M. Google's first-party Gemma release ledger independently records August 14, 2025 as the release of Gemma 3 in 270M size. Google's Gemma 3 model card corroborates the 270M variant and its 32K context. No development geography, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-09-24T07:05:35+08:00"
+      },
+      "sources": [
+        {
+          "title": "Introducing Gemma 3 270M: The compact model for hyper-efficient AI",
+          "url": "https://developers.googleblog.com/en/introducing-gemma-3-270m/",
+          "publisher": "Google Developers Blog",
+          "publishedDate": "2025-08-14",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Gemma releases",
+          "url": "https://ai.google.dev/gemma/docs/releases",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        },
+        {
+          "title": "Gemma 3 model card",
+          "url": "https://ai.google.dev/gemma/docs/core/model_card_3",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemma-3n-release-2025",
+          "label": "Travel backward to Gemma 3n Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "embeddinggemma-release-2025",
+          "label": "Continue to EmbeddingGemma Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-08-14"
+    },
+    {
+      "id": "embeddinggemma-release-2025",
+      "recordType": "event",
+      "title": "EmbeddingGemma Release",
+      "displayDate": "4 September 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google introduced EmbeddingGemma on September 4, 2025 as an open 308-million-parameter embedding model designed for efficient on-device text embeddings.",
+      "significance": "A dated release milestone for a compact Gemma-family embedding model intended for on-device retrieval and semantic-search workflows.",
+      "people": [],
+      "organizations": [
+        "Google",
+        "Google DeepMind"
+      ],
+      "technologies": [
+        "EmbeddingGemma"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party Gemma release ledger records September 4, 2025 as the release of EmbeddingGemma in 308M parameter size. Google's same-day Developers Blog announcement independently introduces EmbeddingGemma as a new open embedding model with a 308M-parameter design. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-09-24T08:02:36+08:00"
+      },
+      "sources": [
+        {
+          "title": "Introducing EmbeddingGemma: The best-in-class open model for on-device embeddings",
+          "url": "https://developers.googleblog.com/en/introducing-embeddinggemma/",
+          "publisher": "Google Developers Blog",
+          "publishedDate": "2025-09-04",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Gemma releases",
+          "url": "https://ai.google.dev/gemma/docs/releases",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemma-3-270m-release-2025",
+          "label": "Travel backward to Gemma 3 270M Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "vaultgemma-release-2025",
+          "label": "Continue to VaultGemma Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-09-04"
+    },
+    {
+      "id": "vaultgemma-release-2025",
+      "recordType": "event",
+      "title": "VaultGemma Release",
+      "displayDate": "13 September 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google's Gemma release ledger records September 13, 2025 as the release of VaultGemma in 1B parameter size. A Google Research post published September 12, 2025 introduced VaultGemma and stated that model weights were being released on Hugging Face and Kaggle alongside a technical report.",
+      "significance": "A dated release milestone for a 1B-parameter Gemma-family language model trained from scratch with differential privacy.",
+      "people": [],
+      "organizations": [
+        "Google Research",
+        "Google DeepMind"
+      ],
+      "technologies": [
+        "VaultGemma"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "The release date follows Google's first-party Gemma release ledger. The separate September 12 Google Research publication is retained as an announcement/evidence boundary rather than substituted for the ledger's September 13 release date. No development geography, downstream influence, priority claim, or causal relationship is inferred.",
+        "lastVerified": "2026-09-24T09:03:03+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemma releases",
+          "url": "https://ai.google.dev/gemma/docs/releases",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        },
+        {
+          "title": "VaultGemma: The world's most capable differentially private LLM",
+          "url": "https://research.google/blog/vaultgemma-the-worlds-most-capable-differentially-private-llm/",
+          "publisher": "Google Research",
+          "publishedDate": "2025-09-12",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "VaultGemma",
+          "url": "https://research.google/pubs/vaultgemma/",
+          "publisher": "Google Research",
+          "publishedDate": null,
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "embeddinggemma-release-2025",
+          "label": "Travel backward to EmbeddingGemma Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-release-2025",
+          "label": "Continue to Gemini 3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-09-13"
+    },
+    {
+      "id": "gemini-3-release-2025",
+      "recordType": "event",
+      "title": "Gemini 3 Release",
+      "displayDate": "18 November 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google announced the release of Gemini 3 on November 18, 2025, beginning the Gemini 3 era with Gemini 3 Pro in preview and availability across Google products and developer platforms.",
+      "significance": "A dated public release milestone in Google's Gemini model family.",
+      "people": [],
+      "organizations": [
+        "Google",
+        "Google DeepMind"
+      ],
+      "technologies": [
+        "Gemini 3",
+        "Gemini 3 Pro"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party November 18, 2025 announcement explicitly states that Google was releasing Gemini 3, beginning with Gemini 3 Pro in preview, and making it available that day across the Gemini app, AI Mode in Search, AI Studio, Vertex AI, Gemini CLI, and Google Antigravity. The candidate records only that directly supported public release milestone. No development geography, ancestry, downstream influence, causality, or relationship edges are inferred.",
+        "lastVerified": "2026-09-19T23:05:13+08:00"
+      },
+      "sources": [
+        {
+          "title": "A new era of intelligence with Gemini 3",
+          "url": "https://blog.google/products-and-platforms/products/gemini/gemini-3/",
+          "publisher": "Google",
+          "publishedDate": "2025-11-18",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "vaultgemma-release-2025",
+          "label": "Travel backward to VaultGemma Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "functiongemma-release-2025",
+          "label": "Continue to FunctionGemma 270M Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-11-18"
+    },
+    {
+      "id": "functiongemma-release-2025",
+      "recordType": "event",
+      "title": "FunctionGemma 270M Release",
+      "displayDate": "18 December 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google released FunctionGemma in 270M parameter size on December 18, 2025. Google's official documentation describes FunctionGemma as a specialized Gemma 3 270M model trained for function calling and intended as a foundation for custom, fast, private, local agents.",
+      "significance": "A dated Gemma-family release milestone focused on function calling and specialized local agent development.",
+      "people": [],
+      "organizations": [
+        "Google",
+        "Google DeepMind"
+      ],
+      "technologies": [
+        "FunctionGemma",
+        "Gemma 3"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google AI for Developers' official Gemma release ledger explicitly records release of FunctionGemma in 270M parameter size on December 18, 2025. Google's official FunctionGemma overview identifies it as a specialized Gemma 3 270M model tuned for function calling. No development geography, ancestry, influence, causality, universal priority, or unsupported relationship edge is inferred.",
+        "lastVerified": "2026-09-26T03:03:18+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemma releases",
+          "url": "https://ai.google.dev/gemma/docs/releases",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "FunctionGemma model overview",
+          "url": "https://ai.google.dev/gemma/docs/functiongemma",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-release-2025",
+          "label": "Travel backward to Gemini 3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "navigation",
+          "targetId": "t5gemma-v2-release-2025",
+          "label": "Open adjacent same-time record: T5Gemma v2 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-12-18"
+    },
+    {
+      "id": "t5gemma-v2-release-2025",
+      "recordType": "event",
+      "title": "T5Gemma v2 Release",
+      "displayDate": "18 December 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google's official Gemma release ledger records December 18, 2025 as the release of T5Gemma v2 in 270M-270M, 1B-1B, and 4B-4B parameter sizes.",
+      "significance": "A dated release milestone in Google's Gemma-family model record.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "T5Gemma v2"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google AI for Developers' first-party Gemma release ledger explicitly records T5Gemma v2 on December 18, 2025 in 270M-270M, 1B-1B, and 4B-4B parameter sizes. This candidate is deliberately limited to that directly evidenced release fact. No development geography, architecture, ancestry, downstream influence, causality, universal priority, or relationship edge is inferred.",
+        "lastVerified": "2026-09-26T09:04:37+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemma releases",
+          "url": "https://ai.google.dev/gemma/docs/releases",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "functiongemma-release-2025",
+          "label": "Open adjacent same-time record: FunctionGemma 270M Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-5-flash-release-2026",
+          "label": "Continue to Gemini 3.5 Flash GA Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-12-18"
+    },
+    {
+      "id": "gemini-3-5-flash-release-2026",
+      "recordType": "event",
+      "title": "Gemini 3.5 Flash GA Release",
+      "displayDate": "19 May 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google's Gemini API release notes record the generally available release of Gemini 3.5 Flash on May 19, 2026 under the stable model identifier gemini-3.5-flash.",
+      "significance": "A dated general-availability milestone for Google's Gemini 3.5 Flash model in the Gemini API.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "Gemini 3.5 Flash",
+        "Gemini API"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party Gemini API release notes explicitly record May 19, 2026 as the GA release of gemini-3.5-flash. Google's first-party Gemini 3.5 documentation independently documents the model and its Gemini 3 family capabilities. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-09-30T14:06:11+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemini API release notes",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "What's new in Gemini 3.5 Flash",
+          "url": "https://ai.google.dev/gemini-api/docs/whats-new-gemini-3.5",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "t5gemma-v2-release-2025",
+          "label": "Travel backward to T5Gemma v2 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-5-flash-lite-ga-2026",
+          "label": "Continue to Gemini 3.5 Flash-Lite General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-05-19"
+    },
+    {
+      "id": "gemini-3-5-flash-lite-ga-2026",
+      "recordType": "event",
+      "title": "Gemini 3.5 Flash-Lite General Availability",
+      "displayDate": "21 July 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google records Gemini 3.5 Flash-Lite as generally available on July 21, 2026 under model identifier gemini-3.5-flash-lite.",
+      "significance": "A dated general-availability milestone for Google's Gemini Flash-Lite model line.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "Gemini 3.5 Flash-Lite",
+        "Gemini API"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party Gemini API release notes explicitly identify July 21, 2026 as the GA release date for gemini-3.5-flash-lite. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-01T20:05:03+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemini API release notes",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-5-flash-release-2026",
+          "label": "Travel backward to Gemini 3.5 Flash GA Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "navigation",
+          "targetId": "gemini-3-6-flash-ga-2026",
+          "label": "Open adjacent same-time record: Gemini 3.6 Flash General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-07-21"
+    },
+    {
+      "id": "gemini-3-6-flash-ga-2026",
+      "recordType": "event",
+      "title": "Gemini 3.6 Flash General Availability",
+      "displayDate": "21 July 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google records Gemini 3.6 Flash as generally available on July 21, 2026 under model identifier gemini-3.6-flash.",
+      "significance": "A dated general-availability milestone for Google's Gemini Flash model line.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "Gemini 3.6 Flash",
+        "Gemini API"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party Gemini API release notes explicitly identify July 21, 2026 as the GA release date for gemini-3.6-flash; Google's deprecations documentation independently records the same release date. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-01T15:04:02+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemini API release notes",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Gemini deprecations",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gemini-3-5-flash-lite-ga-2026",
+          "label": "Open adjacent same-time record: Gemini 3.5 Flash-Lite General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-robotics-2-2026",
+          "label": "Continue to Gemini Robotics 2 Introduction",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-07-21"
+    },
+    {
+      "id": "gemini-robotics-2-2026",
+      "recordType": "event",
+      "title": "Gemini Robotics 2 Introduction",
+      "displayDate": "30 July 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google DeepMind introduced Gemini Robotics 2 on July 30, 2026 as a vision-language-action model for intelligent whole-body robot control, alongside two additional models in the Gemini Robotics 2 family.",
+      "significance": "A dated first-party AI-system release milestone in embodied AI and robotics, documenting a model family designed to connect multimodal reasoning with robot motor control.",
+      "people": [
+        "Carolina Parada"
+      ],
+      "organizations": [
+        "Google DeepMind"
+      ],
+      "technologies": [
+        "Gemini Robotics 2"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google DeepMind's first-party announcement is dated July 30, 2026 and explicitly says it is introducing Gemini Robotics 2. The announcement describes Gemini Robotics 2 as its most advanced vision-language-action model and says it converts vision and language input into motor control. This candidate records the dated introduction only and does not infer ancestry, influence, causality, development geography, universal priority, or relationship edges.",
+        "lastVerified": "2026-09-21T04:07:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+          "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+          "publisher": "Google DeepMind",
+          "publishedDate": "2026-07-30",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-6-flash-ga-2026",
+          "label": "Travel backward to Gemini 3.6 Flash General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-7-flash-ga-2026",
+          "label": "Continue to Gemini 3.7 Flash General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-07-30"
+    },
+    {
+      "id": "gemini-3-7-flash-ga-2026",
+      "recordType": "event",
+      "title": "Gemini 3.7 Flash General Availability",
+      "displayDate": "13 August 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google records Gemini 3.7 Flash as generally available on August 13, 2026 under model identifier gemini-3.7-flash.",
+      "significance": "A dated general-availability milestone for Google's Gemini Flash model line.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "Gemini 3.7 Flash",
+        "Gemini API"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party Gemini API release notes explicitly identify August 13, 2026 as the GA release date for gemini-3.7-flash; Google's deprecations documentation independently records the same release date. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-01T14:01:13+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemini API release notes",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Gemini deprecations",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemini-robotics-2-2026",
+          "label": "Travel backward to Gemini Robotics 2 Introduction",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "weathernext-3-release-2026",
+          "label": "Continue to WeatherNext 3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-08-13"
+    },
+    {
+      "id": "weathernext-3-release-2026",
+      "recordType": "event",
+      "title": "WeatherNext 3 Release",
+      "displayDate": "31 August 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google's WeatherNext release notes record WeatherNext 3 (v3.0) as launched on August 31, 2026, with live satellite input, 5 km multi-resolution output, hourly initialization, and forecasts out to 15 days. Google publicly announced the model on September 3, 2026.",
+      "significance": "A dated launch milestone for Google's WeatherNext AI weather-forecasting model; this record keeps the August 31 launch boundary separate from the later September 3 public announcement and does not infer downstream scientific or operational impact.",
+      "people": [],
+      "organizations": [
+        "Google",
+        "Google DeepMind"
+      ],
+      "technologies": [
+        "WeatherNext 3"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party WeatherNext release notes explicitly record WeatherNext 3 (v3.0) as launched on August 31, 2026. Google's September 3, 2026 first-party announcement is retained as later announcement corroboration rather than launch-date evidence. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-09-30T06:01:48+08:00"
+      },
+      "sources": [
+        {
+          "title": "Release notes | WeatherNext | Google for Developers",
+          "url": "https://developers.google.com/weathernext/release-notes",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/",
+          "publisher": "Google",
           "publishedDate": "2026-09-03",
           "sourceType": "official-announcement",
           "primary": true,
-          "archivedUrl": null
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
         }
       ],
-      "relationships": [],
-      "corrections": [],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-7-flash-ga-2026",
+          "label": "Travel backward to Gemini 3.7 Flash General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "claude-fable-5-1-release-2026",
+          "label": "Continue to Claude Fable 5.1 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [
+        {
+          "field": "eventDate",
+          "previousValue": "2026-09-03",
+          "correctedValue": "2026-08-31",
+          "reason": "Google's WeatherNext release notes explicitly identify August 31, 2026 as the WeatherNext 3 launch date; September 3 is the later public-announcement date."
+        }
+      ],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-08-31"
     },
     {
-      "id": "xai-introducing-grok-voice-transcribe-2-0-2026",
+      "id": "claude-fable-5-1-release-2026",
       "recordType": "event",
-      "title": "Introducing Grok Voice Transcribe 2.0",
-      "displayDate": "18 September 2026",
-      "eventDate": "2026-09-18",
+      "title": "Claude Fable 5.1 Release",
+      "displayDate": "1 September 2026",
       "datePrecision": "day",
       "temporalState": "recorded",
       "status": "VERIFIED RECORD",
-      "summary": "xAI published the first-party milestone “Introducing Grok Voice Transcribe 2.0” on September 18, 2026; the source states an introduction, release, launch, or availability event.",
-      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "summary": "Anthropic announced Claude Fable 5.1 on September 1, 2026. Anthropic's release announcement states that Fable 5.1 was generally available and documents the Claude API identifier claude-fable-5-1.",
+      "significance": "A dated release milestone for Anthropic's Claude Fable 5.1 model, with release timing and model identity corroborated across first-party Anthropic surfaces.",
       "people": [],
       "organizations": [
-        "xAI"
+        "Anthropic"
       ],
-      "technologies": [],
+      "technologies": [
+        "Claude Fable 5.1",
+        "Claude API"
+      ],
       "verification": {
         "state": "verified",
         "factualClaim": true,
         "confidence": "high",
-        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
-        "lastVerified": "2026-10-02T10:44:47Z"
+        "note": "Anthropic's first-party announcement establishes general availability and the API identifier claude-fable-5-1. Anthropic's Claude Mythos product page and Newsroom independently date the Fable 5.1/Mythos 5.1 announcement to September 1, 2026. The system-card index independently places the pair in September 2026. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-01T00:05:18+08:00"
       },
       "sources": [
         {
-          "title": "Introducing Grok Voice Transcribe 2.0",
-          "url": "https://x.ai/news/grok-voice-transcribe-2",
-          "publisher": "xAI",
-          "publishedDate": "2026-09-18",
+          "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "publisher": "Anthropic",
+          "publishedDate": "2026-09-01",
           "sourceType": "official-announcement",
           "primary": true,
-          "archivedUrl": null
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Claude Mythos",
+          "url": "https://www.anthropic.com/claude/mythos",
+          "publisher": "Anthropic",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        },
+        {
+          "title": "Model system cards",
+          "url": "https://www.anthropic.com/system-cards",
+          "publisher": "Anthropic",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
         }
       ],
-      "relationships": [],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "weathernext-3-release-2026",
+          "label": "Travel backward to WeatherNext 3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-8-flash-ga-2026",
+          "label": "Continue to Gemini 3.8 Flash General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-01"
+    },
+    {
+      "id": "gemini-3-8-flash-ga-2026",
+      "recordType": "event",
+      "title": "Gemini 3.8 Flash General Availability",
+      "displayDate": "2 September 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google records Gemini 3.8 Flash with a release date of September 2, 2026 under model identifier gemini-3.8-flash.",
+      "significance": "A dated release milestone for Google's Gemini Flash model line.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "Gemini 3.8 Flash",
+        "Gemini API"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party Gemini API documentation identifies gemini-3.8-flash and records September 2, 2026 as its release date. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-01T12:03:01+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemini deprecations",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Gemini 3.8 Flash",
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "claude-fable-5-1-release-2026",
+          "label": "Travel backward to Claude Fable 5.1 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gpt-6-astra-release-2026",
+          "label": "Continue to GPT-6 Astra Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-02"
+    },
+    {
+      "id": "gpt-6-astra-release-2026",
+      "recordType": "event",
+      "title": "GPT-6 Astra Release",
+      "displayDate": "3 September 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI recorded the release of GPT-6 Astra on September 3, 2026.",
+      "significance": "A dated release milestone for an OpenAI GPT-6 model.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-6 Astra"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "OpenAI's first-party safety overview is dated September 3, 2026 and states that GPT-6 Astra was released that day. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T02:03:49+08:00"
+      },
+      "sources": [
+        {
+          "title": "Safety overview: GPT-6 Astra",
+          "url": "https://openai.com/index/safety-overview-gpt-6-astra/",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-09-03",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-8-flash-ga-2026",
+          "label": "Travel backward to Gemini 3.8 Flash General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "navigation",
+          "targetId": "lyria-3-5-ga-2026",
+          "label": "Open adjacent same-time record: Lyria 3.5 General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-03"
+    },
+    {
+      "id": "lyria-3-5-ga-2026",
+      "recordType": "event",
+      "title": "Lyria 3.5 General Availability",
+      "displayDate": "3 September 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google's Gemini API release notes record September 3, 2026 as the general-availability release of Lyria 3.5. Google DeepMind's model card independently documents Lyria 3.5 as a music generation system.",
+      "significance": "A dated general-availability milestone for Google's Lyria 3.5 music generation model, kept distinct from its earlier July 29, 2026 rollout in Google Flow Music.",
+      "people": [],
+      "organizations": [
+        "Google",
+        "Google DeepMind"
+      ],
+      "technologies": [
+        "Lyria 3.5",
+        "Gemini API"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party Gemini API release notes explicitly record Lyria 3.5 as generally available on September 3, 2026. Google DeepMind's first-party model card independently documents Lyria 3.5 and identifies it as a music generation system. Google's July 29, 2026 announcement establishes an earlier rollout in Google Flow Music, so that product rollout is not conflated with the later API general-availability boundary. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-01T02:03:17+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemini API release notes",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "publisher": "Google AI for Developers",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Lyria 3.5 - Model Card",
+          "url": "https://deepmind.google/models/model-cards/lyria-3-5/",
+          "publisher": "Google DeepMind",
+          "publishedDate": "2026-07-29",
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        },
+        {
+          "title": "Introducing Lyria 3.5 in Google Flow Music",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5/",
+          "publisher": "Google",
+          "publishedDate": "2026-07-29",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gpt-6-astra-release-2026",
+          "label": "Open adjacent same-time record: GPT-6 Astra Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "alphagenome-atlas-release-2026",
+          "label": "Continue to AlphaGenome Atlas Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-03"
+    },
+    {
+      "id": "alphagenome-atlas-release-2026",
+      "recordType": "event",
+      "title": "AlphaGenome Atlas Release",
+      "displayDate": "8 September 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google DeepMind introduced AlphaGenome Atlas on September 8, 2026, describing it as a platform containing molecular-effect predictions for 9 billion single-nucleotide variants in the human genome and making it available for academic research through a free website portal.",
+      "significance": "A dated release milestone for a large-scale AlphaGenome-derived research resource; this record does not infer downstream scientific impact.",
+      "people": [],
+      "organizations": [
+        "Google DeepMind"
+      ],
+      "technologies": [
+        "AlphaGenome Atlas",
+        "AlphaGenome"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google DeepMind's first-party announcement is dated September 8, 2026 and explicitly introduces AlphaGenome Atlas, states that it contains predictions for 9 billion single-nucleotide variants, and says it is available for academic research through a free website portal. Google DeepMind's AlphaGenome science page independently describes the Atlas as a 1PB dataset containing every possible nucleotide variant with an AlphaGenome Variant Impact score and says it is available to researchers around the world. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-09-28T05:03:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+          "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+          "publisher": "Google DeepMind",
+          "publishedDate": "2026-09-08",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "AlphaGenome",
+          "url": "https://deepmind.google/science/alphagenome/",
+          "publisher": "Google DeepMind",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "lyria-3-5-ga-2026",
+          "label": "Travel backward to Lyria 3.5 General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gpt-live-1-release-2026",
+          "label": "Continue to GPT-Live-1 API Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-08"
+    },
+    {
+      "id": "gpt-live-1-release-2026",
+      "recordType": "event",
+      "title": "GPT-Live-1 API Release",
+      "displayDate": "10 September 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI recorded GPT-Live-1 in the API on September 10, 2026.",
+      "significance": "A dated release milestone for an OpenAI real-time voice model.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-Live-1",
+        "OpenAI API"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "OpenAI's first-party research release index dates 'Build more natural voice experiences with GPT-Live-1 in the API' to September 10, 2026. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T07:04:46+08:00"
+      },
+      "sources": [
+        {
+          "title": "Build more natural voice experiences with GPT-Live-1 in the API",
+          "url": "https://openai.com/index/",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-09-10",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "alphagenome-atlas-release-2026",
+          "label": "Travel backward to AlphaGenome Atlas Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-8-live-release-2026",
+          "label": "Continue to Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking GA Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-10"
+    },
+    {
+      "id": "gemini-3-8-live-release-2026",
+      "recordType": "event",
+      "title": "Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking GA Release",
+      "displayDate": "15 September 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google's Gemini API release notes record the general-availability release of Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking on September 15, 2026 as audio-to-audio models for real-time voice applications using the Live API.",
+      "significance": "A dated public-release milestone for two stable Gemini Live API models.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "Gemini 3.8 Live",
+        "Gemini 3.8 Live Extended Thinking",
+        "Live API"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party Gemini API release notes explicitly record September 15, 2026 as the GA release of Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking and describe them as audio-to-audio models for real-time voice applications using the Live API. Google's first-party deprecations/model-lifecycle documentation independently lists the same release date for both stable model identifiers. No development geography, ancestry, influence, causality, priority, or relationship edge is inferred.",
+        "lastVerified": "2026-09-30T02:07:21+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemini API release notes",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Gemini deprecations",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gpt-live-1-release-2026",
+          "label": "Travel backward to GPT-Live-1 API Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "antigravity-agent-09-2026-release",
+          "label": "Continue to Antigravity Agent 09-2026 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-15"
+    },
+    {
+      "id": "antigravity-agent-09-2026-release",
+      "recordType": "event",
+      "title": "Antigravity Agent 09-2026 Release",
+      "displayDate": "17 September 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google's Gemini API release notes record the release of antigravity-preview-09-2026 on September 17, 2026, replacing and deprecating antigravity-preview-05-2026.",
+      "significance": "A dated release milestone for Google's general-purpose Antigravity managed agent.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "Antigravity Agent",
+        "Gemini API"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party Gemini API release notes explicitly record September 17, 2026 as the release date for antigravity-preview-09-2026 and state that it replaces and deprecates antigravity-preview-05-2026. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T03:03:17+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemini API release notes",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-8-live-release-2026",
+          "label": "Travel backward to Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking GA Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-8-flash-lite-tts-ga-2026",
+          "label": "Continue to Gemini 3.8 Flash-Lite TTS General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-17"
+    },
+    {
+      "id": "gemini-3-8-flash-lite-tts-ga-2026",
+      "recordType": "event",
+      "title": "Gemini 3.8 Flash-Lite TTS General Availability",
+      "displayDate": "22 September 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google recorded Gemini 3.8 Flash-Lite TTS as generally available in the Gemini API on September 22, 2026, under model identifier gemini-3.8-flash-lite-tts.",
+      "significance": "A dated general-availability milestone for Google's production-oriented Gemini text-to-speech model line.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "Gemini 3.8 Flash-Lite TTS",
+        "Gemini API"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party Gemini API release notes explicitly establish September 22, 2026 as the GA boundary and the model identifier. Google's model documentation independently identifies the model and its TTS role. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-01T07:10:02+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemini API release notes",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Gemini 3.8 Flash-Lite TTS",
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash-lite-tts",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "antigravity-agent-09-2026-release",
+          "label": "Travel backward to Antigravity Agent 09-2026 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "navigation",
+          "targetId": "gemini-3-8-flash-tts-ga-2026",
+          "label": "Open adjacent same-time record: Gemini 3.8 Flash TTS General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-22"
+    },
+    {
+      "id": "gemini-3-8-flash-tts-ga-2026",
+      "recordType": "event",
+      "title": "Gemini 3.8 Flash TTS General Availability",
+      "displayDate": "22 September 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google records Gemini 3.8 Flash TTS as available on September 22, 2026 under model identifier gemini-3.8-flash-tts.",
+      "significance": "A dated availability milestone for a Gemini text-to-speech model.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "Gemini 3.8 Flash TTS",
+        "Gemini API"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party Gemini API deprecations/model-lifecycle documentation identifies September 22, 2026 as the release date for gemini-3.8-flash-tts and lists no announced shutdown date. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-01T22:01:47+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemini deprecations",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "publisher": "Google",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gemini-3-8-flash-lite-tts-ga-2026",
+          "label": "Open adjacent same-time record: Gemini 3.8 Flash-Lite TTS General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "claude-sonnet-5-5-release-2026",
+          "label": "Continue to Claude Sonnet 5.5 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-22"
+    },
+    {
+      "id": "claude-sonnet-5-5-release-2026",
+      "recordType": "event",
+      "title": "Claude Sonnet 5.5 Release",
+      "displayDate": "28 September 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Anthropic introduced Claude Sonnet 5.5 on September 28, 2026, describing it as the second model in the Claude 5.5 family.",
+      "significance": "A dated Anthropic model-release milestone supported directly by Anthropic's release announcement.",
+      "people": [],
+      "organizations": [
+        "Anthropic"
+      ],
+      "technologies": [
+        "Claude Sonnet 5.5"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Anthropic's first-party release page is dated September 28, 2026 and explicitly introduces Claude Sonnet 5.5 as the second model in the Claude 5.5 family. It also states that the model is available on all platforms, including Amazon Web Services, Google Cloud, and Microsoft Azure. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-09-29T16:04:32+08:00"
+      },
+      "sources": [
+        {
+          "title": "Claude Sonnet 5.5",
+          "url": "https://www.anthropic.com/claude-sonnet-5-5",
+          "publisher": "Anthropic",
+          "publishedDate": "2026-09-28",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-8-flash-tts-ga-2026",
+          "label": "Travel backward to Gemini 3.8 Flash TTS General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gpt-6-1-sol-release-2026",
+          "label": "Continue to GPT-6.1 Sol Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-28"
+    },
+    {
+      "id": "gpt-6-1-sol-release-2026",
+      "recordType": "event",
+      "title": "GPT-6.1 Sol Release",
+      "displayDate": "29 September 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI's Deployment Safety Hub records the introduction of GPT-6.1 Sol on September 29, 2026. OpenAI's API model documentation independently documents the stable model identifier gpt-6.1-sol.",
+      "significance": "A dated release milestone for OpenAI's GPT-6.1 Sol model, with model identity independently corroborated by first-party API documentation.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-6.1 Sol",
+        "OpenAI API"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "OpenAI's first-party Deployment Safety Hub explicitly states that GPT-6.1 Sol was introduced on September 29, 2026. OpenAI's first-party API model catalog independently documents gpt-6.1-sol. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-09-30T16:06:15+08:00"
+      },
+      "sources": [
+        {
+          "title": "Addendum to GPT-6 Astra System Card: GPT-6.1 Sol",
+          "url": "https://deploymentsafety.openai.com/gpt-6-1-sol/respecting-auto-review",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-09-29",
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "GPT-6.1 Sol Model",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+          "publisher": "OpenAI",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "claude-sonnet-5-5-release-2026",
+          "label": "Travel backward to Claude Sonnet 5.5 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-29"
     },
     {
       "id": "now",
@@ -1413,8 +3576,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "plamo-prime-2024",
-          "label": "Travel backward into the currently populated verified record",
+          "targetId": "gpt-6-1-sol-release-2026",
+          "label": "Travel backward into the latest populated verified LINEAiGE record",
           "evidenceState": "contextual",
           "evidenceNote": "Navigation into the currently populated recorded history. This target is not asserted to be the latest AI event overall.",
           "sourceUrls": []
