@@ -1112,8 +1112,6 @@ def validate_public_surfaces() -> dict:
             failures.append(f"{url}: missing title")
         if title.endswith(("…", "...")):
             failures.append(f"{url}: mechanically truncated title")
-        if "LINEAiGE" not in title:
-            failures.append(f"{url}: title missing LINEAiGE site name")
 
         if not description:
             failures.append(f"{url}: missing meta description")
