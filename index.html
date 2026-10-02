@@ -718,6 +718,12 @@ body{
   letter-spacing:.05em;
   color:rgba(213,229,239,.48);
 }
+.now-copy .now-date{
+  font-size:7px;
+  font-weight:600;
+  letter-spacing:.10em;
+  color:rgba(235,245,251,.72);
+}
 
 /* Era labels live as quiet captions in the left rail.
    They never collide with TODAY or LINEAiGE. */
@@ -1146,7 +1152,8 @@ body{
   <div class="time-ruler" id="timeRuler" aria-label="LINEAiGE temporal ruler">
         <div class="now-marker" id="nowMarker">
       <div class="now-copy">
-        <strong id="nowDate">TODAY</strong>
+        <strong>TODAY</strong>
+        <span class="now-date" id="nowDate"></span>
         <span id="nowClock"></span>
       </div>
     </div>
