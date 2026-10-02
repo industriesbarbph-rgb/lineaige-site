@@ -56,7 +56,7 @@ DISTRIBUTION_TITLE = re.compile(
 BLOCK_TITLE = re.compile(
     r"\b(policy|election|lawsuit|funding|partnering|partnership|hiring|program|watermark|"
     r"threat intelligence|wellbeing|responsible scaling|security report|standard|benchmark|"
-    r"measurements|safeguard|verification program)\b",
+    r"measurements|safeguard|verification program|bot|transcrib(?:e|er|ing|ption))\b",
     re.I,
 )
 
@@ -229,9 +229,12 @@ def milestone(title: str, text: str) -> bool:
     # product/model, or identify a model preview. Partner-platform availability,
     # pricing/plan expansion and enterprise distribution are not canonical births.
     strong_title = bool(
-        EXPLICIT_TITLE.search(title)
-        or INTRO_PRODUCT_TITLE.search(title)
-        or (MODEL_TITLE.search(title) and PREVIEW_MODEL_TITLE.search(title))
+        MODEL_TITLE.search(title)
+        and (
+            EXPLICIT_TITLE.search(title)
+            or INTRO_PRODUCT_TITLE.search(title)
+            or PREVIEW_MODEL_TITLE.search(title)
+        )
     )
     if not strong_title:
         return False
