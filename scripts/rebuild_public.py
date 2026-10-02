@@ -308,7 +308,7 @@ def records_index_page(ai, precursors, futures, courses, media):
     }
     return (
         '<!doctype html><html lang="en"><head>'
-        + head_markup(title=title, description=description, canonical=canonical, schema=schema, og_type="article")
+        + head_markup(title=title, description=description, canonical=canonical, schema=schema)
         + '</head><body><main class="wrap">'
         '<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Record Index</nav>'
         '<a class="brand" href="/">LINEAiGE</a>'
@@ -546,7 +546,7 @@ def record_page(record: dict, previous_record, next_record, courses, media, vali
 
     return (
         '<!doctype html><html lang="en"><head>'
-        + head_markup(title=title, description=description, canonical=canonical, schema=schema)
+        + head_markup(title=title, description=description, canonical=canonical, schema=schema, og_type="article")
         + '</head><body><main class="wrap">'
         f'<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/records/">Records</a> / {esc(raw_title)}</nav>'
         '<a class="brand" href="/">LINEAiGE</a>'
