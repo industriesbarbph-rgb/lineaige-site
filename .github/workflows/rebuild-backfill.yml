@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "data/events.json"
+      - "data/future-announcements.json"
       - "scripts/rebuild_public.py"
       - ".github/workflows/rebuild-backfill.yml"
   workflow_dispatch:
