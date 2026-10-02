@@ -46,6 +46,13 @@ INTRO_PRODUCT_TITLE = re.compile(
     r"qwen|deepseek|grok|aya|command|nemotron|lyria|robotics|weathernext|alphagenome)\b",
     re.I,
 )
+PREVIEW_MODEL_TITLE = re.compile(r"\bpreview\b", re.I)
+DISTRIBUTION_TITLE = re.compile(
+    r"\b(on (?:amazon )?bedrock|on (?:microsoft )?foundry|on vertex ai|"
+    r"on gemini enterprise|enterprise agent platform|included with|more plans|"
+    r"available (?:in|on|through) [a-z0-9 -]+(?:cloud|platform|marketplace))\b",
+    re.I,
+)
 BLOCK_TITLE = re.compile(
     r"\b(policy|election|lawsuit|funding|partnering|partnership|hiring|program|watermark|"
     r"threat intelligence|wellbeing|responsible scaling|security report|standard|benchmark|"
@@ -214,18 +221,23 @@ def allowed_url(url: str, source: dict) -> bool:
     return any(p.path.startswith(prefix) for prefix in (source.get("pathPrefixes") or ["/"]))
 
 def milestone(title: str, text: str) -> bool:
-    if BLOCK_TITLE.search(title):
+    if BLOCK_TITLE.search(title) or DISTRIBUTION_TITLE.search(title):
         return False
-    strong_title = (
+
+    # Fail closed on significance. A model name alone is not a lineage event:
+    # the headline must explicitly frame a release/launch/GA, introduce the
+    # product/model, or identify a model preview. Partner-platform availability,
+    # pricing/plan expansion and enterprise distribution are not canonical births.
+    strong_title = bool(
         EXPLICIT_TITLE.search(title)
         or INTRO_PRODUCT_TITLE.search(title)
-        or MODEL_TITLE.search(title)
+        or (MODEL_TITLE.search(title) and PREVIEW_MODEL_TITLE.search(title))
     )
     if not strong_title:
         return False
-    # A model/product name in a headline is not enough. The release/launch/
-    # introduction/availability language must appear near the top of the
-    # first-party page so retrospective mentions cannot promote unrelated posts.
+
+    # The body must independently contain direct launch/release/introduction/
+    # availability wording near the top. This guards against retrospective posts.
     return any(pattern.search(text[:4500]) for pattern in MILESTONE_PATTERNS)
 
 def source_urls(events):
