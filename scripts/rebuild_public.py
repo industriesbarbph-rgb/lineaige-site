@@ -5,8 +5,9 @@ import html
 import json
 import re
 import shutil
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 EVENTS = ROOT / "data" / "events.json"
@@ -36,31 +37,36 @@ def clean_text(value) -> str:
     return re.sub(r"\s+", " ", html.unescape(str(value or ""))).strip()
 
 
-def meta_description(value: str, limit: int = 158) -> str:
+def build_date() -> str:
+    """Publication date in LINEAiGE's operating timezone, not the UTC runner date."""
+    return datetime.now(ZoneInfo("Asia/Manila")).date().isoformat()
+
+
+def meta_description(value: str, soft_limit: int = 170) -> str:
+    """Return natural complete-sentence metadata; never mechanically truncate."""
     text = clean_text(value)
-    if len(text) <= limit:
+    if not text:
+        return ""
+    sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
+    if not sentences:
         return text
-    # Prefer a complete first sentence when it is useful and short enough.
-    sentence = re.match(r"^(.+?[.!?])(?:\s|$)", text)
-    if sentence and 80 <= len(sentence.group(1)) <= limit:
-        return sentence.group(1)
-    cut = text[: limit + 1]
-    if " " in cut:
-        cut = cut.rsplit(" ", 1)[0]
-    return cut.rstrip(" ,;:—-") + "…"
+    result = sentences[0]
+    for sentence in sentences[1:]:
+        candidate = f"{result} {sentence}"
+        if len(candidate) > soft_limit:
+            break
+        result = candidate
+    return result
 
 
-def seo_title(value: str, suffix: str = "LINEAiGE", limit: int = 60) -> str:
+def seo_title(value: str, suffix: str = "LINEAiGE", limit: int | None = None) -> str:
+    """Preserve the complete human title and the LINEAiGE brand; never cut mid-phrase."""
     title = clean_text(value)
-    candidate = f"{title} — {suffix}"
-    if len(candidate) <= limit:
-        return candidate
-    if len(title) <= limit:
+    if not title:
+        return suffix
+    if title.casefold().endswith(suffix.casefold()):
         return title
-    cut = title[: limit]
-    if " " in cut:
-        cut = cut.rsplit(" ", 1)[0]
-    return cut.rstrip(" ,;:—-") + "…"
+    return f"{title} — {suffix}"
 
 
 def time_value(record: dict) -> str:
@@ -294,7 +300,7 @@ def records_index_page(ai, precursors, futures, courses, media):
                 "name": title,
                 "description": description,
                 "isPartOf": {"@id": BASE + "/#website"},
-                "dateModified": date.today().isoformat(),
+                "dateModified": build_date(),
                 "inLanguage": "en",
             },
             breadcrumb_schema([("Home", BASE + "/"), ("Record Index", canonical)]),
@@ -302,7 +308,7 @@ def records_index_page(ai, precursors, futures, courses, media):
     }
     return (
         '<!doctype html><html lang="en"><head>'
-        + head_markup(title=title, description=description, canonical=canonical, schema=schema)
+        + head_markup(title=title, description=description, canonical=canonical, schema=schema, og_type="article")
         + '</head><body><main class="wrap">'
         '<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Record Index</nav>'
         '<a class="brand" href="/">LINEAiGE</a>'
@@ -463,6 +469,7 @@ def record_page(record: dict, previous_record, next_record, courses, media, vali
         raw_title + " — LINEAiGE",
         description,
         [("Home", BASE + "/"), ("Records", BASE + "/records/"), (raw_title, canonical)],
+        page_type="Article",
         about=about,
         citations=citation_urls,
         date_modified=record_lastmod(record),
@@ -608,6 +615,7 @@ def future_page(record: dict, previous_record, next_record, lifecycle_lastmod=No
             "name": raw_title,
             "description": summary,
         },
+        page_type="Article",
         citations=[source_url] if source_url != "#" else [],
         date_modified=max_lastmod(lifecycle_lastmod, record.get("announcedOn"), SEO_TEMPLATE_LASTMOD),
     )
@@ -631,7 +639,7 @@ def future_page(record: dict, previous_record, next_record, lifecycle_lastmod=No
 
     return (
         '<!doctype html><html lang="en"><head>'
-        + head_markup(title=title, description=description, canonical=canonical, schema=schema)
+        + head_markup(title=title, description=description, canonical=canonical, schema=schema, og_type="article")
         + '</head><body><main class="wrap">'
         f'<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/records/">Records</a> / {esc(raw_title)}</nav>'
         '<a class="brand" href="/">LINEAiGE</a><div class="eyebrow">ANNOUNCED FUTURE</div>'
@@ -804,7 +812,7 @@ def ensure_media_pages(media):
 
 
 def homepage_jsonld(ai, precursors, futures, courses, media):
-    today = date.today().isoformat()
+    today = build_date()
     description = (
         "Explore LINEAiGE: verified AI history beginning in 1956, documented prehistory and precursors, "
         "learning resources, and source-backed future announcements."
@@ -955,11 +963,11 @@ def methodology_lastmod() -> str:
         return SEO_TEMPLATE_LASTMOD
     text = METHODOLOGY.read_text(encoding="utf-8")
     match = re.search(r'"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})"', text)
-    return match.group(1) if match else date.today().isoformat()
+    return match.group(1) if match else build_date()
 
 
 def update_sitemap(rows, futures, courses, media, lifecycle_lastmod=None):
-    today = date.today().isoformat()
+    today = build_date()
     entries = [
         (BASE + "/", today),
         *[(f"{BASE}/learn/{r['id']}/", max_lastmod(r.get("verifiedAt"), SEO_TEMPLATE_LASTMOD)) for r in courses],
@@ -982,6 +990,109 @@ def update_sitemap(rows, futures, courses, media, lifecycle_lastmod=None):
     SITEMAP.write_text("\n".join(xml) + "\n", encoding="utf-8")
 
 
+
+
+def sitemap_html_path(url: str) -> Path:
+    if url == BASE + "/":
+        return MAIN
+    relative = url.removeprefix(BASE).strip("/")
+    return ROOT / relative / "index.html"
+
+
+def validate_public_surfaces() -> dict:
+    """Fail closed if the generated public SEO surface regresses."""
+    sitemap_text = SITEMAP.read_text(encoding="utf-8")
+    urls = re.findall(r"<loc>(.*?)</loc>", sitemap_text)
+    if len(urls) != len(set(urls)):
+        raise SystemExit("PUBLIC SEO VALIDATION FAILED: duplicate sitemap URLs")
+
+    titles = {}
+    descriptions = {}
+    failures = []
+
+    for url in urls:
+        path = sitemap_html_path(url)
+        if not path.exists():
+            failures.append(f"{url}: missing HTML file")
+            continue
+
+        source = path.read_text(encoding="utf-8")
+        title_match = re.search(r"<title>(.*?)</title>", source, re.S | re.I)
+        desc_match = re.search(r'<meta name="description" content="([^"]*)"', source, re.I)
+        canonical_match = re.search(r'<link rel="canonical" href="([^"]*)"', source, re.I)
+        robots_match = re.search(r'<meta name="robots" content="([^"]*)"', source, re.I)
+
+        title = clean_text(title_match.group(1)) if title_match else ""
+        description = clean_text(desc_match.group(1)) if desc_match else ""
+        canonical = clean_text(canonical_match.group(1)) if canonical_match else ""
+        robots = clean_text(robots_match.group(1)).casefold() if robots_match else ""
+
+        if not title:
+            failures.append(f"{url}: missing title")
+        if title.endswith(("…", "...")):
+            failures.append(f"{url}: mechanically truncated title")
+        if "LINEAiGE" not in title:
+            failures.append(f"{url}: title missing LINEAiGE site name")
+
+        if not description:
+            failures.append(f"{url}: missing meta description")
+        if description.endswith(("…", "...")):
+            failures.append(f"{url}: mechanically truncated meta description")
+
+        if canonical != url:
+            failures.append(f"{url}: canonical mismatch ({canonical!r})")
+        if "index" not in robots or "noindex" in robots:
+            failures.append(f"{url}: invalid robots directive ({robots!r})")
+        if len(re.findall(r"<h1\b", source, re.I)) != 1:
+            failures.append(f"{url}: expected exactly one H1")
+        if 'property="og:title"' not in source or 'property="og:description"' not in source:
+            failures.append(f"{url}: missing Open Graph metadata")
+        if 'name="twitter:card"' not in source:
+            failures.append(f"{url}: missing Twitter card metadata")
+        if 'application/ld+json' not in source:
+            failures.append(f"{url}: missing JSON-LD")
+        else:
+            for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', source, re.S | re.I):
+                try:
+                    json.loads(html.unescape(block))
+                except json.JSONDecodeError as exc:
+                    failures.append(f"{url}: invalid JSON-LD ({exc})")
+
+        if "/record/" in url:
+            for marker in ("Why it matters", "Evidence & verification", "<h2>Sources</h2>", "Trace the chronology"):
+                if marker not in source:
+                    failures.append(f"{url}: missing record section {marker!r}")
+            if 'property="og:type" content="article"' not in source:
+                failures.append(f"{url}: historical record og:type must be article")
+        if "/future/" in url:
+            if "announced future" not in source.casefold():
+                failures.append(f"{url}: future page does not clearly identify announced-future status")
+            if 'property="og:type" content="article"' not in source:
+                failures.append(f"{url}: future record og:type must be article")
+
+        titles.setdefault(title, []).append(url)
+        descriptions.setdefault(description, []).append(url)
+
+    for title, matching in titles.items():
+        if title and len(matching) > 1:
+            failures.append(f"duplicate title across {len(matching)} pages: {title!r}")
+    for description, matching in descriptions.items():
+        if description and len(matching) > 1:
+            failures.append(f"duplicate meta description across {len(matching)} pages")
+
+    if failures:
+        preview = "\n".join(f" - {item}" for item in failures[:40])
+        suffix = "" if len(failures) <= 40 else f"\n - ... plus {len(failures) - 40} more"
+        raise SystemExit(f"PUBLIC SEO VALIDATION FAILED ({len(failures)} issues):\n{preview}{suffix}")
+
+    return {
+        "urlsValidated": len(urls),
+        "uniqueTitles": len(titles),
+        "uniqueDescriptions": len(descriptions),
+        "mechanicalTruncations": 0,
+    }
+
+
 def main():
     rows = recorded_events(load(EVENTS))
     precursors, ai = split_history(rows)
@@ -1002,10 +1113,12 @@ def main():
     ensure_media_pages(media)
     update_homepage(ai, precursors, futures, courses, media)
     update_sitemap(rows, futures, courses, media, lifecycle_lastmod)
+    seo_validation = validate_public_surfaces()
 
     print(
         json.dumps(
             {
+                "seoValidation": seo_validation,
                 "aiHistory": len(ai),
                 "precursors": len(precursors),
                 "allRecorded": len(rows),
