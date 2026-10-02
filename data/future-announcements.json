@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "cutoff": "2026-09-20",
-  "policy": "Only evidence-backed announcements whose target milestone occurs after the cutoff are admitted. Announcement date may precede the cutoff. These are not treated as completed history until independently confirmed.",
+  "policy": "Only evidence-backed announcements whose target milestone is unresolved are retained here. Lifecycle evaluation uses the actual run date, not the legacy stored cutoff. A target passing its horizon becomes DUE FOR CONFIRMATION, never completed history by date alone. Completion requires verified evidence and a canonical recorded event.",
   "records": [
     {
       "id": "stargate-norway-100k-gpus-2026",
@@ -17,7 +17,8 @@
       "summary": "Stargate Norway is planned to deliver 230MW of capacity and targets delivery of 100,000 NVIDIA GPUs by the end of 2026, with an ambition to expand further.",
       "source": "https://openai.com/index/introducing-stargate-norway/",
       "sourceLabel": "OPEN PRIMARY SOURCE",
-      "evidenceQuality": "PRIMARY"
+      "evidenceQuality": "PRIMARY",
+      "lifecycleState": "scheduled"
     },
     {
       "id": "eurohpc-aigf-selection-2027",
@@ -33,7 +34,8 @@
       "summary": "EuroHPC's 2026 call states that selected AI Gigafactory projects are expected to be chosen in early 2027. The programme can establish up to seven large AI compute facilities, with operations expected within 18 months of selection.",
       "source": "https://www.eurohpc-ju.europa.eu/eurohpc-joint-undertaking-launches-ai-gigafactories-call-2026-07-30_en",
       "sourceLabel": "OPEN PRIMARY SOURCE",
-      "evidenceQuality": "PRIMARY"
+      "evidenceQuality": "PRIMARY",
+      "lifecycleState": "scheduled"
     },
     {
       "id": "geniac-prize-final-2027",
@@ -49,7 +51,8 @@
       "summary": "Japan's METI and NEDO scheduled the GENIAC-PRIZE 2026 final contest and awards ceremony for March 2027, with prize-money awarding scheduled for May 2027. The programme targets AI social implementation and human-resource development.",
       "source": "https://www.meti.go.jp/english/press/2026/0529_002.html",
       "sourceLabel": "OPEN PRIMARY SOURCE",
-      "evidenceQuality": "PRIMARY"
+      "evidenceQuality": "PRIMARY",
+      "lifecycleState": "scheduled"
     },
     {
       "id": "anthropic-nextgen-tpu-2027",
@@ -65,7 +68,8 @@
       "summary": "Anthropic announced an agreement with Google and Broadcom for multiple gigawatts of next-generation TPU capacity expected to come online starting in 2027 to support frontier Claude models.",
       "source": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
       "sourceLabel": "OPEN PRIMARY SOURCE",
-      "evidenceQuality": "PRIMARY"
+      "evidenceQuality": "PRIMARY",
+      "lifecycleState": "scheduled"
     },
     {
       "id": "google-blackstone-tpu-cloud-2027",
@@ -81,7 +85,8 @@
       "summary": "Blackstone announced a joint venture with Google for a new TPU cloud, with an initial $5 billion equity commitment and an expected 500MW of capacity to come online in 2027. Google will supply TPUs, software and services.",
       "source": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/blackstone-tpu-cloud/",
       "sourceLabel": "OPEN PRIMARY SOURCE",
-      "evidenceQuality": "PRIMARY"
+      "evidenceQuality": "PRIMARY",
+      "lifecycleState": "scheduled"
     },
     {
       "id": "meta-el-paso-ai-datacenter-2028",
@@ -97,7 +102,8 @@
       "summary": "Meta and BlackRock announced a 1GW data-center campus in El Paso intended to support AI models and other workloads. The venture expects to begin bringing the capacity online in 2028.",
       "source": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
       "sourceLabel": "OPEN PRIMARY SOURCE",
-      "evidenceQuality": "PRIMARY"
+      "evidenceQuality": "PRIMARY",
+      "lifecycleState": "scheduled"
     },
     {
       "id": "philippines-ai-infra-400mw-2030",
@@ -114,7 +120,8 @@
       "source": "https://www.pna.gov.ph/articles/1283577",
       "sourceLabel": "OPEN GOVERNMENT NEWS SOURCE",
       "evidenceQuality": "GOVERNMENT NEWS AGENCY",
-      "primaryDocument": "https://ictstatistics.dict.gov.ph/wp-content/uploads/2026/09/PAIIM_2033_Expanded_Full-Masterplan_Final-Version.pdf"
+      "primaryDocument": "https://ictstatistics.dict.gov.ph/wp-content/uploads/2026/09/PAIIM_2033_Expanded_Full-Masterplan_Final-Version.pdf",
+      "lifecycleState": "scheduled"
     },
     {
       "id": "philippines-ai-infra-1-5gw-2033",
@@ -131,7 +138,10 @@
       "source": "https://www.pna.gov.ph/articles/1283577",
       "sourceLabel": "OPEN GOVERNMENT NEWS SOURCE",
       "evidenceQuality": "GOVERNMENT NEWS AGENCY",
-      "primaryDocument": "https://ictstatistics.dict.gov.ph/wp-content/uploads/2026/09/PAIIM_2033_Expanded_Full-Masterplan_Final-Version.pdf"
+      "primaryDocument": "https://ictstatistics.dict.gov.ph/wp-content/uploads/2026/09/PAIIM_2033_Expanded_Full-Masterplan_Final-Version.pdf",
+      "lifecycleState": "scheduled"
     }
-  ]
+  ],
+  "cutoffMode": "runtime-date",
+  "lifecycleUpdatedAt": "2026-10-02T11:56:21Z"
 }
