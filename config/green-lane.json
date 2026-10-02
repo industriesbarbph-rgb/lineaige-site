@@ -13,32 +13,135 @@
   "maxPagesPerSource": 24,
   "sources": [
     {
-      "id": "openai-releases",
+      "id": "openai-news-rss",
       "publisher": "OpenAI",
-      "root": "https://openai.com/research/index/release/",
-      "allowedHosts": ["openai.com"],
-      "pathPrefixes": ["/index/", "/research/"]
+      "root": "https://openai.com/news/rss.xml",
+      "mode": "rss",
+      "allowedHosts": [
+        "openai.com"
+      ],
+      "pathPrefixes": [
+        "/index/",
+        "/news/",
+        "/research/"
+      ]
     },
     {
       "id": "anthropic-news",
       "publisher": "Anthropic",
       "root": "https://www.anthropic.com/news",
-      "allowedHosts": ["www.anthropic.com", "anthropic.com"],
-      "pathPrefixes": ["/news/"]
+      "mode": "html",
+      "allowedHosts": [
+        "www.anthropic.com",
+        "anthropic.com"
+      ],
+      "pathPrefixes": [
+        "/news/",
+        "/claude-"
+      ]
     },
     {
       "id": "google-ai",
       "publisher": "Google",
-      "root": "https://blog.google/technology/ai/",
-      "allowedHosts": ["blog.google"],
-      "pathPrefixes": ["/technology/ai/", "/innovation-and-ai/"]
+      "root": "https://blog.google/innovation-and-ai/",
+      "mode": "html",
+      "allowedHosts": [
+        "blog.google"
+      ],
+      "pathPrefixes": [
+        "/innovation-and-ai/",
+        "/products-and-platforms/products/gemini/"
+      ]
     },
     {
       "id": "deepmind-blog",
       "publisher": "Google DeepMind",
       "root": "https://deepmind.google/discover/blog/",
-      "allowedHosts": ["deepmind.google"],
-      "pathPrefixes": ["/discover/blog/"]
+      "mode": "html",
+      "allowedHosts": [
+        "deepmind.google"
+      ],
+      "pathPrefixes": [
+        "/discover/blog/",
+        "/blog/"
+      ]
+    },
+    {
+      "id": "meta-ai",
+      "publisher": "Meta",
+      "root": "https://ai.meta.com/blog/",
+      "mode": "html",
+      "allowedHosts": [
+        "ai.meta.com",
+        "about.fb.com"
+      ],
+      "pathPrefixes": [
+        "/blog/",
+        "/news/"
+      ]
+    },
+    {
+      "id": "mistral-news",
+      "publisher": "Mistral AI",
+      "root": "https://mistral.ai/news/",
+      "mode": "html",
+      "allowedHosts": [
+        "mistral.ai"
+      ],
+      "pathPrefixes": [
+        "/news/"
+      ]
+    },
+    {
+      "id": "cohere-blog",
+      "publisher": "Cohere",
+      "root": "https://cohere.com/blog",
+      "mode": "html",
+      "allowedHosts": [
+        "cohere.com",
+        "www.cohere.com"
+      ],
+      "pathPrefixes": [
+        "/blog/"
+      ]
+    },
+    {
+      "id": "deepseek-news",
+      "publisher": "DeepSeek",
+      "root": "https://deepseek.com/en/news/",
+      "mode": "html",
+      "allowedHosts": [
+        "deepseek.com",
+        "www.deepseek.com"
+      ],
+      "pathPrefixes": [
+        "/en/news/"
+      ]
+    },
+    {
+      "id": "xai-news",
+      "publisher": "xAI",
+      "root": "https://x.ai/news",
+      "mode": "html",
+      "allowedHosts": [
+        "x.ai",
+        "www.x.ai"
+      ],
+      "pathPrefixes": [
+        "/news/"
+      ]
+    },
+    {
+      "id": "qwen-blog",
+      "publisher": "Qwen",
+      "root": "https://qwenlm.github.io/blog/",
+      "mode": "html",
+      "allowedHosts": [
+        "qwenlm.github.io"
+      ],
+      "pathPrefixes": [
+        "/blog/"
+      ]
     }
   ]
 }
