@@ -151,6 +151,7 @@ def page_schema(
     about=None,
     citations=None,
     main_entity=None,
+    date_modified=None,
 ):
     page = {
         "@type": page_type,
@@ -161,8 +162,9 @@ def page_schema(
         "isPartOf": {"@id": BASE + "/#website"},
         "publisher": {"@id": "https://barbph.com/#organization"},
         "inLanguage": "en",
-        "dateModified": date.today().isoformat(),
     }
+    if date_modified:
+        page["dateModified"] = str(date_modified)[:10]
     if about:
         page["about"] = about
     if citations:
@@ -418,6 +420,22 @@ def contributor_block(record: dict) -> str:
     return f'<section class="card"><h2>Co-author / marginalia</h2><p>{esc(text)}</p></section>'
 
 
+def record_lastmod(record: dict) -> str:
+    verified = (record.get("verification") or {}).get("lastVerified")
+    if verified:
+        return str(verified)[:10]
+    value = record.get("eventDate") or record.get("eventMonth") or record.get("eventYear")
+    if value:
+        raw = str(value)
+        if re.match(r"^\d{4}-\d{2}-\d{2}", raw):
+            return raw[:10]
+        if re.match(r"^\d{4}-\d{2}", raw):
+            return raw[:7] + "-01"
+        if re.match(r"^\d{4}$", raw):
+            return raw + "-01-01"
+    return date.today().isoformat()
+
+
 def record_page(record: dict, previous_record, next_record, courses, media, valid_ids: set[str]) -> str:
     rid = record["id"]
     raw_title = record["title"]
@@ -446,6 +464,7 @@ def record_page(record: dict, previous_record, next_record, courses, media, vali
         [("Home", BASE + "/"), ("Records", BASE + "/records/"), (raw_title, canonical)],
         about=about,
         citations=citation_urls,
+        date_modified=record_lastmod(record),
     )
 
     nav_actions = []
@@ -562,7 +581,7 @@ def ensure_record_pages(rows, courses, media):
         )
 
 
-def future_page(record: dict, previous_record, next_record) -> str:
+def future_page(record: dict, previous_record, next_record, lifecycle_lastmod=None) -> str:
     rid = record["id"]
     raw_title = record["title"]
     summary = record.get("summary", "")
@@ -589,6 +608,7 @@ def future_page(record: dict, previous_record, next_record) -> str:
             "description": summary,
         },
         citations=[source_url] if source_url != "#" else [],
+        date_modified=lifecycle_lastmod or record.get("announcedOn"),
     )
 
     nav_actions = []
@@ -636,7 +656,7 @@ def future_page(record: dict, previous_record, next_record) -> str:
     )
 
 
-def ensure_future_pages(futures):
+def ensure_future_pages(futures, lifecycle_lastmod=None):
     root = ROOT / "future"
     root.mkdir(parents=True, exist_ok=True)
     ids = {r["id"] for r in futures}
@@ -651,6 +671,7 @@ def ensure_future_pages(futures):
                 record,
                 futures[i - 1] if i > 0 else None,
                 futures[i + 1] if i + 1 < len(futures) else None,
+                lifecycle_lastmod,
             ),
             encoding="utf-8",
         )
@@ -691,6 +712,7 @@ def course_page(record: dict) -> str:
         description,
         [("Home", BASE + "/"), ("Records", BASE + "/records/"), (record["title"], canonical)],
         main_entity=course_entity,
+        date_modified=record.get("verifiedAt"),
     )
     return (
         '<!doctype html><html lang="en"><head>'
@@ -746,6 +768,7 @@ def media_page(record: dict) -> str:
         description,
         [("Home", BASE + "/"), ("Records", BASE + "/records/"), (record["title"], canonical)],
         main_entity=video,
+        date_modified=record.get("publishedDate"),
     )
     return (
         '<!doctype html><html lang="en"><head>'
@@ -929,16 +952,16 @@ def methodology_lastmod() -> str:
     return match.group(1) if match else date.today().isoformat()
 
 
-def update_sitemap(rows, futures, courses, media):
+def update_sitemap(rows, futures, courses, media, lifecycle_lastmod=None):
     today = date.today().isoformat()
     entries = [
         (BASE + "/", today),
-        *[(f"{BASE}/learn/{r['id']}/", today) for r in courses],
-        *[(f"{BASE}/context/{r['id']}/", today) for r in media],
+        *[(f"{BASE}/learn/{r['id']}/", str(r.get("verifiedAt") or today)[:10]) for r in courses],
+        *[(f"{BASE}/context/{r['id']}/", str(r.get("publishedDate") or today)[:10]) for r in media],
         (BASE + "/records/", today),
         (BASE + "/methodology/", methodology_lastmod()),
-        *[(f"{BASE}/record/{r['id']}/", today) for r in rows],
-        *[(f"{BASE}/future/{r['id']}/", today) for r in futures],
+        *[(f"{BASE}/record/{r['id']}/", record_lastmod(r)) for r in rows],
+        *[(f"{BASE}/future/{r['id']}/", str(lifecycle_lastmod or r.get("announcedOn") or today)[:10]) for r in futures],
     ]
     seen = set()
     unique_entries = []
@@ -956,7 +979,9 @@ def update_sitemap(rows, futures, courses, media):
 def main():
     rows = recorded_events(load(EVENTS))
     precursors, ai = split_history(rows)
-    futures = future_events(load(FUTURE))
+    future_payload = load(FUTURE)
+    futures = future_events(future_payload)
+    lifecycle_lastmod = future_payload.get("lifecycleUpdatedAt")
     courses = load(COURSES).get("items", [])
     media = load(MEDIA).get("items", [])
 
@@ -966,11 +991,11 @@ def main():
     INDEX.parent.mkdir(parents=True, exist_ok=True)
     INDEX.write_text(records_index_page(ai, precursors, futures, courses, media), encoding="utf-8")
     ensure_record_pages(rows, courses, media)
-    ensure_future_pages(futures)
+    ensure_future_pages(futures, lifecycle_lastmod)
     ensure_course_pages(courses)
     ensure_media_pages(media)
     update_homepage(ai, precursors, futures, courses, media)
-    update_sitemap(rows, futures, courses, media)
+    update_sitemap(rows, futures, courses, media, lifecycle_lastmod)
 
     print(
         json.dumps(
