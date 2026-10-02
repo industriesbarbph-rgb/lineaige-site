@@ -354,6 +354,7 @@ def main() -> None:
             record = {
                 "id": rid,
                 "recordType": "event",
+                "historicalLayer": "ai-history",
                 "title": title,
                 "displayDate": human_date(day),
                 "eventDate": day,
