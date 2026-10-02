@@ -1,0 +1,50 @@
+name: LINEAiGE Public Future Lifecycle
+
+on:
+  schedule:
+    - cron: "47 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/future_lifecycle.py"
+      - "data/future-announcements.json"
+      - ".github/workflows/future-lifecycle.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lineaige-public-data-write
+  cancel-in-progress: false
+
+jobs:
+  lifecycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Evaluate public FUTURE state
+        run: python3 scripts/future_lifecycle.py
+
+      - name: Validate lifecycle JSON
+        run: |
+          python3 -m json.tool data/future-announcements.json >/dev/null
+          python3 -m json.tool data/future-resolution-ledger.json >/dev/null
+
+      - name: Commit only real lifecycle transitions
+        shell: bash
+        run: |
+          if git diff --quiet -- data/future-announcements.json data/future-resolution-ledger.json; then
+            echo "No FUTURE transition. No commit."
+            exit 0
+          fi
+          git config user.name "LINEAiGE FUTURE"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/future-announcements.json data/future-resolution-ledger.json
+          git commit -m "FUTURE: update public lifecycle state"
+          git pull --rebase origin main
+          git push
