@@ -582,6 +582,77 @@ body{
     0 0 12px rgba(190,230,255,.24);
 }
 
+/* 1956 is the historical boundary where AI becomes a recognized research field. */
+.year-tick.birth-year::before{
+  width:32px;
+  background:rgba(255,255,255,.96);
+  box-shadow:0 0 7px rgba(255,255,255,.42),0 0 16px rgba(180,226,255,.30);
+}
+.year-tick.birth-year::after{
+  width:6px;height:6px;right:-2px;
+  background:#fff;
+  box-shadow:0 0 9px rgba(210,240,255,.42);
+}
+.year-tick.birth-year .year-label{
+  display:block;
+  color:rgba(244,250,255,.88);
+  font-size:7px;
+  font-weight:700;
+}
+.prehistory-marker{
+  position:absolute;
+  left:0;
+  bottom:7px;
+  transform:translateX(-100%);
+  width:112px;
+  min-height:28px;
+  padding:4px 30px 4px 0;
+  border:0;
+  background:transparent;
+  color:inherit;
+  text-align:right;
+  cursor:pointer;
+  pointer-events:auto;
+  appearance:none;
+  -webkit-appearance:none;
+}
+.prehistory-marker::before{
+  content:"";
+  position:absolute;
+  right:0;top:50%;
+  width:20px;height:1px;
+  background:rgba(205,224,236,.42);
+}
+.prehistory-marker::after{
+  content:"";
+  position:absolute;
+  right:-2px;top:50%;
+  width:4px;height:4px;
+  transform:translateY(-50%);
+  border-radius:50%;
+  background:rgba(224,238,247,.70);
+}
+.prehistory-marker span{
+  display:block;
+  font-size:6.8px;
+  font-weight:700;
+  letter-spacing:.12em;
+  color:rgba(226,239,247,.70);
+}
+.prehistory-marker small{
+  display:block;
+  margin-top:2px;
+  font-size:5.2px;
+  letter-spacing:.06em;
+  color:rgba(187,207,220,.38);
+}
+.prehistory-marker:hover::before,
+.prehistory-marker:focus-visible::before{
+  width:27px;
+  background:rgba(245,251,255,.88);
+}
+.prehistory-marker:focus-visible{outline:none}
+
 /* TODAY — compact, clean, intentionally stronger than the ruler. */
 .now-marker{
   position:absolute;
@@ -1071,9 +1142,13 @@ body{
         <span id="nowClock"></span>
       </div>
     </div>
+    <button class="prehistory-marker" id="prehistoryMarker" type="button" aria-label="Open verified prehistory, foundations and precursors">
+      <span>PREHISTORY</span>
+      <small>FOUNDATIONS / PRECURSORS</small>
+    </button>
     <div class="era-label" id="eraFoundations">
-      <b>FOUNDATIONS → SYMBOLIC AI</b>
-      <span>1943–1989 · AI FIELD FROM 1956</span>
+      <b>ARTIFICIAL INTELLIGENCE</b>
+      <span>1956–1989 · FIELD BEGINS 1956</span>
     </div>
     <div class="era-label" id="eraML">
       <b>MACHINE LEARNING EXPANSION</b>
@@ -1159,6 +1234,10 @@ let FUTURE_DATA=FUTURE_FALLBACK.slice();
 
 let DATA=[{"id":"turing-1950","date":"1950","title":"Computing Machinery and Intelligence","type":"CANONICAL","status":"VERIFIED RECORD","summary":"Alan Turing published Computing Machinery and Intelligence in Mind, framing machine intelligence through the imitation game and asking whether machines can think.","source":"https://academic.oup.com/mind/article/LIX/236/433/986238","sourceLabel":"OPEN SOURCE"},{"id":"dartmouth-1955","date":"1955","title":"Dartmouth Artificial Intelligence Proposal","type":"CANONICAL","status":"VERIFIED RECORD","summary":"John McCarthy, Marvin Minsky, Nathaniel Rochester and Claude Shannon authored the proposal for the Dartmouth Summer Research Project on Artificial Intelligence, dated August 31, 1955.","source":"https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1904/0","sourceLabel":"OPEN SOURCE"},{"id":"rosenblatt-1958","date":"1958-11","title":"The Perceptron","type":"CANONICAL","status":"VERIFIED RECORD","summary":"Frank Rosenblatt published The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain in Psychological Review. LINEAiGE preserves month-level precision here; no unsupported exact publication day is asserted.","source":"https://doi.org/10.1037/h0042519","sourceLabel":"OPEN SOURCE"},{"id":"transformer-2017","date":"2017","title":"Attention Is All You Need","type":"CANONICAL","status":"VERIFIED RECORD","summary":"Vaswani and colleagues introduced the Transformer architecture in Attention Is All You Need, proposing a sequence-transduction architecture based on attention mechanisms without recurrence or convolutions.","source":"https://arxiv.org/abs/1706.03762","sourceLabel":"OPEN SOURCE"},{"id":"chatgpt-2022","date":"2022","title":"Introducing ChatGPT","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"OpenAI publicly introduced ChatGPT on November 30, 2022 as a conversational model released for research preview and user feedback.","source":"https://openai.com/index/chatgpt/","sourceLabel":"OPEN SOURCE"},{"id":"claude-2023","date":"2023","title":"Introducing Claude","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Anthropic announced Claude more broadly on March 14, 2023 after a closed alpha with partners, describing it as a next-generation AI assistant available through a chat interface and API.","source":"https://www.anthropic.com/news/introducing-claude","sourceLabel":"OPEN SOURCE"},{"id":"falcon-2023","date":"2023","title":"Falcon LLM Launch","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Abu Dhabi's Technology Innovation Institute announced the launch of Falcon LLM on March 15, 2023, describing a 40-billion-parameter foundational large language model developed by its AI and Digital Science Research Center team.","source":"https://www.tii.ae/news/abu-dhabi-based-technology-innovation-institute-introduces-falcon-llm-foundational-large","sourceLabel":"OPEN SOURCE"},{"id":"llama2-2023","date":"2023","title":"Llama 2 Availability","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Meta announced the availability of Llama 2 on July 18, 2023 as the next generation of its large language model family, making model weights and starting code available for research and commercial use under its license.","source":"https://about.fb.com/news/2023/07/llama-2/","sourceLabel":"OPEN SOURCE"},{"id":"hyperclovax-2023","date":"2023","title":"HyperCLOVA X Introduction","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"NAVER introduced HyperCLOVA X at its DAN 23 conference on August 24, 2023, alongside CLOVA X and the generative AI search service CUE: built on the model.","source":"https://www.navercorp.com/media/pressReleasesDetail?seq=31266","sourceLabel":"OPEN SOURCE"},{"id":"mistral7b-2023","date":"2023","title":"Mistral 7B Release","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Mistral AI released Mistral 7B on September 27, 2023, describing it as a 7.3-billion-parameter language model released under the Apache 2.0 license.","source":"https://mistral.ai/fr/news/announcing-mistral-7b/","sourceLabel":"OPEN SOURCE"},{"id":"gemini1-2023","date":"2023","title":"Introducing Gemini 1.0","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Google and Google DeepMind introduced Gemini on December 6, 2023, with Gemini 1.0 optimized in Ultra, Pro and Nano sizes and designed as a multimodal model family.","source":"https://blog.google/innovation-and-ai/technology/ai/google-gemini-ai/","sourceLabel":"OPEN SOURCE"},{"id":"typhoon-2024","date":"2024","title":"Typhoon Thai LLM Introduction","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"SCB 10X announced Typhoon on January 29, 2024 as a large language model optimized for Thai, including an open-source Typhoon-7B pretrained model and an instruction-tuned model offered through an API service.","source":"https://www.scbx.com/en/news/scb-10x-unveils-large-language-model-typhoon/","sourceLabel":"OPEN SOURCE"},{"id":"qwen2-2024","date":"2024","title":"Qwen2 Release","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"The Qwen Team announced Qwen2 on June 7, 2024, releasing pretrained and instruction-tuned models in five sizes and making the models available through Hugging Face and ModelScope.","source":"https://qwenlm.github.io/blog/qwen2/","sourceLabel":"OPEN SOURCE"},{"id":"sarvam2b-2024","date":"2024","title":"Sarvam 2B Launch","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Sarvam AI introduced Sarvam 2B on August 13, 2024 as an open-source 2-billion-parameter small Indic language model within the launch of its full-stack generative AI platform for India.","source":"https://www.sarvam.ai/blogs/sarvam-launch","sourceLabel":"OPEN SOURCE"},{"id":"inkubalm-2024","date":"2024","title":"InkubaLM Paper Introduction","type":"CANONICAL","status":"VERIFIED RECORD","summary":"The InkubaLM paper was submitted to arXiv on August 30, 2024 and explicitly introduced InkubaLM, predating the later October 25, 2024 Lelapa AI blog post.","source":"https://arxiv.org/abs/2408.17024","sourceLabel":"OPEN SOURCE"},{"id":"plamo-prime-2024","date":"2024","title":"PLaMo Prime Launch","type":"CANONICAL","status":"VERIFIED SYSTEM BIRTH","summary":"Preferred Networks announced the launch of PLaMo Prime on December 2, 2024 as the flagship model in its PLaMo large-language-model line, commercially available through PLaMo API and accessible through PLaMo Chat during the initial trial period.","source":"https://www.preferred.jp/en/news/459","sourceLabel":"OPEN SOURCE"},{"id":"now","date":"TODAY","title":"The living edge of LINEAiGE","type":"LIVING EDGE","status":"PRESENT IS FORMING","summary":"This is the living boundary between recorded history and the present. TODAY is navigation, not historical evidence.","source":null,"sourceLabel":null},{"id":"mit-6034-ai-2010","date":null,"title":"6.034 Artificial Intelligence","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"MIT OpenCourseWare · Massachusetts Institute of Technology · Undergraduate · free open courseware. Topics include artificial intelligence, knowledge representation, problem solving, and learning.","source":"https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/","sourceLabel":"OPEN COURSE"},{"id":"mit-ai-101-2021","date":null,"title":"AI 101","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"MIT OpenCourseWare · Massachusetts Institute of Technology · Beginner · free open courseware. Topics include artificial intelligence, machine vision, data wrangling, and reinforcement learning.","source":"https://ocw.mit.edu/courses/res-6-013-ai-101-fall-2021/","sourceLabel":"OPEN COURSE"},{"id":"harvard-cs50-ai","date":null,"title":"CS50's Introduction to Artificial Intelligence with Python","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"CS50 OpenCourseWare · Harvard University · Introductory · free open courseware. Topics include artificial intelligence, Python, machine learning, search, and neural networks.","source":"https://cs50.harvard.edu/ai/","sourceLabel":"OPEN COURSE"},{"id":"microsoft-ai-fluency","date":null,"title":"AI Fluency","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"Microsoft Learn · Beginner · free learning path. Topics include AI foundations, AI literacy, and applied AI.","source":"https://learn.microsoft.com/en-us/training/paths/ai-fluency/","sourceLabel":"OPEN RESOURCE"},{"id":"aws-learn-ai","date":null,"title":"Learn AI","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"AWS Training and Certification · all levels · mixed access. Topics include artificial intelligence, generative AI, machine learning, and AI engineering.","source":"https://aws.amazon.com/ai/learn/","sourceLabel":"OPEN RESOURCE"},{"id":"stanford-cs25-transformers-united","date":null,"title":"CS25: Transformers United","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"Stanford CS25 · Stanford University · Seminar · free public audit. Topics include transformers, large language models, multimodal AI, robotics, and generative AI.","source":"https://web.stanford.edu/class/cs25/","sourceLabel":"OPEN COURSE"},{"id":"helsinki-elements-of-ai","date":null,"title":"Elements of AI: Introduction to AI","type":"LEARNING","status":"VERIFIED RESOURCE","summary":"Elements of AI · University of Helsinki · Beginner · free open courseware. Topics include artificial intelligence, machine learning, neural networks, AI concepts, and AI limitations.","source":"https://www.elementsofai.com/","sourceLabel":"OPEN COURSE"},{"id":"youtube-transformers-google-cloud-2021","date":"2021","title":"Transformers, explained: Understand the model behind GPT, BERT, and T5","type":"CONTEXT MEDIA","status":"CONTEXT ONLY","summary":"Google Cloud Tech contextual explainer attached to the verified 2017 Transformer record. It is not the primary historical evidence for the original paper.","source":"https://www.youtube.com/watch?v=SZorAJ4I-sA","sourceLabel":"WATCH CONTEXT"}];
 
+let PRECURSOR_DATA=DATA
+  .filter(r=>r.type==='CANONICAL' && Number(String(r.date||'').slice(0,4))<1956)
+  .map(r=>({...r,historicalLayer:'precursor'}));
+DATA=DATA.filter(r=>r.type!=='CANONICAL' || Number(String(r.date||'').slice(0,4))>=1956);
 const STATIC_SUPPLEMENTAL=DATA.filter(r=>r.type!=='CANONICAL');
 const CANONICAL_DATA_URL='data/events.json';
 
@@ -1176,6 +1255,7 @@ const brandMarker=document.getElementById('brandMarker');
 const drawerClose=document.getElementById('drawerClose');
 
 const timeRuler=document.getElementById('timeRuler');
+const prehistoryMarker=document.getElementById('prehistoryMarker');
 const nowDate=document.getElementById('nowDate');
 const nowClock=document.getElementById('nowClock');
 
@@ -1216,8 +1296,8 @@ function nowYPx(){
 
 function historicalY(year,currentYear){
   const nowY=nowYPx();
-  const bottomY=window.innerHeight-2;
-  const earliest=1943;
+  const bottomY=window.innerHeight-44;
+  const earliest=1956;
   const clamped=Math.max(earliest,Math.min(currentYear,year));
   const ratio=(currentYear-clamped)/Math.max(1,currentYear-earliest);
   return nowY + ratio*(bottomY-nowY);
@@ -1242,7 +1322,7 @@ function buildTimeRuler(){
   const brandQuietStart=nowYPx() + window.innerHeight*0.015;
   const brandQuietEnd=nowYPx() + (window.innerWidth <= 700 ? window.innerHeight*0.34 : window.innerHeight*0.32);
 
-  for(let year=1943; year<=currentYear; year++){
+  for(let year=1956; year<=currentYear; year++){
     const y=historicalY(year,currentYear);
     if(y>brandQuietStart && y<brandQuietEnd) continue;
 
@@ -1253,9 +1333,11 @@ function buildTimeRuler(){
     const isFive=!isDecade && year%5===0;
     const yearRecords=eventYears.get(year)||[];
 
+    const isBirthYear=year===1956;
     tick.className='year-tick'
       +(isDecade?' decade':isFive?' five':'')
-      +(yearRecords.length?' event-year':'');
+      +(yearRecords.length?' event-year':'')
+      +(isBirthYear?' birth-year':'');
     tick.style.top=y+'px';
 
     tick.setAttribute('aria-label',
@@ -1264,7 +1346,7 @@ function buildTimeRuler(){
         : `${year}. No admitted canonical LINEAiGE record yet.`
     );
 
-    if(isDecade){
+    if(isDecade || isBirthYear){
       const label=document.createElement('span');
       label.className='year-label';
       label.textContent=String(year);
@@ -1273,9 +1355,11 @@ function buildTimeRuler(){
 
     const tip=document.createElement('span');
     tip.className='tick-tip';
-    tip.textContent=yearRecords.length
-      ? `${year} · ${yearRecords.length} ${yearRecords.length===1?'record':'records'}`
-      : `${year} · no canonical milestone`;
+    tip.textContent=isBirthYear
+      ? '1956 · AI FIELD BEGINS'
+      : (yearRecords.length
+          ? `${year} · ${yearRecords.length} ${yearRecords.length===1?'record':'records'}`
+          : `${year} · no canonical milestone`);
     tick.appendChild(tip);
 
     const openYear=()=>{
@@ -1284,9 +1368,11 @@ function buildTimeRuler(){
       tick.classList.add('is-selected');
       setTimeout(()=>tick.classList.remove('is-selected'),700);
 
-      drawerMeta.textContent=yearRecords.length
-        ? `${year} · CANONICAL YEAR`
-        : `${year} · NO CANONICAL MILESTONE`;
+      drawerMeta.textContent=isBirthYear
+        ? '1956 · BIRTH OF ARTIFICIAL INTELLIGENCE AS A FIELD'
+        : (yearRecords.length
+            ? `${year} · AI HISTORY`
+            : `${year} · NO CANONICAL MILESTONE`);
       drawerTitle.textContent=String(year);
 
       if(yearRecords.length){
@@ -1324,7 +1410,7 @@ function buildTimeRuler(){
   const ml=document.getElementById('eraML');
   const gen=document.getElementById('eraGenAI');
 
-  if(foundations) foundations.style.top=eraMid(1943,Math.min(1989,currentYear))+'px';
+  if(foundations) foundations.style.top=eraMid(1956,Math.min(1989,currentYear))+'px';
   if(ml && currentYear>=1990) ml.style.top=eraMid(1990,Math.min(2016,currentYear))+'px';
   if(gen && currentYear>=2017){
     const y=eraMid(2017,currentYear);
@@ -1381,6 +1467,49 @@ function addFutureDrawerItems(records){
     futureSourceList.appendChild(item);
   });
 }
+
+function addPrehistoryDrawerItems(records){
+  clearFutureDrawer();
+  if(!futureSourceList) return;
+  records.forEach(r=>{
+    const item=document.createElement('div');
+    item.className='future-source-item';
+    const title=document.createElement('strong');
+    title.textContent=`${r.date||''} · ${r.title||'Verified precursor'}`;
+    const meta=document.createElement('span');
+    meta.textContent=r.summary||'Verified precursor record.';
+    item.append(title,meta);
+    const link=document.createElement('a');
+    link.href=`/record/${r.id}/`;
+    link.textContent='OPEN PRECURSOR RECORD';
+    item.appendChild(link);
+    if(r.source){
+      const source=document.createElement('a');
+      source.href=r.source;
+      source.target='_blank';
+      source.rel='noopener noreferrer';
+      source.textContent='OPEN SOURCE';
+      item.appendChild(source);
+    }
+    futureSourceList.appendChild(item);
+  });
+}
+
+function openPrehistory(){
+  const records=PRECURSOR_DATA.slice().sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
+  drawerMeta.textContent='BEFORE 1956 · PREHISTORY / FOUNDATIONS / PRECURSORS';
+  drawerTitle.textContent='What led to artificial intelligence';
+  drawerText.textContent='These verified records predate the recognized beginning of artificial intelligence as a research field in 1956. They are preserved as historical context and are not counted as AI-field history.';
+  drawerPath.textContent=`${records.length} verified precursor ${records.length===1?'record':'records'} · AI history begins in 1956`;
+  setDrawerPermalink(null);
+  drawerSource.removeAttribute('href');
+  drawerSource.textContent='';
+  drawerSource.style.display='none';
+  addPrehistoryDrawerItems(records);
+  drawer.classList.add('open');
+}
+
+if(prehistoryMarker) prehistoryMarker.addEventListener('click',openPrehistory);
 
 let futureYears=[];
 let futureGroups=new Map();
@@ -1568,14 +1697,17 @@ function adaptCanonicalEvent(r){
     type:'CANONICAL',
     status:r.status || 'VERIFIED RECORD',
     summary:r.summary || '',
+    historicalLayer:r.historicalLayer || (Number(String(dateValue).slice(0,4))<1956 ? 'precursor' : 'ai-history'),
     source:source ? source.url : null,
     sourceLabel:source ? 'OPEN SOURCE' : null
   };
 }
 
 function rebuildPublicQueue(canonicalRecords){
+  const adapted=canonicalRecords.map(adaptCanonicalEvent);
+  PRECURSOR_DATA=adapted.filter(r=>r.historicalLayer==='precursor');
   DATA=[
-    ...canonicalRecords.map(adaptCanonicalEvent),
+    ...adapted.filter(r=>r.historicalLayer==='ai-history'),
     ...STATIC_SUPPLEMENTAL
   ];
   QUEUE=DATA.slice().sort((a,b)=>hash(a.id)-hash(b.id));
