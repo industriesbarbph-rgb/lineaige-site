@@ -5,6 +5,8 @@ import hashlib
 import html
 import json
 import re
+import subprocess
+import xml.etree.ElementTree as ET
 from datetime import date, datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -29,15 +31,25 @@ MILESTONE_PATTERNS = [
     re.compile(r"\blaunch(?:es|ed|ing)? today\b", re.I),
     re.compile(r"\breleas(?:e|es|ed|ing) today\b", re.I),
 ]
-TITLE_SIGNALS = re.compile(
-    r"(^introducing\b|\brelease\b|\breleased\b|\blaunch\b|\bavailability\b|"
-    r"\bnow available\b|\bgpt[-‑\s]?\d|\bclaude\b|\bgemini\b|\bllama\b|"
-    r"\bmistral\b|\bqwen\b|\bdeepseek\b|\blyria\b)",
+MODEL_TITLE = re.compile(
+    r"\b(gpt[-‑\s]?\d|claude(?:\s+[a-z]+)?\s*\d|gemini(?:\s+[a-z0-9.]+)?|"
+    r"gemma(?:\s*\d)?|llama(?:\s*\d)?|mistral|codestral|ministral|devstral|magistral|"
+    r"qwen|deepseek|grok|aya|command|nemotron|lyria|alphagenome|weathernext|robotics)\b",
+    re.I,
+)
+EXPLICIT_TITLE = re.compile(
+    r"\b(release|released|launch|launched|general availability|now available)\b",
+    re.I,
+)
+INTRO_PRODUCT_TITLE = re.compile(
+    r"^introducing\b.*\b(model|agent|api|gpt|claude|gemini|gemma|llama|mistral|"
+    r"qwen|deepseek|grok|aya|command|nemotron|lyria|robotics|weathernext|alphagenome)\b",
     re.I,
 )
 BLOCK_TITLE = re.compile(
-    r"\b(policy|election|lawsuit|funding|partnering|partnership|hiring|"
-    r"threat intelligence|wellbeing|responsible scaling|security report)\b",
+    r"\b(policy|election|lawsuit|funding|partnering|partnership|hiring|program|watermark|"
+    r"threat intelligence|wellbeing|responsible scaling|security report|standard|benchmark|"
+    r"measurements|safeguard|verification program)\b",
     re.I,
 )
 
@@ -60,12 +72,23 @@ def fetch(url: str, limit: int = 1800000):
         url,
         headers={
             "User-Agent": UA,
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.5",
+            "Accept": "text/html,application/xhtml+xml,application/xml,application/rss+xml;q=0.9,*/*;q=0.5",
             "Accept-Language": "en-US,en;q=0.8",
         },
     )
-    with urlopen(req, timeout=20) as response:
-        return response.geturl(), response.read(limit)
+    try:
+        with urlopen(req, timeout=20) as response:
+            return response.geturl(), response.read(limit)
+    except Exception as first:
+        try:
+            cp = subprocess.run(
+                ["curl", "--http2", "--fail", "--location", "--silent", "--show-error",
+                 "--max-time", "20", "-A", UA, url],
+                check=True, capture_output=True, timeout=24,
+            )
+            return url, cp.stdout[:limit]
+        except Exception:
+            raise first
 
 class PageParser(HTMLParser):
     def __init__(self):
@@ -250,17 +273,37 @@ def main() -> None:
             continue
 
         candidates = []
-        for href, label in root.links:
+        if source.get("mode") == "rss":
             try:
-                url = canon(urljoin(final_root, href))
-            except Exception:
+                xml_root = ET.fromstring(body)
+                for item in xml_root.findall(".//item")[:100]:
+                    href = (item.findtext("link") or "").strip()
+                    label = (item.findtext("title") or "").strip()
+                    if not href:
+                        continue
+                    try:
+                        url = canon(href)
+                    except Exception:
+                        continue
+                    if url in checked or url in known_urls or not allowed_url(url, source):
+                        continue
+                    checked.add(url)
+                    candidates.append((url, label))
+            except Exception as exc:
+                print(f"GREEN YELLOW: {source['id']} feed parse failed: {type(exc).__name__}: {exc}")
                 continue
-            if url == canon(final_root) or url in checked or url in known_urls:
-                continue
-            if not allowed_url(url, source):
-                continue
-            checked.add(url)
-            candidates.append((url, label))
+        else:
+            for href, label in root.links:
+                try:
+                    url = canon(urljoin(final_root, href))
+                except Exception:
+                    continue
+                if url == canon(final_root) or url in checked or url in known_urls:
+                    continue
+                if not allowed_url(url, source):
+                    continue
+                checked.add(url)
+                candidates.append((url, label))
 
         for url, label in candidates[:max_pages]:
             if len(additions) >= max_new:
