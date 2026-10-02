@@ -478,7 +478,7 @@ body{
 /* HISTORY ZONE BELOW TODAY:
    every dash is still a real clickable year,
    but the visual system now makes the lower historical field more purposeful:
-   faint years = research gaps,
+   faint years = years without an admitted canonical milestone,
    decade anchors = orientation,
    brighter long dashes = admitted-record years. */
 .year-tick{
@@ -1275,7 +1275,7 @@ function buildTimeRuler(){
     tip.className='tick-tip';
     tip.textContent=yearRecords.length
       ? `${year} · ${yearRecords.length} ${yearRecords.length===1?'record':'records'}`
-      : `${year} · research gap`;
+      : `${year} · no canonical milestone`;
     tick.appendChild(tip);
 
     const openYear=()=>{
@@ -1286,7 +1286,7 @@ function buildTimeRuler(){
 
       drawerMeta.textContent=yearRecords.length
         ? `${year} · CANONICAL YEAR`
-        : `${year} · RESEARCH GAP`;
+        : `${year} · NO CANONICAL MILESTONE`;
       drawerTitle.textContent=String(year);
 
       if(yearRecords.length){
@@ -1305,7 +1305,7 @@ function buildTimeRuler(){
         }
       }else{
         setDrawerPermalink(null);
-        drawerText.textContent='No canonical LINEAiGE record has been admitted for this year yet. This dash remains visible as a research gap, showing where the historical record is still thin or still under development.';
+        drawerText.textContent='No canonical LINEAiGE milestone is assigned to this year. The year remains on the ruler for chronological continuity; this does not by itself mean the research is incomplete.';
         drawerPath.textContent=`Year: ${year}`;
         drawerSource.removeAttribute('href');
         drawerSource.textContent='';
