@@ -45,7 +45,7 @@ jobs:
           fi
           git config user.name "LINEAiGE PUBLIC"
           git config user.email "actions@users.noreply.github.com"
-          git add records/index.html sitemap.xml record/
+          git add index.html records/index.html sitemap.xml record/ future/
           git commit -m "site: rebuild canonical record surfaces"
           # Reconcile a main-branch update that may land while pages are rebuilt.
           # Any real content conflict remains fail-closed.
