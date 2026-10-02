@@ -1079,6 +1079,318 @@
       "entryOrigin": "lineaige"
     },
     {
+      "id": "deepseek-introducing-deepseek-v3-2024",
+      "recordType": "event",
+      "title": "Introducing DeepSeek-V3",
+      "displayDate": "26 December 2024",
+      "eventDate": "2024-12-26",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "DeepSeek published the first-party milestone “Introducing DeepSeek-V3” on December 26, 2024; the source states an introduction, release, launch, or availability event.",
+      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "people": [],
+      "organizations": [
+        "DeepSeek"
+      ],
+      "technologies": [],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
+        "lastVerified": "2026-10-02T10:44:46Z"
+      },
+      "sources": [
+        {
+          "title": "Introducing DeepSeek-V3",
+          "url": "https://deepseek.com/en/news/deepseek-v3",
+          "publisher": "DeepSeek",
+          "publishedDate": "2024-12-26",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "deepseek-deepseek-v4-preview-entering-the-era-of-affordable-million-to-2026",
+      "recordType": "event",
+      "title": "DeepSeek-V4 Preview: Entering the Era of Affordable Million-Token Context",
+      "displayDate": "24 April 2026",
+      "eventDate": "2026-04-24",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "DeepSeek published the first-party milestone “DeepSeek-V4 Preview: Entering the Era of Affordable Million-Token Context” on April 24, 2026; the source states an introduction, release, launch, or availability event.",
+      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "people": [],
+      "organizations": [
+        "DeepSeek"
+      ],
+      "technologies": [],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
+        "lastVerified": "2026-10-02T10:44:44Z"
+      },
+      "sources": [
+        {
+          "title": "DeepSeek-V4 Preview: Entering the Era of Affordable Million-Token Context",
+          "url": "https://deepseek.com/en/news/v4-preview",
+          "publisher": "DeepSeek",
+          "publishedDate": "2026-04-24",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "xai-grok-4-6-on-amazon-bedrock-2026",
+      "recordType": "event",
+      "title": "Grok 4.6 on Amazon Bedrock",
+      "displayDate": "19 August 2026",
+      "eventDate": "2026-08-19",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI published the first-party milestone “Grok 4.6 on Amazon Bedrock” on August 19, 2026; the source states an introduction, release, launch, or availability event.",
+      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
+        "lastVerified": "2026-10-02T10:44:47Z"
+      },
+      "sources": [
+        {
+          "title": "Grok 4.6 on Amazon Bedrock",
+          "url": "https://x.ai/news/grok-4-6-amazon-bedrock",
+          "publisher": "xAI",
+          "publishedDate": "2026-08-19",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "xai-grok-4-6-on-gemini-enterprise-agent-platform-2026",
+      "recordType": "event",
+      "title": "Grok 4.6 on Gemini Enterprise Agent Platform",
+      "displayDate": "21 August 2026",
+      "eventDate": "2026-08-21",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI published the first-party milestone “Grok 4.6 on Gemini Enterprise Agent Platform” on August 21, 2026; the source states an introduction, release, launch, or availability event.",
+      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
+        "lastVerified": "2026-10-02T10:44:47Z"
+      },
+      "sources": [
+        {
+          "title": "Grok 4.6 on Gemini Enterprise Agent Platform",
+          "url": "https://x.ai/news/grok-4-6-vertex-ai",
+          "publisher": "xAI",
+          "publishedDate": "2026-08-21",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "xai-grok-4-6-on-microsoft-foundry-2026",
+      "recordType": "event",
+      "title": "Grok 4.6 on Microsoft Foundry",
+      "displayDate": "26 August 2026",
+      "eventDate": "2026-08-26",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI published the first-party milestone “Grok 4.6 on Microsoft Foundry” on August 26, 2026; the source states an introduction, release, launch, or availability event.",
+      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
+        "lastVerified": "2026-10-02T10:44:47Z"
+      },
+      "sources": [
+        {
+          "title": "Grok 4.6 on Microsoft Foundry",
+          "url": "https://x.ai/news/grok-4-6-microsoft-foundry",
+          "publisher": "xAI",
+          "publishedDate": "2026-08-26",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "xai-grok-bot-is-now-included-with-more-plans-2026",
+      "recordType": "event",
+      "title": "Grok Bot is now included with more plans",
+      "displayDate": "26 August 2026",
+      "eventDate": "2026-08-26",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI published the first-party milestone “Grok Bot is now included with more plans” on August 26, 2026; the source states an introduction, release, launch, or availability event.",
+      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
+        "lastVerified": "2026-10-02T10:44:47Z"
+      },
+      "sources": [
+        {
+          "title": "Grok Bot is now included with more plans",
+          "url": "https://x.ai/news/grok-bot-more-plans",
+          "publisher": "xAI",
+          "publishedDate": "2026-08-26",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "xai-grok-bot-for-enterprise-2026",
+      "recordType": "event",
+      "title": "Grok Bot for Enterprise",
+      "displayDate": "3 September 2026",
+      "eventDate": "2026-09-03",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI published the first-party milestone “Grok Bot for Enterprise” on September 3, 2026; the source states an introduction, release, launch, or availability event.",
+      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
+        "lastVerified": "2026-10-02T10:44:47Z"
+      },
+      "sources": [
+        {
+          "title": "Grok Bot for Enterprise",
+          "url": "https://x.ai/news/grok-bot-for-enterprise",
+          "publisher": "xAI",
+          "publishedDate": "2026-09-03",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "xai-introducing-grok-voice-transcribe-2-0-2026",
+      "recordType": "event",
+      "title": "Introducing Grok Voice Transcribe 2.0",
+      "displayDate": "18 September 2026",
+      "eventDate": "2026-09-18",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI published the first-party milestone “Introducing Grok Voice Transcribe 2.0” on September 18, 2026; the source states an introduction, release, launch, or availability event.",
+      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
+        "lastVerified": "2026-10-02T10:44:47Z"
+      },
+      "sources": [
+        {
+          "title": "Introducing Grok Voice Transcribe 2.0",
+          "url": "https://x.ai/news/grok-voice-transcribe-2",
+          "publisher": "xAI",
+          "publishedDate": "2026-09-18",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
       "id": "now",
       "recordType": "living_edge",
       "title": "TODAY",
