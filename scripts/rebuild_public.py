@@ -150,6 +150,24 @@ def seo_title(value: str, suffix: str = "LINEAiGE", limit: int | None = 60) -> s
     return rebranded if len(rebranded) <= limit else short
 
 
+def description_looks_incomplete(value: str) -> bool:
+    """Catch metadata endings that are syntactically tidy but semantically cut off."""
+    text = clean_text(value)
+    if not text:
+        return True
+    if re.search(
+        r"\\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\\s+\\d{1,2}[.]$",
+        text,
+        flags=re.I,
+    ):
+        return True
+    if re.search(r"\\b(?:a|an|and|as|at|by|for|from|in|into|of|on|or|the|to|using|with)[.]$", text, flags=re.I):
+        return True
+    if re.search(r"\\b[A-Z][.]$", text):
+        return True
+    return False
+
+
 def time_value(record: dict) -> str:
     return (
         record.get("eventDate")
@@ -529,9 +547,17 @@ def record_page(record: dict, previous_record, next_record, courses, media, vali
     raw_title = record["title"]
     summary = record.get("summary") or ""
     description = meta_description(summary)
+    precursor = record.get("historicalLayer") == "precursor"
+    if len(description) > 160 or len(description) < 55 or description_looks_incomplete(description):
+        subject = compact_phrase(raw_title, 52)
+        year = year_value(record)
+        layer = "precursor" if precursor else "AI-history"
+        description = (
+            f"{subject} is a verified {year} LINEAiGE {layer} record with source evidence, "
+            "chronology and historical context."
+        )
     title = seo_title(raw_title)
     canonical = f"{BASE}/record/{rid}/"
-    precursor = record.get("historicalLayer") == "precursor"
     eyebrow = "PREHISTORY / PRECURSOR" if precursor else "AI HISTORY"
     status_copy = (
         "This verified record predates the 1956 beginning of artificial intelligence as a recognized research field and is preserved as historical prehistory/foundation."
@@ -675,6 +701,13 @@ def future_page(record: dict, previous_record, next_record, lifecycle_lastmod=No
     raw_title = record["title"]
     summary = record.get("summary", "")
     description = meta_description(summary)
+    if len(description) > 160 or len(description) < 55 or description_looks_incomplete(description):
+        subject = compact_phrase(raw_title, 58)
+        target = clean_text(record.get("targetPrecision") or record.get("targetDate") or "a future target")
+        description = (
+            f"{subject} is an announced LINEAiGE future milestone targeting {target}, "
+            "with source provenance and lifecycle status."
+        )
     title = seo_title(raw_title, "LINEAiGE Future")
     status = record.get("status") or "ANNOUNCED"
     source_url = record.get("source") or "#"
@@ -1112,11 +1145,17 @@ def validate_public_surfaces() -> dict:
             failures.append(f"{url}: missing title")
         if title.endswith(("…", "...")):
             failures.append(f"{url}: mechanically truncated title")
+        if len(title) > 60:
+            failures.append(f"{url}: SEO title exceeds 60 characters ({len(title)})")
 
         if not description:
             failures.append(f"{url}: missing meta description")
         if description.endswith(("…", "...")):
             failures.append(f"{url}: mechanically truncated meta description")
+        if len(description) > 160:
+            failures.append(f"{url}: meta description exceeds 160 characters ({len(description)})")
+        if "/record/" in url and (len(description) < 40 or description_looks_incomplete(description)):
+            failures.append(f"{url}: historical meta description is broken or suspiciously short")
 
         if canonical != url:
             failures.append(f"{url}: canonical mismatch ({canonical!r})")
