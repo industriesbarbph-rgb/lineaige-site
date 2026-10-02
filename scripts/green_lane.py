@@ -191,9 +191,19 @@ def allowed_url(url: str, source: dict) -> bool:
     return any(p.path.startswith(prefix) for prefix in (source.get("pathPrefixes") or ["/"]))
 
 def milestone(title: str, text: str) -> bool:
-    if BLOCK_TITLE.search(title) or not TITLE_SIGNALS.search(title):
+    if BLOCK_TITLE.search(title):
         return False
-    return any(pattern.search(text[:18000]) for pattern in MILESTONE_PATTERNS)
+    strong_title = (
+        EXPLICIT_TITLE.search(title)
+        or INTRO_PRODUCT_TITLE.search(title)
+        or MODEL_TITLE.search(title)
+    )
+    if not strong_title:
+        return False
+    # A model/product name in a headline is not enough. The release/launch/
+    # introduction/availability language must appear near the top of the
+    # first-party page so retrospective mentions cannot promote unrelated posts.
+    return any(pattern.search(text[:4500]) for pattern in MILESTONE_PATTERNS)
 
 def source_urls(events):
     urls = set()
