@@ -4,6 +4,7 @@ from __future__ import annotations
 import html
 import json
 import re
+import shutil
 from datetime import date
 from pathlib import Path
 
@@ -82,8 +83,19 @@ def record_page(record: dict) -> str:
     )
 
 def ensure_record_pages(events) -> None:
+    record_root = ROOT / "record"
+    record_root.mkdir(parents=True, exist_ok=True)
+    canonical_ids = {record["id"] for record in events}
+
+    # Canonical data is authoritative. Remove generated record pages that are
+    # no longer represented in data/events.json so rejected/rolled-back GREEN
+    # admissions cannot remain crawlable as orphan history.
+    for child in record_root.iterdir():
+        if child.is_dir() and child.name not in canonical_ids:
+            shutil.rmtree(child)
+
     for record in events:
-        path = ROOT / "record" / record["id"] / "index.html"
+        path = record_root / record["id"] / "index.html"
         if path.exists():
             continue
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -93,14 +105,20 @@ def update_sitemap(events) -> None:
     if not SITEMAP.exists():
         return
     text = SITEMAP.read_text(encoding="utf-8")
-    missing = []
+    # Rebuild the canonical /record/ section from authoritative data instead
+    # of append-only behavior, which could preserve rolled-back GREEN records.
+    text = re.sub(
+        r'^\s*<url><loc>https://lineaige\.barbph\.com/record/.*?</url>\s*\n?',
+        '',
+        text,
+        flags=re.M,
+    )
     today = date.today().isoformat()
-    for record in events:
-        loc = f"https://lineaige.barbph.com/record/{record['id']}/"
-        if loc not in text:
-            missing.append(f"  <url><loc>{esc(loc)}</loc><lastmod>{today}</lastmod></url>\n")
-    if missing:
-        SITEMAP.write_text(text.replace("</urlset>", "".join(missing) + "</urlset>"), encoding="utf-8")
+    rows = [
+        f"  <url><loc>https://lineaige.barbph.com/record/{esc(record['id'])}/</loc><lastmod>{today}</lastmod></url>\n"
+        for record in events
+    ]
+    SITEMAP.write_text(text.replace("</urlset>", "".join(rows) + "</urlset>"), encoding="utf-8")
 
 def main():
     payload = load(EVENTS)
