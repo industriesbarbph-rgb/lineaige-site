@@ -9,6 +9,7 @@ on:
     paths:
       - "scripts/future_lifecycle.py"
       - "data/future-announcements.json"
+      - "data/future-resolution-ledger.json"
       - ".github/workflows/future-lifecycle.yml"
 
 permissions:
