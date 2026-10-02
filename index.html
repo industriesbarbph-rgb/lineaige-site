@@ -550,6 +550,14 @@ body{
   white-space:nowrap;
   pointer-events:none;
 }
+/* Keep labels clear of the actual tick length.
+   Event-year and 1956 threshold dashes are longer than ordinary decade ticks. */
+.year-tick.event-year .year-label{
+  right:24px;
+}
+.year-tick.birth-year .year-label{
+  right:38px;
+}
 .year-tick .tick-tip{
   position:absolute;
   right:32px;
