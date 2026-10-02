@@ -1,8 +1,64 @@
 {
-  "schemaVersion": "1.1.0",
+  "schemaVersion": "1.2.0",
   "product": "LINEAiGE",
   "principle": "The historical record is LINEAiGE. The interface is a representation of LINEAiGE.",
   "events": [
+    {
+      "id": "turing-computable-numbers-1937",
+      "recordType": "event",
+      "historicalLayer": "precursor",
+      "title": "On Computable Numbers, with an Application to the Entscheidungsproblem",
+      "displayDate": "Received 28 May 1936 · Published 1 January 1937",
+      "eventDate": "1937-01-01",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED PRECURSOR",
+      "summary": "Alan Turing's paper On Computable Numbers, with an Application to the Entscheidungsproblem was received on May 28, 1936 and is recorded by Oxford Academic as published on January 1, 1937. The paper formalized computability using abstract machines and applied the framework to the Entscheidungsproblem.",
+      "significance": "A documented computational precursor to later artificial-intelligence research. LINEAiGE does not classify this paper as the beginning of artificial intelligence or as part of the post-1956 AI field.",
+      "people": [
+        "Alan Turing"
+      ],
+      "organizations": [
+        "Proceedings of the London Mathematical Society",
+        "Oxford University Press"
+      ],
+      "technologies": [
+        "Computability",
+        "Turing machine"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Oxford Academic records the article in Proceedings of the London Mathematical Society, volume s2-42, pages 230-265, article history received 28 May 1936 and published 1 January 1937. LINEAiGE preserves that publisher metadata rather than choosing between disputed late-November 1936 part-publication dates.",
+        "lastVerified": "2026-10-02T21:55:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "On Computable Numbers, with an Application to the Entscheidungsproblem",
+          "url": "https://academic.oup.com/plms/article-abstract/s2-42/1/230/1491926",
+          "publisher": "Oxford Academic / Proceedings of the London Mathematical Society",
+          "publishedDate": "1937-01-01",
+          "sourceType": "paper",
+          "sourceRole": "claim-evidence",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "mcculloch-pitts-1943",
+          "label": "Continue to A Logical Calculus of the Ideas Immanent in Nervous Activity",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
     {
       "id": "mcculloch-pitts-1943",
       "recordType": "event",
@@ -56,6 +112,14 @@
       "relationships": [
         {
           "type": "chronological",
+          "targetId": "turing-computable-numbers-1937",
+          "label": "Travel backward to On Computable Numbers, with an Application to the Entscheidungsproblem",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
           "targetId": "shannon-computer-chess-1950",
           "label": "Continue to Programming a Computer for Playing Chess",
           "evidenceState": "contextual",
@@ -66,7 +130,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "1943-12"
+      "eventMonth": "1943-12",
+      "historicalLayer": "precursor"
     },
     {
       "id": "shannon-computer-chess-1950",
@@ -140,7 +205,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "1950-03"
+      "eventMonth": "1950-03",
+      "historicalLayer": "precursor"
     },
     {
       "id": "turing-1950",
@@ -198,7 +264,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "precursor"
     },
     {
       "id": "dartmouth-1955",
@@ -258,7 +325,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "precursor"
     },
     {
       "id": "dartmouth-workshop-1956",
@@ -327,7 +395,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "1956"
+      "eventYear": "1956",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "logic-theory-machine-publication-1956",
@@ -387,7 +456,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "1956"
+      "eventYear": "1956",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "rosenblatt-1958",
@@ -466,7 +536,8 @@
       "contributor": null,
       "datePrecision": "month",
       "eventMonth": "1958-11",
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "samuel-checkers-machine-learning-1959",
@@ -528,7 +599,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "1959-07-31"
+      "eventDate": "1959-07-31",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "lisp-1960",
@@ -592,7 +664,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "1960-04"
+      "eventMonth": "1960-04",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "geometry-theorem-machine-1960",
@@ -656,7 +729,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "1960-05-03"
+      "eventDate": "1960-05-03",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "dendral-64-part-i-1964",
@@ -728,7 +802,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "1964-12-15"
+      "eventDate": "1964-12-15",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "eliza-source-code-1965",
@@ -799,7 +874,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "1965"
+      "eventYear": "1965",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "dendral-documented-1965",
@@ -874,7 +950,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "1965-04-05"
+      "eventDate": "1965-04-05",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "eliza-1966",
@@ -947,7 +1024,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "1966-01"
+      "eventMonth": "1966-01",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "shakey-1966",
@@ -1020,7 +1098,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "1966"
+      "eventYear": "1966",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "macqueen-k-means-1967",
@@ -1089,7 +1168,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "1967"
+      "eventYear": "1967",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "shrdlu-1970",
@@ -1160,7 +1240,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "1970"
+      "eventYear": "1970",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "shrdlu-publication-1972",
@@ -1229,7 +1310,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "1972"
+      "eventYear": "1972",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "wabot-1-completion-1973",
@@ -1310,7 +1392,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "1973"
+      "eventYear": "1973",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mycin-thesis-1974",
@@ -1383,7 +1466,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "1974"
+      "eventYear": "1974",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mycin-publication-1975",
@@ -1459,7 +1543,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "1975-08"
+      "eventMonth": "1975-08",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "dempster-laird-rubin-em-algorithm-1977",
@@ -1532,7 +1617,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "1977"
+      "eventYear": "1977",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "neocognitron-1980",
@@ -1605,7 +1691,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "1980-04"
+      "eventMonth": "1980-04",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "kohonen-feature-maps-1982",
@@ -1685,7 +1772,8 @@
       ],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "1982-01"
+      "eventMonth": "1982-01",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "hopfield-network-1982",
@@ -1769,7 +1857,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "1982-04"
+      "eventMonth": "1982-04",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "boltzmann-machine-learning-1985",
@@ -1845,7 +1934,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "1985-01"
+      "eventMonth": "1985-01",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "quinlan-induction-decision-trees-1986",
@@ -1905,7 +1995,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "1986"
+      "eventYear": "1986",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "backpropagation-1986",
@@ -1971,7 +2062,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "1986-10-09"
+      "eventDate": "1986-10-09",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "temporal-difference-learning-1988",
@@ -2042,7 +2134,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "1988"
+      "eventYear": "1988",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "q-learning-1989",
@@ -2126,7 +2219,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "1989-05"
+      "eventMonth": "1989-05",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "q-learning-1992",
@@ -2190,7 +2284,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "1992-05"
+      "eventMonth": "1992-05",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "td-gammon-1993",
@@ -2256,7 +2351,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "1993-10-22"
+      "eventDate": "1993-10-22",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "adaboost-1995",
@@ -2328,7 +2424,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "1995"
+      "eventYear": "1995",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "support-vector-networks-1995",
@@ -2391,7 +2488,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "1995-09"
+      "eventMonth": "1995-09",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "deep-blue-1997",
@@ -2474,7 +2572,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "1997-05-11"
+      "eventDate": "1997-05-11",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "lstm-1997",
@@ -2561,7 +2660,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "1997-11-15"
+      "eventDate": "1997-11-15",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "lecun-document-recognition-1998",
@@ -2647,7 +2747,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "1998-11-30"
+      "eventDate": "1998-11-30",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "random-forests-random-features-1999",
@@ -2721,7 +2822,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "1999-09-01"
+      "eventDate": "1999-09-01",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "random-forests-2001",
@@ -2802,7 +2904,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "2001-10"
+      "eventMonth": "2001-10",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "neural-probabilistic-language-model-2003",
@@ -2877,7 +2980,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "2003-02"
+      "eventMonth": "2003-02",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "theano-development-start-2008",
@@ -2956,7 +3060,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "2008-01"
+      "eventMonth": "2008-01",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "imagenet-2009",
@@ -3032,7 +3137,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "2009"
+      "eventYear": "2009",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "scikit-learn-first-public-release-2010",
@@ -3106,7 +3212,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2010-02-01"
+      "eventDate": "2010-02-01",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "torch7-paper-2011",
@@ -3179,7 +3286,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "2011"
+      "eventYear": "2011",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "ibm-watson-jeopardy-2011",
@@ -3256,7 +3364,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2011-02-16"
+      "eventDate": "2011-02-16",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "alexnet-2012",
@@ -3331,7 +3440,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "2012"
+      "eventYear": "2012",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "dropout-2012",
@@ -3416,7 +3526,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2012-07-03"
+      "eventDate": "2012-07-03",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "word2vec-2013",
@@ -3492,7 +3603,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2013-01-16"
+      "eventDate": "2013-01-16",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "playing-atari-deep-rl-2013",
@@ -3560,7 +3672,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2013-12-19"
+      "eventDate": "2013-12-19",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "auto-encoding-variational-bayes-2013",
@@ -3622,7 +3735,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2013-12-20"
+      "eventDate": "2013-12-20",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gan-2014",
@@ -3700,7 +3814,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "2014"
+      "eventYear": "2014",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "xgboost-v0-1-repository-milestone-2014",
@@ -3781,7 +3896,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "2014-03"
+      "eventMonth": "2014-03",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "caffe-paper-2014",
@@ -3859,7 +3975,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2014-06-20"
+      "eventDate": "2014-06-20",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "glove-2014",
@@ -3934,7 +4051,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "2014-08"
+      "eventMonth": "2014-08",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "bahdanau-attention-2014",
@@ -4008,7 +4126,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2014-09-01"
+      "eventDate": "2014-09-01",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "vggnet-2014",
@@ -4082,7 +4201,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2014-09-04"
+      "eventDate": "2014-09-04",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "seq2seq-2014",
@@ -4155,7 +4275,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2014-09-10"
+      "eventDate": "2014-09-10",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "googlenet-inception-2014",
@@ -4236,7 +4357,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2014-09-17"
+      "eventDate": "2014-09-17",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "adam-2014",
@@ -4309,7 +4431,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2014-12-22"
+      "eventDate": "2014-12-22",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "batch-normalization-2015",
@@ -4381,7 +4504,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2015-02-11"
+      "eventDate": "2015-02-11",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "dqn-2015",
@@ -4472,7 +4596,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2015-02-25"
+      "eventDate": "2015-02-25",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "keras-initial-release-2015",
@@ -4541,7 +4666,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "2015-03"
+      "eventMonth": "2015-03",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "deep-unsupervised-nonequilibrium-thermodynamics-2015",
@@ -4615,7 +4741,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2015-03-12"
+      "eventDate": "2015-03-12",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "u-net-2015",
@@ -4695,7 +4822,8 @@
       ],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2015-05-18"
+      "eventDate": "2015-05-18",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "yolo-object-detection-2015",
@@ -4767,7 +4895,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2015-06-08"
+      "eventDate": "2015-06-08",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "chainer-open-source-release-2015",
@@ -4837,7 +4966,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2015-06-09"
+      "eventDate": "2015-06-09",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "tensorflow-open-source-release-2015",
@@ -4916,7 +5046,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2015-11-09"
+      "eventDate": "2015-11-09",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mxnet-paper-2015",
@@ -4994,7 +5125,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2015-12-03"
+      "eventDate": "2015-12-03",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "resnet-2015",
@@ -5078,7 +5210,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2015-12-10"
+      "eventDate": "2015-12-10",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "paddlepaddle-open-source-2016",
@@ -5147,7 +5280,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "2016"
+      "eventYear": "2016",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "cntk-github-public-2016",
@@ -5226,7 +5360,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2016-01-25"
+      "eventDate": "2016-01-25",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "alphago-2016",
@@ -5321,7 +5456,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2016-01-27"
+      "eventDate": "2016-01-27",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "a3c-asynchronous-methods-2016",
@@ -5399,7 +5535,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2016-02-04"
+      "eventDate": "2016-02-04",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "xgboost-2016",
@@ -5472,7 +5609,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2016-03-09"
+      "eventDate": "2016-03-09",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "layer-normalization-2016",
@@ -5555,7 +5693,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2016-07-21"
+      "eventDate": "2016-07-21",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "wavenet-2016",
@@ -5637,7 +5776,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2016-09-08"
+      "eventDate": "2016-09-08",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "pytorch-public-release-2017",
@@ -5706,7 +5846,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2017-01-19"
+      "eventDate": "2017-01-19",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mobilenet-paper-2017",
@@ -5784,7 +5925,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2017-04-17"
+      "eventDate": "2017-04-17",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "transformer-2017",
@@ -5849,7 +5991,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "apache-mxnet-0-11-incubating-release-2017",
@@ -5920,7 +6063,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2017-09-06"
+      "eventDate": "2017-09-06",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "onnx-announcement-2017",
@@ -5995,7 +6139,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2017-09-07"
+      "eventDate": "2017-09-07",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "lightgbm-2017",
@@ -6074,7 +6219,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "2017-12"
+      "eventMonth": "2017-12",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "alphazero-2017",
@@ -6148,7 +6294,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2017-12-05"
+      "eventDate": "2017-12-05",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "jax-open-source-release-2018",
@@ -6232,7 +6379,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventYear": "2018"
+      "eventYear": "2018",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "elmo-2018",
@@ -6309,7 +6457,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2018-02-15"
+      "eventDate": "2018-02-15",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "openai-generative-pretraining-2018",
@@ -6385,7 +6534,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2018-06-11"
+      "eventDate": "2018-06-11",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "bert-2018",
@@ -6461,7 +6611,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2018-10-11"
+      "eventDate": "2018-10-11",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "bert-open-source-release-2018",
@@ -6536,7 +6687,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2018-11-02"
+      "eventDate": "2018-11-02",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "transformer-xl-2019",
@@ -6613,7 +6765,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2019-01-09"
+      "eventDate": "2019-01-09",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-2-2019",
@@ -6691,7 +6844,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2019-02-14"
+      "eventDate": "2019-02-14",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "ernie-knowledge-integration-2019",
@@ -6761,7 +6915,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2019-04-19"
+      "eventDate": "2019-04-19",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "t5-2019",
@@ -6842,7 +6997,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2019-10-23"
+      "eventDate": "2019-10-23",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "muzero-2019",
@@ -6918,7 +7074,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2019-11-19"
+      "eventDate": "2019-11-19",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "masakhane-machine-translation-2020",
@@ -7013,7 +7170,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2020-03-13"
+      "eventDate": "2020-03-13",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mindspore-open-source-release-2020",
@@ -7082,7 +7240,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2020-03-28"
+      "eventDate": "2020-03-28",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "retrieval-augmented-generation-2020",
@@ -7165,7 +7324,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2020-05-22"
+      "eventDate": "2020-05-22",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-3-2020",
@@ -7268,7 +7428,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2020-05-28"
+      "eventDate": "2020-05-28",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "ddpm-2020",
@@ -7341,7 +7502,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2020-06-19"
+      "eventDate": "2020-06-19",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "vision-transformer-2020",
@@ -7424,7 +7586,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2020-10-22"
+      "eventDate": "2020-10-22",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "clip-2021",
@@ -7500,7 +7663,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2021-01-05"
+      "eventDate": "2021-01-05",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "pangu-alpha-paper-2021",
@@ -7608,7 +7772,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2021-04-26"
+      "eventDate": "2021-04-26",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "lamda-2021",
@@ -7678,7 +7843,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2021-05-18"
+      "eventDate": "2021-05-18",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "lora-2021",
@@ -7757,7 +7923,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2021-06-17"
+      "eventDate": "2021-06-17",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "alphafold-2021",
@@ -7832,7 +7999,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2021-07-15"
+      "eventDate": "2021-07-15",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "chinchilla-2022",
@@ -7901,7 +8069,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2022-03-29"
+      "eventDate": "2022-03-29",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "palm-2022",
@@ -7971,7 +8140,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2022-04-05"
+      "eventDate": "2022-04-05",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "flamingo-2022",
@@ -8040,7 +8210,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2022-04-28"
+      "eventDate": "2022-04-28",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "opt-175b-2022",
@@ -8109,7 +8280,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2022-05-03"
+      "eventDate": "2022-05-03",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "bloom-2022",
@@ -8179,7 +8351,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2022-07-12"
+      "eventDate": "2022-07-12",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "stable-diffusion-2022",
@@ -8250,7 +8423,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2022-08-22"
+      "eventDate": "2022-08-22",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "chatgpt-2022",
@@ -8308,7 +8482,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "datePrecision": "day"
+      "datePrecision": "day",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "llama-public-release-2023",
@@ -8402,7 +8577,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2023-02-24"
+      "eventDate": "2023-02-24",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-4-2023",
@@ -8472,7 +8648,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2023-03-14"
+      "eventDate": "2023-03-14",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-2023",
@@ -8530,7 +8707,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "datePrecision": "day"
+      "datePrecision": "day",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "falcon-2023",
@@ -8597,7 +8775,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "ernie-bot-2023",
@@ -8676,7 +8855,8 @@
         "context": "announcement-location",
         "note": "Baidu's March 16, 2023 release identifies Beijing as the location of the ERNIE Bot press conference where Robin Li presented the system.",
         "sourceUrl": "https://www.prnewswire.com/news-releases/baidu-unveils-ernie-bot-the-latest-generative-ai-mastering-chinese-language-and-multi-modal-generation-301774240.html"
-      }
+      },
+      "historicalLayer": "ai-history"
     },
     {
       "id": "sabia-portuguese-llms-2023",
@@ -8742,7 +8922,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2023-04-16"
+      "eventDate": "2023-04-16",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "llama2-2023",
@@ -8800,7 +8981,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "hyperclovax-2023",
@@ -8869,7 +9051,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "jais-13b-2023",
@@ -8951,7 +9134,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2023-08-30"
+      "eventDate": "2023-08-30",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mistral7b-2023",
@@ -9019,7 +9203,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "sea-lion-2023",
@@ -9078,7 +9263,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventMonth": "2023-11"
+      "eventMonth": "2023-11",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini1-2023",
@@ -9143,7 +9329,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mixtral-8x7b-release-2023",
@@ -9212,7 +9399,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2023-12-11"
+      "eventDate": "2023-12-11",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "typhoon-2024",
@@ -9289,7 +9477,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "aya-101-launch-2024",
@@ -9387,7 +9576,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-02-13"
+      "eventDate": "2024-02-13",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-1-5-pro-early-preview-2024",
@@ -9448,7 +9638,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-02-15"
+      "eventDate": "2024-02-15",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemma-2024",
@@ -9523,7 +9714,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-02-21"
+      "eventDate": "2024-02-21",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-3-opus-sonnet-release-2024",
@@ -9585,7 +9777,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-03-04"
+      "eventDate": "2024-03-04",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "command-r-release-2024",
@@ -9654,7 +9847,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-03-11"
+      "eventDate": "2024-03-11",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-3-haiku-release-2024",
@@ -9713,7 +9907,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-03-13"
+      "eventDate": "2024-03-13",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "command-r-plus-release-2024",
@@ -9784,7 +9979,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-04-04"
+      "eventDate": "2024-04-04",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mixtral-8x22b-release-2024",
@@ -9863,7 +10059,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-04-17"
+      "eventDate": "2024-04-17",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "llama-3-release-2024",
@@ -9932,7 +10129,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-04-18"
+      "eventDate": "2024-04-18",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-1-5-pro-gemini-advanced-2024",
@@ -9993,7 +10191,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-05-14"
+      "eventDate": "2024-05-14",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-1-5-pro-public-preview-2024",
@@ -10064,7 +10263,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-05-14"
+      "eventDate": "2024-05-14",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "aya-23-launch-2024",
@@ -10165,7 +10365,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-05-23"
+      "eventDate": "2024-05-23",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-1-5-pro-general-availability-2024",
@@ -10227,7 +10428,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-05-24"
+      "eventDate": "2024-05-24",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "codestral-release-2024",
@@ -10307,7 +10509,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-05-29"
+      "eventDate": "2024-05-29",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "qwen2-2024",
@@ -10381,7 +10584,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "recurrentgemma-9b-release-2024",
@@ -10450,7 +10654,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-06-11"
+      "eventDate": "2024-06-11",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-3-5-sonnet-release-2024",
@@ -10509,7 +10714,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-06-21"
+      "eventDate": "2024-06-21",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemma-2-initial-release-2024",
@@ -10581,7 +10787,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-06-27"
+      "eventDate": "2024-06-27",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mistral-nemo-release-2024",
@@ -10651,7 +10858,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-07-18"
+      "eventDate": "2024-07-18",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "llama-3-1-public-release-2024",
@@ -10713,7 +10921,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-07-23"
+      "eventDate": "2024-07-23",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mistral-large-2-release-2024",
@@ -10782,7 +10991,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-07-24"
+      "eventDate": "2024-07-24",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemma-2-2b-release-2024",
@@ -10842,7 +11052,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-07-31"
+      "eventDate": "2024-07-31",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemma-scope-release-2024",
@@ -10912,7 +11123,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-07-31"
+      "eventDate": "2024-07-31",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "shieldgemma-initial-release-2024",
@@ -10981,7 +11193,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-07-31"
+      "eventDate": "2024-07-31",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "sarvam2b-2024",
@@ -11049,7 +11262,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "command-r-august-refresh-2024",
@@ -11121,7 +11335,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-08-30"
+      "eventDate": "2024-08-30",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "inkubalm-2024",
@@ -11215,7 +11430,8 @@
       ],
       "contributor": null,
       "datePrecision": "day",
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "datagemma-release-2024",
@@ -11297,7 +11513,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-09-12"
+      "eventDate": "2024-09-12",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "qwen2-5-2024",
@@ -11359,7 +11576,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-09-19"
+      "eventDate": "2024-09-19",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "llama-3-2-launch-2024",
@@ -11422,7 +11640,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-09-25"
+      "eventDate": "2024-09-25",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemma-aps-release-2024",
@@ -11491,7 +11710,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-10-15"
+      "eventDate": "2024-10-15",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-3-5-sonnet-upgrade-computer-use-beta-2024",
@@ -11551,7 +11771,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-10-22"
+      "eventDate": "2024-10-22",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "aya-expanse-launch-2024",
@@ -11632,7 +11853,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-10-24"
+      "eventDate": "2024-10-24",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "plamo-prime-2024",
@@ -11699,7 +11921,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "paligemma-2-release-2024",
@@ -11771,7 +11994,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-12-05"
+      "eventDate": "2024-12-05",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "llama-3-3-release-2024",
@@ -11850,7 +12074,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-12-06"
+      "eventDate": "2024-12-06",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-2-0-flash-release-2024",
@@ -11920,7 +12145,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-12-11"
+      "eventDate": "2024-12-11",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "command-r7b-release-2024",
@@ -11990,7 +12216,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2024-12-13"
+      "eventDate": "2024-12-13",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "deepseek-v3-release-2024",
@@ -12048,7 +12275,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "deepseek-r1-2025",
@@ -12129,7 +12357,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-01-20"
+      "eventDate": "2025-01-20",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mistral-small-3-release-2025",
@@ -12198,7 +12427,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-01-30"
+      "eventDate": "2025-01-30",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "grok-3-beta-2025",
@@ -12257,7 +12487,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "paligemma-2-mix-release-2025",
@@ -12329,7 +12560,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-02-19"
+      "eventDate": "2025-02-19",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-3-7-sonnet-2025",
@@ -12387,7 +12619,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-4-5-2025",
@@ -12445,7 +12678,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "aya-vision-launch-2025",
@@ -12525,7 +12759,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-03-04"
+      "eventDate": "2025-03-04",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemma-3-release-2025",
@@ -12598,7 +12833,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-03-10"
+      "eventDate": "2025-03-10",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "shieldgemma-2-release-2025",
@@ -12668,7 +12904,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-03-10"
+      "eventDate": "2025-03-10",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "command-a-2025",
@@ -12726,7 +12963,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "olmo-2-32b-release-2025",
@@ -12785,7 +13023,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-03-13"
+      "eventDate": "2025-03-13",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mistral-small-3-1-release-2025",
@@ -12854,7 +13093,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-03-17"
+      "eventDate": "2025-03-17",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-2-5-introduction-2025",
@@ -12915,7 +13155,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-03-25"
+      "eventDate": "2025-03-25",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "txgemma-release-2025",
@@ -12974,7 +13215,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-03-25"
+      "eventDate": "2025-03-25",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "llama-4-scout-maverick-release-2025",
@@ -13034,7 +13276,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-04-05"
+      "eventDate": "2025-04-05",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "dolphingemma-announcement-2025",
@@ -13095,7 +13338,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-04-14"
+      "eventDate": "2025-04-14",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-4-1-api-2025",
@@ -13155,7 +13399,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "openai-o3-o4-mini-2025",
@@ -13214,7 +13459,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "qwen3-2025",
@@ -13272,7 +13518,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mistral-medium-3-2025",
@@ -13330,7 +13577,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemma-3n-preview-2025",
@@ -13390,7 +13638,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-05-20"
+      "eventDate": "2025-05-20",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "devstral-2025",
@@ -13448,7 +13697,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-4-2025",
@@ -13507,7 +13757,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "magistral-2025",
@@ -13565,7 +13816,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-2-5-pro-flash-ga-2025",
@@ -13624,7 +13876,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemma-3n-release-2025",
@@ -13706,7 +13959,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-06-26"
+      "eventDate": "2025-06-26",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "grok-4-2025",
@@ -13765,7 +14019,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-opus-4-1-2025",
@@ -13823,7 +14078,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-5-2025",
@@ -13881,7 +14137,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemma-3-270m-release-2025",
@@ -13961,7 +14218,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-08-14"
+      "eventDate": "2025-08-14",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "embeddinggemma-release-2025",
@@ -14031,7 +14289,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-09-04"
+      "eventDate": "2025-09-04",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "vaultgemma-release-2025",
@@ -14111,7 +14370,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-09-13"
+      "eventDate": "2025-09-13",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "grok-4-fast-release-2025",
@@ -14170,7 +14430,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-09-19"
+      "eventDate": "2025-09-19",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-sonnet-4-5-2025",
@@ -14228,7 +14489,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-haiku-4-5-release-2025",
@@ -14287,7 +14549,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-10-15"
+      "eventDate": "2025-10-15",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-5-1-api-2025",
@@ -14345,7 +14608,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "grok-4-1-release-2025",
@@ -14404,7 +14668,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-11-17"
+      "eventDate": "2025-11-17",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-3-release-2025",
@@ -14465,7 +14730,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-11-18"
+      "eventDate": "2025-11-18",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "olmo-3-release-2025",
@@ -14524,7 +14790,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-11-20"
+      "eventDate": "2025-11-20",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-opus-4-5-2025",
@@ -14582,7 +14849,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "deepseek-v3-2-release-2025",
@@ -14642,7 +14910,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-12-01"
+      "eventDate": "2025-12-01",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mistral-3-release-2025",
@@ -14703,7 +14972,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-12-02"
+      "eventDate": "2025-12-02",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-5-2-2025",
@@ -14761,7 +15031,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "functiongemma-release-2025",
@@ -14832,7 +15103,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-12-18"
+      "eventDate": "2025-12-18",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "t5gemma-v2-release-2025",
@@ -14891,7 +15163,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-12-18"
+      "eventDate": "2025-12-18",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-opus-4-6-2026",
@@ -14949,7 +15222,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-sonnet-4-6-2026",
@@ -15007,7 +15281,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-3-1-pro-2026",
@@ -15065,7 +15340,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-5-3-instant-2026",
@@ -15123,7 +15399,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-5-4-2026",
@@ -15182,7 +15459,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mistral-small-4-2026",
@@ -15240,7 +15518,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-5-5-2026",
@@ -15299,7 +15578,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "deepseek-v4-preview-2026",
@@ -15357,7 +15637,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-3-5-flash-release-2026",
@@ -15427,7 +15708,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-05-19"
+      "eventDate": "2026-05-19",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "command-a-plus-2026",
@@ -15485,7 +15767,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "mistral-medium-3-5-2026",
@@ -15543,7 +15826,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-5-6-2026",
@@ -15604,7 +15888,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "grok-4-5-2026",
@@ -15662,7 +15947,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-3-5-flash-lite-ga-2026",
@@ -15722,7 +16008,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-07-21"
+      "eventDate": "2026-07-21",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-3-6-flash-ga-2026",
@@ -15792,7 +16079,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-07-21"
+      "eventDate": "2026-07-21",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-robotics-2-2026",
@@ -15853,7 +16141,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-07-30"
+      "eventDate": "2026-07-30",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "grok-4-6-2026",
@@ -15911,7 +16200,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "deepseek-v4-pro-ga-2026",
@@ -15970,7 +16260,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-08-13"
+      "eventDate": "2026-08-13",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-3-7-flash-ga-2026",
@@ -16040,7 +16331,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-08-13"
+      "eventDate": "2026-08-13",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "weathernext-3-release-2026",
@@ -16117,7 +16409,8 @@
       ],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-08-31"
+      "eventDate": "2026-08-31",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-fable-5-1-release-2026",
@@ -16197,7 +16490,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-09-01"
+      "eventDate": "2026-09-01",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-3-8-flash-ga-2026",
@@ -16267,7 +16561,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-09-02"
+      "eventDate": "2026-09-02",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-6-astra-release-2026",
@@ -16326,7 +16621,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-09-03"
+      "eventDate": "2026-09-03",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "lyria-3-5-ga-2026",
@@ -16407,7 +16703,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-09-03"
+      "eventDate": "2026-09-03",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "alphagenome-atlas-release-2026",
@@ -16477,7 +16774,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-09-08"
+      "eventDate": "2026-09-08",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "deepseek-v4-1-flash-release-2026",
@@ -16536,7 +16834,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-09-10"
+      "eventDate": "2026-09-10",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-live-1-release-2026",
@@ -16596,7 +16895,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-09-10"
+      "eventDate": "2026-09-10",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-3-8-live-release-2026",
@@ -16667,7 +16967,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-09-15"
+      "eventDate": "2026-09-15",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "antigravity-agent-09-2026-release",
@@ -16727,7 +17028,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-09-17"
+      "eventDate": "2026-09-17",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "grok-4-7-2026",
@@ -16785,7 +17087,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-3-8-flash-tts-ga-2026",
@@ -16845,7 +17148,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-09-22"
+      "eventDate": "2026-09-22",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gemini-3-8-flash-lite-tts-ga-2026",
@@ -16915,7 +17219,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-09-22"
+      "eventDate": "2026-09-22",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "claude-sonnet-5-5-release-2026",
@@ -16974,7 +17279,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-09-28"
+      "eventDate": "2026-09-28",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "gpt-6-1-sol-release-2026",
@@ -17036,7 +17342,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2026-09-29"
+      "eventDate": "2026-09-29",
+      "historicalLayer": "ai-history"
     },
     {
       "id": "now",
@@ -17072,5 +17379,11 @@
       "contributor": null,
       "entryOrigin": "lineaige"
     }
-  ]
+  ],
+  "historicalBoundary": {
+    "aiFieldStartYear": 1956,
+    "meaning": "Artificial intelligence as a recognized research field begins with the 1956 Dartmouth Summer Research Project on Artificial Intelligence.",
+    "pre1956Layer": "precursor",
+    "pre1956Meaning": "Verified foundations and precursors are preserved separately and are not counted as AI-field history."
+  }
 }
