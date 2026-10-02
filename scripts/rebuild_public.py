@@ -21,6 +21,7 @@ SITEMAP = ROOT / "sitemap.xml"
 BASE = "https://lineaige.barbph.com"
 OG_IMAGE = f"{BASE}/assets/og-lineaige.png"
 ROBOTS = "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+SEO_TEMPLATE_LASTMOD = "2026-10-03"
 
 
 def load(path: Path):
@@ -423,17 +424,17 @@ def contributor_block(record: dict) -> str:
 def record_lastmod(record: dict) -> str:
     verified = (record.get("verification") or {}).get("lastVerified")
     if verified:
-        return str(verified)[:10]
+        return max_lastmod(str(verified)[:10], SEO_TEMPLATE_LASTMOD)
     value = record.get("eventDate") or record.get("eventMonth") or record.get("eventYear")
     if value:
         raw = str(value)
         if re.match(r"^\d{4}-\d{2}-\d{2}", raw):
-            return raw[:10]
+            return max_lastmod(raw[:10], SEO_TEMPLATE_LASTMOD)
         if re.match(r"^\d{4}-\d{2}", raw):
-            return raw[:7] + "-01"
+            return max_lastmod(raw[:7] + "-01", SEO_TEMPLATE_LASTMOD)
         if re.match(r"^\d{4}$", raw):
-            return raw + "-01-01"
-    return date.today().isoformat()
+            return max_lastmod(raw + "-01-01", SEO_TEMPLATE_LASTMOD)
+    return SEO_TEMPLATE_LASTMOD
 
 
 def record_page(record: dict, previous_record, next_record, courses, media, valid_ids: set[str]) -> str:
@@ -608,7 +609,7 @@ def future_page(record: dict, previous_record, next_record, lifecycle_lastmod=No
             "description": summary,
         },
         citations=[source_url] if source_url != "#" else [],
-        date_modified=lifecycle_lastmod or record.get("announcedOn"),
+        date_modified=max_lastmod(lifecycle_lastmod, record.get("announcedOn"), SEO_TEMPLATE_LASTMOD),
     )
 
     nav_actions = []
@@ -712,7 +713,7 @@ def course_page(record: dict) -> str:
         description,
         [("Home", BASE + "/"), ("Records", BASE + "/records/"), (record["title"], canonical)],
         main_entity=course_entity,
-        date_modified=record.get("verifiedAt"),
+        date_modified=max_lastmod(record.get("verifiedAt"), SEO_TEMPLATE_LASTMOD),
     )
     return (
         '<!doctype html><html lang="en"><head>'
@@ -768,7 +769,7 @@ def media_page(record: dict) -> str:
         description,
         [("Home", BASE + "/"), ("Records", BASE + "/records/"), (record["title"], canonical)],
         main_entity=video,
-        date_modified=record.get("publishedDate"),
+        date_modified=max_lastmod(record.get("publishedDate"), SEO_TEMPLATE_LASTMOD),
     )
     return (
         '<!doctype html><html lang="en"><head>'
@@ -944,9 +945,14 @@ def update_homepage(ai, precursors, futures, courses, media):
     MAIN.write_text(text, encoding="utf-8")
 
 
+def max_lastmod(*values) -> str:
+    days = [str(v)[:10] for v in values if v and re.match(r"^\d{4}-\d{2}-\d{2}", str(v))]
+    return max(days) if days else SEO_TEMPLATE_LASTMOD
+
+
 def methodology_lastmod() -> str:
     if not METHODOLOGY.exists():
-        return date.today().isoformat()
+        return SEO_TEMPLATE_LASTMOD
     text = METHODOLOGY.read_text(encoding="utf-8")
     match = re.search(r'"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})"', text)
     return match.group(1) if match else date.today().isoformat()
@@ -956,12 +962,12 @@ def update_sitemap(rows, futures, courses, media, lifecycle_lastmod=None):
     today = date.today().isoformat()
     entries = [
         (BASE + "/", today),
-        *[(f"{BASE}/learn/{r['id']}/", str(r.get("verifiedAt") or today)[:10]) for r in courses],
-        *[(f"{BASE}/context/{r['id']}/", str(r.get("publishedDate") or today)[:10]) for r in media],
+        *[(f"{BASE}/learn/{r['id']}/", max_lastmod(r.get("verifiedAt"), SEO_TEMPLATE_LASTMOD)) for r in courses],
+        *[(f"{BASE}/context/{r['id']}/", max_lastmod(r.get("publishedDate"), SEO_TEMPLATE_LASTMOD)) for r in media],
         (BASE + "/records/", today),
         (BASE + "/methodology/", methodology_lastmod()),
         *[(f"{BASE}/record/{r['id']}/", record_lastmod(r)) for r in rows],
-        *[(f"{BASE}/future/{r['id']}/", str(lifecycle_lastmod or r.get("announcedOn") or today)[:10]) for r in futures],
+        *[(f"{BASE}/future/{r['id']}/", max_lastmod(lifecycle_lastmod, r.get("announcedOn"), SEO_TEMPLATE_LASTMOD)) for r in futures],
     ]
     seen = set()
     unique_entries = []
