@@ -9,14 +9,13 @@ on:
     paths:
       - "config/green-lane.json"
       - "scripts/green_lane.py"
-      - "scripts/rebuild_public.py"
       - ".github/workflows/autonomous-green.yml"
 
 permissions:
   contents: write
 
 concurrency:
-  group: lineaige-public-green
+  group: lineaige-public-data-write
   cancel-in-progress: false
 
 jobs:
