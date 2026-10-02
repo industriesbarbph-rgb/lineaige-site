@@ -42,31 +42,112 @@ def build_date() -> str:
     return datetime.now(ZoneInfo("Asia/Manila")).date().isoformat()
 
 
-def meta_description(value: str, soft_limit: int = 170) -> str:
-    """Return natural complete-sentence metadata; never mechanically truncate."""
+def compact_phrase(value: str, limit: int = 72) -> str:
+    """Shorten a phrase at natural boundaries without ellipses or mid-word cuts."""
+    phrase = clean_text(value)
+    if len(phrase) <= limit:
+        return phrase
+
+    phrase = re.sub(r"\s*\([^)]{1,80}\)\s*", " ", phrase).strip()
+    if len(phrase) <= limit:
+        return phrase
+
+    for marker in [", with ", ", using ", ": ", " — ", " – ", "; ", ", Part ", " Part "]:
+        idx = phrase.find(marker)
+        if idx >= 12:
+            left = phrase[:idx].strip(" ,;:-")
+            if left and len(left) <= limit:
+                return left
+
+    words = phrase.split()
+    chosen = []
+    for word in words:
+        candidate = " ".join(chosen + [word])
+        if len(candidate) > limit:
+            break
+        chosen.append(word)
+
+    trailing = {
+        "a", "an", "and", "as", "at", "by", "for", "from", "in", "into",
+        "of", "on", "or", "the", "their", "to", "using", "with",
+    }
+    while chosen and chosen[-1].strip(" ,;:-").casefold() in trailing:
+        chosen.pop()
+
+    return " ".join(chosen).rstrip(" ,;:-") or phrase
+
+
+def meta_description(value: str, soft_limit: int = 155) -> str:
+    """Return readable metadata while protecting initials and avoiding ellipsis truncation."""
     text = clean_text(value)
     if not text:
         return ""
-    sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
+
+    protected = re.sub(
+        r"\b([A-Z])\.(?=\s+[A-Z][A-Za-z'’\-]+)",
+        r"\1<LINEAIGE_DOT>",
+        text,
+    )
+    protected = re.sub(
+        r"\b(Dr|Mr|Mrs|Ms|Prof|Sr|Jr|St|vs|etc)\.",
+        r"\1<LINEAIGE_DOT>",
+        protected,
+        flags=re.I,
+    )
+
+    sentences = [
+        part.replace("<LINEAIGE_DOT>", ".").strip()
+        for part in re.split(r"(?<=[.!?])\s+", protected)
+        if part.strip()
+    ]
     if not sentences:
         return text
-    result = sentences[0]
-    for sentence in sentences[1:]:
-        candidate = f"{result} {sentence}"
+
+    first = sentences[0]
+    if len(first) <= soft_limit:
+        result = first
+        for sentence in sentences[1:]:
+            candidate = f"{result} {sentence}"
+            if len(candidate) > soft_limit:
+                break
+            result = candidate
+        return result
+
+    clauses = [c.strip() for c in re.split(r"(?<=[,;:])\s+|\s+[—–]\s+", first) if c.strip()]
+    result = ""
+    for clause in clauses:
+        candidate = clause if not result else f"{result} {clause}"
         if len(candidate) > soft_limit:
             break
         result = candidate
-    return result
+
+    if len(result) >= 55:
+        result = result.rstrip(" ,;:-")
+        return result if result.endswith((".", "!", "?")) else result + "."
+
+    compact = compact_phrase(first, soft_limit - 1).rstrip(" ,;:-")
+    return compact if compact.endswith((".", "!", "?")) else compact + "."
 
 
-def seo_title(value: str, suffix: str = "LINEAiGE", limit: int | None = None) -> str:
-    """Preserve the complete human title and the LINEAiGE brand; never cut mid-phrase."""
+def seo_title(value: str, suffix: str = "LINEAiGE", limit: int | None = 60) -> str:
+    """Keep SEO titles concise without ellipses, retaining the brand when it fits."""
     title = clean_text(value)
     if not title:
         return suffix
+
     if title.casefold().endswith(suffix.casefold()):
+        return title if limit is None or len(title) <= limit else compact_phrase(title, limit)
+
+    branded = f"{title} — {suffix}"
+    if limit is None or len(branded) <= limit:
+        return branded
+
+    if len(title) <= limit:
         return title
-    return f"{title} — {suffix}"
+
+    short = compact_phrase(title, limit)
+    rebranded = f"{short} — {suffix}"
+    return rebranded if len(rebranded) <= limit else short
 
 
 def time_value(record: dict) -> str:
