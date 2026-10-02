@@ -52,8 +52,9 @@ def main():
     future["cutoffMode"]="runtime-date"
     future["policy"]=(
         "Only evidence-backed announcements whose target milestone is unresolved are retained here. "
-        "Lifecycle evaluation uses the actual run date. A target passing its horizon becomes DUE FOR "
-        "CONFIRMATION, never completed history by date alone. Completion requires a verified canonical event."
+        "Lifecycle evaluation uses the actual run date, not the legacy stored cutoff. A target passing "
+        "its horizon becomes DUE FOR CONFIRMATION, never completed history by date alone. Completion "
+        "requires verified evidence and a canonical recorded event."
     )
 
     canonical_ids={
