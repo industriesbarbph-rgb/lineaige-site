@@ -33,6 +33,8 @@ jobs:
           python3 -m py_compile scripts/green_lane.py scripts/rebuild_public.py
           python3 -m json.tool config/green-lane.json >/dev/null
           python3 -m json.tool data/events.json >/dev/null
+          python3 -m json.tool data/courses.json >/dev/null
+          python3 -m json.tool data/media.json >/dev/null
 
       - name: Run deterministic GREEN lane
         run: python3 scripts/green_lane.py
@@ -66,7 +68,7 @@ jobs:
         run: |
           git config user.name "LINEAiGE GREEN"
           git config user.email "actions@users.noreply.github.com"
-          git add data/events.json records/index.html sitemap.xml record/
+          git add data/events.json index.html records/index.html sitemap.xml record/ future/ learn/ context/
           git commit -m "LINEAiGE: autonomous GREEN admission"
           # Reconcile a rare human/main update that lands while this job runs.
           # A real content conflict remains fail-closed and will stop the push.
