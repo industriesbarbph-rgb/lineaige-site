@@ -1058,17 +1058,67 @@
       ],
       "relationships": [
         {
-          "type": "navigation",
-          "targetId": "now",
-          "label": "Continue toward the living present",
-          "evidenceState": "navigation-only",
-          "evidenceNote": "Interface navigation from a recorded event toward NOW.",
+          "type": "chronological",
+          "targetId": "inkubalm-2024",
+          "label": "Travel backward to InkubaLM Paper Introduction",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
           "type": "chronological",
-          "targetId": "inkubalm-2024",
-          "label": "Travel backward to InkubaLM Paper Introduction",
+          "targetId": "deepseek-v3-release-2024",
+          "label": "Continue to DeepSeek-V3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "deepseek-v3-release-2024",
+      "recordType": "event",
+      "title": "DeepSeek-V3 Release",
+      "displayDate": "26 December 2024",
+      "eventDate": "2024-12-26",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "DeepSeek introduced DeepSeek-V3 on December 26, 2024.",
+      "significance": "A major DeepSeek model-generation release preceding DeepSeek-R1.",
+      "people": [],
+      "organizations": [
+        "DeepSeek"
+      ],
+      "technologies": [
+        "DeepSeek-V3"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "DeepSeek-V3 Release",
+          "url": "https://deepseek.com/en/news/deepseek-v3",
+          "publisher": "DeepSeek",
+          "publishedDate": "2024-12-26",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "plamo-prime-2024",
+          "label": "Travel backward to PLaMo Prime Launch",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -1147,8 +1197,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "plamo-prime-2024",
-          "label": "Travel backward to PLaMo Prime Launch",
+          "targetId": "deepseek-v3-release-2024",
+          "label": "Travel backward to DeepSeek-V3 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -1295,6 +1345,182 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "grok-3-beta-2025",
+          "label": "Open adjacent same-time record: Grok 3 Beta Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-02-19"
+    },
+    {
+      "id": "grok-3-beta-2025",
+      "recordType": "event",
+      "title": "Grok 3 Beta Release",
+      "displayDate": "19 February 2025",
+      "eventDate": "2025-02-19",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI introduced Grok 3 and Grok 3 mini in beta on February 19, 2025.",
+      "significance": "A major Grok model-generation milestone centered on reasoning.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [
+        "Grok 3",
+        "Grok 3 mini"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Grok 3 Beta Release",
+          "url": "https://x.ai/news/grok-3",
+          "publisher": "xAI",
+          "publishedDate": "2025-02-19",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "paligemma-2-mix-release-2025",
+          "label": "Open adjacent same-time record: PaliGemma 2 mix Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "claude-3-7-sonnet-2025",
+          "label": "Continue to Claude 3.7 Sonnet Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "claude-3-7-sonnet-2025",
+      "recordType": "event",
+      "title": "Claude 3.7 Sonnet Release",
+      "displayDate": "24 February 2025",
+      "eventDate": "2025-02-24",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Anthropic announced Claude 3.7 Sonnet on February 24, 2025 and made it available across Claude plans and developer platforms.",
+      "significance": "Anthropic's first hybrid reasoning Claude model.",
+      "people": [],
+      "organizations": [
+        "Anthropic"
+      ],
+      "technologies": [
+        "Claude 3.7 Sonnet"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Claude 3.7 Sonnet Release",
+          "url": "https://www.anthropic.com/news/claude-3-7-sonnet",
+          "publisher": "Anthropic",
+          "publishedDate": "2025-02-24",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "grok-3-beta-2025",
+          "label": "Travel backward to Grok 3 Beta Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gpt-4-5-2025",
+          "label": "Continue to GPT-4.5 Research Preview",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "gpt-4-5-2025",
+      "recordType": "event",
+      "title": "GPT-4.5 Research Preview",
+      "displayDate": "27 February 2025",
+      "eventDate": "2025-02-27",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI released GPT-4.5 as a research preview on February 27, 2025.",
+      "significance": "A major GPT-series scaling milestone before the GPT-5 generation.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-4.5"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "GPT-4.5 Research Preview",
+          "url": "https://openai.com/index/introducing-gpt-4-5/",
+          "publisher": "OpenAI",
+          "publishedDate": "2025-02-27",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "claude-3-7-sonnet-2025",
+          "label": "Travel backward to Claude 3.7 Sonnet Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "aya-vision-launch-2025",
           "label": "Continue to Aya Vision Public Launch",
@@ -1305,8 +1531,7 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige",
-      "eventDate": "2025-02-19"
+      "entryOrigin": "lineaige"
     },
     {
       "id": "aya-vision-launch-2025",
@@ -1368,8 +1593,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "paligemma-2-mix-release-2025",
-          "label": "Travel backward to PaliGemma 2 mix Release",
+          "targetId": "gpt-4-5-2025",
+          "label": "Travel backward to GPT-4.5 Research Preview",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -1519,8 +1744,8 @@
         },
         {
           "type": "chronological",
-          "targetId": "mistral-small-3-1-release-2025",
-          "label": "Continue to Mistral Small 3.1 Release",
+          "targetId": "command-a-2025",
+          "label": "Continue to Command A Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -1530,6 +1755,64 @@
       "contributor": null,
       "entryOrigin": "lineaige",
       "eventDate": "2025-03-10"
+    },
+    {
+      "id": "command-a-2025",
+      "recordType": "event",
+      "title": "Command A Release",
+      "displayDate": "13 March 2025",
+      "eventDate": "2025-03-13",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Cohere released Command A on March 13, 2025 as an enterprise-focused generative model.",
+      "significance": "A major Cohere Command-family model release.",
+      "people": [],
+      "organizations": [
+        "Cohere"
+      ],
+      "technologies": [
+        "Command A"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Command A Release",
+          "url": "https://cohere.com/blog/command-a",
+          "publisher": "Cohere",
+          "publishedDate": "2025-03-13",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "shieldgemma-2-release-2025",
+          "label": "Travel backward to ShieldGemma 2 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "mistral-small-3-1-release-2025",
+          "label": "Continue to Mistral Small 3.1 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
     },
     {
       "id": "mistral-small-3-1-release-2025",
@@ -1580,8 +1863,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "shieldgemma-2-release-2025",
-          "label": "Travel backward to ShieldGemma 2 Release",
+          "targetId": "command-a-2025",
+          "label": "Travel backward to Command A Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -1646,6 +1929,65 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "gemini-2-5-pro-experimental-2025",
+          "label": "Open adjacent same-time record: Gemini 2.5 Pro Experimental Introduction",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-03-25"
+    },
+    {
+      "id": "gemini-2-5-pro-experimental-2025",
+      "recordType": "event",
+      "title": "Gemini 2.5 Pro Experimental Introduction",
+      "displayDate": "25 March 2025",
+      "eventDate": "2025-03-25",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google introduced Gemini 2.5 on March 25, 2025, beginning with Gemini 2.5 Pro Experimental.",
+      "significance": "A major Gemini generation introducing built-in thinking capabilities across the family.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "Gemini 2.5 Pro"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Gemini 2.5 Pro Experimental Introduction",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/",
+          "publisher": "Google",
+          "publishedDate": "2025-03-25",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "txgemma-release-2025",
+          "label": "Open adjacent same-time record: TxGemma Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "llama-4-scout-maverick-release-2025",
           "label": "Continue to Llama 4 Scout and Maverick Release",
@@ -1656,8 +1998,7 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige",
-      "eventDate": "2025-03-25"
+      "entryOrigin": "lineaige"
     },
     {
       "id": "llama-4-scout-maverick-release-2025",
@@ -1699,8 +2040,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "txgemma-release-2025",
-          "label": "Travel backward to TxGemma Release",
+          "targetId": "gemini-2-5-pro-experimental-2025",
+          "label": "Travel backward to Gemini 2.5 Pro Experimental Introduction",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -1767,6 +2108,242 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "gpt-4-1-api-2025",
+          "label": "Open adjacent same-time record: GPT-4.1 API Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-04-14"
+    },
+    {
+      "id": "gpt-4-1-api-2025",
+      "recordType": "event",
+      "title": "GPT-4.1 API Release",
+      "displayDate": "14 April 2025",
+      "eventDate": "2025-04-14",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI launched GPT-4.1, GPT-4.1 mini and GPT-4.1 nano in the API on April 14, 2025.",
+      "significance": "A major GPT-series release focused on coding, instruction following and long context.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-4.1",
+        "GPT-4.1 mini",
+        "GPT-4.1 nano"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "GPT-4.1 API Release",
+          "url": "https://openai.com/index/gpt-4-1/",
+          "publisher": "OpenAI",
+          "publishedDate": "2025-04-14",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "dolphingemma-announcement-2025",
+          "label": "Open adjacent same-time record: DolphinGemma Announcement",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "openai-o3-o4-mini-2025",
+          "label": "Continue to OpenAI o3 and o4-mini Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "openai-o3-o4-mini-2025",
+      "recordType": "event",
+      "title": "OpenAI o3 and o4-mini Release",
+      "displayDate": "16 April 2025",
+      "eventDate": "2025-04-16",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI released o3 and o4-mini on April 16, 2025.",
+      "significance": "A major reasoning-model milestone combining deeper reasoning with tool use.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "OpenAI o3",
+        "OpenAI o4-mini"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "OpenAI o3 and o4-mini Release",
+          "url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+          "publisher": "OpenAI",
+          "publishedDate": "2025-04-16",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gpt-4-1-api-2025",
+          "label": "Travel backward to GPT-4.1 API Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "qwen3-2025",
+          "label": "Continue to Qwen3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "qwen3-2025",
+      "recordType": "event",
+      "title": "Qwen3 Release",
+      "displayDate": "29 April 2025",
+      "eventDate": "2025-04-29",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "The Qwen team announced the release of Qwen3 on April 29, 2025.",
+      "significance": "A major open-weight Qwen model-generation release.",
+      "people": [],
+      "organizations": [
+        "Qwen"
+      ],
+      "technologies": [
+        "Qwen3"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Qwen3 Release",
+          "url": "https://qwenlm.github.io/blog/qwen3/",
+          "publisher": "Qwen",
+          "publishedDate": "2025-04-29",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "openai-o3-o4-mini-2025",
+          "label": "Travel backward to OpenAI o3 and o4-mini Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "mistral-medium-3-2025",
+          "label": "Continue to Mistral Medium 3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "mistral-medium-3-2025",
+      "recordType": "event",
+      "title": "Mistral Medium 3 Release",
+      "displayDate": "7 May 2025",
+      "eventDate": "2025-05-07",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Mistral AI announced Mistral Medium 3 on May 7, 2025.",
+      "significance": "A major Mistral model release balancing frontier performance and deployment efficiency.",
+      "people": [],
+      "organizations": [
+        "Mistral AI"
+      ],
+      "technologies": [
+        "Mistral Medium 3"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Mistral Medium 3 Release",
+          "url": "https://mistral.ai/news/mistral-medium-3/",
+          "publisher": "Mistral AI",
+          "publishedDate": "2025-05-07",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "qwen3-2025",
+          "label": "Travel backward to Qwen3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "gemma-3n-preview-2025",
           "label": "Continue to Gemma 3n Preview",
@@ -1777,8 +2354,7 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige",
-      "eventDate": "2025-04-14"
+      "entryOrigin": "lineaige"
     },
     {
       "id": "gemma-3n-preview-2025",
@@ -1820,8 +2396,243 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "dolphingemma-announcement-2025",
-          "label": "Travel backward to DolphinGemma Announcement",
+          "targetId": "mistral-medium-3-2025",
+          "label": "Travel backward to Mistral Medium 3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "devstral-2025",
+          "label": "Continue to Devstral Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-05-20"
+    },
+    {
+      "id": "devstral-2025",
+      "recordType": "event",
+      "title": "Devstral Release",
+      "displayDate": "21 May 2025",
+      "eventDate": "2025-05-21",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Mistral AI introduced and released Devstral on May 21, 2025 for agentic software-engineering tasks.",
+      "significance": "A major open agentic coding-model release.",
+      "people": [],
+      "organizations": [
+        "Mistral AI"
+      ],
+      "technologies": [
+        "Devstral"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Devstral Release",
+          "url": "https://mistral.ai/news/devstral/",
+          "publisher": "Mistral AI",
+          "publishedDate": "2025-05-21",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemma-3n-preview-2025",
+          "label": "Travel backward to Gemma 3n Preview",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "claude-4-2025",
+          "label": "Continue to Claude 4 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "claude-4-2025",
+      "recordType": "event",
+      "title": "Claude 4 Release",
+      "displayDate": "22 May 2025",
+      "eventDate": "2025-05-22",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Anthropic introduced Claude Opus 4 and Claude Sonnet 4 on May 22, 2025.",
+      "significance": "A major new Claude model generation for coding, reasoning and agents.",
+      "people": [],
+      "organizations": [
+        "Anthropic"
+      ],
+      "technologies": [
+        "Claude Opus 4",
+        "Claude Sonnet 4"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Claude 4 Release",
+          "url": "https://www.anthropic.com/news/claude-4",
+          "publisher": "Anthropic",
+          "publishedDate": "2025-05-22",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "devstral-2025",
+          "label": "Travel backward to Devstral Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "magistral-2025",
+          "label": "Continue to Magistral Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "magistral-2025",
+      "recordType": "event",
+      "title": "Magistral Release",
+      "displayDate": "10 June 2025",
+      "eventDate": "2025-06-10",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Mistral AI announced Magistral on June 10, 2025 as its first reasoning-model family.",
+      "significance": "Mistral AI's first dedicated reasoning-model milestone.",
+      "people": [],
+      "organizations": [
+        "Mistral AI"
+      ],
+      "technologies": [
+        "Magistral"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Magistral Release",
+          "url": "https://mistral.ai/news/magistral/",
+          "publisher": "Mistral AI",
+          "publishedDate": "2025-06-10",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "claude-4-2025",
+          "label": "Travel backward to Claude 4 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-2-5-pro-flash-ga-2025",
+          "label": "Continue to Gemini 2.5 Pro and Flash General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "gemini-2-5-pro-flash-ga-2025",
+      "recordType": "event",
+      "title": "Gemini 2.5 Pro and Flash General Availability",
+      "displayDate": "17 June 2025",
+      "eventDate": "2025-06-17",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google released stable generally available versions of Gemini 2.5 Pro and Gemini 2.5 Flash on June 17, 2025.",
+      "significance": "The production general-availability milestone for Google's Gemini 2.5 flagship and Flash models.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "Gemini 2.5 Pro",
+        "Gemini 2.5 Flash"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Gemini 2.5 Pro and Flash General Availability",
+          "url": "https://blog.google/products-and-platforms/products/gemini/gemini-2-5-model-family-expands/",
+          "publisher": "Google",
+          "publishedDate": "2025-06-17",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "magistral-2025",
+          "label": "Travel backward to Magistral Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -1837,8 +2648,7 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige",
-      "eventDate": "2025-05-20"
+      "entryOrigin": "lineaige"
     },
     {
       "id": "gemma-3n-release-2025",
@@ -1902,8 +2712,184 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "gemma-3n-preview-2025",
-          "label": "Travel backward to Gemma 3n Preview",
+          "targetId": "gemini-2-5-pro-flash-ga-2025",
+          "label": "Travel backward to Gemini 2.5 Pro and Flash General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "grok-4-2025",
+          "label": "Continue to Grok 4 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-06-26"
+    },
+    {
+      "id": "grok-4-2025",
+      "recordType": "event",
+      "title": "Grok 4 Release",
+      "displayDate": "9 July 2025",
+      "eventDate": "2025-07-09",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI released Grok 4 on July 9, 2025 and introduced Grok 4 Heavy.",
+      "significance": "A major Grok generation with native tool use and real-time search integration.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [
+        "Grok 4",
+        "Grok 4 Heavy"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Grok 4 Release",
+          "url": "https://x.ai/news/grok-4",
+          "publisher": "xAI",
+          "publishedDate": "2025-07-09",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemma-3n-release-2025",
+          "label": "Travel backward to Gemma 3n Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "claude-opus-4-1-2025",
+          "label": "Continue to Claude Opus 4.1 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "claude-opus-4-1-2025",
+      "recordType": "event",
+      "title": "Claude Opus 4.1 Release",
+      "displayDate": "5 August 2025",
+      "eventDate": "2025-08-05",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Anthropic released Claude Opus 4.1 on August 5, 2025.",
+      "significance": "A major Opus-family upgrade for agentic tasks, coding and reasoning.",
+      "people": [],
+      "organizations": [
+        "Anthropic"
+      ],
+      "technologies": [
+        "Claude Opus 4.1"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Claude Opus 4.1 Release",
+          "url": "https://www.anthropic.com/news/claude-opus-4-1",
+          "publisher": "Anthropic",
+          "publishedDate": "2025-08-05",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "grok-4-2025",
+          "label": "Travel backward to Grok 4 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gpt-5-2025",
+          "label": "Continue to GPT-5 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "gpt-5-2025",
+      "recordType": "event",
+      "title": "GPT-5 Release",
+      "displayDate": "7 August 2025",
+      "eventDate": "2025-08-07",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI introduced GPT-5 on August 7, 2025.",
+      "significance": "A major GPT generation unifying fast responses, deeper reasoning and routing.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-5"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "GPT-5 Release",
+          "url": "https://openai.com/index/introducing-gpt-5/",
+          "publisher": "OpenAI",
+          "publishedDate": "2025-08-07",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "claude-opus-4-1-2025",
+          "label": "Travel backward to Claude Opus 4.1 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -1919,8 +2905,7 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige",
-      "eventDate": "2025-06-26"
+      "entryOrigin": "lineaige"
     },
     {
       "id": "gemma-3-270m-release-2025",
@@ -1982,8 +2967,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "gemma-3n-release-2025",
-          "label": "Travel backward to Gemma 3n Release",
+          "targetId": "gpt-5-2025",
+          "label": "Travel backward to GPT-5 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -2140,8 +3125,8 @@
         },
         {
           "type": "chronological",
-          "targetId": "gemini-3-release-2025",
-          "label": "Continue to Gemini 3 Release",
+          "targetId": "claude-sonnet-4-5-2025",
+          "label": "Continue to Claude Sonnet 4.5 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -2151,6 +3136,122 @@
       "contributor": null,
       "entryOrigin": "lineaige",
       "eventDate": "2025-09-13"
+    },
+    {
+      "id": "claude-sonnet-4-5-2025",
+      "recordType": "event",
+      "title": "Claude Sonnet 4.5 Release",
+      "displayDate": "29 September 2025",
+      "eventDate": "2025-09-29",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Anthropic released Claude Sonnet 4.5 on September 29, 2025.",
+      "significance": "A major Sonnet-family release focused on coding, agents and computer use.",
+      "people": [],
+      "organizations": [
+        "Anthropic"
+      ],
+      "technologies": [
+        "Claude Sonnet 4.5"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Claude Sonnet 4.5 Release",
+          "url": "https://www.anthropic.com/news/claude-sonnet-4-5",
+          "publisher": "Anthropic",
+          "publishedDate": "2025-09-29",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "vaultgemma-release-2025",
+          "label": "Travel backward to VaultGemma Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gpt-5-1-api-2025",
+          "label": "Continue to GPT-5.1 API Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "gpt-5-1-api-2025",
+      "recordType": "event",
+      "title": "GPT-5.1 API Release",
+      "displayDate": "13 November 2025",
+      "eventDate": "2025-11-13",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI released GPT-5.1 on its API platform on November 13, 2025.",
+      "significance": "A major GPT-5-series update balancing adaptive reasoning, intelligence and speed.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-5.1"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "GPT-5.1 API Release",
+          "url": "https://openai.com/index/gpt-5-1-for-developers/",
+          "publisher": "OpenAI",
+          "publishedDate": "2025-11-13",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "claude-sonnet-4-5-2025",
+          "label": "Travel backward to Claude Sonnet 4.5 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-release-2025",
+          "label": "Continue to Gemini 3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
     },
     {
       "id": "gemini-3-release-2025",
@@ -2193,8 +3294,125 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "vaultgemma-release-2025",
-          "label": "Travel backward to VaultGemma Release",
+          "targetId": "gpt-5-1-api-2025",
+          "label": "Travel backward to GPT-5.1 API Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "claude-opus-4-5-2025",
+          "label": "Continue to Claude Opus 4.5 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-11-18"
+    },
+    {
+      "id": "claude-opus-4-5-2025",
+      "recordType": "event",
+      "title": "Claude Opus 4.5 Release",
+      "displayDate": "24 November 2025",
+      "eventDate": "2025-11-24",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Anthropic released Claude Opus 4.5 on November 24, 2025.",
+      "significance": "A major Opus-family advance in coding, agents and computer use.",
+      "people": [],
+      "organizations": [
+        "Anthropic"
+      ],
+      "technologies": [
+        "Claude Opus 4.5"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Claude Opus 4.5 Release",
+          "url": "https://www.anthropic.com/news/claude-opus-4-5",
+          "publisher": "Anthropic",
+          "publishedDate": "2025-11-24",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-release-2025",
+          "label": "Travel backward to Gemini 3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gpt-5-2-2025",
+          "label": "Continue to GPT-5.2 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "gpt-5-2-2025",
+      "recordType": "event",
+      "title": "GPT-5.2 Release",
+      "displayDate": "11 December 2025",
+      "eventDate": "2025-12-11",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI introduced GPT-5.2 on December 11, 2025.",
+      "significance": "A major GPT-5-series frontier release for professional work and long-running agents.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-5.2"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "GPT-5.2 Release",
+          "url": "https://openai.com/index/introducing-gpt-5-2/",
+          "publisher": "OpenAI",
+          "publishedDate": "2025-12-11",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "claude-opus-4-5-2025",
+          "label": "Travel backward to Claude Opus 4.5 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -2210,8 +3428,7 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige",
-      "eventDate": "2025-11-18"
+      "entryOrigin": "lineaige"
     },
     {
       "id": "functiongemma-release-2025",
@@ -2264,8 +3481,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "gemini-3-release-2025",
-          "label": "Travel backward to Gemini 3 Release",
+          "targetId": "gpt-5-2-2025",
+          "label": "Travel backward to GPT-5.2 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -2331,8 +3548,8 @@
         },
         {
           "type": "chronological",
-          "targetId": "gemini-3-5-flash-release-2026",
-          "label": "Continue to Gemini 3.5 Flash GA Release",
+          "targetId": "claude-opus-4-6-2026",
+          "label": "Continue to Claude Opus 4.6 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -2342,6 +3559,472 @@
       "contributor": null,
       "entryOrigin": "lineaige",
       "eventDate": "2025-12-18"
+    },
+    {
+      "id": "claude-opus-4-6-2026",
+      "recordType": "event",
+      "title": "Claude Opus 4.6 Release",
+      "displayDate": "5 February 2026",
+      "eventDate": "2026-02-05",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Anthropic introduced Claude Opus 4.6 on February 5, 2026.",
+      "significance": "A major Opus-family upgrade for coding, long-running agents and knowledge work.",
+      "people": [],
+      "organizations": [
+        "Anthropic"
+      ],
+      "technologies": [
+        "Claude Opus 4.6"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Claude Opus 4.6 Release",
+          "url": "https://www.anthropic.com/news/claude-opus-4-6",
+          "publisher": "Anthropic",
+          "publishedDate": "2026-02-05",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "t5gemma-v2-release-2025",
+          "label": "Travel backward to T5Gemma v2 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "claude-sonnet-4-6-2026",
+          "label": "Continue to Claude Sonnet 4.6 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "claude-sonnet-4-6-2026",
+      "recordType": "event",
+      "title": "Claude Sonnet 4.6 Release",
+      "displayDate": "17 February 2026",
+      "eventDate": "2026-02-17",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Anthropic introduced Claude Sonnet 4.6 on February 17, 2026.",
+      "significance": "A major Sonnet-family upgrade across coding, computer use, reasoning and agent planning.",
+      "people": [],
+      "organizations": [
+        "Anthropic"
+      ],
+      "technologies": [
+        "Claude Sonnet 4.6"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Claude Sonnet 4.6 Release",
+          "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+          "publisher": "Anthropic",
+          "publishedDate": "2026-02-17",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "claude-opus-4-6-2026",
+          "label": "Travel backward to Claude Opus 4.6 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-1-pro-2026",
+          "label": "Continue to Gemini 3.1 Pro Introduction",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "gemini-3-1-pro-2026",
+      "recordType": "event",
+      "title": "Gemini 3.1 Pro Introduction",
+      "displayDate": "19 February 2026",
+      "eventDate": "2026-02-19",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google introduced Gemini 3.1 Pro on February 19, 2026.",
+      "significance": "A major Gemini 3-series upgrade for complex reasoning and agentic workflows.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [
+        "Gemini 3.1 Pro"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Gemini 3.1 Pro Introduction",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+          "publisher": "Google",
+          "publishedDate": "2026-02-19",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "claude-sonnet-4-6-2026",
+          "label": "Travel backward to Claude Sonnet 4.6 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gpt-5-3-instant-2026",
+          "label": "Continue to GPT-5.3 Instant Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "gpt-5-3-instant-2026",
+      "recordType": "event",
+      "title": "GPT-5.3 Instant Release",
+      "displayDate": "3 March 2026",
+      "eventDate": "2026-03-03",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI released GPT-5.3 Instant on March 3, 2026.",
+      "significance": "A major GPT-5-series update to OpenAI's everyday conversational model.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-5.3 Instant"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "GPT-5.3 Instant Release",
+          "url": "https://openai.com/index/gpt-5-3-instant/",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-03-03",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-1-pro-2026",
+          "label": "Travel backward to Gemini 3.1 Pro Introduction",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gpt-5-4-2026",
+          "label": "Continue to GPT-5.4 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "gpt-5-4-2026",
+      "recordType": "event",
+      "title": "GPT-5.4 Release",
+      "displayDate": "5 March 2026",
+      "eventDate": "2026-03-05",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI released GPT-5.4 and GPT-5.4 Pro on March 5, 2026.",
+      "significance": "A major frontier GPT release for professional work, reasoning, coding and agents.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-5.4",
+        "GPT-5.4 Pro"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "GPT-5.4 Release",
+          "url": "https://openai.com/index/introducing-gpt-5-4/",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-03-05",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gpt-5-3-instant-2026",
+          "label": "Travel backward to GPT-5.3 Instant Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "mistral-small-4-2026",
+          "label": "Continue to Mistral Small 4 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "mistral-small-4-2026",
+      "recordType": "event",
+      "title": "Mistral Small 4 Release",
+      "displayDate": "16 March 2026",
+      "eventDate": "2026-03-16",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Mistral AI announced Mistral Small 4 on March 16, 2026.",
+      "significance": "A major Mistral Small generation unifying reasoning, multimodal and agentic coding capabilities.",
+      "people": [],
+      "organizations": [
+        "Mistral AI"
+      ],
+      "technologies": [
+        "Mistral Small 4"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Mistral Small 4 Release",
+          "url": "https://mistral.ai/news/mistral-small-4/",
+          "publisher": "Mistral AI",
+          "publishedDate": "2026-03-16",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gpt-5-4-2026",
+          "label": "Travel backward to GPT-5.4 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gpt-5-5-2026",
+          "label": "Continue to GPT-5.5 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "gpt-5-5-2026",
+      "recordType": "event",
+      "title": "GPT-5.5 Release",
+      "displayDate": "23 April 2026",
+      "eventDate": "2026-04-23",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI released GPT-5.5 on April 23, 2026.",
+      "significance": "A major GPT frontier-model release for long-horizon computer-based work.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-5.5",
+        "GPT-5.5 Pro"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "GPT-5.5 Release",
+          "url": "https://openai.com/index/introducing-gpt-5-5/",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-04-23",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "mistral-small-4-2026",
+          "label": "Travel backward to Mistral Small 4 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "deepseek-v4-preview-2026",
+          "label": "Continue to DeepSeek-V4 Preview Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "deepseek-v4-preview-2026",
+      "recordType": "event",
+      "title": "DeepSeek-V4 Preview Release",
+      "displayDate": "24 April 2026",
+      "eventDate": "2026-04-24",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "DeepSeek introduced DeepSeek-V4 Preview on April 24, 2026.",
+      "significance": "A major DeepSeek model-generation preview with million-token context.",
+      "people": [],
+      "organizations": [
+        "DeepSeek"
+      ],
+      "technologies": [
+        "DeepSeek-V4 Preview"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "DeepSeek-V4 Preview Release",
+          "url": "https://deepseek.com/en/news/v4-preview",
+          "publisher": "DeepSeek",
+          "publishedDate": "2026-04-24",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gpt-5-5-2026",
+          "label": "Travel backward to GPT-5.5 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-5-flash-release-2026",
+          "label": "Continue to Gemini 3.5 Flash GA Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
     },
     {
       "id": "gemini-3-5-flash-release-2026",
@@ -2393,8 +4076,244 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "t5gemma-v2-release-2025",
-          "label": "Travel backward to T5Gemma v2 Release",
+          "targetId": "deepseek-v4-preview-2026",
+          "label": "Travel backward to DeepSeek-V4 Preview Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "command-a-plus-2026",
+          "label": "Continue to Command A+ Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-05-19"
+    },
+    {
+      "id": "command-a-plus-2026",
+      "recordType": "event",
+      "title": "Command A+ Release",
+      "displayDate": "20 May 2026",
+      "eventDate": "2026-05-20",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Cohere released Command A+ on May 20, 2026.",
+      "significance": "A major Command-family open-weight enterprise model release.",
+      "people": [],
+      "organizations": [
+        "Cohere"
+      ],
+      "technologies": [
+        "Command A+"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Command A+ Release",
+          "url": "https://cohere.com/blog/command-a-plus",
+          "publisher": "Cohere",
+          "publishedDate": "2026-05-20",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-5-flash-release-2026",
+          "label": "Travel backward to Gemini 3.5 Flash GA Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "mistral-medium-3-5-2026",
+          "label": "Continue to Mistral Medium 3.5 Public Preview",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "mistral-medium-3-5-2026",
+      "recordType": "event",
+      "title": "Mistral Medium 3.5 Public Preview",
+      "displayDate": "22 May 2026",
+      "eventDate": "2026-05-22",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Mistral AI made Mistral Medium 3.5 available in public preview on May 22, 2026.",
+      "significance": "A major Mistral model update optimized for long-horizon coding and productivity work.",
+      "people": [],
+      "organizations": [
+        "Mistral AI"
+      ],
+      "technologies": [
+        "Mistral Medium 3.5"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Mistral Medium 3.5 Public Preview",
+          "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/",
+          "publisher": "Mistral AI",
+          "publishedDate": "2026-05-22",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "command-a-plus-2026",
+          "label": "Travel backward to Command A+ Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gpt-5-6-2026",
+          "label": "Continue to GPT-5.6 General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "gpt-5-6-2026",
+      "recordType": "event",
+      "title": "GPT-5.6 General Availability",
+      "displayDate": "9 July 2026",
+      "eventDate": "2026-07-09",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI launched the GPT-5.6 family for general availability on July 9, 2026.",
+      "significance": "A major GPT frontier family release spanning Sol, Terra and Luna.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-5.6",
+        "GPT-5.6 Sol",
+        "GPT-5.6 Terra",
+        "GPT-5.6 Luna"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "GPT-5.6 General Availability",
+          "url": "https://openai.com/index/gpt-5-6/",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-07-09",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "mistral-medium-3-5-2026",
+          "label": "Travel backward to Mistral Medium 3.5 Public Preview",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "grok-4-5-2026",
+          "label": "Continue to Grok 4.5 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "grok-4-5-2026",
+      "recordType": "event",
+      "title": "Grok 4.5 Release",
+      "displayDate": "16 July 2026",
+      "eventDate": "2026-07-16",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI launched Grok 4.5 on July 16, 2026.",
+      "significance": "A major Grok frontier-model release for coding, agents and knowledge work.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [
+        "Grok 4.5"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Grok 4.5 Release",
+          "url": "https://x.ai/news/grok-4-5",
+          "publisher": "xAI",
+          "publishedDate": "2026-07-16",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gpt-5-6-2026",
+          "label": "Travel backward to GPT-5.6 General Availability",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -2410,8 +4329,7 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige",
-      "eventDate": "2026-05-19"
+      "entryOrigin": "lineaige"
     },
     {
       "id": "gemini-3-5-flash-lite-ga-2026",
@@ -2453,8 +4371,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "gemini-3-5-flash-release-2026",
-          "label": "Travel backward to Gemini 3.5 Flash GA Release",
+          "targetId": "grok-4-5-2026",
+          "label": "Travel backward to Grok 4.5 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -2592,8 +4510,8 @@
         },
         {
           "type": "chronological",
-          "targetId": "gemini-3-7-flash-ga-2026",
-          "label": "Continue to Gemini 3.7 Flash General Availability",
+          "targetId": "grok-4-6-2026",
+          "label": "Continue to Grok 4.6 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -2603,6 +4521,64 @@
       "contributor": null,
       "entryOrigin": "lineaige",
       "eventDate": "2026-07-30"
+    },
+    {
+      "id": "grok-4-6-2026",
+      "recordType": "event",
+      "title": "Grok 4.6 Release",
+      "displayDate": "12 August 2026",
+      "eventDate": "2026-08-12",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI released Grok 4.6 on August 12, 2026.",
+      "significance": "A major Grok update focused on long-running agents and interactive and visual work.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [
+        "Grok 4.6"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Grok 4.6 Release",
+          "url": "https://x.ai/news/grok-4-6",
+          "publisher": "xAI",
+          "publishedDate": "2026-08-12",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemini-robotics-2-2026",
+          "label": "Travel backward to Gemini Robotics 2 Introduction",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-7-flash-ga-2026",
+          "label": "Continue to Gemini 3.7 Flash General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
     },
     {
       "id": "gemini-3-7-flash-ga-2026",
@@ -2654,8 +4630,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "gemini-robotics-2-2026",
-          "label": "Travel backward to Gemini Robotics 2 Introduction",
+          "targetId": "grok-4-6-2026",
+          "label": "Travel backward to Grok 4.6 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -3290,8 +5266,8 @@
         },
         {
           "type": "chronological",
-          "targetId": "gemini-3-8-flash-lite-tts-ga-2026",
-          "label": "Continue to Gemini 3.8 Flash-Lite TTS General Availability",
+          "targetId": "grok-4-7-2026",
+          "label": "Continue to Grok 4.7 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -3301,6 +5277,64 @@
       "contributor": null,
       "entryOrigin": "lineaige",
       "eventDate": "2026-09-17"
+    },
+    {
+      "id": "grok-4-7-2026",
+      "recordType": "event",
+      "title": "Grok 4.7 Release",
+      "displayDate": "21 September 2026",
+      "eventDate": "2026-09-21",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI introduced Grok 4.7 on September 21, 2026.",
+      "significance": "A major Grok frontier-model release for coding and knowledge work.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [
+        "Grok 4.7"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-02T10:53:20Z"
+      },
+      "sources": [
+        {
+          "title": "Grok 4.7 Release",
+          "url": "https://x.ai/news/grok-4-7",
+          "publisher": "xAI",
+          "publishedDate": "2026-09-21",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "antigravity-agent-09-2026-release",
+          "label": "Travel backward to Antigravity Agent 09-2026 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-8-flash-lite-tts-ga-2026",
+          "label": "Continue to Gemini 3.8 Flash-Lite TTS General Availability",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
     },
     {
       "id": "gemini-3-8-flash-lite-tts-ga-2026",
@@ -3352,8 +5386,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "antigravity-agent-09-2026-release",
-          "label": "Travel backward to Antigravity Agent 09-2026 Release",
+          "targetId": "grok-4-7-2026",
+          "label": "Travel backward to Grok 4.7 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
