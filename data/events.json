@@ -5636,6 +5636,45 @@
       "eventDate": "2026-07-30"
     },
     {
+      "id": "xai-introducing-grok-bot-2026",
+      "recordType": "event",
+      "title": "Introducing Grok Bot",
+      "displayDate": "11 August 2026",
+      "eventDate": "2026-08-11",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI published the first-party milestone “Introducing Grok Bot” on August 11, 2026; the source states an introduction, release, launch, or availability event.",
+      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
+        "lastVerified": "2026-10-02T10:56:28Z"
+      },
+      "sources": [
+        {
+          "title": "Introducing Grok Bot",
+          "url": "https://x.ai/news/introducing-grok-bot",
+          "publisher": "xAI",
+          "publishedDate": "2026-08-11",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
       "id": "grok-4-6-2026",
       "recordType": "event",
       "title": "Grok 4.6 Release",
@@ -6406,6 +6445,45 @@
       "contributor": null,
       "entryOrigin": "lineaige",
       "eventDate": "2026-09-17"
+    },
+    {
+      "id": "xai-introducing-grok-voice-transcribe-2-0-2026",
+      "recordType": "event",
+      "title": "Introducing Grok Voice Transcribe 2.0",
+      "displayDate": "18 September 2026",
+      "eventDate": "2026-09-18",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI published the first-party milestone “Introducing Grok Voice Transcribe 2.0” on September 18, 2026; the source states an introduction, release, launch, or availability event.",
+      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
+        "lastVerified": "2026-10-02T10:56:26Z"
+      },
+      "sources": [
+        {
+          "title": "Introducing Grok Voice Transcribe 2.0",
+          "url": "https://x.ai/news/grok-voice-transcribe-2",
+          "publisher": "xAI",
+          "publishedDate": "2026-09-18",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
     },
     {
       "id": "grok-4-7-2026",
