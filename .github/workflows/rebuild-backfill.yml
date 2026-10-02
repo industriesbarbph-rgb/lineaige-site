@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: lineaige-public-backfill-rebuild
+  group: lineaige-public-data-write
   cancel-in-progress: false
 
 jobs:
