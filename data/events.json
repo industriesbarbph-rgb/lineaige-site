@@ -2551,8 +2551,8 @@
         },
         {
           "type": "chronological",
-          "targetId": "lenet-document-recognition-1998",
-          "label": "Continue to Gradient Based Learning Applied to Document Recognition",
+          "targetId": "lecun-document-recognition-1998",
+          "label": "Continue to Gradient-Based Learning Applied to Document Recognition",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -2562,158 +2562,6 @@
       "contributor": null,
       "entryOrigin": "lineaige",
       "eventDate": "1997-11-15"
-    },
-    {
-      "id": "lenet-document-recognition-1998",
-      "recordType": "event",
-      "title": "Gradient Based Learning Applied to Document Recognition",
-      "displayDate": "1998",
-      "datePrecision": "year",
-      "temporalState": "recorded",
-      "status": "VERIFIED RECORD",
-      "summary": "Yann Le Cun, Léon Bottou, Yoshua Bengio and Patrick Haffner published 'Gradient Based Learning Applied to Document Recognition' in Proceedings of the IEEE in 1998. The paper documents gradient-based learning for handwritten character and document recognition, including convolutional neural networks and the LeNet-5 architecture.",
-      "significance": "A documented 1998 research-publication milestone for convolutional neural networks and trainable document-recognition systems, recorded at publication-year precision without treating it as an invention date, development start, universal priority claim, or causal ancestor assertion.",
-      "people": [
-        "Yann Le Cun",
-        "Léon Bottou",
-        "Yoshua Bengio",
-        "Patrick Haffner"
-      ],
-      "organizations": [],
-      "technologies": [
-        "Convolutional neural networks",
-        "LeNet-5",
-        "Gradient-based learning",
-        "Document recognition"
-      ],
-      "verification": {
-        "state": "verified",
-        "factualClaim": true,
-        "confidence": "high",
-        "note": "Coauthor Léon Bottou's publication page directly supports the title, four authors, Proceedings of IEEE venue, volume 86 issue 11, pages 2278-2324, and publication year 1998, and provides the paper itself. CiNii Research independently corroborates the title, authors, DOI 10.1109/5.726791, publisher, venue, volume/issue, pages and year. The candidate deliberately stores only year precision because this run did not establish a publication day from first-party evidence. No invention date, development geography, ancestry, influence, causality, or relationship edge is inferred.",
-        "lastVerified": "2026-09-14T13:07:48+08:00"
-      },
-      "sources": [
-        {
-          "title": "Gradient Based Learning Applied to Document Recognition",
-          "url": "https://leon.bottou.org/papers/lecun-98h",
-          "publisher": "Léon Bottou",
-          "publishedDate": null,
-          "sourceType": "paper",
-          "sourceRole": "claim-evidence",
-          "primary": true,
-          "archivedUrl": null
-        },
-        {
-          "title": "Gradient-based learning applied to document recognition",
-          "url": "https://cir.nii.ac.jp/crid/1362544418782658688",
-          "publisher": "CiNii Research / National Institute of Informatics",
-          "publishedDate": null,
-          "sourceType": "archive",
-          "sourceRole": "corroboration",
-          "primary": false,
-          "archivedUrl": null
-        }
-      ],
-      "relationships": [
-        {
-          "type": "chronological",
-          "targetId": "lstm-1997",
-          "label": "Travel backward to Long Short-Term Memory",
-          "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
-          "sourceUrls": []
-        },
-        {
-          "type": "navigation",
-          "targetId": "lenet-5-publication-1998",
-          "label": "Open adjacent same-time record: LeNet-5 — 1998 Proceedings of the IEEE Publication Milestone",
-          "evidenceState": "navigation-only",
-          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
-          "sourceUrls": []
-        }
-      ],
-      "corrections": [],
-      "contributor": null,
-      "entryOrigin": "lineaige",
-      "eventYear": "1998"
-    },
-    {
-      "id": "lenet-5-publication-1998",
-      "recordType": "event",
-      "title": "LeNet-5 — 1998 Proceedings of the IEEE Publication Milestone",
-      "displayDate": "November 1998",
-      "datePrecision": "month",
-      "temporalState": "recorded",
-      "status": "VERIFIED RECORD",
-      "summary": "In November 1998, Yann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner published \"Gradient-Based Learning Applied to Document Recognition\" in Proceedings of the IEEE. The paper describes gradient-based learning for document recognition and presents the LeNet-5 convolutional neural-network architecture in that publication context.",
-      "significance": "A directly identifiable publication milestone for LeNet-5 and gradient-trained convolutional neural networks in document recognition. LINEAiGE records the November 1998 publication milestone without treating it as the invention date of convolutional neural networks, LeNet's first implementation date, or a universal system-birth date.",
-      "people": [
-        "Yann LeCun",
-        "Léon Bottou",
-        "Yoshua Bengio",
-        "Patrick Haffner"
-      ],
-      "organizations": [
-        "Institute of Electrical and Electronics Engineers (IEEE)"
-      ],
-      "technologies": [
-        "LeNet-5",
-        "Convolutional neural networks",
-        "Gradient-based learning",
-        "Document recognition"
-      ],
-      "verification": {
-        "state": "verified",
-        "factualClaim": true,
-        "confidence": "high",
-        "note": "The IEEE publication metadata and DOI identify the article, authors, Proceedings of the IEEE volume 86 issue 11, pages 2278-2324, and November 1998 publication context. An author-hosted copy is available from Yann LeCun's publication archive. This candidate is limited to the November 1998 publication/documentation milestone and does not infer an exact publication day, first implementation date, development geography, universal priority, ancestry, influence, causality, or relationship edges.",
-        "lastVerified": "2026-09-12T21:06:48+08:00"
-      },
-      "sources": [
-        {
-          "title": "Gradient-Based Learning Applied to Document Recognition",
-          "url": "https://doi.org/10.1109/5.726791",
-          "publisher": "Proceedings of the IEEE / IEEE",
-          "publishedDate": null,
-          "sourceType": "paper",
-          "sourceRole": "claim-evidence",
-          "primary": true,
-          "archivedUrl": null
-        },
-        {
-          "title": "Gradient-Based Learning Applied to Document Recognition — author-hosted PDF",
-          "url": "http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf",
-          "publisher": "Yann LeCun",
-          "publishedDate": null,
-          "sourceType": "paper",
-          "sourceRole": "corroboration",
-          "primary": true,
-          "archivedUrl": null
-        }
-      ],
-      "relationships": [
-        {
-          "type": "navigation",
-          "targetId": "lenet-document-recognition-1998",
-          "label": "Open adjacent same-time record: Gradient Based Learning Applied to Document Recognition",
-          "evidenceState": "navigation-only",
-          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
-          "sourceUrls": []
-        },
-        {
-          "type": "navigation",
-          "targetId": "lecun-document-recognition-1998",
-          "label": "Open adjacent same-time record: Gradient-Based Learning Applied to Document Recognition",
-          "evidenceState": "navigation-only",
-          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
-          "sourceUrls": []
-        }
-      ],
-      "corrections": [],
-      "contributor": null,
-      "entryOrigin": "lineaige",
-      "eventMonth": "1998-11"
     },
     {
       "id": "lecun-document-recognition-1998",
@@ -2780,11 +2628,11 @@
       ],
       "relationships": [
         {
-          "type": "navigation",
-          "targetId": "lenet-5-publication-1998",
-          "label": "Open adjacent same-time record: LeNet-5 — 1998 Proceedings of the IEEE Publication Milestone",
-          "evidenceState": "navigation-only",
-          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "type": "chronological",
+          "targetId": "lstm-1997",
+          "label": "Travel backward to Long Short-Term Memory",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
         },
         {
@@ -8408,7 +8256,7 @@
       "id": "chatgpt-2022",
       "recordType": "event",
       "title": "Introducing ChatGPT",
-      "displayDate": "2022",
+      "displayDate": "30 November 2022",
       "eventDate": "2022-11-30",
       "temporalState": "recorded",
       "status": "VERIFIED SYSTEM BIRTH",
@@ -8459,7 +8307,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "datePrecision": "day"
     },
     {
       "id": "llama-public-release-2023",
@@ -8629,7 +8478,7 @@
       "id": "claude-2023",
       "recordType": "event",
       "title": "Introducing Claude",
-      "displayDate": "2023",
+      "displayDate": "14 March 2023",
       "eventDate": "2023-03-14",
       "temporalState": "recorded",
       "status": "VERIFIED SYSTEM BIRTH",
@@ -8680,7 +8529,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "datePrecision": "day"
     },
     {
       "id": "falcon-2023",
@@ -13055,65 +12905,6 @@
         },
         {
           "type": "navigation",
-          "targetId": "gemini-2-5-pro-experimental-2025",
-          "label": "Open adjacent same-time record: Gemini 2.5 Pro Experimental Introduction",
-          "evidenceState": "navigation-only",
-          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
-          "sourceUrls": []
-        }
-      ],
-      "corrections": [],
-      "contributor": null,
-      "entryOrigin": "lineaige",
-      "eventDate": "2025-03-25"
-    },
-    {
-      "id": "gemini-2-5-pro-experimental-2025",
-      "recordType": "event",
-      "title": "Gemini 2.5 Pro Experimental Introduction",
-      "displayDate": "25 March 2025",
-      "eventDate": "2025-03-25",
-      "datePrecision": "day",
-      "temporalState": "recorded",
-      "status": "VERIFIED RECORD",
-      "summary": "Google introduced Gemini 2.5 on March 25, 2025, beginning with Gemini 2.5 Pro Experimental.",
-      "significance": "A major Gemini generation introducing built-in thinking capabilities across the family.",
-      "people": [],
-      "organizations": [
-        "Google"
-      ],
-      "technologies": [
-        "Gemini 2.5 Pro"
-      ],
-      "verification": {
-        "state": "verified",
-        "factualClaim": true,
-        "confidence": "high",
-        "note": "Curated major-gap admission from a dated first-party release or announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
-        "lastVerified": "2026-10-02T10:53:20Z"
-      },
-      "sources": [
-        {
-          "title": "Gemini 2.5 Pro Experimental Introduction",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/",
-          "publisher": "Google",
-          "publishedDate": "2025-03-25",
-          "sourceType": "official-announcement",
-          "primary": true,
-          "archivedUrl": null
-        }
-      ],
-      "relationships": [
-        {
-          "type": "navigation",
-          "targetId": "gemini-2-5-introduction-2025",
-          "label": "Open adjacent same-time record: Gemini 2.5 Introduction",
-          "evidenceState": "navigation-only",
-          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
-          "sourceUrls": []
-        },
-        {
-          "type": "navigation",
           "targetId": "txgemma-release-2025",
           "label": "Open adjacent same-time record: TxGemma Release",
           "evidenceState": "navigation-only",
@@ -13123,7 +12914,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-03-25"
     },
     {
       "id": "txgemma-release-2025",
@@ -13164,8 +12956,8 @@
       "relationships": [
         {
           "type": "navigation",
-          "targetId": "gemini-2-5-pro-experimental-2025",
-          "label": "Open adjacent same-time record: Gemini 2.5 Pro Experimental Introduction",
+          "targetId": "gemini-2-5-introduction-2025",
+          "label": "Open adjacent same-time record: Gemini 2.5 Introduction",
           "evidenceState": "navigation-only",
           "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
           "sourceUrls": []
