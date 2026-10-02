@@ -1345,6 +1345,14 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "grok-3-beta-2025",
+          "label": "Open adjacent same-time record: Grok 3 Beta Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "mistral-small-3-release-2025",
           "label": "Travel backward to Mistral Small 3 Release",
@@ -1404,6 +1412,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "paligemma-2-mix-release-2025",
+          "label": "Open adjacent same-time record: PaliGemma 2 mix Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "paligemma-2-mix-release-2025",
@@ -1529,6 +1545,14 @@
       ],
       "relationships": [
         {
+          "type": "navigation",
+          "targetId": "gpt-4-5-release-2025",
+          "label": "Open adjacent same-time record: GPT-4.5 Research Preview",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "claude-3-7-sonnet-2025",
           "label": "Travel backward to Claude 3.7 Sonnet Release",
@@ -1586,6 +1610,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gpt-4-5-2025",
+          "label": "Open adjacent same-time record: GPT-4.5 Research Preview",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "gpt-4-5-2025",
@@ -1748,6 +1780,14 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "shieldgemma-2-release-2025",
+          "label": "Open adjacent same-time record: ShieldGemma 2 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "aya-vision-launch-2025",
           "label": "Travel backward to Aya Vision Public Launch",
@@ -1834,6 +1874,14 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "gemma-3-release-2025",
+          "label": "Open adjacent same-time record: Gemma 3 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "command-a-2025",
           "label": "Continue to Command A Release",
@@ -1884,6 +1932,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "command-a-release-2025",
+          "label": "Open adjacent same-time record: Command A Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "chronological",
           "targetId": "shieldgemma-2-release-2025",
@@ -1957,6 +2013,22 @@
           "evidenceState": "navigation-only",
           "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
           "sourceUrls": []
+        },
+        {
+          "type": "navigation",
+          "targetId": "command-a-2025",
+          "label": "Open adjacent same-time record: Command A Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
+          "type": "navigation",
+          "targetId": "olmo-2-32b-release-2025",
+          "label": "Open adjacent same-time record: OLMo 2 32B Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
         }
       ],
       "corrections": [],
@@ -2001,6 +2073,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "command-a-release-2025",
+          "label": "Open adjacent same-time record: Command A Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "command-a-release-2025",
@@ -2138,6 +2218,14 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "gemini-2-5-pro-experimental-2025",
+          "label": "Open adjacent same-time record: Gemini 2.5 Pro Experimental Introduction",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "mistral-small-3-1-release-2025",
           "label": "Travel backward to Mistral Small 3.1 Release",
@@ -2219,6 +2307,22 @@
           "evidenceState": "navigation-only",
           "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
           "sourceUrls": []
+        },
+        {
+          "type": "navigation",
+          "targetId": "txgemma-release-2025",
+          "label": "Open adjacent same-time record: TxGemma Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
+          "type": "navigation",
+          "targetId": "gemini-2-5-introduction-2025",
+          "label": "Open adjacent same-time record: Gemini 2.5 Introduction",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
         }
       ],
       "corrections": [],
@@ -2264,6 +2368,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gemini-2-5-pro-experimental-2025",
+          "label": "Open adjacent same-time record: Gemini 2.5 Pro Experimental Introduction",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "gemini-2-5-pro-experimental-2025",
@@ -2394,6 +2506,14 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "gpt-4-1-api-2025",
+          "label": "Open adjacent same-time record: GPT-4.1 API Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "llama-4-scout-maverick-release-2025",
           "label": "Travel backward to Llama 4 Scout and Maverick Release",
@@ -2477,6 +2597,22 @@
           "evidenceState": "navigation-only",
           "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
           "sourceUrls": []
+        },
+        {
+          "type": "navigation",
+          "targetId": "dolphingemma-announcement-2025",
+          "label": "Open adjacent same-time record: DolphinGemma Announcement",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
+          "type": "navigation",
+          "targetId": "gpt-4-1-api-launch-2025",
+          "label": "Open adjacent same-time record: GPT-4.1 API Launch",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
         }
       ],
       "corrections": [],
@@ -2522,6 +2658,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gpt-4-1-api-2025",
+          "label": "Open adjacent same-time record: GPT-4.1 API Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "gpt-4-1-api-2025",
@@ -2582,6 +2726,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "openai-o3-o4-mini-release-2025",
+          "label": "Open adjacent same-time record: OpenAI o3 and o4-mini Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "chronological",
           "targetId": "gpt-4-1-api-launch-2025",
@@ -2650,6 +2802,14 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "openai-o3-o4-mini-2025",
+          "label": "Open adjacent same-time record: OpenAI o3 and o4-mini Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "qwen3-2025",
           "label": "Continue to Qwen3 Release",
@@ -2700,6 +2860,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "qwen3-release-2025",
+          "label": "Open adjacent same-time record: Qwen3 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "chronological",
           "targetId": "openai-o3-o4-mini-release-2025",
@@ -2768,6 +2936,14 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "qwen3-2025",
+          "label": "Open adjacent same-time record: Qwen3 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "mistral-medium-3-2025",
           "label": "Continue to Mistral Medium 3 Release",
@@ -2818,6 +2994,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "mistral-medium-3-release-2025",
+          "label": "Open adjacent same-time record: Mistral Medium 3 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "chronological",
           "targetId": "qwen3-release-2025",
@@ -2876,6 +3060,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "mistral-medium-3-2025",
+          "label": "Open adjacent same-time record: Mistral Medium 3 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "mistral-medium-3-2025",
@@ -2996,6 +3188,14 @@
       ],
       "relationships": [
         {
+          "type": "navigation",
+          "targetId": "devstral-release-2025",
+          "label": "Open adjacent same-time record: Devstral Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "gemma-3n-preview-2025",
           "label": "Travel backward to Gemma 3n Preview",
@@ -3063,6 +3263,14 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "devstral-2025",
+          "label": "Open adjacent same-time record: Devstral Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "claude-4-2025",
           "label": "Continue to Claude 4 Release",
@@ -3114,6 +3322,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "claude-4-release-2025",
+          "label": "Open adjacent same-time record: Claude 4 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "chronological",
           "targetId": "devstral-release-2025",
@@ -3173,6 +3389,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "claude-4-2025",
+          "label": "Open adjacent same-time record: Claude 4 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "claude-4-2025",
@@ -3292,6 +3516,14 @@
       ],
       "relationships": [
         {
+          "type": "navigation",
+          "targetId": "gemini-2-5-ga-2025",
+          "label": "Open adjacent same-time record: Gemini 2.5 Pro and Flash General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "magistral-2025",
           "label": "Travel backward to Magistral Release",
@@ -3352,6 +3584,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gemini-2-5-pro-flash-ga-2025",
+          "label": "Open adjacent same-time record: Gemini 2.5 Pro and Flash General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "gemini-2-5-pro-flash-ga-2025",
@@ -3495,6 +3735,14 @@
       ],
       "relationships": [
         {
+          "type": "navigation",
+          "targetId": "grok-4-release-2025",
+          "label": "Open adjacent same-time record: Grok 4 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "gemma-3n-release-2025",
           "label": "Travel backward to Gemma 3n Release",
@@ -3553,6 +3801,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "grok-4-2025",
+          "label": "Open adjacent same-time record: Grok 4 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "grok-4-2025",
@@ -3621,6 +3877,64 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "claude-opus-4-1-release-2025",
+          "label": "Open adjacent same-time record: Claude Opus 4.1 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "claude-opus-4-1-release-2025",
+      "recordType": "event",
+      "title": "Claude Opus 4.1 Release",
+      "displayDate": "5 August 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Anthropic released Claude Opus 4.1 on August 5, 2025.",
+      "significance": "A Claude Opus-family upgrade focused on agentic tasks, coding, and reasoning.",
+      "people": [],
+      "organizations": [
+        "Anthropic"
+      ],
+      "technologies": [
+        "Claude Opus 4.1"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "First-party dated source directly supports this release/introduction boundary. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T18:40:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "Claude Opus 4.1 Release",
+          "url": "https://www.anthropic.com/news/claude-opus-4-1",
+          "publisher": "Anthropic",
+          "publishedDate": "2025-08-05",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "claude-opus-4-1-2025",
+          "label": "Open adjacent same-time record: Claude Opus 4.1 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "gpt-5-2025",
           "label": "Continue to GPT-5 Release",
@@ -3631,7 +3945,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-08-05"
     },
     {
       "id": "gpt-5-2025",
@@ -3671,8 +3986,16 @@
       ],
       "relationships": [
         {
+          "type": "navigation",
+          "targetId": "gpt-5-release-2025",
+          "label": "Open adjacent same-time record: GPT-5 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
-          "targetId": "claude-opus-4-1-2025",
+          "targetId": "claude-opus-4-1-release-2025",
           "label": "Travel backward to Claude Opus 4.1 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
@@ -3728,6 +4051,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gpt-5-2025",
+          "label": "Open adjacent same-time record: GPT-5 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "gpt-5-2025",
@@ -3968,6 +4299,65 @@
         },
         {
           "type": "chronological",
+          "targetId": "grok-4-fast-release-2025",
+          "label": "Continue to Grok 4 Fast Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-09-13"
+    },
+    {
+      "id": "grok-4-fast-release-2025",
+      "recordType": "event",
+      "title": "Grok 4 Fast Release",
+      "displayDate": "19 September 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI introduced Grok 4 Fast on September 19, 2025.",
+      "significance": "An xAI model milestone focused on cost-efficient reasoning with unified reasoning and non-reasoning modes.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [
+        "Grok 4 Fast"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "First-party dated source directly supports this release/introduction boundary. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T18:40:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "Grok 4 Fast Release",
+          "url": "https://x.ai/news/grok-4-fast",
+          "publisher": "xAI",
+          "publishedDate": "2025-09-19",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "vaultgemma-release-2025",
+          "label": "Travel backward to VaultGemma Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
           "targetId": "claude-sonnet-4-5-2025",
           "label": "Continue to Claude Sonnet 4.5 Release",
           "evidenceState": "contextual",
@@ -3978,7 +4368,7 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "eventDate": "2025-09-13"
+      "eventDate": "2025-09-19"
     },
     {
       "id": "claude-sonnet-4-5-2025",
@@ -4019,8 +4409,125 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "vaultgemma-release-2025",
-          "label": "Travel backward to VaultGemma Release",
+          "targetId": "grok-4-fast-release-2025",
+          "label": "Travel backward to Grok 4 Fast Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "navigation",
+          "targetId": "claude-sonnet-4-5-release-2025",
+          "label": "Open adjacent same-time record: Claude Sonnet 4.5 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "claude-sonnet-4-5-release-2025",
+      "recordType": "event",
+      "title": "Claude Sonnet 4.5 Release",
+      "displayDate": "29 September 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Anthropic released Claude Sonnet 4.5 on September 29, 2025.",
+      "significance": "A major Claude Sonnet-family milestone in coding, computer use, and agentic workflows.",
+      "people": [],
+      "organizations": [
+        "Anthropic"
+      ],
+      "technologies": [
+        "Claude Sonnet 4.5"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "First-party dated source directly supports this release/introduction boundary. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T18:40:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "Claude Sonnet 4.5 Release",
+          "url": "https://www.anthropic.com/news/claude-sonnet-4-5",
+          "publisher": "Anthropic",
+          "publishedDate": "2025-09-29",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "claude-sonnet-4-5-2025",
+          "label": "Open adjacent same-time record: Claude Sonnet 4.5 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "claude-haiku-4-5-release-2025",
+          "label": "Continue to Claude Haiku 4.5 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-09-29"
+    },
+    {
+      "id": "claude-haiku-4-5-release-2025",
+      "recordType": "event",
+      "title": "Claude Haiku 4.5 Release",
+      "displayDate": "15 October 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Anthropic released Claude Haiku 4.5 on October 15, 2025.",
+      "significance": "A Claude Haiku-family milestone bringing stronger coding and computer-use capabilities to a smaller model tier.",
+      "people": [],
+      "organizations": [
+        "Anthropic"
+      ],
+      "technologies": [
+        "Claude Haiku 4.5"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "First-party dated source directly supports this release/introduction boundary. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T18:40:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "Claude Haiku 4.5 Release",
+          "url": "https://www.anthropic.com/news/claude-haiku-4-5",
+          "publisher": "Anthropic",
+          "publishedDate": "2025-10-15",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "claude-sonnet-4-5-release-2025",
+          "label": "Travel backward to Claude Sonnet 4.5 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -4036,7 +4543,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-10-15"
     },
     {
       "id": "gpt-5-1-api-2025",
@@ -4077,8 +4585,125 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "claude-sonnet-4-5-2025",
-          "label": "Travel backward to Claude Sonnet 4.5 Release",
+          "targetId": "claude-haiku-4-5-release-2025",
+          "label": "Travel backward to Claude Haiku 4.5 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
+          "type": "navigation",
+          "targetId": "gpt-5-1-release-2025",
+          "label": "Open adjacent same-time record: GPT-5.1 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "gpt-5-1-release-2025",
+      "recordType": "event",
+      "title": "GPT-5.1 Release",
+      "displayDate": "13 November 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI released GPT-5.1 in the API on November 13, 2025.",
+      "significance": "A GPT-5-series milestone emphasizing adaptive reasoning, agentic coding, and efficiency.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-5.1"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "First-party dated source directly supports this release/introduction boundary. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T18:40:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "GPT-5.1 Release",
+          "url": "https://openai.com/index/gpt-5-1-for-developers/",
+          "publisher": "OpenAI",
+          "publishedDate": "2025-11-13",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gpt-5-1-api-2025",
+          "label": "Open adjacent same-time record: GPT-5.1 API Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "grok-4-1-release-2025",
+          "label": "Continue to Grok 4.1 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-11-13"
+    },
+    {
+      "id": "grok-4-1-release-2025",
+      "recordType": "event",
+      "title": "Grok 4.1 Release",
+      "displayDate": "17 November 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI introduced Grok 4.1 on November 17, 2025 and made it available across Grok surfaces.",
+      "significance": "A Grok-family milestone focused on real-world usability and model behavior improvements.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [
+        "Grok 4.1"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "First-party dated source directly supports this release/introduction boundary. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T18:40:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "Grok 4.1 Release",
+          "url": "https://x.ai/news/grok-4-1",
+          "publisher": "xAI",
+          "publishedDate": "2025-11-17",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gpt-5-1-release-2025",
+          "label": "Travel backward to GPT-5.1 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -4094,7 +4719,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-11-17"
     },
     {
       "id": "gemini-3-release-2025",
@@ -4137,8 +4763,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "gpt-5-1-api-2025",
-          "label": "Travel backward to GPT-5.1 API Release",
+          "targetId": "grok-4-1-release-2025",
+          "label": "Travel backward to Grok 4.1 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -4262,6 +4888,124 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "claude-opus-4-5-release-2025",
+          "label": "Open adjacent same-time record: Claude Opus 4.5 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "claude-opus-4-5-release-2025",
+      "recordType": "event",
+      "title": "Claude Opus 4.5 Release",
+      "displayDate": "24 November 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Anthropic released Claude Opus 4.5 on November 24, 2025.",
+      "significance": "A major Claude Opus-family milestone in coding, agents, computer use, and professional work.",
+      "people": [],
+      "organizations": [
+        "Anthropic"
+      ],
+      "technologies": [
+        "Claude Opus 4.5"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "First-party dated source directly supports this release/introduction boundary. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T18:40:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "Claude Opus 4.5 Release",
+          "url": "https://www.anthropic.com/news/claude-opus-4-5",
+          "publisher": "Anthropic",
+          "publishedDate": "2025-11-24",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "claude-opus-4-5-2025",
+          "label": "Open adjacent same-time record: Claude Opus 4.5 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "deepseek-v3-2-release-2025",
+          "label": "Continue to DeepSeek-V3.2 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-11-24"
+    },
+    {
+      "id": "deepseek-v3-2-release-2025",
+      "recordType": "event",
+      "title": "DeepSeek-V3.2 Release",
+      "displayDate": "1 December 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "DeepSeek released DeepSeek-V3.2 and DeepSeek-V3.2-Speciale on December 1, 2025.",
+      "significance": "A major DeepSeek model-family milestone integrating reasoning with tool use and agent-oriented capabilities.",
+      "people": [],
+      "organizations": [
+        "DeepSeek"
+      ],
+      "technologies": [
+        "DeepSeek-V3.2",
+        "DeepSeek-V3.2-Speciale"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "First-party dated source directly supports this release/introduction boundary. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T18:40:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "DeepSeek-V3.2 Release",
+          "url": "https://deepseek.com/en/news/deepseek-v3-2/",
+          "publisher": "DeepSeek",
+          "publishedDate": "2025-12-01",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "claude-opus-4-5-release-2025",
+          "label": "Travel backward to Claude Opus 4.5 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "mistral-3-release-2025",
           "label": "Continue to Mistral 3 Release",
@@ -4272,7 +5016,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-12-01"
     },
     {
       "id": "mistral-3-release-2025",
@@ -4315,8 +5060,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "claude-opus-4-5-2025",
-          "label": "Travel backward to Claude Opus 4.5 Release",
+          "targetId": "deepseek-v3-2-release-2025",
+          "label": "Travel backward to DeepSeek-V3.2 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -4381,6 +5126,64 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "gpt-5-2-release-2025",
+          "label": "Open adjacent same-time record: GPT-5.2 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
+      "id": "gpt-5-2-release-2025",
+      "recordType": "event",
+      "title": "GPT-5.2 Release",
+      "displayDate": "11 December 2025",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI introduced GPT-5.2 on December 11, 2025.",
+      "significance": "A GPT-5-series frontier milestone focused on professional knowledge work and long-running agents.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-5.2"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "First-party dated source directly supports this release/introduction boundary. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T18:40:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "GPT-5.2 Release",
+          "url": "https://openai.com/index/introducing-gpt-5-2/",
+          "publisher": "OpenAI",
+          "publishedDate": "2025-12-11",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gpt-5-2-2025",
+          "label": "Open adjacent same-time record: GPT-5.2 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "functiongemma-release-2025",
           "label": "Continue to FunctionGemma 270M Release",
@@ -4391,7 +5194,8 @@
       ],
       "corrections": [],
       "contributor": null,
-      "entryOrigin": "lineaige"
+      "entryOrigin": "lineaige",
+      "eventDate": "2025-12-11"
     },
     {
       "id": "functiongemma-release-2025",
@@ -4451,8 +5255,16 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "t5gemma-v2-release-2025",
+          "label": "Open adjacent same-time record: T5Gemma v2 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
-          "targetId": "gpt-5-2-2025",
+          "targetId": "gpt-5-2-release-2025",
           "label": "Travel backward to GPT-5.2 Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
@@ -4509,6 +5321,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "functiongemma-release-2025",
+          "label": "Open adjacent same-time record: FunctionGemma 270M Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "functiongemma-release-2025",
@@ -4868,6 +5688,14 @@
       ],
       "relationships": [
         {
+          "type": "navigation",
+          "targetId": "mistral-small-4-release-2026",
+          "label": "Open adjacent same-time record: Mistral Small 4 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "gpt-5-4-2026",
           "label": "Travel backward to GPT-5.4 Release",
@@ -4925,6 +5753,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "mistral-small-4-2026",
+          "label": "Open adjacent same-time record: Mistral Small 4 Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "mistral-small-4-2026",
@@ -5172,6 +6008,14 @@
       ],
       "relationships": [
         {
+          "type": "navigation",
+          "targetId": "command-a-plus-release-2026",
+          "label": "Open adjacent same-time record: Command A+ Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "gemini-3-5-flash-release-2026",
           "label": "Travel backward to Gemini 3.5 Flash GA Release",
@@ -5229,6 +6073,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "command-a-plus-2026",
+          "label": "Open adjacent same-time record: Command A+ Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "command-a-plus-2026",
@@ -5475,6 +6327,14 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "gemini-3-6-flash-ga-2026",
+          "label": "Open adjacent same-time record: Gemini 3.6 Flash General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "grok-4-5-2026",
           "label": "Travel backward to Grok 4.5 Release",
@@ -5544,6 +6404,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gemini-3-5-flash-lite-ga-2026",
+          "label": "Open adjacent same-time record: Gemini 3.5 Flash-Lite General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "gemini-3-5-flash-lite-ga-2026",
@@ -5634,45 +6502,6 @@
       "contributor": null,
       "entryOrigin": "lineaige",
       "eventDate": "2026-07-30"
-    },
-    {
-      "id": "xai-introducing-grok-bot-2026",
-      "recordType": "event",
-      "title": "Introducing Grok Bot",
-      "displayDate": "11 August 2026",
-      "eventDate": "2026-08-11",
-      "datePrecision": "day",
-      "temporalState": "recorded",
-      "status": "VERIFIED RECORD",
-      "summary": "xAI published the first-party milestone “Introducing Grok Bot” on August 11, 2026; the source states an introduction, release, launch, or availability event.",
-      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
-      "people": [],
-      "organizations": [
-        "xAI"
-      ],
-      "technologies": [],
-      "verification": {
-        "state": "verified",
-        "factualClaim": true,
-        "confidence": "high",
-        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
-        "lastVerified": "2026-10-02T10:56:28Z"
-      },
-      "sources": [
-        {
-          "title": "Introducing Grok Bot",
-          "url": "https://x.ai/news/introducing-grok-bot",
-          "publisher": "xAI",
-          "publishedDate": "2026-08-11",
-          "sourceType": "official-announcement",
-          "primary": true,
-          "archivedUrl": null
-        }
-      ],
-      "relationships": [],
-      "corrections": [],
-      "contributor": null,
-      "entryOrigin": "lineaige"
     },
     {
       "id": "grok-4-6-2026",
@@ -5789,6 +6618,65 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "deepseek-v4-pro-ga-2026",
+          "label": "Open adjacent same-time record: DeepSeek-V4-Pro General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-08-13"
+    },
+    {
+      "id": "deepseek-v4-pro-ga-2026",
+      "recordType": "event",
+      "title": "DeepSeek-V4-Pro General Availability",
+      "displayDate": "13 August 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "DeepSeek launched DeepSeek-V4-Pro as generally available on August 13, 2026.",
+      "significance": "A production-availability milestone for the DeepSeek V4 model family.",
+      "people": [],
+      "organizations": [
+        "DeepSeek"
+      ],
+      "technologies": [
+        "DeepSeek-V4-Pro"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "First-party dated source directly supports this release/introduction boundary. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T18:40:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "DeepSeek-V4-Pro General Availability",
+          "url": "https://api-docs.deepseek.com/news/news260813/",
+          "publisher": "DeepSeek",
+          "publishedDate": "2026-08-13",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gemini-3-7-flash-ga-2026",
+          "label": "Open adjacent same-time record: Gemini 3.7 Flash General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "weathernext-3-release-2026",
           "label": "Continue to WeatherNext 3 Release",
@@ -5852,8 +6740,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "gemini-3-7-flash-ga-2026",
-          "label": "Travel backward to Gemini 3.7 Flash General Availability",
+          "targetId": "deepseek-v4-pro-ga-2026",
+          "label": "Travel backward to DeepSeek-V4-Pro General Availability",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -6075,6 +6963,14 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "lyria-3-5-ga-2026",
+          "label": "Open adjacent same-time record: Lyria 3.5 General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "gemini-3-8-flash-ga-2026",
           "label": "Travel backward to Gemini 3.8 Flash General Availability",
@@ -6155,6 +7051,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gpt-6-astra-release-2026",
+          "label": "Open adjacent same-time record: GPT-6 Astra Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "gpt-6-astra-release-2026",
@@ -6302,6 +7206,65 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "deepseek-v4-1-flash-release-2026",
+          "label": "Open adjacent same-time record: DeepSeek-V4.1-Flash Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-10"
+    },
+    {
+      "id": "deepseek-v4-1-flash-release-2026",
+      "recordType": "event",
+      "title": "DeepSeek-V4.1-Flash Release",
+      "displayDate": "10 September 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "DeepSeek released DeepSeek-V4.1-Flash on September 10, 2026.",
+      "significance": "A DeepSeek V4-family milestone focused on capability, inference efficiency, and lower serving cost.",
+      "people": [],
+      "organizations": [
+        "DeepSeek"
+      ],
+      "technologies": [
+        "DeepSeek-V4.1-Flash"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "First-party dated source directly supports this release/introduction boundary. No development geography, ancestry, downstream influence, causality, priority claim, or relationship edge is inferred.",
+        "lastVerified": "2026-10-02T18:40:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "DeepSeek-V4.1-Flash Release",
+          "url": "https://api-docs.deepseek.com/news/news260910/",
+          "publisher": "DeepSeek",
+          "publishedDate": "2026-09-10",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gpt-live-1-release-2026",
+          "label": "Open adjacent same-time record: GPT-Live-1 API Release",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "gemini-3-8-live-release-2026",
           "label": "Continue to Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking GA Release",
@@ -6366,8 +7329,8 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "gpt-live-1-release-2026",
-          "label": "Travel backward to GPT-Live-1 API Release",
+          "targetId": "deepseek-v4-1-flash-release-2026",
+          "label": "Travel backward to DeepSeek-V4.1-Flash Release",
           "evidenceState": "contextual",
           "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
           "sourceUrls": []
@@ -6445,45 +7408,6 @@
       "contributor": null,
       "entryOrigin": "lineaige",
       "eventDate": "2026-09-17"
-    },
-    {
-      "id": "xai-introducing-grok-voice-transcribe-2-0-2026",
-      "recordType": "event",
-      "title": "Introducing Grok Voice Transcribe 2.0",
-      "displayDate": "18 September 2026",
-      "eventDate": "2026-09-18",
-      "datePrecision": "day",
-      "temporalState": "recorded",
-      "status": "VERIFIED RECORD",
-      "summary": "xAI published the first-party milestone “Introducing Grok Voice Transcribe 2.0” on September 18, 2026; the source states an introduction, release, launch, or availability event.",
-      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
-      "people": [],
-      "organizations": [
-        "xAI"
-      ],
-      "technologies": [],
-      "verification": {
-        "state": "verified",
-        "factualClaim": true,
-        "confidence": "high",
-        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
-        "lastVerified": "2026-10-02T10:56:26Z"
-      },
-      "sources": [
-        {
-          "title": "Introducing Grok Voice Transcribe 2.0",
-          "url": "https://x.ai/news/grok-voice-transcribe-2",
-          "publisher": "xAI",
-          "publishedDate": "2026-09-18",
-          "sourceType": "official-announcement",
-          "primary": true,
-          "archivedUrl": null
-        }
-      ],
-      "relationships": [],
-      "corrections": [],
-      "contributor": null,
-      "entryOrigin": "lineaige"
     },
     {
       "id": "grok-4-7-2026",
@@ -6600,6 +7524,14 @@
           "sourceUrls": []
         },
         {
+          "type": "navigation",
+          "targetId": "gemini-3-8-flash-tts-ga-2026",
+          "label": "Open adjacent same-time record: Gemini 3.8 Flash TTS General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
+        {
           "type": "chronological",
           "targetId": "grok-4-7-2026",
           "label": "Travel backward to Grok 4.7 Release",
@@ -6659,6 +7591,14 @@
         }
       ],
       "relationships": [
+        {
+          "type": "navigation",
+          "targetId": "gemini-3-8-flash-lite-tts-ga-2026",
+          "label": "Open adjacent same-time record: Gemini 3.8 Flash-Lite TTS General Availability",
+          "evidenceState": "navigation-only",
+          "evidenceNote": "Navigation only between records whose stored date intervals overlap; no temporal precedence or causality is asserted.",
+          "sourceUrls": []
+        },
         {
           "type": "navigation",
           "targetId": "gemini-3-8-flash-lite-tts-ga-2026",
