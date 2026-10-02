@@ -114,13 +114,12 @@ def update_sitemap(events) -> None:
         return
     text = SITEMAP.read_text(encoding="utf-8")
     # Rebuild the canonical /record/ section from authoritative data instead
-    # of append-only behavior, which could preserve rolled-back GREEN records.
-    text = re.sub(
-        r'^\s*<url><loc>https://lineaige\.barbph\.com/record/.*?</url>\s*\n?',
-        '',
-        text,
-        flags=re.M,
-    )
+    # of append-only behavior. Line-based removal is deliberately simple and
+    # removes all older generated record blocks before writing one canonical row.
+    text = "\n".join(
+        line for line in text.splitlines()
+        if "https://lineaige.barbph.com/record/" not in line
+    ) + "\n"
     today = date.today().isoformat()
     rows = [
         f"  <url><loc>https://lineaige.barbph.com/record/{esc(record['id'])}/</loc><lastmod>{today}</lastmod></url>\n"
