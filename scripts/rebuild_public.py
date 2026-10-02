@@ -48,12 +48,20 @@ def update_records_index(events) -> None:
         return
     text = INDEX.read_text(encoding="utf-8")
     text = re.sub(r"<span>\d+\s+HISTORICAL</span>", f"<span>{len(events)} HISTORICAL</span>", text, count=1)
-    replacement = "<h2>Verified historical records</h2><div class=\"grid\">" + "".join(card(r) for r in events) + "</div><h2>Learning"
+    next_heading = "<h2>Verified learning resources</h2>"
+    replacement = (
+        "<h2>Verified historical records</h2><div class=\"grid\">"
+        + "".join(card(r) for r in events)
+        + "</div>"
+        + next_heading
+    )
     updated, count = re.subn(
-        r"<h2>Verified historical records</h2><div class=\"grid\">.*?</div><h2>Learning",
+        r"<h2>Verified historical records</h2><div class=\"grid\">.*?</div><h2>Verified learning resources</h2>",
         replacement, text, count=1, flags=re.S
     )
-    if count == 1 and updated != text:
+    if count != 1:
+        raise SystemExit("PUBLIC REBUILD FAILED: historical record section boundary not found")
+    if updated != text:
         INDEX.write_text(updated, encoding="utf-8")
 
 def record_page(record: dict) -> str:
