@@ -7,8 +7,6 @@ on:
       - "data/events.json"
       - "scripts/rebuild_public.py"
       - ".github/workflows/rebuild-backfill.yml"
-      - "scripts/rebuild_public.py"
-      - "data/events.json"
   workflow_dispatch:
 
 permissions:
@@ -48,4 +46,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add records/index.html sitemap.xml record/
           git commit -m "site: rebuild canonical record surfaces"
+          # Reconcile a main-branch update that may land while pages are rebuilt.
+          # Any real content conflict remains fail-closed.
+          git pull --rebase origin main
           git push
