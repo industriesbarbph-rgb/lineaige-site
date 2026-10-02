@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0",
+  "policy": {
+    "lane": "GREEN",
+    "admission": "autonomous",
+    "requireTrustedFirstPartyHost": true,
+    "requireExactPublicationDate": true,
+    "requireMilestoneLanguage": true,
+    "allowInferredRelationships": false,
+    "note": "Only deterministic first-party release/launch/introduction/availability milestones may self-publish. Ambiguous material stays out of canonical history."
+  },
+  "maxNewRecordsPerRun": 8,
+  "maxPagesPerSource": 24,
+  "sources": [
+    {
+      "id": "openai-releases",
+      "publisher": "OpenAI",
+      "root": "https://openai.com/research/index/release/",
+      "allowedHosts": ["openai.com"],
+      "pathPrefixes": ["/index/", "/research/"]
+    },
+    {
+      "id": "anthropic-news",
+      "publisher": "Anthropic",
+      "root": "https://www.anthropic.com/news",
+      "allowedHosts": ["www.anthropic.com", "anthropic.com"],
+      "pathPrefixes": ["/news/"]
+    },
+    {
+      "id": "google-ai",
+      "publisher": "Google",
+      "root": "https://blog.google/technology/ai/",
+      "allowedHosts": ["blog.google"],
+      "pathPrefixes": ["/technology/ai/", "/innovation-and-ai/"]
+    },
+    {
+      "id": "deepmind-blog",
+      "publisher": "Google DeepMind",
+      "root": "https://deepmind.google/discover/blog/",
+      "allowedHosts": ["deepmind.google"],
+      "pathPrefixes": ["/discover/blog/"]
+    }
+  ]
+}
