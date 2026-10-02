@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/rebuild-backfill.yml"
+      - "scripts/rebuild_public.py"
   workflow_dispatch:
 
 permissions:
