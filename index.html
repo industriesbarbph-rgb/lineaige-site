@@ -1072,8 +1072,8 @@ body{
       </div>
     </div>
     <div class="era-label" id="eraFoundations">
-      <b>FOUNDATIONS + SYMBOLIC AI</b>
-      <span>1940–1989</span>
+      <b>FOUNDATIONS → SYMBOLIC AI</b>
+      <span>1943–1989 · AI FIELD FROM 1956</span>
     </div>
     <div class="era-label" id="eraML">
       <b>MACHINE LEARNING EXPANSION</b>
@@ -1217,7 +1217,7 @@ function nowYPx(){
 function historicalY(year,currentYear){
   const nowY=nowYPx();
   const bottomY=window.innerHeight-2;
-  const earliest=1940;
+  const earliest=1943;
   const clamped=Math.max(earliest,Math.min(currentYear,year));
   const ratio=(currentYear-clamped)/Math.max(1,currentYear-earliest);
   return nowY + ratio*(bottomY-nowY);
@@ -1242,7 +1242,7 @@ function buildTimeRuler(){
   const brandQuietStart=nowYPx() + window.innerHeight*0.015;
   const brandQuietEnd=nowYPx() + (window.innerWidth <= 700 ? window.innerHeight*0.34 : window.innerHeight*0.32);
 
-  for(let year=1940; year<=currentYear; year++){
+  for(let year=1943; year<=currentYear; year++){
     const y=historicalY(year,currentYear);
     if(y>brandQuietStart && y<brandQuietEnd) continue;
 
@@ -1324,7 +1324,7 @@ function buildTimeRuler(){
   const ml=document.getElementById('eraML');
   const gen=document.getElementById('eraGenAI');
 
-  if(foundations) foundations.style.top=eraMid(1940,Math.min(1989,currentYear))+'px';
+  if(foundations) foundations.style.top=eraMid(1943,Math.min(1989,currentYear))+'px';
   if(ml && currentYear>=1990) ml.style.top=eraMid(1990,Math.min(2016,currentYear))+'px';
   if(gen && currentYear>=2017){
     const y=eraMid(2017,currentYear);
