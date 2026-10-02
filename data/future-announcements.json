@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "cutoff": "2026-09-20",
-  "policy": "Only evidence-backed announcements whose target milestone is unresolved are retained here. Lifecycle evaluation uses the actual run date, not the legacy stored cutoff. A target passing its horizon becomes DUE FOR CONFIRMATION, never completed history by date alone. Completion requires verified evidence and a canonical recorded event.",
+  "policy": "Only evidence-backed announcements whose target milestone is unresolved are retained here. Lifecycle evaluation uses the actual run date. A target passing its horizon becomes DUE FOR CONFIRMATION, never completed history by date alone. Completion requires a verified canonical event.",
   "records": [
     {
       "id": "stargate-norway-100k-gpus-2026",
