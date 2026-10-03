@@ -849,36 +849,41 @@ body{
   font-weight:inherit;
   background:
     linear-gradient(
-      180deg,
-      #F8FBFF 0%,
-      #F8FBFF 14%,
-      #1769FF 14%,
-      #1769FF 40%,
-      #FFD84A 40%,
-      #FFD84A 72%,
-      #FF2A2A 72%,
-      #FF2A2A 84%,
-      #FFF4A8 84%,
-      #FFF4A8 100%
+      155deg,
+      #FFFFFF 0%,
+      #F7FAFF 24%,
+      #2F7CFF 31%,
+      #8FB8FF 36%,
+      #FFFFFF 43%,
+      #FFD84A 56%,
+      #FFF1A8 64%,
+      #FFFFFF 72%,
+      #FF2638 78%,
+      #FFFFFF 84%,
+      #F4F8FC 100%
     );
+  background-size:165% 165%;
+  background-position:42% 50%;
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
-  text-shadow:none;
+  text-shadow:
+    0 -1px 0 rgba(255,255,255,.78),
+    0 1px 0 rgba(0,0,0,.42);
   filter:none;
-  -webkit-text-stroke:.35px rgba(255,255,255,.72);
+  -webkit-text-stroke:.18px rgba(255,255,255,.72);
   transform:none;
-  animation:brandAiPulse 4.8s ease-in-out infinite;
-  will-change:filter,opacity;
+  animation:brandAiPulse 5.6s ease-in-out infinite;
+  will-change:filter,background-position;
 }
 @keyframes brandAiPulse{
   0%,100%{
-    opacity:.99;
     filter:brightness(1);
+    background-position:42% 50%;
   }
   50%{
-    opacity:1;
-    filter:brightness(1.05);
+    filter:brightness(1.035);
+    background-position:56% 48%;
   }
 }
 
