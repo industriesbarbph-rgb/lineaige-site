@@ -846,19 +846,24 @@ body{
 
 #brandMarker .brand-ai{
   display:inline-block !important;
+  font-weight:inherit;
   background:linear-gradient(
-    145deg,
-    #0F63FF 0%,
-    #2F7CFF 30%,
-    #FF9B8F 42%,
-    #FFD84A 68%,
-    #FFE66D 84%,
+    160deg,
+    rgba(255,255,255,.99) 0%,
+    rgba(248,251,255,.99) 18%,
+    #2F7CFF 34%,
+    rgba(255,255,255,.97) 46%,
+    #FF1F1F 63%,
+    #FFD84A 84%,
     #FFF2A8 100%
   );
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
-  text-shadow:none;
+  text-shadow:
+    0 0 2px rgba(255,255,255,.96),
+    0 0 12px rgba(185,225,255,.30),
+    0 1px 2px rgba(0,0,0,.95);
   filter:none;
   transform-origin:center;
   animation:brandAiPulse 4.8s ease-in-out infinite;
@@ -866,13 +871,13 @@ body{
 }
 @keyframes brandAiPulse{
   0%,100%{
-    opacity:.96;
+    opacity:.97;
     filter:brightness(1);
     transform:scale(1);
   }
   50%{
     opacity:1;
-    filter:brightness(1.06);
+    filter:brightness(1.04);
     transform:scale(1.01);
   }
 }
