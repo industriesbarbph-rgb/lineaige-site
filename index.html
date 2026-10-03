@@ -346,7 +346,7 @@ body{
   position:absolute;
   z-index:5;
   left:var(--x);
-  top:0;
+  top:var(--record-y,50vh);
   width:min(var(--w),28vw);
   max-width:360px;
   padding:12px 0 0;
@@ -355,13 +355,12 @@ body{
   background:transparent;
   color:inherit;
   opacity:var(--o);
-  transform:translate3d(-50%,112vh,0);
-  animation:dataRise var(--dur) linear infinite;
-  animation-delay:var(--delay);
+  transform:translate3d(-50%,-50%,0);
+  transition:top .5s ease,left .35s ease,opacity .25s ease;
   pointer-events:auto;
   cursor:pointer;
   user-select:none;
-  will-change:transform;
+  will-change:top,transform;
   backface-visibility:hidden;
   -webkit-font-smoothing:antialiased;
   contain:layout style paint;
@@ -387,7 +386,6 @@ body{
   opacity:1 !important;
   z-index:20;
   outline:none;
-  animation-play-state:paused;
 }
 .data-node:hover .node-glass,
 .data-node:focus-visible .node-glass{
@@ -436,11 +434,6 @@ body{
     inset 2px 2px 5px rgba(255,255,255,.13),
     0 0 13px rgba(255,255,255,.045);
 }
-@keyframes dataRise{
-  from{transform:translate3d(-50%,112vh,0)}
-  to{transform:translate3d(-50%,calc(var(--now-y) + 8.8vh),0)}
-}
-
 
 /* IMPORTANT: --spine-x is the TRUE X coordinate of the illuminated centerline.
    The glass wrapper is centered on it; the ruler uses the same coordinate.
@@ -1169,7 +1162,7 @@ body{
   .data-node .title{font-size:10px}
 }
 @media(prefers-reduced-motion:reduce){
-  .data-node{animation:none!important;transform:translate3d(-50%,var(--static-y),0)}
+  .data-node{transition:none!important}
   
 }
 
@@ -1179,6 +1172,20 @@ body{
    ========================================================== */
 /* Dash attaches to the real illuminated centerline, not the wrapper edge. */
 
+
+
+@media(max-width:700px){
+  /* Keep the 1956/prehistory controls fully inside narrow phone viewports. */
+  .prehistory-marker{
+    transform:none;
+    width:128px;
+    padding:4px 0 4px 28px;
+    text-align:left;
+  }
+  .prehistory-marker::before{left:0;right:auto}
+  .prehistory-marker::after{left:-2px;right:auto}
+  .year-tick.birth-year .year-label{right:26px}
+}
 
 .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 </style>
@@ -1434,7 +1441,7 @@ function buildTimeRuler(){
 
       if(yearRecords.length){
         drawerText.textContent=yearRecords.map((r,i)=>`${i+1}. ${r.title}`).join('   ');
-        drawerPath.textContent=`${yearRecords.length} admitted LINEAiGE ${yearRecords.length===1?'record':'records'} in ${year}. Tap a floating card for the full record summary.`;
+        drawerPath.textContent=`${yearRecords.length} admitted LINEAiGE ${yearRecords.length===1?'record':'records'} in ${year}. Tap a timeline card for the full record summary.`;
 
         setDrawerPermalink(yearRecords.length===1 ? lineaigeRecordUrl(yearRecords[0]) : null);
         if(yearRecords.length===1 && yearRecords[0].source){
@@ -1734,9 +1741,14 @@ updateVisitorNow();
 setInterval(updateVisitorNow,30000);
 setInterval(refreshFutureData,15*60*1000);
 setInterval(refreshCanonicalData,15*60*1000);
+let resizeTimer=null;
 window.addEventListener('resize',()=>{
-  buildTimeRuler();
-  buildFutureField(FUTURE_DATA);
+  clearTimeout(resizeTimer);
+  resizeTimer=setTimeout(()=>{
+    buildTimeRuler();
+    buildFutureField(FUTURE_DATA);
+    rebuildTimelineCards();
+  },120);
 },{passive:true});
 
 
@@ -1767,13 +1779,7 @@ function rebuildPublicQueue(canonicalRecords){
     ...adapted.filter(r=>r.historicalLayer==='ai-history'),
     ...STATIC_SUPPLEMENTAL
   ];
-  QUEUE=DATA.slice().sort((a,b)=>hash(a.id)-hash(b.id));
-  cursor=0;
-
-  document.querySelectorAll('.data-node').forEach(el=>{
-    assignRecord(el,nextRecord());
-  });
-
+  rebuildTimelineCards();
   buildTimeRuler();
 }
 
@@ -1810,115 +1816,151 @@ function recordText(r){
   );
 }
 const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const mobile=window.matchMedia('(max-width:700px)').matches;
-const tablet=window.matchMedia('(min-width:701px) and (max-width:999px)').matches;
-const POOL_SIZE=Math.min(DATA.length,
-  reducedMotion ? (mobile?6:tablet?8:10) : (mobile?7:tablet?9:12)
-);
+let cardCycleTimer=null;
+let cardSlots=[];
+let cardCycleIndex=0;
 
-/* Deterministic order: the complete corpus is still used, but only a small
-   compositor-friendly pool is on screen at once. Each animation cycle swaps
-   in the next real LINEAiGE record, so every record passes through the field. */
-let QUEUE=DATA.slice().sort((a,b)=>hash(a.id)-hash(b.id));
-let cursor=0;
+function viewportMode(){
+  const width=window.innerWidth;
+  return width<=700 ? 'mobile' : (width<=999 ? 'tablet' : 'desktop');
+}
 
-function nextRecord(){
-  const r=QUEUE[cursor % QUEUE.length];
-  cursor=(cursor+1)%QUEUE.length;
-  return r;
+function timelineRecords(){
+  return DATA
+    .filter(r=>r && r.type==='CANONICAL' && getYearFromRecord(r)>=1956)
+    .slice()
+    .sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
+}
+
+function temporalBuckets(records,count){
+  const currentYear=new Date().getFullYear();
+  const earliest=1956;
+  const span=Math.max(1,currentYear-earliest+1);
+  const buckets=Array.from({length:count},()=>[]);
+
+  records.forEach(r=>{
+    const year=getYearFromRecord(r);
+    if(!year) return;
+    const age=currentYear-Math.max(earliest,Math.min(currentYear,year));
+    const index=Math.min(count-1,Math.floor((age/span)*count));
+    buckets[index].push(r);
+  });
+
+  return buckets.filter(bucket=>bucket.length);
+}
+
+function recordYPx(r){
+  const currentYear=new Date().getFullYear();
+  const year=getYearFromRecord(r);
+  if(!year) return window.innerHeight*.5;
+  const y=historicalY(year,currentYear);
+  /* Current-year cards sit just under TODAY instead of covering its label. */
+  return year===currentYear ? Math.max(y,nowYPx()+42) : y;
 }
 
 function cardMeta(r){
-  if(r.type==='LEARNING') return {date:'', kind:'VERIFIED LEARNING RESOURCE'};
-  if(r.id==='now'){
-    return {
-      date:new Intl.DateTimeFormat(undefined,{month:'short',day:'numeric'}).format(new Date()).toUpperCase(),
-      kind:'LIVING EDGE'
-    };
-  }
-  return {date:r.date||'',kind:r.type||''};
+  return {date:r.date||'',kind:'CANONICAL'};
 }
 
 function drawerMetaLabel(r){
-  if(r.type==='LEARNING') return 'VERIFIED LEARNING RESOURCE';
-  return `${r.date||''} · ${r.type}${r.status ? ' · '+r.status : ''}`;
+  return (r.date||'')+' · '+r.type+(r.status ? ' · '+r.status : '');
 }
 
 function assignRecord(el,r){
+  if(!el || !r) return;
   el._record=r;
   el.dataset.type=r.type;
   const meta=cardMeta(r);
   el.querySelector('.date').textContent=meta.date;
   el.querySelector('.kind').textContent=meta.kind;
   el.querySelector('.title').textContent=r.title;
+  el.style.setProperty('--record-y',recordYPx(r)+'px');
+  el.setAttribute('aria-label',(meta.date || getYearFromRecord(r))+'. '+r.title+'. Open LINEAiGE record.');
 }
 
-for(let i=0;i<POOL_SIZE;i++){
-  const slotHash=hash('slot-'+i);
-  const el=document.createElement('button');
-  el.className='data-node';
-  el.type='button';
-
-  // One continuous public record field. The left-side LINEAiGE spine is identity,
-  // not a divider between two classes of records.
-  // Collision-safe lanes. Cards in the same lane share one duration and are
-  // evenly phase-spaced, so they cannot catch each other over time.
-  const mobileLanes=[70];
-  const tabletLanes=[43,68,89];
-  const desktopLanes=[38,55,72,89];
-  const lanes=mobile ? mobileLanes : (tablet ? tabletLanes : desktopLanes);
-  const lane=i % lanes.length;
-  const laneSlot=Math.floor(i/lanes.length);
-  const lanePopulation=Math.ceil((POOL_SIZE-lane)/lanes.length);
-  const x=lanes[lane];
-  const width=mobile
-    ? 138
-    : tablet
-      ? 142+((slotHash>>>5)%12)
-      : 172+((slotHash>>>5)%28);
-  const dur=mobile ? 49 : (tablet ? 44 : 40);
-  const phase=((laneSlot + lane/lanes.length)/Math.max(1,lanePopulation))*dur;
-  const staticStep=mobile ? 10.5 : (tablet ? 17 : 22);
-  const staticBase=(mobile ? 27 : 25) + laneSlot*staticStep + lane*(mobile ? 0 : 3);
-
-  el.style.setProperty('--x',x+'%');
-  el.style.setProperty('--w',width+'px');
-  el.style.setProperty('--dur',dur+'s');
-  el.style.setProperty('--delay',(-phase)+'s');
-  el.style.setProperty('--o',(0.48+((slotHash>>>22)%16)/100).toFixed(2));
-  el.style.setProperty('--static-y',Math.min(88,staticBase)+'vh');
-
-  el.innerHTML='<div class="node-glass"><div class="meta"><span class="dot"></span><span class="date"></span><span class="kind"></span></div><div class="title"></div></div>';
-
-  assignRecord(el,nextRecord());
-
-  el.addEventListener('animationiteration',()=>{
-    assignRecord(el,nextRecord());
-  });
-
-  el.addEventListener('click',()=>{
-    clearFutureDrawer();
-    const r=el._record;
-    if(!r) return;
-    drawerMeta.textContent=drawerMetaLabel(r);
-    drawerTitle.textContent=r.title;
-    drawerText.textContent=recordText(r);
-    drawerPath.textContent=`Record ID: ${r.id}`;
-    setDrawerPermalink(lineaigeRecordUrl(r));
-    if(r.source){
-      drawerSource.href=r.source;
-      drawerSource.textContent=r.sourceLabel||'OPEN SOURCE';
-      drawerSource.style.display='inline-flex';
-    }else{
-      drawerSource.removeAttribute('href');
-      drawerSource.textContent='';
-      drawerSource.style.display='none';
-    }
-    drawer.classList.add('open');
-  });
-
-  field.appendChild(el);
+function openTimelineRecord(el){
+  clearFutureDrawer();
+  const r=el._record;
+  if(!r) return;
+  drawerMeta.textContent=drawerMetaLabel(r);
+  drawerTitle.textContent=r.title;
+  drawerText.textContent=recordText(r);
+  drawerPath.textContent='Record ID: '+r.id;
+  setDrawerPermalink(lineaigeRecordUrl(r));
+  if(r.source){
+    drawerSource.href=r.source;
+    drawerSource.textContent=r.sourceLabel||'OPEN SOURCE';
+    drawerSource.style.display='inline-flex';
+  }else{
+    drawerSource.removeAttribute('href');
+    drawerSource.textContent='';
+    drawerSource.style.display='none';
+  }
+  drawer.classList.add('open');
 }
+
+function rebuildTimelineCards(){
+  if(!field) return;
+
+  clearInterval(cardCycleTimer);
+  cardCycleTimer=null;
+  cardSlots=[];
+  cardCycleIndex=0;
+  field.replaceChildren();
+
+  const records=timelineRecords();
+  if(!records.length) return;
+
+  const mode=viewportMode();
+  const targetCount=mode==='mobile' ? 7 : (mode==='tablet' ? 9 : 12);
+  const buckets=temporalBuckets(records,targetCount);
+  const lanes=mode==='mobile' ? [73] : (mode==='tablet' ? [44,69,88] : [38,56,74,89]);
+
+  buckets.forEach((bucket,index)=>{
+    const el=document.createElement('button');
+    el.className='data-node';
+    el.type='button';
+
+    const lane=index%lanes.length;
+    const slotHash=hash('temporal-slot-'+index);
+    const width=mode==='mobile'
+      ? 138
+      : mode==='tablet'
+        ? 142+((slotHash>>>5)%12)
+        : 172+((slotHash>>>5)%28);
+
+    el.style.setProperty('--x',lanes[lane]+'%');
+    el.style.setProperty('--w',width+'px');
+    el.style.setProperty('--o',(0.56+((slotHash>>>22)%14)/100).toFixed(2));
+    el.innerHTML='<div class="node-glass"><div class="meta"><span class="dot"></span><span class="date"></span><span class="kind"></span></div><div class="title"></div></div>';
+
+    const startIndex=slotHash%bucket.length;
+    const slot={el,bucket,index:startIndex};
+    assignRecord(el,bucket[startIndex]);
+
+    el.addEventListener('click',()=>openTimelineRecord(el));
+    field.appendChild(el);
+    cardSlots.push(slot);
+  });
+
+  if(!reducedMotion && cardSlots.some(slot=>slot.bucket.length>1)){
+    cardCycleTimer=setInterval(()=>{
+      if(drawer.classList.contains('open') || !cardSlots.length) return;
+      let checked=0;
+      while(checked<cardSlots.length){
+        const slot=cardSlots[cardCycleIndex%cardSlots.length];
+        cardCycleIndex=(cardCycleIndex+1)%cardSlots.length;
+        checked++;
+        if(slot.bucket.length<2) continue;
+        slot.index=(slot.index+1)%slot.bucket.length;
+        assignRecord(slot.el,slot.bucket[slot.index]);
+        break;
+      }
+    },3600);
+  }
+}
+
+rebuildTimelineCards();
 
 const cubeZone=document.getElementById('cubeZone');
 let cubePauseTimer=null;
