@@ -844,14 +844,38 @@ body{
   outline:none;
 }
 
-#brandMarker .brand-i{
-  display:inline !important;
-  color:#2F7CFF;
-  text-shadow:
-    0 0 2px rgba(255,255,255,.84),
-    0 0 7px rgba(47,124,255,.72),
-    0 0 15px rgba(47,124,255,.34),
-    0 0 22px rgba(47,124,255,.16);
+#brandMarker .brand-ai{
+  display:inline-block !important;
+  background:linear-gradient(135deg,#0066FF 0%,#0066FF 34%,#FF1744 54%,#FF1744 72%,#FFD500 88%,#FFF0A0 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  transform-origin:center;
+  filter:
+    drop-shadow(0 0 2px rgba(255,255,255,.62))
+    drop-shadow(0 0 6px rgba(0,102,255,.68))
+    drop-shadow(0 0 9px rgba(255,23,68,.50))
+    drop-shadow(0 0 12px rgba(255,213,0,.32));
+  animation:brandAiPulse 4.8s ease-in-out infinite;
+  will-change:transform,filter;
+}
+@keyframes brandAiPulse{
+  0%,100%{
+    transform:scale(1);
+    filter:
+      drop-shadow(0 0 2px rgba(255,255,255,.58))
+      drop-shadow(0 0 5px rgba(0,102,255,.66))
+      drop-shadow(0 0 8px rgba(255,23,68,.46))
+      drop-shadow(0 0 11px rgba(255,213,0,.28));
+  }
+  50%{
+    transform:scale(1.035);
+    filter:
+      drop-shadow(0 0 3px rgba(255,255,255,.84))
+      drop-shadow(0 0 8px rgba(0,102,255,.96))
+      drop-shadow(0 0 12px rgba(255,23,68,.82))
+      drop-shadow(0 0 16px rgba(255,213,0,.62));
+  }
 }
 
 @media(max-width:700px){
@@ -1078,6 +1102,10 @@ body{
     animation:none;
     transform:rotateX(-34deg) rotateY(28deg);
   }
+  #brandMarker .brand-ai{
+    animation:none;
+    transform:none;
+  }
 }
 
 .drawer{
@@ -1183,8 +1211,8 @@ body{
 I
 N
 E
-A
-<span class="brand-i">i</span>
+<span class="brand-ai brand-a">A</span>
+<span class="brand-ai brand-i">i</span>
 G
 E</span></button>
   </section>
