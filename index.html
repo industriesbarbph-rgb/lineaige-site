@@ -1854,8 +1854,48 @@ function recordYPx(r){
   const year=getYearFromRecord(r);
   if(!year) return window.innerHeight*.5;
   const y=historicalY(year,currentYear);
-  /* Current-year cards sit just under TODAY instead of covering its label. */
-  return year===currentYear ? Math.max(y,nowYPx()+42) : y;
+  /* Keep the newest historical card clear of TODAY while preserving order. */
+  return Math.max(y,nowYPx()+48);
+}
+
+function layoutCardSlots(){
+  if(!cardSlots.length) return;
+
+  const mode=viewportMode();
+  const items=cardSlots
+    .map(slot=>({slot,desired:recordYPx(slot.el._record)}))
+    .sort((a,b)=>a.desired-b.desired);
+
+  if(mode!=='mobile'){
+    items.forEach(item=>item.slot.el.style.setProperty('--record-y',item.desired+'px'));
+    return;
+  }
+
+  const top=nowYPx()+48;
+  const bottom=Math.max(top+1,window.innerHeight-44);
+  const available=Math.max(1,bottom-top);
+  const gap=items.length>1 ? Math.min(86,available/(items.length-1)) : 0;
+  const placed=[];
+
+  items.forEach((item,index)=>{
+    const floor=index===0 ? top : placed[index-1]+gap;
+    placed[index]=Math.max(item.desired,floor);
+  });
+
+  if(placed.length && placed[placed.length-1]>bottom){
+    placed[placed.length-1]=bottom;
+    for(let i=placed.length-2;i>=0;i--){
+      placed[i]=Math.min(placed[i],placed[i+1]-gap);
+    }
+    if(placed[0]<top){
+      const shift=top-placed[0];
+      for(let i=0;i<placed.length;i++) placed[i]+=shift;
+    }
+  }
+
+  items.forEach((item,index)=>{
+    item.slot.el.style.setProperty('--record-y',placed[index]+'px');
+  });
 }
 
 function cardMeta(r){
@@ -1874,7 +1914,6 @@ function assignRecord(el,r){
   el.querySelector('.date').textContent=meta.date;
   el.querySelector('.kind').textContent=meta.kind;
   el.querySelector('.title').textContent=r.title;
-  el.style.setProperty('--record-y',recordYPx(r)+'px');
   el.setAttribute('aria-label',(meta.date || getYearFromRecord(r))+'. '+r.title+'. Open LINEAiGE record.');
 }
 
@@ -1943,6 +1982,8 @@ function rebuildTimelineCards(){
     cardSlots.push(slot);
   });
 
+  layoutCardSlots();
+
   if(!reducedMotion && cardSlots.some(slot=>slot.bucket.length>1)){
     cardCycleTimer=setInterval(()=>{
       if(drawer.classList.contains('open') || !cardSlots.length) return;
@@ -1954,6 +1995,7 @@ function rebuildTimelineCards(){
         if(slot.bucket.length<2) continue;
         slot.index=(slot.index+1)%slot.bucket.length;
         assignRecord(slot.el,slot.bucket[slot.index]);
+        layoutCardSlots();
         break;
       }
     },3600);
