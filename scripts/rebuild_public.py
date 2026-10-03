@@ -23,6 +23,7 @@ BASE = "https://lineaige.barbph.com"
 OG_IMAGE = f"{BASE}/assets/og-lineaige.png"
 ROBOTS = "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
 SEO_TEMPLATE_LASTMOD = "2026-10-03"
+# Generated public pages are validated against current SEO length and completeness rules.
 
 
 def load(path: Path):
