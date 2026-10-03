@@ -1,7 +1,8 @@
 # LINEAiGE
 
 Canonical site: https://lineaige.barbph.com/
+AI history guide: https://lineaige.barbph.com/ai-history/
 Record index: https://lineaige.barbph.com/records/
 Evidence methodology: https://lineaige.barbph.com/methodology/
 
-Current public layers: 16 historical, 7 learning, 1 context, 8 announced-future.
+Current public layers: 239 AI-history records, 5 precursors, 8 learning resources, 1 context media record, 8 announced-future records.
