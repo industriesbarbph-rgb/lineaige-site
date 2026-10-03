@@ -39,6 +39,8 @@ jobs:
           python3 -m json.tool data/courses.json >/dev/null
           python3 -m json.tool data/media.json >/dev/null
           test -s records/index.html
+          test -s ai-history/index.html
+          test -s llms.txt
           test -s sitemap.xml
           grep -q "LINEAiGE Record Index" records/index.html
           grep -q "application/ld+json" record/transformer-2017/index.html
@@ -55,7 +57,7 @@ jobs:
           fi
           git config user.name "LINEAiGE PUBLIC"
           git config user.email "actions@users.noreply.github.com"
-          git add index.html records/index.html sitemap.xml record/ future/ learn/ context/
+          git add index.html ai-history/ records/index.html llms.txt sitemap.xml record/ future/ learn/ context/
           git commit -m "site: rebuild canonical record surfaces"
           # Reconcile a main-branch update that may land while pages are rebuilt.
           # Any real content conflict remains fail-closed.
