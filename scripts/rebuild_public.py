@@ -16,8 +16,10 @@ COURSES = ROOT / "data" / "courses.json"
 MEDIA = ROOT / "data" / "media.json"
 MAIN = ROOT / "index.html"
 INDEX = ROOT / "records" / "index.html"
+AI_HISTORY = ROOT / "ai-history" / "index.html"
 METHODOLOGY = ROOT / "methodology" / "index.html"
 SITEMAP = ROOT / "sitemap.xml"
+LLMS = ROOT / "llms.txt"
 
 BASE = "https://lineaige.barbph.com"
 OG_IMAGE = f"{BASE}/assets/og-lineaige.png"
@@ -369,13 +371,158 @@ def media_card(record: dict) -> str:
     )
 
 
+
+def ai_history_page(ai, precursors):
+    canonical = BASE + "/ai-history/"
+    title = "AI History Timeline: 1956 to Today | LINEAiGE"
+    description = (
+        "A source-backed AI history timeline from 1956 to today, with verified precursors, "
+        "major milestones, record pages and evidence links."
+    )
+    featured_ids = [
+        "dartmouth-workshop-1956",
+        "rosenblatt-1958",
+        "lisp-1960",
+        "dendral-documented-1965",
+        "shrdlu-1970",
+        "backpropagation-1986",
+        "deep-blue-1997",
+        "alexnet-2012",
+        "transformer-2017",
+        "chatgpt-2022",
+        "gpt-4-2023",
+        "gemini-1-5-pro-early-preview-2024",
+        "deepseek-r1-2025",
+    ]
+    by_id = {r.get("id"): r for r in ai}
+    featured = [by_id[rid] for rid in featured_ids if rid in by_id]
+
+    schema = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://barbph.com/#organization",
+                "name": "BarbPH",
+                "url": "https://barbph.com/",
+            },
+            {
+                "@type": "WebSite",
+                "@id": BASE + "/#website",
+                "url": BASE + "/",
+                "name": "LINEAiGE",
+                "publisher": {"@id": "https://barbph.com/#organization"},
+                "inLanguage": "en",
+            },
+            {
+                "@type": "CollectionPage",
+                "@id": canonical + "#webpage",
+                "url": canonical,
+                "name": "History of Artificial Intelligence — AI History Timeline",
+                "description": description,
+                "isPartOf": {"@id": BASE + "/#website"},
+                "about": {
+                    "@type": "Thing",
+                    "name": "History of artificial intelligence",
+                    "alternateName": "AI history",
+                },
+                "dateModified": build_date(),
+                "inLanguage": "en",
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Selected milestones in the history of artificial intelligence",
+                    "numberOfItems": len(featured),
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": i,
+                            "name": r["title"],
+                            "url": f"{BASE}/record/{r['id']}/",
+                        }
+                        for i, r in enumerate(featured, 1)
+                    ],
+                },
+            },
+            breadcrumb_schema([("Home", BASE + "/"), ("AI History", canonical)]),
+        ],
+    }
+
+    featured_cards = "".join(
+        '<article class="card">'
+        f'<small>{esc(r.get("displayDate"))}</small>'
+        f'<h2><a href="/record/{esc(r.get("id"))}/">{esc(r.get("title"))}</a></h2>'
+        f'<p>{esc(meta_description(r.get("summary", ""), 190))}</p>'
+        '</article>'
+        for r in featured
+    )
+
+    precursor_links = "".join(
+        '<article class="card">'
+        f'<small>{esc(r.get("displayDate"))} · PRECURSOR</small>'
+        f'<h2><a href="/record/{esc(r.get("id"))}/">{esc(r.get("title"))}</a></h2>'
+        f'<p>{esc(meta_description(r.get("summary", ""), 190))}</p>'
+        '</article>'
+        for r in precursors
+    )
+
+    return (
+        '<!doctype html><html lang="en"><head>'
+        + head_markup(title=title, description=description, canonical=canonical, schema=schema)
+        + '</head><body><main class="wrap">'
+        '<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / AI History</nav>'
+        '<a class="brand" href="/">LINEAiGE</a>'
+        '<div class="eyebrow">HISTORY OF ARTIFICIAL INTELLIGENCE</div>'
+        '<h1>AI History: A Source-Backed History of Artificial Intelligence</h1>'
+        '<p class="lede">LINEAiGE documents the history of artificial intelligence as an evidence trail. '
+        'The main AI-history timeline begins in 1956, while earlier foundations and precursors are preserved '
+        'separately so the project does not blur prehistory with the recognized research field.</p>'
+        f'<div class="meta"><span>{len(ai)} VERIFIED AI-HISTORY RECORDS</span>'
+        f'<span>{len(precursors)} VERIFIED PRECURSORS</span><span>1956–TODAY</span></div>'
+        '<section class="card"><h2>When does AI history begin?</h2>'
+        '<p>LINEAiGE uses 1956 as the boundary for artificial intelligence as a recognized research field, '
+        'centered on the Dartmouth Summer Research Project on Artificial Intelligence. Earlier work is not erased: '
+        'it is documented as prehistory, foundations and precursors.</p>'
+        '<div class="actions"><a href="/record/dartmouth-workshop-1956/">OPEN 1956 RECORD</a>'
+        '<a href="/records/">BROWSE ALL RECORDS</a></div></section>'
+        '<section><h2>Selected AI history milestones</h2><div class="grid">'
+        + featured_cards
+        + '</div></section>'
+        '<section><h2>Before 1956: foundations and precursors</h2>'
+        '<p class="lede">These verified records predate the main AI-history timeline and are kept in their own layer.</p>'
+        '<div class="grid">'
+        + precursor_links
+        + '</div></section>'
+        '<section class="card"><h2>How LINEAiGE builds the timeline</h2>'
+        '<p>Every public historical record is admitted only after evidence review. Date precision is preserved, '
+        'chronology is kept separate from causal claims, and each record exposes its source trail.</p>'
+        '<div class="actions"><a href="/methodology/">READ THE EVIDENCE METHODOLOGY</a>'
+        '<a href="/">OPEN THE INTERACTIVE TIMELINE</a></div></section>'
+        '<footer>LINEAiGE is a living AI-history record. This guide summarizes the subject; '
+        'the complete documentary inventory lives in the <a href="/records/">record index</a>.</footer>'
+        '</main></body></html>'
+    )
+
+
+def update_llms(ai, precursors, futures, courses, media):
+    LLMS.write_text(
+        "# LINEAiGE\n\n"
+        f"Canonical site: {BASE}/\n"
+        f"AI history guide: {BASE}/ai-history/\n"
+        f"Record index: {BASE}/records/\n"
+        f"Evidence methodology: {BASE}/methodology/\n\n"
+        f"Current public layers: {len(ai)} AI-history records, {len(precursors)} precursors, "
+        f"{len(courses)} learning resources, {len(media)} context media records, "
+        f"{len(futures)} announced-future records.\n",
+        encoding="utf-8",
+    )
+
 def records_index_page(ai, precursors, futures, courses, media):
     canonical = BASE + "/records/"
     description = (
-        "Browse verified AI history from 1956, documented precursors, learning resources, "
-        "context media, and source-backed announced future milestones in LINEAiGE."
+        "Browse source-backed AI history records, verified precursors, evidence links, "
+        "learning resources and announced future milestones in LINEAiGE."
     )
-    title = "LINEAiGE Record Index — Verified AI History & Sources"
+    title = "AI History Sources & Records | LINEAiGE"
     schema = {
         "@context": "https://schema.org",
         "@graph": [
@@ -413,9 +560,10 @@ def records_index_page(ai, precursors, futures, courses, media):
         '<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Record Index</nav>'
         '<a class="brand" href="/">LINEAiGE</a>'
         '<div class="eyebrow">EVIDENCE INDEX</div>'
-        '<h1>LINEAiGE Record Index</h1>'
-        '<p class="lede">The crawlable documentary index behind the interactive timeline. '
-        'Prehistory and precursors remain separate from artificial-intelligence history beginning in 1956.</p>'
+        '<h1>AI History Sources and LINEAiGE Record Index</h1>'
+        '<p class="lede">The crawlable documentary index behind the interactive timeline and the '
+        '<a href="/ai-history/">history of artificial intelligence guide</a>. Prehistory and precursors '
+        'remain separate from artificial-intelligence history beginning in 1956.</p>'
         f'<div class="meta"><span>{len(ai)} AI HISTORY</span><span>{len(precursors)} PRECURSORS</span>'
         f'<span>{len(courses)} LEARNING</span><span>{len(media)} CONTEXT</span><span>{len(futures)} FUTURE</span></div>'
         '<h2>Prehistory / foundations / precursors</h2><div class="grid">'
@@ -430,7 +578,8 @@ def records_index_page(ai, precursors, futures, courses, media):
         + "".join(future_card(r) for r in futures)
         + '</div><footer>LINEAiGE separates prehistory/precursors, AI history from 1956 onward, '
         'learning resources, contextual media, and announced future milestones into distinct evidence layers.'
-        '<br><a href="/methodology/">Evidence methodology</a> · <a href="/">Interactive LINEAiGE</a></footer>'
+        '<br><a href="/ai-history/">AI history guide</a> · <a href="/methodology/">Evidence methodology</a> '
+        '· <a href="/">Interactive LINEAiGE</a></footer>'
         '</main></body></html>'
     )
 
@@ -929,8 +1078,8 @@ def ensure_media_pages(media):
 def homepage_jsonld(ai, precursors, futures, courses, media):
     today = build_date()
     description = (
-        "Explore LINEAiGE: verified AI history beginning in 1956, documented prehistory and precursors, "
-        "learning resources, and source-backed future announcements."
+        "Explore the history of artificial intelligence in LINEAiGE: a source-backed AI history timeline "
+        "from verified precursors and 1956 through today."
     )
     graph = [
         {
@@ -952,10 +1101,10 @@ def homepage_jsonld(ai, precursors, futures, courses, media):
             "@type": "CollectionPage",
             "@id": BASE + "/#webpage",
             "url": BASE + "/",
-            "name": "LINEAiGE — Verified AI History, Precursors & Future Announcements",
+            "name": "History of Artificial Intelligence — AI History Timeline | LINEAiGE",
             "description": description,
             "isPartOf": {"@id": BASE + "/#website"},
-            "about": {"@type": "Thing", "name": "Artificial intelligence history"},
+            "about": {"@type": "Thing", "name": "History of artificial intelligence", "alternateName": "AI history"},
             "datePublished": "2026-09-20",
             "dateModified": today,
             "mainEntity": {"@id": BASE + "/#ai-history"},
@@ -1041,6 +1190,30 @@ def homepage_jsonld(ai, precursors, futures, courses, media):
 
 def update_homepage(ai, precursors, futures, courses, media):
     text = MAIN.read_text(encoding="utf-8")
+    homepage_title = "AI History Timeline | LINEAiGE"
+    homepage_description = (
+        "Explore the history of artificial intelligence in a source-backed AI history timeline "
+        "from verified precursors and 1956 through today."
+    )
+    replacements = [
+        (r"<title>.*?</title>", f"<title>{esc(homepage_title)}</title>"),
+        (r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{esc(homepage_description)}">'),
+        (r'<meta property="og:title" content="[^"]*">', f'<meta property="og:title" content="{esc(homepage_title)}">'),
+        (r'<meta property="og:description" content="[^"]*">', f'<meta property="og:description" content="{esc(homepage_description)}">'),
+        (r'<meta name="twitter:title" content="[^"]*">', f'<meta name="twitter:title" content="{esc(homepage_title)}">'),
+        (r'<meta name="twitter:description" content="[^"]*">', f'<meta name="twitter:description" content="{esc(homepage_description)}">'),
+        (
+            r'<header class="sr-only"><h1>.*?</h1><p>.*?</p></header>',
+            '<header class="sr-only"><h1>History of Artificial Intelligence — AI History Timeline</h1>'
+            '<p>LINEAiGE is a source-backed AI history timeline beginning with verified precursors, '
+            'the 1956 research-field boundary, and documented milestones through today. '
+            '<a href="/ai-history/">Read the AI history guide</a>.</p></header>',
+        ),
+    ]
+    for pattern, replacement in replacements:
+        text, replaced = re.subn(pattern, replacement, text, count=1, flags=re.S)
+        if replaced != 1:
+            raise SystemExit(f"PUBLIC REBUILD FAILED: homepage SEO pattern not found: {pattern}")
     payload = json.dumps(
         homepage_jsonld(ai, precursors, futures, courses, media),
         ensure_ascii=False,
@@ -1087,6 +1260,7 @@ def update_sitemap(rows, futures, courses, media, lifecycle_lastmod=None):
         (BASE + "/", today),
         *[(f"{BASE}/learn/{r['id']}/", max_lastmod(r.get("verifiedAt"), SEO_TEMPLATE_LASTMOD)) for r in courses],
         *[(f"{BASE}/context/{r['id']}/", max_lastmod(r.get("publishedDate"), SEO_TEMPLATE_LASTMOD)) for r in media],
+        (BASE + "/ai-history/", today),
         (BASE + "/records/", today),
         (BASE + "/methodology/", methodology_lastmod()),
         *[(f"{BASE}/record/{r['id']}/", record_lastmod(r)) for r in rows],
@@ -1225,7 +1399,10 @@ def main():
         raise SystemExit("PUBLIC REBUILD FAILED: AI history must begin in 1956")
 
     INDEX.parent.mkdir(parents=True, exist_ok=True)
+    AI_HISTORY.parent.mkdir(parents=True, exist_ok=True)
     INDEX.write_text(records_index_page(ai, precursors, futures, courses, media), encoding="utf-8")
+    AI_HISTORY.write_text(ai_history_page(ai, precursors), encoding="utf-8")
+    update_llms(ai, precursors, futures, courses, media)
     ensure_record_pages(rows, courses, media)
     ensure_future_pages(futures, lifecycle_lastmod)
     ensure_course_pages(courses)
@@ -1244,7 +1421,7 @@ def main():
                 "future": len(futures),
                 "courses": len(courses),
                 "media": len(media),
-                "sitemapUrls": 1 + len(courses) + len(media) + 2 + len(rows) + len(futures),
+                "sitemapUrls": 1 + len(courses) + len(media) + 3 + len(rows) + len(futures),
             },
             indent=2,
         )
