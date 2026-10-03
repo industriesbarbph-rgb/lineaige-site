@@ -60,6 +60,8 @@ jobs:
           python3 -m json.tool data/events.json >/dev/null
           grep -q "const CANONICAL_DATA_URL='data/events.json';" index.html
           test -s records/index.html
+          test -s ai-history/index.html
+          test -s llms.txt
           test -s sitemap.xml
 
       - name: Publish canonical GREEN admissions
@@ -68,7 +70,7 @@ jobs:
         run: |
           git config user.name "LINEAiGE GREEN"
           git config user.email "actions@users.noreply.github.com"
-          git add data/events.json index.html records/index.html sitemap.xml record/ future/ learn/ context/
+          git add data/events.json index.html ai-history/ records/index.html llms.txt sitemap.xml record/ future/ learn/ context/
           git commit -m "LINEAiGE: autonomous GREEN admission"
           # Reconcile a rare human/main update that lands while this job runs.
           # A real content conflict remains fail-closed and will stop the push.
