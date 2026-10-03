@@ -846,35 +846,34 @@ body{
 
 #brandMarker .brand-ai{
   display:inline-block !important;
-  background:linear-gradient(135deg,#0066FF 0%,#0066FF 34%,#FF1744 54%,#FF1744 72%,#FFD500 88%,#FFF0A0 100%);
+  background:linear-gradient(
+    145deg,
+    #0F63FF 0%,
+    #2F7CFF 30%,
+    #FF9B8F 42%,
+    #FFD84A 68%,
+    #FFE66D 84%,
+    #FFF2A8 100%
+  );
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
+  text-shadow:none;
+  filter:none;
   transform-origin:center;
-  filter:
-    drop-shadow(0 0 2px rgba(255,255,255,.62))
-    drop-shadow(0 0 6px rgba(0,102,255,.68))
-    drop-shadow(0 0 9px rgba(255,23,68,.50))
-    drop-shadow(0 0 12px rgba(255,213,0,.32));
   animation:brandAiPulse 4.8s ease-in-out infinite;
-  will-change:transform,filter;
+  will-change:opacity,transform,filter;
 }
 @keyframes brandAiPulse{
   0%,100%{
+    opacity:.96;
+    filter:brightness(1);
     transform:scale(1);
-    filter:
-      drop-shadow(0 0 2px rgba(255,255,255,.58))
-      drop-shadow(0 0 5px rgba(0,102,255,.66))
-      drop-shadow(0 0 8px rgba(255,23,68,.46))
-      drop-shadow(0 0 11px rgba(255,213,0,.28));
   }
   50%{
-    transform:scale(1.035);
-    filter:
-      drop-shadow(0 0 3px rgba(255,255,255,.84))
-      drop-shadow(0 0 8px rgba(0,102,255,.96))
-      drop-shadow(0 0 12px rgba(255,23,68,.82))
-      drop-shadow(0 0 16px rgba(255,213,0,.62));
+    opacity:1;
+    filter:brightness(1.06);
+    transform:scale(1.01);
   }
 }
 
