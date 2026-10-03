@@ -511,7 +511,8 @@ def update_llms(ai, precursors, futures, courses, media):
         f"Record index: {BASE}/records/\n"
         f"Evidence methodology: {BASE}/methodology/\n\n"
         f"Current public layers: {len(ai)} AI-history records, {len(precursors)} precursors, "
-        f"{len(courses)} learning resources, {len(media)} context media records, "
+        f"{len(courses)} learning resources, {len(media)} context media "
+        f"{'record' if len(media) == 1 else 'records'}, "
         f"{len(futures)} announced-future records.\n",
         encoding="utf-8",
     )
