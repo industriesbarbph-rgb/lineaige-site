@@ -849,11 +849,12 @@ body{
   font-weight:inherit;
   background:linear-gradient(
     160deg,
-    rgba(255,255,255,.99) 0%,
-    rgba(248,251,255,.99) 18%,
-    #2F7CFF 34%,
-    rgba(255,255,255,.97) 46%,
-    #FF1F1F 63%,
+    rgba(255,255,255,.995) 0%,
+    rgba(250,252,255,.99) 18%,
+    rgba(255,255,255,.985) 34%,
+    #2F7CFF 46%,
+    rgba(255,255,255,.98) 56%,
+    #FF2A2A 68%,
     #FFD84A 84%,
     #FFF2A8 100%
   );
@@ -862,22 +863,22 @@ body{
   color:transparent;
   text-shadow:
     0 0 2px rgba(255,255,255,.96),
-    0 0 12px rgba(185,225,255,.30),
+    0 0 10px rgba(185,225,255,.22),
     0 1px 2px rgba(0,0,0,.95);
-  filter:none;
+  filter:brightness(1.01);
   transform-origin:center;
   animation:brandAiPulse 4.8s ease-in-out infinite;
   will-change:opacity,transform,filter;
 }
 @keyframes brandAiPulse{
   0%,100%{
-    opacity:.97;
-    filter:brightness(1);
+    opacity:.98;
+    filter:brightness(1.01);
     transform:scale(1);
   }
   50%{
     opacity:1;
-    filter:brightness(1.04);
+    filter:brightness(1.05);
     transform:scale(1.01);
   }
 }
