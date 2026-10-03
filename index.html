@@ -846,44 +846,49 @@ body{
 
 #brandMarker .brand-ai{
   display:inline-block !important;
+  position:relative;
   font-weight:inherit;
+  color:transparent;
   background:
     linear-gradient(
-      155deg,
-      #FFFFFF 0%,
-      #F7FAFF 24%,
-      #2F7CFF 31%,
-      #8FB8FF 36%,
-      #FFFFFF 43%,
-      #FFD84A 56%,
-      #FFF1A8 64%,
-      #FFFFFF 72%,
-      #FF2638 78%,
-      #FFFFFF 84%,
-      #F4F8FC 100%
+      138deg,
+      #0A57FF 0%,
+      #1769FF 24%,
+      #4E8DFF 33%,
+      #FFD21A 43%,
+      #FFE15A 66%,
+      #FFF1A0 73%,
+      #FF2638 80%,
+      #FF2638 87%,
+      #FFD84A 94%,
+      #FFF3A8 100%
     );
-  background-size:165% 165%;
-  background-position:42% 50%;
   -webkit-background-clip:text;
   background-clip:text;
-  color:transparent;
-  text-shadow:
-    0 -1px 0 rgba(255,255,255,.78),
-    0 1px 0 rgba(0,0,0,.42);
+  -webkit-text-stroke:0;
+  text-shadow:none;
   filter:none;
-  -webkit-text-stroke:.18px rgba(255,255,255,.72);
   transform:none;
-  animation:brandAiPulse 5.6s ease-in-out infinite;
-  will-change:filter,background-position;
+  animation:brandAiPulse 5.4s ease-in-out infinite;
+  will-change:filter;
+}
+#brandMarker .brand-ai::after{
+  content:attr(data-char);
+  position:absolute;
+  inset:0;
+  color:transparent;
+  -webkit-text-stroke:.62px rgba(248,252,255,.96);
+  text-shadow:
+    0 -1px 0 rgba(255,255,255,.92),
+    0 1px 0 rgba(92,108,124,.68);
+  pointer-events:none;
 }
 @keyframes brandAiPulse{
   0%,100%{
-    filter:brightness(1);
-    background-position:42% 50%;
+    filter:brightness(1) saturate(1.04);
   }
   50%{
-    filter:brightness(1.035);
-    background-position:56% 48%;
+    filter:brightness(1.08) saturate(1.12);
   }
 }
 
@@ -1220,8 +1225,8 @@ body{
 I
 N
 E
-<span class="brand-ai brand-a">A</span>
-<span class="brand-ai brand-i">i</span>
+<span class="brand-ai brand-a" data-char="A">A</span>
+<span class="brand-ai brand-i" data-char="i">i</span>
 G
 E</span></button>
   </section>
