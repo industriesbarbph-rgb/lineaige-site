@@ -356,14 +356,22 @@ body{
   color:inherit;
   opacity:var(--o);
   transform:translate3d(-50%,-50%,0);
-  transition:top .5s ease,left .35s ease,opacity .25s ease;
+  transition:top .42s ease,left .35s ease;
+  animation:timelinePanelRise var(--dur,7s) linear infinite;
+  animation-delay:var(--delay,0s);
   pointer-events:auto;
   cursor:pointer;
   user-select:none;
-  will-change:top,transform;
+  will-change:top,transform,opacity;
   backface-visibility:hidden;
   -webkit-font-smoothing:antialiased;
   contain:layout style paint;
+}
+@keyframes timelinePanelRise{
+  0%{transform:translate3d(-50%,calc(-50% + 18px),0);opacity:0}
+  12%{opacity:var(--o)}
+  82%{opacity:var(--o)}
+  100%{transform:translate3d(-50%,calc(-50% - 22px),0);opacity:0}
 }
 .node-glass{
   width:100%;
@@ -386,6 +394,7 @@ body{
   opacity:1 !important;
   z-index:20;
   outline:none;
+  animation-play-state:paused;
 }
 .data-node:hover .node-glass,
 .data-node:focus-visible .node-glass{
@@ -1162,7 +1171,7 @@ body{
   .data-node .title{font-size:10px}
 }
 @media(prefers-reduced-motion:reduce){
-  .data-node{transition:none!important}
+  .data-node{animation:none!important;transition:none!important}
   
 }
 
@@ -1826,6 +1835,9 @@ function viewportMode(){
 }
 
 function timelineRecords(){
+  /* Public moving panels contain every approved, recorded, canonical AI-history event.
+     Precursors stay in the dedicated PREHISTORY control; future announcements,
+     courses and context media remain separate evidence layers. */
   return DATA
     .filter(r=>r && r.type==='CANONICAL' && getYearFromRecord(r)>=1956)
     .slice()
@@ -1846,6 +1858,7 @@ function temporalBuckets(records,count){
     buckets[index].push(r);
   });
 
+  /* Every record is assigned exactly once to one temporal stream. */
   return buckets.filter(bucket=>bucket.length);
 }
 
@@ -1854,7 +1867,6 @@ function recordYPx(r){
   const year=getYearFromRecord(r);
   if(!year) return window.innerHeight*.5;
   const y=historicalY(year,currentYear);
-  /* Keep the newest historical card clear of TODAY while preserving order. */
   return Math.max(y,nowYPx()+48);
 }
 
@@ -1874,7 +1886,7 @@ function layoutCardSlots(){
   const top=nowYPx()+48;
   const bottom=Math.max(top+1,window.innerHeight-44);
   const available=Math.max(1,bottom-top);
-  const gap=items.length>1 ? Math.min(86,available/(items.length-1)) : 0;
+  const gap=items.length>1 ? Math.min(78,available/(items.length-1)) : 0;
   const placed=[];
 
   items.forEach((item,index)=>{
@@ -1938,6 +1950,13 @@ function openTimelineRecord(el){
   drawer.classList.add('open');
 }
 
+function advancePanelSlot(slot){
+  if(!slot || slot.bucket.length<2) return;
+  slot.index=(slot.index+1)%slot.bucket.length;
+  assignRecord(slot.el,slot.bucket[slot.index]);
+  layoutCardSlots();
+}
+
 function rebuildTimelineCards(){
   if(!field) return;
 
@@ -1953,7 +1972,7 @@ function rebuildTimelineCards(){
   const mode=viewportMode();
   const targetCount=mode==='mobile' ? 7 : (mode==='tablet' ? 9 : 12);
   const buckets=temporalBuckets(records,targetCount);
-  const lanes=mode==='mobile' ? [73] : (mode==='tablet' ? [44,69,88] : [38,56,74,89]);
+  const lanes=mode==='mobile' ? [73] : (mode==='tablet' ? [43,68,88] : [38,55,72,89]);
 
   buckets.forEach((bucket,index)=>{
     const el=document.createElement('button');
@@ -1967,9 +1986,13 @@ function rebuildTimelineCards(){
       : mode==='tablet'
         ? 142+((slotHash>>>5)%12)
         : 172+((slotHash>>>5)%28);
+    const dur=(5.8+index*.46).toFixed(2);
+    const phase=-(index/buckets.length)*Number(dur);
 
     el.style.setProperty('--x',lanes[lane]+'%');
     el.style.setProperty('--w',width+'px');
+    el.style.setProperty('--dur',dur+'s');
+    el.style.setProperty('--delay',phase.toFixed(2)+'s');
     el.style.setProperty('--o',(0.56+((slotHash>>>22)%14)/100).toFixed(2));
     el.innerHTML='<div class="node-glass"><div class="meta"><span class="dot"></span><span class="date"></span><span class="kind"></span></div><div class="title"></div></div>';
 
@@ -1978,13 +2001,30 @@ function rebuildTimelineCards(){
     assignRecord(el,bucket[startIndex]);
 
     el.addEventListener('click',()=>openTimelineRecord(el));
+    if(!reducedMotion){
+      el.addEventListener('animationiteration',()=>{
+        if(drawer.classList.contains('open')) return;
+        advancePanelSlot(slot);
+      });
+    }
+
     field.appendChild(el);
     cardSlots.push(slot);
   });
 
+  /* Runtime completeness guard: the stream inventory must match the approved
+     post-1956 canonical inventory exactly, with no duplicate assignment. */
+  const panelIds=new Set(cardSlots.flatMap(slot=>slot.bucket.map(r=>r.id)));
+  field.dataset.recordCount=String(panelIds.size);
+  field.setAttribute('aria-label',panelIds.size+' verified LINEAiGE historical records rotating through timeline panels');
+  if(panelIds.size!==records.length){
+    console.error('LINEAiGE panel corpus mismatch', {expected:records.length,actual:panelIds.size});
+  }
+
   layoutCardSlots();
 
-  if(!reducedMotion && cardSlots.some(slot=>slot.bucket.length>1)){
+  /* Reduced-motion visitors still get the full corpus rotation, without motion. */
+  if(reducedMotion && cardSlots.some(slot=>slot.bucket.length>1)){
     cardCycleTimer=setInterval(()=>{
       if(drawer.classList.contains('open') || !cardSlots.length) return;
       let checked=0;
@@ -1993,12 +2033,10 @@ function rebuildTimelineCards(){
         cardCycleIndex=(cardCycleIndex+1)%cardSlots.length;
         checked++;
         if(slot.bucket.length<2) continue;
-        slot.index=(slot.index+1)%slot.bucket.length;
-        assignRecord(slot.el,slot.bucket[slot.index]);
-        layoutCardSlots();
+        advancePanelSlot(slot);
         break;
       }
-    },3600);
+    },5200);
   }
 }
 
