@@ -17346,6 +17346,59 @@
       "historicalLayer": "ai-history"
     },
     {
+      "id": "gemini-4-argon-announcement-2026",
+      "recordType": "event",
+      "title": "Gemini 4 Argon Announcement",
+      "displayDate": "30 September 2026",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google DeepMind announced Gemini 4 Argon on September 30, 2026, describing it as a frontier model for complex workflows including software engineering, enterprise knowledge work, and cybersecurity defense. Google stated that it was rolling out first to trusted cyber defenders through the Fairwind Program.",
+      "significance": "A dated first-party announcement and controlled rollout milestone for Google's Gemini 4 Argon model.",
+      "people": [],
+      "organizations": [
+        "Google",
+        "Google DeepMind"
+      ],
+      "technologies": [
+        "Gemini 4 Argon"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Google's first-party announcement is dated September 30, 2026 and explicitly introduces Gemini 4 Argon and describes its initial rollout to trusted cyber defenders through the Fairwind Program. LINEAiGE does not convert that controlled rollout into general availability and does not infer development geography, ancestry, influence, causality, priority, or downstream impact.",
+        "lastVerified": "2026-10-05T12:08:54+08:00"
+      },
+      "sources": [
+        {
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "publisher": "Google / Google DeepMind",
+          "publishedDate": "2026-09-30",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gpt-6-1-sol-release-2026",
+          "label": "Travel backward to GPT-6.1 Sol Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "eventDate": "2026-09-30",
+      "historicalLayer": "ai-history"
+    },
+    {
       "id": "now",
       "recordType": "living_edge",
       "title": "TODAY",
@@ -17368,10 +17421,10 @@
       "relationships": [
         {
           "type": "chronological",
-          "targetId": "gpt-6-1-sol-release-2026",
-          "label": "Travel backward into the latest populated verified LINEAiGE record",
+          "targetId": "gemini-4-argon-announcement-2026",
+          "label": "Travel backward to Gemini 4 Argon Announcement",
           "evidenceState": "contextual",
-          "evidenceNote": "Navigation into the currently populated recorded history. This target is not asserted to be the latest AI event overall.",
+          "evidenceNote": "Navigation into the latest populated verified LINEAiGE record. This target is not asserted to be the latest AI event overall.",
           "sourceUrls": []
         }
       ],
