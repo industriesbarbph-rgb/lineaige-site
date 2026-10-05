@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://lineaige.barbph.com/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://lineaige.barbph.com/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://lineaige.barbph.com/learn/mit-6034-ai-2010/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/learn/mit-ai-101-2021/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/learn/harvard-cs50-ai/</loc><lastmod>2026-10-03</lastmod></url>
@@ -10,8 +10,8 @@
   <url><loc>https://lineaige.barbph.com/learn/helsinki-elements-of-ai/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/learn/google-ai-professional-certificate-2026/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/context/youtube-transformers-google-cloud-2021/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://lineaige.barbph.com/ai-history/</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://lineaige.barbph.com/records/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://lineaige.barbph.com/ai-history/</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://lineaige.barbph.com/records/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://lineaige.barbph.com/methodology/</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://lineaige.barbph.com/record/turing-computable-numbers-1937/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/record/mcculloch-pitts-1943/</loc><lastmod>2026-10-03</lastmod></url>
@@ -257,6 +257,7 @@
   <url><loc>https://lineaige.barbph.com/record/gemini-3-8-flash-lite-tts-ga-2026/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/record/claude-sonnet-5-5-release-2026/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/record/gpt-6-1-sol-release-2026/</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://lineaige.barbph.com/record/openai-dots-launch-2026/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://lineaige.barbph.com/record/gemini-4-argon-announcement-2026/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://lineaige.barbph.com/future/stargate-norway-100k-gpus-2026/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/future/anthropic-nextgen-tpu-2027/</loc><lastmod>2026-10-03</lastmod></url>
