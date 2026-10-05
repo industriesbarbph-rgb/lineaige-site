@@ -17346,6 +17346,50 @@
       "historicalLayer": "ai-history"
     },
     {
+      "id": "openai-dots-launch-2026",
+      "recordType": "event",
+      "historicalLayer": "ai-history",
+      "title": "Introducing dots",
+      "displayDate": "29 September 2026",
+      "eventDate": "2026-09-29",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI introduced dots on September 29, 2026. OpenAI describes dots as always-on AI agents powered by GPT-6 Astra, with their own cloud computer, app connections, background work, safeguards, and rollout across eligible ChatGPT markets and plans.",
+      "significance": "A documented AI-system launch milestone for autonomous agents. LINEAiGE records the product introduction and stated capabilities without inferring broader historical priority, causality, ancestry, influence, or universal availability.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "AI agents",
+        "cloud computer"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "OpenAI's first-party product announcement is dated September 29, 2026 and explicitly introduces dots, describes their agentic operation and safeguards, and states that rollout is beginning across eligible markets. No broader availability or historical priority is inferred.",
+        "lastVerified": "2026-10-06T02:00:04+08:00"
+      },
+      "sources": [
+        {
+          "title": "Introducing dots",
+          "url": "https://openai.com/index/introducing-dots/",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-09-29",
+          "sourceType": "official-announcement",
+          "sourceRole": "claim-evidence",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
       "id": "gemini-4-argon-announcement-2026",
       "recordType": "event",
       "title": "Gemini 4 Argon Announcement",
