@@ -17223,6 +17223,76 @@
       "historicalLayer": "ai-history"
     },
     {
+      "id": "claude-opus-5-5-release-2026",
+      "recordType": "event",
+      "title": "Claude Opus 5.5 Release",
+      "displayDate": "22 September 2026",
+      "eventDate": "2026-09-22",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Anthropic introduced Claude Opus 5.5 on September 22, 2026.",
+      "significance": "A dated Anthropic model-release milestone for the Claude 5.5 family.",
+      "people": [],
+      "organizations": [
+        "Anthropic"
+      ],
+      "technologies": [
+        "Claude Opus 5.5"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Anthropic's first-party Claude Opus page explicitly dates the introduction to September 22, 2026. Anthropic's model system-card index independently lists Claude Opus 5.5 as a September 2026 model. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-06T10:01:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "Claude Opus",
+          "url": "https://www.anthropic.com/claude/opus",
+          "publisher": "Anthropic",
+          "publishedDate": "2026-09-22",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "Model system cards",
+          "url": "https://www.anthropic.com/system-cards",
+          "publisher": "Anthropic",
+          "publishedDate": null,
+          "sourceType": "other",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "gemini-3-8-flash-lite-tts-ga-2026",
+          "label": "Continue to Claude Opus 5.5 from the same-date Gemini record",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as causality, influence, or priority.",
+          "sourceUrls": []
+        },
+        {
+          "type": "chronological",
+          "targetId": "claude-sonnet-5-5-release-2026",
+          "label": "Continue to Claude Sonnet 5.5 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as causality, influence, or family lineage beyond Anthropic's explicit model-family wording.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
+    },
+    {
       "id": "claude-sonnet-5-5-release-2026",
       "recordType": "event",
       "title": "Claude Sonnet 5.5 Release",
