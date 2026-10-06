@@ -17545,6 +17545,112 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige"
+    },
+    {
+      "id": "gpt-6-sol-release-2026",
+      "recordType": "event",
+      "title": "GPT-6 Sol Release",
+      "displayDate": "22 September 2026",
+      "eventDate": "2026-09-22",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI introduced GPT-6 Sol on September 22, 2026.",
+      "significance": "A dated OpenAI model-release milestone for GPT-6 Sol.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-6 Sol"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "OpenAI's first-party GPT-6 announcement and ChatGPT release notes date the introduction to September 22, 2026. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-06T22:02:12+08:00"
+      },
+      "sources": [
+        {
+          "title": "Introducing GPT-6 Sol and Luna",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-09-22",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "ChatGPT Release Notes — September 22, 2026",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-09-22",
+          "sourceType": "official-release-notes",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
+    },
+    {
+      "id": "gpt-6-luna-release-2026",
+      "recordType": "event",
+      "title": "GPT-6 Luna Release",
+      "displayDate": "22 September 2026",
+      "eventDate": "2026-09-22",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI introduced GPT-6 Luna on September 22, 2026.",
+      "significance": "A dated OpenAI model-release milestone for GPT-6 Luna.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-6 Luna"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "OpenAI's first-party GPT-6 announcement and ChatGPT release notes date the introduction to September 22, 2026. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-06T22:02:12+08:00"
+      },
+      "sources": [
+        {
+          "title": "Introducing GPT-6 Sol and Luna",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-09-22",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "ChatGPT Release Notes — September 22, 2026",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-09-22",
+          "sourceType": "official-release-notes",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     }
   ],
   "historicalBoundary": {
