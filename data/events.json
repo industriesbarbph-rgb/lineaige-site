@@ -230,8 +230,8 @@
         "state": "verified",
         "factualClaim": true,
         "confidence": "high",
-        "note": "Publication metadata verified against Oxford Academic.",
-        "lastVerified": "2026-09-06T20:38:00+08:00"
+        "note": "Publication metadata verified against Oxford Academic. Oxford Academic article metadata records publication 1 October 1950.",
+        "lastVerified": "2026-10-06T23:00:41+08:00"
       },
       "sources": [
         {
@@ -265,7 +265,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "historicalLayer": "precursor"
+      "historicalLayer": "precursor",
+      "datePrecision": "day"
     },
     {
       "id": "dartmouth-1955",
@@ -291,8 +292,8 @@
         "state": "verified",
         "factualClaim": true,
         "confidence": "high",
-        "note": "Authors, date and archival history verified through the AI Magazine reproduction of the original proposal.",
-        "lastVerified": "2026-09-06T20:38:00+08:00"
+        "note": "Authors, date and archival history verified through the AI Magazine reproduction of the original proposal. The Dartmouth proposal is dated 31 August 1955 in the primary proposal record.",
+        "lastVerified": "2026-10-06T23:00:41+08:00"
       },
       "sources": [
         {
@@ -326,7 +327,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "historicalLayer": "precursor"
+      "historicalLayer": "precursor",
+      "datePrecision": "day"
     },
     {
       "id": "dartmouth-workshop-1956",
@@ -5957,8 +5959,8 @@
         "state": "verified",
         "factualClaim": true,
         "confidence": "high",
-        "note": "Title, authors, submission date and architecture description verified against the original arXiv record.",
-        "lastVerified": "2026-09-06T20:38:00+08:00"
+        "note": "Title, authors, submission date and architecture description verified against the original arXiv record. The arXiv record for Attention Is All You Need is dated 12 June 2017.",
+        "lastVerified": "2026-10-06T23:00:41+08:00"
       },
       "sources": [
         {
@@ -5992,7 +5994,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "historicalLayer": "ai-history"
+      "historicalLayer": "ai-history",
+      "datePrecision": "day"
     },
     {
       "id": "apache-mxnet-0-11-incubating-release-2017",
@@ -8947,8 +8950,8 @@
         "state": "verified",
         "factualClaim": true,
         "confidence": "high",
-        "note": "Availability date and release description verified against Meta's official Llama 2 announcement.",
-        "lastVerified": "2026-09-07T00:51:55+08:00"
+        "note": "Availability date and release description verified against Meta's official Llama 2 announcement. Meta AI's Llama 2 Community License Agreement states a release date of 18 July 2023.",
+        "lastVerified": "2026-10-06T23:00:41+08:00"
       },
       "sources": [
         {
@@ -8982,7 +8985,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "historicalLayer": "ai-history"
+      "historicalLayer": "ai-history",
+      "datePrecision": "day"
     },
     {
       "id": "hyperclovax-2023",
@@ -9294,8 +9298,8 @@
         "state": "verified",
         "factualClaim": true,
         "confidence": "high",
-        "note": "Introduction date, Gemini 1.0 naming, multimodal design and three model sizes verified against Google's official announcement.",
-        "lastVerified": "2026-09-07T03:49:43+08:00"
+        "note": "Introduction date, Gemini 1.0 naming, multimodal design and three model sizes verified against Google's official announcement. Google's first-party Gemini announcement is dated 6 December 2023.",
+        "lastVerified": "2026-10-06T23:00:41+08:00"
       },
       "sources": [
         {
@@ -9330,7 +9334,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "historicalLayer": "ai-history"
+      "historicalLayer": "ai-history",
+      "datePrecision": "day"
     },
     {
       "id": "mixtral-8x7b-release-2023",
