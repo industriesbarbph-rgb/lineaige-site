@@ -8779,7 +8779,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "historicalLayer": "ai-history"
+      "historicalLayer": "ai-history",
+      "datePrecision": "day"
     },
     {
       "id": "ernie-bot-2023",
@@ -9056,7 +9057,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "historicalLayer": "ai-history"
+      "historicalLayer": "ai-history",
+      "datePrecision": "day"
     },
     {
       "id": "jais-13b-2023",
@@ -9208,7 +9210,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "historicalLayer": "ai-history"
+      "historicalLayer": "ai-history",
+      "datePrecision": "day"
     },
     {
       "id": "sea-lion-2023",
@@ -9483,7 +9486,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "historicalLayer": "ai-history"
+      "historicalLayer": "ai-history",
+      "datePrecision": "day"
     },
     {
       "id": "aya-101-launch-2024",
@@ -10590,7 +10594,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "historicalLayer": "ai-history"
+      "historicalLayer": "ai-history",
+      "datePrecision": "day"
     },
     {
       "id": "recurrentgemma-9b-release-2024",
@@ -11268,7 +11273,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "historicalLayer": "ai-history"
+      "historicalLayer": "ai-history",
+      "datePrecision": "day"
     },
     {
       "id": "command-r-august-refresh-2024",
@@ -11927,7 +11933,8 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige",
-      "historicalLayer": "ai-history"
+      "historicalLayer": "ai-history",
+      "datePrecision": "day"
     },
     {
       "id": "paligemma-2-release-2024",
