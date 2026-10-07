@@ -17663,6 +17663,61 @@
       "contributor": null,
       "entryOrigin": "lineaige",
       "historicalLayer": "ai-history"
+    },
+    {
+      "id": "qwen3-5-2026",
+      "recordType": "event",
+      "title": "Qwen3.5 Release",
+      "displayDate": "16 February 2026",
+      "eventDate": "2026-02-16",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Alibaba released Qwen3.5 on February 16, 2026, beginning with the open-sourcing of Qwen3.5-397B-A17B, also named Qwen3.5-Plus, a natively multimodal foundation model.",
+      "significance": "A dated Qwen model-series release milestone documented by Alibaba.",
+      "people": [],
+      "organizations": [
+        "Alibaba",
+        "Qwen"
+      ],
+      "technologies": [
+        "Qwen3.5",
+        "Qwen3.5-397B-A17B",
+        "Qwen3.5-Plus"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Release date and initial open-sourced model are documented in Alibaba's first-party February 16, 2026 announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-08T03:10:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "Alibaba Open-Sources Qwen3.5, A Natively Multimodal Model Built For High-Efficiency Inference",
+          "url": "https://home.alibabagroup.com/en-US/document-1960233590314761328",
+          "publisher": "Alibaba Group",
+          "publishedDate": "2026-02-16",
+          "sourceType": "official-announcement",
+          "sourceRole": "claim-evidence",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "qwen3-2025",
+          "label": "Travel backward to Qwen3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
     }
   ],
   "historicalBoundary": {
