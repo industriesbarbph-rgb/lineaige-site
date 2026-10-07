@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://lineaige.barbph.com/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://lineaige.barbph.com/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://lineaige.barbph.com/learn/mit-6034-ai-2010/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/learn/mit-ai-101-2021/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/learn/harvard-cs50-ai/</loc><lastmod>2026-10-03</lastmod></url>
@@ -10,8 +10,8 @@
   <url><loc>https://lineaige.barbph.com/learn/helsinki-elements-of-ai/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/learn/google-ai-professional-certificate-2026/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/context/youtube-transformers-google-cloud-2021/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://lineaige.barbph.com/ai-history/</loc><lastmod>2026-10-07</lastmod></url>
-  <url><loc>https://lineaige.barbph.com/records/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://lineaige.barbph.com/ai-history/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://lineaige.barbph.com/records/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://lineaige.barbph.com/methodology/</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://lineaige.barbph.com/record/turing-computable-numbers-1937/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/record/mcculloch-pitts-1943/</loc><lastmod>2026-10-03</lastmod></url>
@@ -224,6 +224,7 @@
   <url><loc>https://lineaige.barbph.com/record/functiongemma-release-2025/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/record/t5gemma-v2-release-2025/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/record/claude-opus-4-6-2026/</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://lineaige.barbph.com/record/qwen3-5-2026/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://lineaige.barbph.com/record/claude-sonnet-4-6-2026/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/record/gemini-3-1-pro-2026/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://lineaige.barbph.com/record/gpt-5-3-instant-2026/</loc><lastmod>2026-10-03</lastmod></url>
