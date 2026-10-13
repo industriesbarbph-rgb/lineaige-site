@@ -15238,6 +15238,61 @@
       "historicalLayer": "ai-history"
     },
     {
+      "id": "qwen3-5-2026",
+      "recordType": "event",
+      "title": "Qwen3.5 Release",
+      "displayDate": "16 February 2026",
+      "eventDate": "2026-02-16",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Alibaba released Qwen3.5 on February 16, 2026, beginning with the open-sourcing of Qwen3.5-397B-A17B, also named Qwen3.5-Plus, a natively multimodal foundation model.",
+      "significance": "A dated Qwen model-series release milestone documented by Alibaba.",
+      "people": [],
+      "organizations": [
+        "Alibaba",
+        "Qwen"
+      ],
+      "technologies": [
+        "Qwen3.5",
+        "Qwen3.5-397B-A17B",
+        "Qwen3.5-Plus"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Release date and initial open-sourced model are documented in Alibaba's first-party February 16, 2026 announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
+        "lastVerified": "2026-10-08T03:10:00+08:00"
+      },
+      "sources": [
+        {
+          "title": "Alibaba Open-Sources Qwen3.5, A Natively Multimodal Model Built For High-Efficiency Inference",
+          "url": "https://home.alibabagroup.com/en-US/document-1960233590314761328",
+          "publisher": "Alibaba Group",
+          "publishedDate": "2026-02-16",
+          "sourceType": "official-announcement",
+          "sourceRole": "claim-evidence",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [
+        {
+          "type": "chronological",
+          "targetId": "qwen3-2025",
+          "label": "Travel backward to Qwen3 Release",
+          "evidenceState": "contextual",
+          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
+          "sourceUrls": []
+        }
+      ],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
+    },
+    {
       "id": "claude-sonnet-4-6-2026",
       "recordType": "event",
       "title": "Claude Sonnet 4.6 Release",
@@ -17305,6 +17360,112 @@
       "historicalLayer": "ai-history"
     },
     {
+      "id": "gpt-6-sol-release-2026",
+      "recordType": "event",
+      "title": "GPT-6 Sol Release",
+      "displayDate": "22 September 2026",
+      "eventDate": "2026-09-22",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI introduced GPT-6 Sol on September 22, 2026.",
+      "significance": "A dated OpenAI model-release milestone for GPT-6 Sol.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-6 Sol"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "OpenAI's first-party GPT-6 announcement and ChatGPT release notes date the introduction to September 22, 2026. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-06T22:02:12+08:00"
+      },
+      "sources": [
+        {
+          "title": "Introducing GPT-6 Sol and Luna",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-09-22",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "ChatGPT Release Notes — September 22, 2026",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-09-22",
+          "sourceType": "official-release-notes",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
+    },
+    {
+      "id": "gpt-6-luna-release-2026",
+      "recordType": "event",
+      "title": "GPT-6 Luna Release",
+      "displayDate": "22 September 2026",
+      "eventDate": "2026-09-22",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "OpenAI introduced GPT-6 Luna on September 22, 2026.",
+      "significance": "A dated OpenAI model-release milestone for GPT-6 Luna.",
+      "people": [],
+      "organizations": [
+        "OpenAI"
+      ],
+      "technologies": [
+        "GPT-6 Luna"
+      ],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "OpenAI's first-party GPT-6 announcement and ChatGPT release notes date the introduction to September 22, 2026. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
+        "lastVerified": "2026-10-06T22:02:12+08:00"
+      },
+      "sources": [
+        {
+          "title": "Introducing GPT-6 Sol and Luna",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-09-22",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "claim-evidence"
+        },
+        {
+          "title": "ChatGPT Release Notes — September 22, 2026",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "publisher": "OpenAI",
+          "publishedDate": "2026-09-22",
+          "sourceType": "official-release-notes",
+          "primary": true,
+          "archivedUrl": null,
+          "sourceRole": "corroboration"
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige",
+      "historicalLayer": "ai-history"
+    },
+    {
       "id": "claude-sonnet-5-5-release-2026",
       "recordType": "event",
       "title": "Claude Sonnet 5.5 Release",
@@ -17525,6 +17686,46 @@
       "historicalLayer": "ai-history"
     },
     {
+      "id": "google-gemini-4-argon-is-now-available-for-developers-2026",
+      "recordType": "event",
+      "historicalLayer": "ai-history",
+      "title": "Gemini 4 Argon is now available for developers.",
+      "displayDate": "13 October 2026",
+      "eventDate": "2026-10-13",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "Google published the first-party milestone “Gemini 4 Argon is now available for developers.” on October 13, 2026; the source states an introduction, release, launch, or availability event.",
+      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "people": [],
+      "organizations": [
+        "Google"
+      ],
+      "technologies": [],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
+        "lastVerified": "2026-10-13T20:14:43Z"
+      },
+      "sources": [
+        {
+          "title": "Gemini 4 Argon is now available for developers.",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon",
+          "publisher": "Google",
+          "publishedDate": "2026-10-13",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
       "id": "now",
       "recordType": "living_edge",
       "title": "TODAY",
@@ -17557,167 +17758,6 @@
       "corrections": [],
       "contributor": null,
       "entryOrigin": "lineaige"
-    },
-    {
-      "id": "gpt-6-sol-release-2026",
-      "recordType": "event",
-      "title": "GPT-6 Sol Release",
-      "displayDate": "22 September 2026",
-      "eventDate": "2026-09-22",
-      "datePrecision": "day",
-      "temporalState": "recorded",
-      "status": "VERIFIED RECORD",
-      "summary": "OpenAI introduced GPT-6 Sol on September 22, 2026.",
-      "significance": "A dated OpenAI model-release milestone for GPT-6 Sol.",
-      "people": [],
-      "organizations": [
-        "OpenAI"
-      ],
-      "technologies": [
-        "GPT-6 Sol"
-      ],
-      "verification": {
-        "state": "verified",
-        "factualClaim": true,
-        "confidence": "high",
-        "note": "OpenAI's first-party GPT-6 announcement and ChatGPT release notes date the introduction to September 22, 2026. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
-        "lastVerified": "2026-10-06T22:02:12+08:00"
-      },
-      "sources": [
-        {
-          "title": "Introducing GPT-6 Sol and Luna",
-          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
-          "publisher": "OpenAI",
-          "publishedDate": "2026-09-22",
-          "sourceType": "official-announcement",
-          "primary": true,
-          "archivedUrl": null,
-          "sourceRole": "claim-evidence"
-        },
-        {
-          "title": "ChatGPT Release Notes — September 22, 2026",
-          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-          "publisher": "OpenAI",
-          "publishedDate": "2026-09-22",
-          "sourceType": "official-release-notes",
-          "primary": true,
-          "archivedUrl": null,
-          "sourceRole": "corroboration"
-        }
-      ],
-      "relationships": [],
-      "corrections": [],
-      "contributor": null,
-      "entryOrigin": "lineaige",
-      "historicalLayer": "ai-history"
-    },
-    {
-      "id": "gpt-6-luna-release-2026",
-      "recordType": "event",
-      "title": "GPT-6 Luna Release",
-      "displayDate": "22 September 2026",
-      "eventDate": "2026-09-22",
-      "datePrecision": "day",
-      "temporalState": "recorded",
-      "status": "VERIFIED RECORD",
-      "summary": "OpenAI introduced GPT-6 Luna on September 22, 2026.",
-      "significance": "A dated OpenAI model-release milestone for GPT-6 Luna.",
-      "people": [],
-      "organizations": [
-        "OpenAI"
-      ],
-      "technologies": [
-        "GPT-6 Luna"
-      ],
-      "verification": {
-        "state": "verified",
-        "factualClaim": true,
-        "confidence": "high",
-        "note": "OpenAI's first-party GPT-6 announcement and ChatGPT release notes date the introduction to September 22, 2026. No development geography, ancestry, influence, causality, priority, downstream impact, or relationship edge is inferred.",
-        "lastVerified": "2026-10-06T22:02:12+08:00"
-      },
-      "sources": [
-        {
-          "title": "Introducing GPT-6 Sol and Luna",
-          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
-          "publisher": "OpenAI",
-          "publishedDate": "2026-09-22",
-          "sourceType": "official-announcement",
-          "primary": true,
-          "archivedUrl": null,
-          "sourceRole": "claim-evidence"
-        },
-        {
-          "title": "ChatGPT Release Notes — September 22, 2026",
-          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-          "publisher": "OpenAI",
-          "publishedDate": "2026-09-22",
-          "sourceType": "official-release-notes",
-          "primary": true,
-          "archivedUrl": null,
-          "sourceRole": "corroboration"
-        }
-      ],
-      "relationships": [],
-      "corrections": [],
-      "contributor": null,
-      "entryOrigin": "lineaige",
-      "historicalLayer": "ai-history"
-    },
-    {
-      "id": "qwen3-5-2026",
-      "recordType": "event",
-      "title": "Qwen3.5 Release",
-      "displayDate": "16 February 2026",
-      "eventDate": "2026-02-16",
-      "datePrecision": "day",
-      "temporalState": "recorded",
-      "status": "VERIFIED RECORD",
-      "summary": "Alibaba released Qwen3.5 on February 16, 2026, beginning with the open-sourcing of Qwen3.5-397B-A17B, also named Qwen3.5-Plus, a natively multimodal foundation model.",
-      "significance": "A dated Qwen model-series release milestone documented by Alibaba.",
-      "people": [],
-      "organizations": [
-        "Alibaba",
-        "Qwen"
-      ],
-      "technologies": [
-        "Qwen3.5",
-        "Qwen3.5-397B-A17B",
-        "Qwen3.5-Plus"
-      ],
-      "verification": {
-        "state": "verified",
-        "factualClaim": true,
-        "confidence": "high",
-        "note": "Release date and initial open-sourced model are documented in Alibaba's first-party February 16, 2026 announcement. No geography, causal ancestry, influence, priority, or downstream relationship is inferred.",
-        "lastVerified": "2026-10-08T03:10:00+08:00"
-      },
-      "sources": [
-        {
-          "title": "Alibaba Open-Sources Qwen3.5, A Natively Multimodal Model Built For High-Efficiency Inference",
-          "url": "https://home.alibabagroup.com/en-US/document-1960233590314761328",
-          "publisher": "Alibaba Group",
-          "publishedDate": "2026-02-16",
-          "sourceType": "official-announcement",
-          "sourceRole": "claim-evidence",
-          "primary": true,
-          "archivedUrl": null
-        }
-      ],
-      "relationships": [
-        {
-          "type": "chronological",
-          "targetId": "qwen3-2025",
-          "label": "Travel backward to Qwen3 Release",
-          "evidenceState": "contextual",
-          "evidenceNote": "Chronological traversal only; not asserted as direct causality.",
-          "sourceUrls": []
-        }
-      ],
-      "corrections": [],
-      "contributor": null,
-      "entryOrigin": "lineaige",
-      "historicalLayer": "ai-history"
     }
   ],
   "historicalBoundary": {
