@@ -17726,6 +17726,46 @@
       "entryOrigin": "lineaige"
     },
     {
+      "id": "xai-introducing-grok-voice-3-0-2026",
+      "recordType": "event",
+      "historicalLayer": "ai-history",
+      "title": "Introducing Grok Voice 3.0",
+      "displayDate": "14 October 2026",
+      "eventDate": "2026-10-14",
+      "datePrecision": "day",
+      "temporalState": "recorded",
+      "status": "VERIFIED RECORD",
+      "summary": "xAI published the first-party milestone “Introducing Grok Voice 3.0” on October 14, 2026; the source states an introduction, release, launch, or availability event.",
+      "significance": "A dated first-party AI milestone admitted by LINEAiGE's deterministic GREEN lane.",
+      "people": [],
+      "organizations": [
+        "xAI"
+      ],
+      "technologies": [],
+      "verification": {
+        "state": "verified",
+        "factualClaim": true,
+        "confidence": "high",
+        "note": "Autonomous GREEN admission: exact publication date, trusted first-party host, release/launch/introduction/availability language, no inferred geography, ancestry, influence, causality, priority, or relationship edge.",
+        "lastVerified": "2026-10-14T18:36:03Z"
+      },
+      "sources": [
+        {
+          "title": "Introducing Grok Voice 3.0",
+          "url": "https://x.ai/news/grok-voice-3",
+          "publisher": "xAI",
+          "publishedDate": "2026-10-14",
+          "sourceType": "official-announcement",
+          "primary": true,
+          "archivedUrl": null
+        }
+      ],
+      "relationships": [],
+      "corrections": [],
+      "contributor": null,
+      "entryOrigin": "lineaige"
+    },
+    {
       "id": "now",
       "recordType": "living_edge",
       "title": "TODAY",
